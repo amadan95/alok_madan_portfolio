@@ -1,0 +1,25 @@
+{
+  "title": "Alok Madan",
+  "description": "AI-curated photography portfolio assembled from a local image archive.",
+  "photographer": "Alok Madan",
+  "intro": "Observational photographs gathered into shifting series of night, weather, transit, and distance.",
+  "introDesktop": "Observational photographs gathered into shifting series of night, weather, transit, and distance. The archive moves between motion and stillness, using quiet edits and long pauses rather than dense project framing.",
+  "introMobile": "Observational photographs gathered into shifting series of night, weather, transit, and distance.",
+  "contactEmail": "hello@example.com",
+  "cityLabel": "New York",
+  "timeZone": "America/New_York",
+  "contactBio": "Alok Madan photographs atmosphere, transit, weather, and the small human traces left in public space. The work moves between documentary observation and editorial pacing, building sequences from distance, texture, and timing rather than spectacle.",
+  "contactRepresented": "Available for commissions, editorial projects, brand storytelling, and long-form photographic sequencing. Select collaborations and ongoing personal work are developed between New York and travel-based assignments.",
+  "contactBackgroundPhotoId": "",
+  "disclaimerText": "All photographs, layouts, and sequencing on this portfolio are presented for editorial review and commission inquiry. Images may not be reproduced, distributed, or reused without written permission.",
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hello@example.com"
+    }
+  ]
+}

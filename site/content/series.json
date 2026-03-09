@@ -1,0 +1,1050 @@
+{
+  "generatedAt": "2026-03-08T14:32:29.723961+00:00",
+  "totalSeries": 26,
+  "series": [
+    {
+      "id": "series-01",
+      "slug": "01-transit-archive",
+      "title": "Transit Archive",
+      "subtitle": "India / UAE. 11 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "warm"
+      ],
+      "coverPhotoId": "b5d8e6b3305a-photo-1-2",
+      "previewPhotoIds": [
+        "b5d8e6b3305a-photo-1-2",
+        "f95f1370ed2c-photo-1",
+        "7c25cc7c0d5d-photo-12",
+        "8e60cbdf04d0-photo-15",
+        "3487817b8afa-photo-17"
+      ],
+      "photoIds": [
+        "b5d8e6b3305a-photo-1-2",
+        "3e485f8b1932-photo-1-3",
+        "f95f1370ed2c-photo-1",
+        "ac69dca7c75d-photo-10",
+        "28c3f0c7e2be-photo-11",
+        "7c25cc7c0d5d-photo-12",
+        "a3c936b2ae18-photo-13",
+        "7de89ddfae18-photo-14",
+        "8e60cbdf04d0-photo-15",
+        "e65e2dc59bfa-photo-16",
+        "3487817b8afa-photo-17"
+      ],
+      "portfolioIndex": 1,
+      "archiveLabel": "India / UAE",
+      "archiveYear": "2026",
+      "credits": "india  /  uae / landscape sequence / 2026",
+      "projectInformation": "Transit Archive gathers 11 photographs from India / UAE into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-02",
+      "slug": "02-night-sequence",
+      "title": "Night Sequence",
+      "subtitle": "Winter Study. 10 photographs shaped around snow study and snow study.",
+      "synopsis": "A hushed sequence that moves through snow study, restless, and passage.",
+      "tags": [
+        "snow study",
+        "passage",
+        "hushed",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "7780d0882987-dscf2310",
+      "previewPhotoIds": [
+        "57304a4fff81-dsc07166",
+        "35ffd15178d9-dsc07229",
+        "48395174d2cb-dsc07307-hdr",
+        "7780d0882987-dscf2310",
+        "f194c32728a5-dscf2593"
+      ],
+      "photoIds": [
+        "57304a4fff81-dsc07166",
+        "7a6c33e32953-dsc07176",
+        "35ffd15178d9-dsc07229",
+        "24b6069d5aab-dsc07238",
+        "48395174d2cb-dsc07307-hdr",
+        "b4623490f21e-dsc07314",
+        "225320486751-dscf2289",
+        "7780d0882987-dscf2310",
+        "157b5cd44260-dscf2321-edit",
+        "f194c32728a5-dscf2593"
+      ],
+      "portfolioIndex": 2,
+      "archiveLabel": "Winter Study",
+      "archiveYear": "2024",
+      "credits": "winter study / landscape sequence / 2024",
+      "projectInformation": "Night Sequence gathers 10 photographs from Winter Study into a focused snow study chapter. The sequence leans on snow study, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-03",
+      "slug": "03-crosswind-weather",
+      "title": "Crosswind Weather",
+      "subtitle": "Japan. 21 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "warm"
+      ],
+      "coverPhotoId": "d374109e5021-dsc02699-edit",
+      "previewPhotoIds": [
+        "9765e692ff59-dsc00117",
+        "abf6fbee2c8a-dsc00768-hdr",
+        "3ba83ec23909-dsc02026-edit",
+        "c9060b81b82e-dsc02440-hdr",
+        "e68182280732-dsc02893-hdr"
+      ],
+      "photoIds": [
+        "9765e692ff59-dsc00117",
+        "3d6dc3564e43-dsc00161",
+        "496b9a265c4c-dsc00396",
+        "562a97dee673-dsc00402",
+        "fa85474cc282-dsc00532-hdr-pano-edit",
+        "abf6fbee2c8a-dsc00768-hdr",
+        "2f3273db5cbe-dsc01052-hdr",
+        "70c081b8adf7-dsc01067-hdr-pano-edit",
+        "b49d7d3b3404-dsc01517-hdr",
+        "5e56ec538141-dsc02008",
+        "3ba83ec23909-dsc02026-edit",
+        "ca5afed3d21a-dsc02200-hdr-edit",
+        "b71b09adeb7b-dsc02215-hdr",
+        "4f3e85f8ee67-dsc02233-hdr",
+        "5d8190828642-dsc02323-hdr",
+        "c9060b81b82e-dsc02440-hdr",
+        "400bfbb33e19-dsc02524-hdr",
+        "f1baec7746c9-dsc02639-hdr",
+        "d374109e5021-dsc02699-edit",
+        "4ca5dfdd416b-dsc02750-hdr",
+        "e68182280732-dsc02893-hdr"
+      ],
+      "portfolioIndex": 3,
+      "archiveLabel": "Japan",
+      "archiveYear": "2023",
+      "credits": "japan / landscape sequence / 2023",
+      "projectInformation": "Crosswind Weather gathers 21 photographs from Japan into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-04",
+      "slug": "04-nocturnal-signal",
+      "title": "Nocturnal Signal",
+      "subtitle": "Taiwan / Malaysia / Singapore. 16 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "after hours"
+      ],
+      "coverPhotoId": "2248f0fcf40e-dscf0573",
+      "previewPhotoIds": [
+        "dc208313252e-dscf0033",
+        "7260db24d666-dscf0546",
+        "38d96a82734a-dscf8315",
+        "8bd6011b1db2-dscf8618-enhanced-nr",
+        "5cc8cd70cb94-dscf9227"
+      ],
+      "photoIds": [
+        "dc208313252e-dscf0033",
+        "b9e09123af38-dscf0219",
+        "ea810e796501-dscf0400-enhanced-nr",
+        "e2cf63ef1f7b-dscf0498",
+        "7260db24d666-dscf0546",
+        "2248f0fcf40e-dscf0573",
+        "95c9264b1aff-dscf0578-2",
+        "b851ff1e1f4c-dscf8207-2-enhanced-nr-pano-",
+        "38d96a82734a-dscf8315",
+        "44864ad1864a-dscf8394",
+        "bee017c6ee32-dscf8524",
+        "8bd6011b1db2-dscf8618-enhanced-nr",
+        "7868a50dd409-dscf8808-edit",
+        "28f6c601bd09-dscf8932-edit",
+        "2ec01c20b9e7-dscf9143",
+        "5cc8cd70cb94-dscf9227"
+      ],
+      "portfolioIndex": 4,
+      "archiveLabel": "Taiwan / Malaysia / Singapore",
+      "archiveYear": "2024",
+      "credits": "taiwan  /  malaysia  /  singapore / landscape sequence / 2024",
+      "projectInformation": "Nocturnal Signal gathers 16 photographs from Taiwan / Malaysia / Singapore into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-05",
+      "slug": "05-broken-route",
+      "title": "Broken Route",
+      "subtitle": "Japan. 8 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "warm"
+      ],
+      "coverPhotoId": "9b0fb39ccc7c-dsc09363",
+      "previewPhotoIds": [
+        "9b0fb39ccc7c-dsc09363",
+        "e9ee9dff4203-dsc09414-hdr",
+        "c64c73da8987-dsc09512",
+        "c91ec30285a6-dsc09621-hdr",
+        "732c7ba7e4c2-dsc09661"
+      ],
+      "photoIds": [
+        "9b0fb39ccc7c-dsc09363",
+        "1eb4bad8ffa9-dsc09374",
+        "e9ee9dff4203-dsc09414-hdr",
+        "67b186e4e012-dsc09501",
+        "c64c73da8987-dsc09512",
+        "c91ec30285a6-dsc09621-hdr",
+        "2f4d71e55562-dsc09628-edit",
+        "732c7ba7e4c2-dsc09661"
+      ],
+      "portfolioIndex": 5,
+      "archiveLabel": "Japan",
+      "archiveYear": "2023",
+      "credits": "japan / landscape sequence / 2023",
+      "projectInformation": "Broken Route gathers 8 photographs from Japan into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-06",
+      "slug": "06-still-residue",
+      "title": "Still Residue",
+      "subtitle": "India / UAE. 6 photographs shaped around after hours and after hours.",
+      "synopsis": "A nocturnal sequence that moves through after hours, cinematic, and night.",
+      "tags": [
+        "after hours",
+        "night",
+        "spatial-distance",
+        "passage"
+      ],
+      "coverPhotoId": "2cd37d3cad63-photo-9",
+      "previewPhotoIds": [
+        "0f58433afb46-photo-47",
+        "e906f3da5510-photo-5",
+        "d66c903d85e8-photo-6",
+        "760dd44a1fd6-photo-8",
+        "2cd37d3cad63-photo-9"
+      ],
+      "photoIds": [
+        "0f58433afb46-photo-47",
+        "e906f3da5510-photo-5",
+        "d66c903d85e8-photo-6",
+        "cda69c470029-photo-7",
+        "760dd44a1fd6-photo-8",
+        "2cd37d3cad63-photo-9"
+      ],
+      "portfolioIndex": 6,
+      "archiveLabel": "India / UAE",
+      "archiveYear": "2026",
+      "credits": "india  /  uae / landscape sequence / 2026",
+      "projectInformation": "Still Residue gathers 6 photographs from India / UAE into a focused after hours chapter. The sequence leans on after hours, night, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-07",
+      "slug": "07-vertical-distance",
+      "title": "Vertical Distance",
+      "subtitle": "Hong Kong. 13 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "after hours",
+        "night"
+      ],
+      "coverPhotoId": "da7c3276e26a-photo-12",
+      "previewPhotoIds": [
+        "7c53a3bd5a09-photo-1",
+        "da7c3276e26a-photo-12",
+        "69827b1df5c9-photo-15",
+        "3b8be9041556-photo-18",
+        "fd2ac7a05d2c-photo-20"
+      ],
+      "photoIds": [
+        "7c53a3bd5a09-photo-1",
+        "6ef2bd5db12d-photo-10",
+        "f8383b065e11-photo-11",
+        "da7c3276e26a-photo-12",
+        "62c1ccf5b785-photo-13",
+        "72d1af01a23d-photo-14",
+        "69827b1df5c9-photo-15",
+        "a3dedab7b63a-photo-16",
+        "fa0fef38c85b-photo-17",
+        "3b8be9041556-photo-18",
+        "0e6d1b34bf9d-photo-19",
+        "28be2bd83e0f-photo-2",
+        "fd2ac7a05d2c-photo-20"
+      ],
+      "portfolioIndex": 7,
+      "archiveLabel": "Hong Kong",
+      "archiveYear": "2025",
+      "credits": "hong kong / landscape sequence / 2025",
+      "projectInformation": "Vertical Distance gathers 13 photographs from Hong Kong into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-08",
+      "slug": "08-cold-archive",
+      "title": "Cold Archive",
+      "subtitle": "Print Archive. 12 photographs shaped around print memory and print memory.",
+      "synopsis": "A cinematic sequence that moves through print memory, warm, and memory.",
+      "tags": [
+        "print memory",
+        "memory",
+        "cinematic",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "73a220f635bf-dscf0692-pano-edit",
+      "previewPhotoIds": [
+        "deae5cf59e05-screen-shot-2021-04-17-at-12",
+        "3221737c2722-dsc00891",
+        "7a60373781e8-dsc04411",
+        "73a220f635bf-dscf0692-pano-edit",
+        "3f3836999a9d-dscf6197"
+      ],
+      "photoIds": [
+        "deae5cf59e05-screen-shot-2021-04-17-at-12",
+        "a4faf8b2d553-dsc00544",
+        "86c1635ec049-dsc00757-edit",
+        "3221737c2722-dsc00891",
+        "5c579a9d2799-dsc01442-edit-edit",
+        "806298c1700e-dsc03546-enhanced-nr",
+        "7a60373781e8-dsc04411",
+        "a83b832554a8-dsc09556",
+        "73a220f635bf-dscf0692-pano-edit",
+        "e4fd99769d0b-dscf5184-2",
+        "0d81cc123c29-dscf5449",
+        "3f3836999a9d-dscf6197"
+      ],
+      "portfolioIndex": 8,
+      "archiveLabel": "Print Archive",
+      "archiveYear": "2024",
+      "credits": "print archive / landscape sequence / 2024",
+      "projectInformation": "Cold Archive gathers 12 photographs from Print Archive into a focused print memory chapter. The sequence leans on print memory, memory, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-09",
+      "slug": "09-drift-terminal",
+      "title": "Drift Terminal",
+      "subtitle": "India / UAE. 23 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "warm"
+      ],
+      "coverPhotoId": "71466b39f32e-photo-32",
+      "previewPhotoIds": [
+        "35f24a86a224-photo-18",
+        "3c7473fc4be6-photo-23",
+        "3a63b333a4b8-photo-28",
+        "71466b39f32e-photo-32",
+        "1d31d16f7799-photo-38"
+      ],
+      "photoIds": [
+        "35f24a86a224-photo-18",
+        "410a05be6055-photo-19",
+        "3e11caf8cca7-photo-2",
+        "cfdc0fa8ef43-photo-20",
+        "a4c32c2c8cc1-photo-21",
+        "0bb17ce0a073-photo-22",
+        "3c7473fc4be6-photo-23",
+        "0559bf9e963f-photo-24",
+        "a4a4051dfd3a-photo-25",
+        "150b2327aaa8-photo-26",
+        "5312dffb37a4-photo-27",
+        "3a63b333a4b8-photo-28",
+        "7bf1b94a7d21-photo-29",
+        "5e190491e59b-photo-3",
+        "b7ba2148ee16-photo-30",
+        "e64bc02aabf5-photo-31",
+        "71466b39f32e-photo-32",
+        "2585b8f078af-photo-33",
+        "6d9570c888c2-photo-34",
+        "03c73f07cbdb-photo-35",
+        "a0d1fdf4b0a8-photo-36",
+        "a77bb788fc75-photo-37",
+        "1d31d16f7799-photo-38"
+      ],
+      "portfolioIndex": 9,
+      "archiveLabel": "India / UAE",
+      "archiveYear": "2026",
+      "credits": "india  /  uae / landscape sequence / 2026",
+      "projectInformation": "Drift Terminal gathers 23 photographs from India / UAE into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-10",
+      "slug": "10-wild-archive",
+      "title": "Wild Archive",
+      "subtitle": "Social Drafts. 19 photographs shaped around after hours and memory.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "memory",
+        "cinematic",
+        "spatial-distance",
+        "after hours"
+      ],
+      "coverPhotoId": "471207599c89-dsc00182",
+      "previewPhotoIds": [
+        "e28627254248-dsc02714-hdr",
+        "42be5fabb745-dscf0842-hdr",
+        "91887e6fcb95-dscf0976",
+        "7f536dc85ff7-dsc03857-hdr",
+        "471207599c89-dsc00182"
+      ],
+      "photoIds": [
+        "e28627254248-dsc02714-hdr",
+        "c06466c04932-dsc02994-enhanced-nr-hdr",
+        "a9c340d6e0e2-dsc03236-hdr",
+        "5ec61ddbe9a4-dsc03296-hdr",
+        "42be5fabb745-dscf0842-hdr",
+        "462822cd3e5f-dscf0853-hdr",
+        "3b36b011bc32-dscf0912",
+        "9676153d7da3-dscf0918-hdr",
+        "fb9c79f01a32-dscf0933-2",
+        "91887e6fcb95-dscf0976",
+        "97e1a44df631-dsc03710-hdr",
+        "e0b52b0525d0-dsc03732-hdr",
+        "82ff05eb0c09-dsc03841-hdr",
+        "56796e86beb6-dsc03850-hdr",
+        "7f536dc85ff7-dsc03857-hdr",
+        "950da7f986ee-dsc03934-hdr",
+        "7e580d3b1909-dsc03973",
+        "7a237b6662a2-dsc00157",
+        "471207599c89-dsc00182"
+      ],
+      "portfolioIndex": 10,
+      "archiveLabel": "Social Drafts",
+      "archiveYear": "2024",
+      "credits": "social drafts / landscape sequence / 2024",
+      "projectInformation": "Wild Archive gathers 19 photographs from Social Drafts into a focused after hours chapter. The sequence leans on memory, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-11",
+      "slug": "11-silver-distance",
+      "title": "Silver Distance",
+      "subtitle": "Copenhagen. 6 photographs shaped around travel observation and travel observation.",
+      "synopsis": "A cinematic sequence that moves through travel observation, restless, and passage.",
+      "tags": [
+        "travel observation",
+        "passage",
+        "cinematic",
+        "transition"
+      ],
+      "coverPhotoId": "302aa3b6b17e-dscf5784",
+      "previewPhotoIds": [
+        "302aa3b6b17e-dscf5784",
+        "85d32c4f5db5-dscf5969-hdr-edit-3",
+        "98ce300fc043-dscf5987-hdr",
+        "2fcee6394e1c-dscf6120",
+        "883bcedefd11-dscf6133"
+      ],
+      "photoIds": [
+        "302aa3b6b17e-dscf5784",
+        "85d32c4f5db5-dscf5969-hdr-edit-3",
+        "98ce300fc043-dscf5987-hdr",
+        "b805fbc10b61-dscf5988-hdr",
+        "2fcee6394e1c-dscf6120",
+        "883bcedefd11-dscf6133"
+      ],
+      "portfolioIndex": 11,
+      "archiveLabel": "Copenhagen",
+      "archiveYear": "2024",
+      "credits": "copenhagen / landscape sequence / 2024",
+      "projectInformation": "Silver Distance gathers 6 photographs from Copenhagen into a focused travel observation chapter. The sequence leans on travel observation, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-12",
+      "slug": "12-velvet-study",
+      "title": "Velvet Study",
+      "subtitle": "Switzerland. 15 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, cool, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "cool"
+      ],
+      "coverPhotoId": "d0634b5aeb03-photo-4",
+      "previewPhotoIds": [
+        "07adf8533c64-photo-1-2",
+        "5df53b348647-photo-12",
+        "b14237cc54b3-photo-15",
+        "d0634b5aeb03-photo-4",
+        "72524cb7354d-photo-9"
+      ],
+      "photoIds": [
+        "07adf8533c64-photo-1-2",
+        "db7f11d4d90b-photo-1",
+        "f992f425a9dc-photo-10",
+        "a59362b0b711-photo-11",
+        "5df53b348647-photo-12",
+        "dfe332135103-photo-13",
+        "5496d51aa501-photo-14",
+        "b14237cc54b3-photo-15",
+        "8ba759271118-photo-2",
+        "b10683df96c1-photo-3",
+        "d0634b5aeb03-photo-4",
+        "a8f4e7e1d797-photo-5",
+        "2b39bc363cad-photo-6",
+        "9c1db07b282b-photo-8",
+        "72524cb7354d-photo-9"
+      ],
+      "portfolioIndex": 12,
+      "archiveLabel": "Switzerland",
+      "archiveYear": "2025",
+      "credits": "switzerland / landscape sequence / 2025",
+      "projectInformation": "Velvet Study gathers 15 photographs from Switzerland into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-13",
+      "slug": "13-crosswind-trace",
+      "title": "Crosswind Trace",
+      "subtitle": "Pocket Camera. 10 photographs shaped around street fragments and street fragments.",
+      "synopsis": "A cinematic sequence that moves through street fragments, nocturnal, and passage.",
+      "tags": [
+        "street fragments",
+        "passage",
+        "cinematic",
+        "night"
+      ],
+      "coverPhotoId": "497244bf4f9c-r0001419-2",
+      "previewPhotoIds": [
+        "d6676b1cb478-r0001350-2",
+        "497244bf4f9c-r0001419-2",
+        "d23068086ff3-r0001595",
+        "436edcb134b5-r0001728",
+        "ce219aa15ae7-r0001839"
+      ],
+      "photoIds": [
+        "d6676b1cb478-r0001350-2",
+        "325e09034302-r0001403-2",
+        "497244bf4f9c-r0001419-2",
+        "2ec9a4efc654-r0001456-2",
+        "d23068086ff3-r0001595",
+        "c0e7d7a36892-r0001680",
+        "c00c6a79e514-r0001726-edit",
+        "436edcb134b5-r0001728",
+        "6ae1ce240bc8-r0001770",
+        "ce219aa15ae7-r0001839"
+      ],
+      "portfolioIndex": 13,
+      "archiveLabel": "Pocket Camera",
+      "archiveYear": "2025",
+      "credits": "pocket camera / landscape sequence / 2025",
+      "projectInformation": "Crosswind Trace gathers 10 photographs from Pocket Camera into a focused street fragments chapter. The sequence leans on street fragments, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-14",
+      "slug": "14-signal-route",
+      "title": "Signal Route",
+      "subtitle": "Japan. 12 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "warm",
+        "travel observation"
+      ],
+      "coverPhotoId": "23f2a435b925-dsc03417-hdr",
+      "previewPhotoIds": [
+        "e956f3a17d65-dsc03048-hdr",
+        "23f2a435b925-dsc03417-hdr",
+        "882cae0f7ebb-dsc03830-hdr",
+        "c1247789f4b4-dsc04373-hdr",
+        "bc0ca9ff945f-dsc05024-hdr"
+      ],
+      "photoIds": [
+        "e956f3a17d65-dsc03048-hdr",
+        "aa9b377fabb3-dsc03277-hdr",
+        "78dab22a183b-dsc03360-hdr",
+        "23f2a435b925-dsc03417-hdr",
+        "ba57a5c11cf8-dsc03755-hdr",
+        "b50fe7498964-dsc03767-hdr",
+        "882cae0f7ebb-dsc03830-hdr",
+        "64d25bb83d2a-dsc03918-edit-2",
+        "c1247789f4b4-dsc04373-hdr",
+        "3a158d7d89e2-dsc04697-hdr-edit",
+        "b4844bad5da6-dsc04854-hdr",
+        "bc0ca9ff945f-dsc05024-hdr"
+      ],
+      "portfolioIndex": 14,
+      "archiveLabel": "Japan",
+      "archiveYear": "2023",
+      "credits": "japan / landscape sequence / 2023",
+      "projectInformation": "Signal Route gathers 12 photographs from Japan into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-15",
+      "slug": "15-velvet-transit",
+      "title": "Velvet Transit",
+      "subtitle": "Japan. 9 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "warm",
+        "travel observation"
+      ],
+      "coverPhotoId": "f6371e8f7f8a-dsc09315",
+      "previewPhotoIds": [
+        "bd1a3c471587-dsc06449-hdr",
+        "88931133faa1-dsc08629-hdr",
+        "36f808e6fa05-dsc09227",
+        "869a3968fdc7-dsc09314",
+        "adf3d1623896-dsc09326"
+      ],
+      "photoIds": [
+        "bd1a3c471587-dsc06449-hdr",
+        "339ed2be993f-dsc06561",
+        "88931133faa1-dsc08629-hdr",
+        "3090371f68f4-dsc08722",
+        "36f808e6fa05-dsc09227",
+        "e89d329642dd-dsc09263",
+        "869a3968fdc7-dsc09314",
+        "f6371e8f7f8a-dsc09315",
+        "adf3d1623896-dsc09326"
+      ],
+      "portfolioIndex": 15,
+      "archiveLabel": "Japan",
+      "archiveYear": "2023",
+      "credits": "japan / landscape sequence / 2023",
+      "projectInformation": "Velvet Transit gathers 9 photographs from Japan into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-16",
+      "slug": "16-late-study",
+      "title": "Late Study",
+      "subtitle": "Winter Study. 8 photographs shaped around snow study and snow study.",
+      "synopsis": "A hushed sequence that moves through snow study, cool, and passage.",
+      "tags": [
+        "snow study",
+        "passage",
+        "hushed",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "a74c3dc7305f-dsc06833",
+      "previewPhotoIds": [
+        "e83da8222ceb-dsc06612",
+        "a74c3dc7305f-dsc06833",
+        "3639be8591be-dsc06971-edit",
+        "9216aab407f5-dsc07006",
+        "cedb5f469be2-dsc07041"
+      ],
+      "photoIds": [
+        "e83da8222ceb-dsc06612",
+        "574c6a35d9fb-dsc06626-edit",
+        "a74c3dc7305f-dsc06833",
+        "3cb5b24c5a31-dsc06854",
+        "3639be8591be-dsc06971-edit",
+        "9216aab407f5-dsc07006",
+        "4ae38866abdf-dsc07029",
+        "cedb5f469be2-dsc07041"
+      ],
+      "portfolioIndex": 16,
+      "archiveLabel": "Winter Study",
+      "archiveYear": "2024",
+      "credits": "winter study / landscape sequence / 2024",
+      "projectInformation": "Late Study gathers 8 photographs from Winter Study into a focused snow study chapter. The sequence leans on snow study, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-17",
+      "slug": "17-monsoon-sequence",
+      "title": "Monsoon Sequence",
+      "subtitle": "Copenhagen. 11 photographs shaped around travel observation and travel observation.",
+      "synopsis": "A cinematic sequence that moves through travel observation, clear, and passage.",
+      "tags": [
+        "travel observation",
+        "passage",
+        "cinematic",
+        "open-air"
+      ],
+      "coverPhotoId": "285fccef2c70-dscf4638-edit",
+      "previewPhotoIds": [
+        "285fccef2c70-dscf4638-edit",
+        "4e0d3d3f7359-dscf4850-hdr",
+        "63194684d31c-dscf5135",
+        "0aab7d91781c-dscf5551-hdr",
+        "bdb0f8cabac3-dscf5681"
+      ],
+      "photoIds": [
+        "285fccef2c70-dscf4638-edit",
+        "56383ec03ef6-dscf4759",
+        "4e0d3d3f7359-dscf4850-hdr",
+        "79f23fc2908a-dscf4872-hdr",
+        "994c3b6cddc5-dscf5090",
+        "63194684d31c-dscf5135",
+        "ceb87a09b213-dscf5188",
+        "51e037cbdd59-dscf5428",
+        "0aab7d91781c-dscf5551-hdr",
+        "fb5b60b48a69-dscf5661",
+        "bdb0f8cabac3-dscf5681"
+      ],
+      "portfolioIndex": 17,
+      "archiveLabel": "Copenhagen",
+      "archiveYear": "2024",
+      "credits": "copenhagen / landscape sequence / 2024",
+      "projectInformation": "Monsoon Sequence gathers 11 photographs from Copenhagen into a focused travel observation chapter. The sequence leans on travel observation, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-18",
+      "slug": "18-concrete-archive",
+      "title": "Concrete Archive",
+      "subtitle": "Hong Kong. 14 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "after hours",
+        "night"
+      ],
+      "coverPhotoId": "6a46feb72c93-photo-21",
+      "previewPhotoIds": [
+        "6a46feb72c93-photo-21",
+        "6def8c5af908-photo-24",
+        "d6fa5c81fa1c-photo-27",
+        "0c8fe2748d90-photo-6",
+        "429cd7ec783e-photo-9"
+      ],
+      "photoIds": [
+        "6a46feb72c93-photo-21",
+        "0d18d9fcd731-photo-22",
+        "7e0f2fbc86b1-photo-23",
+        "6def8c5af908-photo-24",
+        "0a3cd589f414-photo-25",
+        "f1fe96ac11d5-photo-26",
+        "d6fa5c81fa1c-photo-27",
+        "8102d7268f06-photo-3",
+        "af8f4d32a9cd-photo-4",
+        "d7fea7095b8d-photo-5",
+        "0c8fe2748d90-photo-6",
+        "10f3ca274323-photo-7",
+        "46276b1534cb-photo-8",
+        "429cd7ec783e-photo-9"
+      ],
+      "portfolioIndex": 18,
+      "archiveLabel": "Hong Kong",
+      "archiveYear": "2025",
+      "credits": "hong kong / landscape sequence / 2025",
+      "projectInformation": "Concrete Archive gathers 14 photographs from Hong Kong into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-19",
+      "slug": "19-quiet-crossing",
+      "title": "Quiet Crossing",
+      "subtitle": "Japan. 19 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "warm",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "c9fccb5c11a2-dsc06172-hdr",
+      "previewPhotoIds": [
+        "c3ff9a35ad3c-dsc05184",
+        "5b8f136c2168-dsc05555-hdr",
+        "2489bebdd3ae-dsc05593-hdr",
+        "e7dd038ffabb-dsc06085",
+        "70dd9f58a6e7-dsc06406-hdr"
+      ],
+      "photoIds": [
+        "c3ff9a35ad3c-dsc05184",
+        "bb7b3d534215-dsc05260-hdr",
+        "a65897b00238-dsc05411-edit",
+        "3b7e74b4d3d2-dsc05479-edit",
+        "5b8f136c2168-dsc05555-hdr",
+        "9ad75dd23fe5-dsc05560",
+        "f6d0073529d6-dsc05564-hdr",
+        "ed553b93d0b6-dsc05571",
+        "a55880472d74-dsc05588",
+        "2489bebdd3ae-dsc05593-hdr",
+        "3703f30d0d2d-dsc05649-hdr-pano",
+        "0a51d8bc9b56-dsc05894-hdr",
+        "606be3af4f6c-dsc05986",
+        "dca7b0b984b0-dsc06060-hdr-edit",
+        "e7dd038ffabb-dsc06085",
+        "5f6aeefc6d19-dsc06139-hdr",
+        "c9fccb5c11a2-dsc06172-hdr",
+        "959f83c44af0-dsc06383",
+        "70dd9f58a6e7-dsc06406-hdr"
+      ],
+      "portfolioIndex": 19,
+      "archiveLabel": "Japan",
+      "archiveYear": "2023",
+      "credits": "japan / landscape sequence / 2023",
+      "projectInformation": "Quiet Crossing gathers 19 photographs from Japan into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-20",
+      "slug": "20-paper-passage",
+      "title": "Paper Passage",
+      "subtitle": "Spring. 9 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "after hours"
+      ],
+      "coverPhotoId": "a195c48371c9-dscf7347",
+      "previewPhotoIds": [
+        "802ed9d8e4d6-dscf6797",
+        "9106cbd3c677-dscf6816-edit",
+        "1c4e2f9bf125-dscf6839",
+        "8a1851022b72-dscf7100-hdr",
+        "2203024d2b5b-dscf7371-edit"
+      ],
+      "photoIds": [
+        "802ed9d8e4d6-dscf6797",
+        "4abfcba4f031-dscf6815",
+        "9106cbd3c677-dscf6816-edit",
+        "3a4b06888aee-dscf6827",
+        "1c4e2f9bf125-dscf6839",
+        "9f3e8e692119-dscf6866",
+        "8a1851022b72-dscf7100-hdr",
+        "a195c48371c9-dscf7347",
+        "2203024d2b5b-dscf7371-edit"
+      ],
+      "portfolioIndex": 20,
+      "archiveLabel": "Spring",
+      "archiveYear": "2024",
+      "credits": "spring / landscape sequence / 2024",
+      "projectInformation": "Paper Passage gathers 9 photographs from Spring into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-21",
+      "slug": "21-quiet-margin",
+      "title": "Quiet Margin",
+      "subtitle": "Social Drafts. 11 photographs shaped around after hours and memory.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "memory",
+        "cinematic",
+        "spatial-distance",
+        "after hours"
+      ],
+      "coverPhotoId": "1907076e5291-dsc02696",
+      "previewPhotoIds": [
+        "e0981087b017-dsc01366-hdr",
+        "1907076e5291-dsc02696",
+        "e705e5bba66c-dsc07385",
+        "0aec362b9497-img-4131-edit-2",
+        "abb99a91ead6-img-4611-hdr-edit"
+      ],
+      "photoIds": [
+        "e0981087b017-dsc01366-hdr",
+        "12ab2c167e90-dsc02027-hdr",
+        "1907076e5291-dsc02696",
+        "da20e7011579-dsc03762",
+        "62addcb703f1-dsc05057-hdr",
+        "e705e5bba66c-dsc07385",
+        "ef16fd4871e8-dsc07852-2",
+        "f73816a9f271-dscf1271",
+        "0aec362b9497-img-4131-edit-2",
+        "b2b6a3cc1a9c-img-4351-edit",
+        "abb99a91ead6-img-4611-hdr-edit"
+      ],
+      "portfolioIndex": 21,
+      "archiveLabel": "Social Drafts",
+      "archiveYear": "2024",
+      "credits": "social drafts / landscape sequence / 2024",
+      "projectInformation": "Quiet Margin gathers 11 photographs from Social Drafts into a focused after hours chapter. The sequence leans on memory, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-22",
+      "slug": "22-paper-distance",
+      "title": "Paper Distance",
+      "subtitle": "India / UAE. 8 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, warm, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "travel observation"
+      ],
+      "coverPhotoId": "78c6c2d17e0c-photo-46",
+      "previewPhotoIds": [
+        "684048097746-photo-39",
+        "07648ec4161f-photo-40",
+        "82c42073a305-photo-42",
+        "8b3257523353-photo-43",
+        "78c6c2d17e0c-photo-46"
+      ],
+      "photoIds": [
+        "684048097746-photo-39",
+        "4bb9678a0248-photo-4",
+        "07648ec4161f-photo-40",
+        "790fdf43d472-photo-41",
+        "82c42073a305-photo-42",
+        "8b3257523353-photo-43",
+        "23e772b5e714-photo-45",
+        "78c6c2d17e0c-photo-46"
+      ],
+      "portfolioIndex": 22,
+      "archiveLabel": "India / UAE",
+      "archiveYear": "2026",
+      "credits": "india  /  uae / landscape sequence / 2026",
+      "projectInformation": "Paper Distance gathers 8 photographs from India / UAE into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-23",
+      "slug": "23-electric-counter",
+      "title": "Electric Counter",
+      "subtitle": "After Hours. 9 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "spatial-distance",
+        "after hours"
+      ],
+      "coverPhotoId": "bc2dbb34fd90-dsc03259",
+      "previewPhotoIds": [
+        "f24abfe6cd81-dsc03051",
+        "b8d3168d4ad9-dsc03491-hdr",
+        "3d4d6035553d-dsc08003-edit",
+        "12a5512ce931-dsc09052-edit",
+        "c44e80fa3ba7-dscf6349"
+      ],
+      "photoIds": [
+        "f24abfe6cd81-dsc03051",
+        "bc2dbb34fd90-dsc03259",
+        "b8d3168d4ad9-dsc03491-hdr",
+        "9e32362737d9-dsc06313",
+        "3d4d6035553d-dsc08003-edit",
+        "7539be28128e-dsc08048",
+        "12a5512ce931-dsc09052-edit",
+        "f3353bac61ec-dsc09127",
+        "c44e80fa3ba7-dscf6349"
+      ],
+      "portfolioIndex": 23,
+      "archiveLabel": "After Hours",
+      "archiveYear": "2025",
+      "credits": "after hours / landscape sequence / 2025",
+      "projectInformation": "Electric Counter gathers 9 photographs from After Hours into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-24",
+      "slug": "24-white-route",
+      "title": "White Route",
+      "subtitle": "Pocket Camera. 18 photographs shaped around street fragments and street fragments.",
+      "synopsis": "A cinematic sequence that moves through street fragments, cool, and passage.",
+      "tags": [
+        "street fragments",
+        "passage",
+        "cinematic",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "1bd23369cff2-r0001297-2",
+      "previewPhotoIds": [
+        "3ec0cfe43870-r0000099",
+        "c6602851d821-r0000528",
+        "8256ebae3cc3-r0000768-hdr-pano-enhanced-n",
+        "78d037736163-r0001116",
+        "1bd23369cff2-r0001297-2"
+      ],
+      "photoIds": [
+        "3ec0cfe43870-r0000099",
+        "4301b280d51d-r0000164",
+        "4c674024ec3c-r0000433-hdr",
+        "687b6b74e99b-r0000490",
+        "c6602851d821-r0000528",
+        "efebeec3ad25-r0000543-edit",
+        "4c56decb826d-r0000544",
+        "8f0a03e692ff-r0000665-enhanced-nr",
+        "8256ebae3cc3-r0000768-hdr-pano-enhanced-n",
+        "a475e5b1927d-r0000952",
+        "44b4f1cb2ae1-r0000966",
+        "8fb2371a8f69-r0001010",
+        "0797697d9483-r0001094",
+        "78d037736163-r0001116",
+        "668876a0af49-r0001236",
+        "63a8e3ce8aa0-r0001249",
+        "a11974d37515-r0001250",
+        "1bd23369cff2-r0001297-2"
+      ],
+      "portfolioIndex": 24,
+      "archiveLabel": "Pocket Camera",
+      "archiveYear": "2024",
+      "credits": "pocket camera / landscape sequence / 2024",
+      "projectInformation": "White Route gathers 18 photographs from Pocket Camera into a focused street fragments chapter. The sequence leans on street fragments, passage, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-25",
+      "slug": "25-cold-light",
+      "title": "Cold Light",
+      "subtitle": "Spring. 12 photographs shaped around travel observation and passage.",
+      "synopsis": "A cinematic sequence that moves through travel observation, clear, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "travel observation",
+        "spatial-distance"
+      ],
+      "coverPhotoId": "4227e40b6da0-dscf6388-edit",
+      "previewPhotoIds": [
+        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
+        "574d14e38e30-dsc03499-edit",
+        "a1027115472d-dscf6338",
+        "4227e40b6da0-dscf6388-edit",
+        "529fa9484cb4-dscf6745"
+      ],
+      "photoIds": [
+        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
+        "746d62951cee-dsc03434-edit",
+        "1c26c472f6b0-dsc03474-2",
+        "574d14e38e30-dsc03499-edit",
+        "71ada4694401-dscf6200",
+        "af46956483d7-dscf6304",
+        "a1027115472d-dscf6338",
+        "286f11d751ba-dscf6377",
+        "4227e40b6da0-dscf6388-edit",
+        "1322a2425f87-dscf6609",
+        "d3914540ad00-dscf6674",
+        "529fa9484cb4-dscf6745"
+      ],
+      "portfolioIndex": 25,
+      "archiveLabel": "Spring",
+      "archiveYear": "2024",
+      "credits": "spring / landscape sequence / 2024",
+      "projectInformation": "Cold Light gathers 12 photographs from Spring into a focused travel observation chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    },
+    {
+      "id": "series-26",
+      "slug": "26-monsoon-tide",
+      "title": "Monsoon Tide",
+      "subtitle": "Taiwan / Malaysia / Singapore. 6 photographs shaped around after hours and passage.",
+      "synopsis": "A cinematic sequence that moves through after hours, nocturnal, and cinematic.",
+      "tags": [
+        "passage",
+        "cinematic",
+        "after hours",
+        "night"
+      ],
+      "coverPhotoId": "882a8af34513-dscf9294",
+      "previewPhotoIds": [
+        "882a8af34513-dscf9294",
+        "8027e3f34d6f-dscf9399",
+        "84b90a093846-dscf9426",
+        "6e33b12d2e41-dscf9713-enhanced-nr-pano",
+        "75d88e92e1b5-dscf9999"
+      ],
+      "photoIds": [
+        "882a8af34513-dscf9294",
+        "8027e3f34d6f-dscf9399",
+        "84b90a093846-dscf9426",
+        "f34b0cca792f-dscf9441-pano",
+        "6e33b12d2e41-dscf9713-enhanced-nr-pano",
+        "75d88e92e1b5-dscf9999"
+      ],
+      "portfolioIndex": 26,
+      "archiveLabel": "Taiwan / Malaysia / Singapore",
+      "archiveYear": "2024",
+      "credits": "taiwan  /  malaysia  /  singapore / landscape sequence / 2024",
+      "projectInformation": "Monsoon Tide gathers 6 photographs from Taiwan / Malaysia / Singapore into a focused after hours chapter. The sequence leans on passage, cinematic, and landscape frames so the edit shifts without repeating the same motif."
+    }
+  ]
+}

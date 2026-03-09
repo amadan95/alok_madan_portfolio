@@ -1,0 +1,17 @@
+.DS_Store
+.next
+.next*
+site/.next
+site/.next*
+node_modules
+.node_modules.*
+out
+output
+site/out
+__pycache__
+.playwright-cli
+.archive
+.site-export*
+site/tsconfig.tsbuildinfo
+site/*.tsbuildinfo
+*.tsbuildinfo
