@@ -7,7 +7,7 @@ import type { IntroSlide, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { sitePrimaryNavLinks } from "@/components/site-header-chrome";
 
-const slideDurationMs = 420;
+const slideDurationMs = 160;
 const flashSlideCount = 9;
 
 function buildRandomIntroSequence(pool: IntroSlide[]) {
@@ -206,6 +206,10 @@ export function IntroOverlay({
         <p className="intro-overlay__desktop">{siteMeta.introDesktop}</p>
         <p className="intro-overlay__mobile">{siteMeta.introMobile}</p>
       </div>
+
+      <aside className="intro-overlay__name-rail" aria-label="Photographer">
+        <span className="intro-overlay__name">{siteMeta.photographer}</span>
+      </aside>
 
       <nav className="intro-overlay__final-nav" aria-label="Portfolio intro navigation">
         {sitePrimaryNavLinks.map((link) => (

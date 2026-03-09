@@ -250,7 +250,7 @@ img {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 90ms linear;
+  transition: opacity 18ms linear;
   will-change: opacity;
 }
 
@@ -298,6 +298,10 @@ img {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.intro-overlay__name-rail {
+  display: none;
 }
 
 .intro-overlay__final-link {
@@ -939,6 +943,30 @@ img {
     font-size: 1.05rem;
     line-height: 1.05;
     color: var(--color-text);
+  }
+
+  .intro-overlay__name-rail {
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 1;
+    display: flex;
+    width: var(--home-left-rail);
+    align-items: center;
+    padding: var(--page-gutter);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease;
+  }
+
+  .intro-overlay[data-complete="true"] .intro-overlay__name-rail {
+    opacity: 1;
+  }
+
+  .intro-overlay__name {
+    font-size: 1.05rem;
+    line-height: 1.05;
+    color: #ffffff;
+    mix-blend-mode: difference;
   }
 
   .portfolio-home__content {
