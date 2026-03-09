@@ -14,8 +14,17 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import requests
-from PIL import Image, ImageOps, ImageStat
+try:
+    import requests
+except ModuleNotFoundError:
+    requests = None
+
+try:
+    from PIL import Image, ImageOps, ImageStat
+except ModuleNotFoundError:
+    Image = None
+    ImageOps = None
+    ImageStat = None
 
 WORKSPACE_ROOT = Path(__file__).resolve().parents[1]
 SITE_ROOT = WORKSPACE_ROOT / "site"
@@ -432,6 +441,7 @@ def main() -> None:
         canonical_assets = existing_assets
         print(f"Reusing {len(canonical_assets)} canonical assets from photo-analysis.json")
     else:
+        ensure_pillow_available()
         files = walk_archive(SOURCE_ROOT, SOURCE_ROOT)
         raw_records: list[RawRecord] = []
 
@@ -703,6 +713,7 @@ def analyze_assets(assets: list[dict[str, Any]], existing_analyses: dict[str, di
 
 
 def analyze_with_openai(api_key: str, asset: dict[str, Any]) -> dict[str, Any]:
+    ensure_requests_available()
     thumb_path = PUBLIC_DIR / asset["thumbPath"].lstrip("/")
     payload = {
         "model": ANALYSIS_MODEL,
@@ -1754,6 +1765,19 @@ def normalize_tone_tags(values: Any) -> list[str]:
         values = []
     cleaned = [slugify(str(value)).replace("-", " ") for value in values if str(value).strip()]
     return unique_preserve(cleaned)[:5]
+
+
+def ensure_requests_available() -> None:
+    if requests is None:
+        raise RuntimeError("OpenAI analysis requires the optional Python package 'requests'.")
+
+
+def ensure_pillow_available() -> None:
+    if Image is None or ImageOps is None or ImageStat is None:
+        raise RuntimeError(
+            "Image rescanning requires the optional Python package 'Pillow'. "
+            "Commit generated catalog artifacts or install Pillow before rescanning."
+        )
 
 
 def create_perceptual_hash(image: Image.Image) -> str:
