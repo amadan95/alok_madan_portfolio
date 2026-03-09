@@ -1,19 +1,19 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { PhotoAsset } from "@/lib/types";
+import type { DisplayAsset } from "@/lib/types";
 import { createSeededRandom } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 
 type RawRow = {
   id: string;
-  assets: PhotoAsset[];
+  assets: DisplayAsset[];
   align: "start" | "center" | "end";
   padLeft: number;
   padRight: number;
 };
 
-function buildRows(assets: PhotoAsset[]) {
+function buildRows(assets: DisplayAsset[]) {
   const random = createSeededRandom(assets.map((asset) => asset.id).join("|"));
   const shuffled = [...assets];
 
@@ -39,8 +39,8 @@ function buildRows(assets: PhotoAsset[]) {
   return rows;
 }
 
-export function RawPageExperience({ assets }: { assets: PhotoAsset[] }) {
-  const [activeAsset, setActiveAsset] = useState<PhotoAsset | null>(null);
+export function RawPageExperience({ assets }: { assets: DisplayAsset[] }) {
+  const [activeAsset, setActiveAsset] = useState<DisplayAsset | null>(null);
   const rows = useMemo(() => buildRows(assets), [assets]);
 
   return (
@@ -48,7 +48,7 @@ export function RawPageExperience({ assets }: { assets: PhotoAsset[] }) {
       <div className="raw-page-experience__gradient" />
       {activeAsset ? (
         <div className="raw-page-experience__overlay">
-          <img src={activeAsset.displayPath} alt="" width={activeAsset.width} height={activeAsset.height} />
+          <img src={activeAsset.displayPath} alt="" width={activeAsset.width} height={activeAsset.height} decoding="async" />
         </div>
       ) : null}
       <InfiniteVerticalSlider
@@ -74,6 +74,8 @@ export function RawPageExperience({ assets }: { assets: PhotoAsset[] }) {
                   alt=""
                   width={asset.width}
                   height={asset.height}
+                  loading="lazy"
+                  decoding="async"
                   onMouseEnter={() => setActiveAsset(asset)}
                   onMouseLeave={() => setActiveAsset(null)}
                 />

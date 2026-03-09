@@ -1,6 +1,8 @@
 {
   "generatedAt": "2026-03-09T13:06:05.952709+00:00",
-  "totalSeries": 14,
+  "manifestVersion": 1,
+  "totalCanonicalPhotos": 316,
+  "targetExhibitCount": 260,
   "exhibitPhotoCount": 260,
   "rawOnlyPhotoIds": [
     "4f3e85f8ee67-dsc02233-hdr",
@@ -60,11 +62,11 @@
     "88931133faa1-dsc08629-hdr",
     "b851ff1e1f4c-dscf8207-2-enhanced-nr-pano-"
   ],
-  "series": [
+  "rooms": [
     {
-      "id": "series-01",
-      "slug": "01-threshold",
       "title": "Threshold",
+      "primaryTone": "arrival",
+      "roomStatement": "The exhibition begins at the edge of disclosure: entries, crossings, and the first sensation that a place is about to reveal itself.",
       "subtitle": "Thresholds, arrivals, and first public light.",
       "synopsis": "An opening room of crossings, lookout, and tentative approach.",
       "tags": [
@@ -99,18 +101,15 @@
         "10f3ca274323-photo-7",
         "12ab2c167e90-dsc02027-hdr"
       ],
-      "portfolioIndex": 1,
       "archiveLabel": "India-UAE / Switzerland / Copenhagen",
       "archiveYear": "2023-2026",
       "credits": "india-uae / switzerland / copenhagen / landscape sequence / 2023-2026",
-      "projectInformation": "The exhibition begins at the edge of disclosure: entries, crossings, and the first sensation that a place is about to reveal itself. Threshold draws photographs from India-UAE / Switzerland / Copenhagen across 2023-2026. The edit leans on cool, threshold, public and moves through twilight light with far framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "arrival",
-      "roomStatement": "The exhibition begins at the edge of disclosure: entries, crossings, and the first sensation that a place is about to reveal itself."
+      "projectInformation": "The exhibition begins at the edge of disclosure: entries, crossings, and the first sensation that a place is about to reveal itself. Threshold draws photographs from India-UAE / Switzerland / Copenhagen across 2023-2026. The edit leans on cool, threshold, public and moves through twilight light with far framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-02",
-      "slug": "02-drift",
       "title": "Drift",
+      "primaryTone": "movement",
+      "roomStatement": "Drift stays with moving attention: bodies in passage, peripheral incidents, and the instability of seeing while still in motion.",
       "subtitle": "Slipstream movement and passing attention.",
       "synopsis": "Street movement loosens into glances, fragments, and unstable pace.",
       "tags": [
@@ -147,18 +146,15 @@
         "4abfcba4f031-dscf6815",
         "3ec0cfe43870-r0000099"
       ],
-      "portfolioIndex": 2,
       "archiveLabel": "Pocket Camera / Social Drafts / Japan",
       "archiveYear": "2023-2025",
       "credits": "pocket camera / social drafts / japan / landscape sequence / 2023-2025",
-      "projectInformation": "Drift stays with moving attention: bodies in passage, peripheral incidents, and the instability of seeing while still in motion. Drift draws photographs from Pocket Camera / Social Drafts / Japan across 2023-2025. The edit leans on cool, cinematic, threshold and moves through twilight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "movement",
-      "roomStatement": "Drift stays with moving attention: bodies in passage, peripheral incidents, and the instability of seeing while still in motion."
+      "projectInformation": "Drift stays with moving attention: bodies in passage, peripheral incidents, and the instability of seeing while still in motion. Drift draws photographs from Pocket Camera / Social Drafts / Japan across 2023-2025. The edit leans on cool, cinematic, threshold and moves through twilight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-03",
-      "slug": "03-crossing",
       "title": "Crossing",
+      "primaryTone": "encounter",
+      "roomStatement": "Crossing is built from encounter and negotiation, where paths intersect and the public frame tightens around gesture, blockage, and contact.",
       "subtitle": "Bodies, paths, and public negotiation.",
       "synopsis": "Encounters, obstructions, and shared ground shape the room.",
       "tags": [
@@ -195,18 +191,15 @@
         "a74c3dc7305f-dsc06833",
         "285fccef2c70-dscf4638-edit"
       ],
-      "portfolioIndex": 3,
       "archiveLabel": "Pocket Camera / Japan / Switzerland",
       "archiveYear": "2023-2026",
       "credits": "pocket camera / japan / switzerland / portrait sequence / 2023-2026",
-      "projectInformation": "Crossing is built from encounter and negotiation, where paths intersect and the public frame tightens around gesture, blockage, and contact. Crossing draws photographs from Pocket Camera / Japan / Switzerland across 2023-2026. The edit leans on cool, close, figure and moves through twilight light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "encounter",
-      "roomStatement": "Crossing is built from encounter and negotiation, where paths intersect and the public frame tightens around gesture, blockage, and contact."
+      "projectInformation": "Crossing is built from encounter and negotiation, where paths intersect and the public frame tightens around gesture, blockage, and contact. Crossing draws photographs from Pocket Camera / Japan / Switzerland across 2023-2026. The edit leans on cool, close, figure and moves through twilight light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-04",
-      "slug": "04-concourse",
       "title": "Concourse",
+      "primaryTone": "flow",
+      "roomStatement": "Concourse moves from incidental passage into directed flow, where paths, signals, and structural cues begin to gather force.",
       "subtitle": "Transit, direction, and accumulating momentum.",
       "synopsis": "Signals, routes, and collective motion begin to press forward.",
       "tags": [
@@ -244,18 +237,15 @@
         "c00c6a79e514-r0001726-edit",
         "732c7ba7e4c2-dsc09661"
       ],
-      "portfolioIndex": 4,
       "archiveLabel": "Japan / Social Drafts / India-UAE",
       "archiveYear": "2023-2026",
       "credits": "japan / social drafts / india-uae / landscape sequence / 2023-2026",
-      "projectInformation": "Concourse moves from incidental passage into directed flow, where paths, signals, and structural cues begin to gather force. Concourse draws photographs from Japan / Social Drafts / India-UAE across 2023-2026. The edit leans on warm, cinematic, public and moves through twilight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "flow",
-      "roomStatement": "Concourse moves from incidental passage into directed flow, where paths, signals, and structural cues begin to gather force."
+      "projectInformation": "Concourse moves from incidental passage into directed flow, where paths, signals, and structural cues begin to gather force. Concourse draws photographs from Japan / Social Drafts / India-UAE across 2023-2026. The edit leans on warm, cinematic, public and moves through twilight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-05",
-      "slug": "05-pressure",
       "title": "Pressure",
+      "primaryTone": "density",
+      "roomStatement": "Pressure compresses the frame into density and friction, where closeness, heat, and layered surfaces overpower orientation.",
       "subtitle": "Density, compression, and urban heat.",
       "synopsis": "Close frames and stacked surfaces push the exhibition inward.",
       "tags": [
@@ -293,18 +283,15 @@
         "f1fe96ac11d5-photo-26",
         "d374109e5021-dsc02699-edit"
       ],
-      "portfolioIndex": 5,
       "archiveLabel": "Japan / Pocket Camera / India-UAE",
       "archiveYear": "2023-2026",
       "credits": "japan / pocket camera / india-uae / portrait sequence / 2023-2026",
-      "projectInformation": "Pressure compresses the frame into density and friction, where closeness, heat, and layered surfaces overpower orientation. Pressure draws photographs from Japan / Pocket Camera / India-UAE across 2023-2026. The edit leans on night, warm, close and moves through night light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "density",
-      "roomStatement": "Pressure compresses the frame into density and friction, where closeness, heat, and layered surfaces overpower orientation."
+      "projectInformation": "Pressure compresses the frame into density and friction, where closeness, heat, and layered surfaces overpower orientation. Pressure draws photographs from Japan / Pocket Camera / India-UAE across 2023-2026. The edit leans on night, warm, close and moves through night light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-06",
-      "slug": "06-voltage",
       "title": "Voltage",
+      "primaryTone": "infrastructure",
+      "roomStatement": "Voltage gathers the charged architecture of movement, where glass, signage, and reflective surfaces feel electrically alive.",
       "subtitle": "Infrastructure, glare, and charged surfaces.",
       "synopsis": "Steel, glass, and signage turn the public city into voltage.",
       "tags": [
@@ -343,18 +330,15 @@
         "1eb4bad8ffa9-dsc09374",
         "56796e86beb6-dsc03850-hdr"
       ],
-      "portfolioIndex": 6,
       "archiveLabel": "Hong Kong / Social Drafts / Japan",
       "archiveYear": "2023-2026",
       "credits": "hong kong / social drafts / japan / landscape sequence / 2023-2026",
-      "projectInformation": "Voltage gathers the charged architecture of movement, where glass, signage, and reflective surfaces feel electrically alive. Voltage draws photographs from Hong Kong / Social Drafts / Japan across 2023-2026. The edit leans on night, cool, nocturnal and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "infrastructure",
-      "roomStatement": "Voltage gathers the charged architecture of movement, where glass, signage, and reflective surfaces feel electrically alive."
+      "projectInformation": "Voltage gathers the charged architecture of movement, where glass, signage, and reflective surfaces feel electrically alive. Voltage draws photographs from Hong Kong / Social Drafts / Japan across 2023-2026. The edit leans on night, cool, nocturnal and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-07",
-      "slug": "07-nocturne",
       "title": "Nocturne",
+      "primaryTone": "night",
+      "roomStatement": "Nocturne lets darkness redraw the image, turning streets and facades into withheld information, scattered glow, and long distance.",
       "subtitle": "Nightfall, distance, and artificial glow.",
       "synopsis": "Darkness reorganizes space into withheld light and suspended distance.",
       "tags": [
@@ -393,18 +377,15 @@
         "6ef2bd5db12d-photo-10",
         "760dd44a1fd6-photo-8"
       ],
-      "portfolioIndex": 7,
       "archiveLabel": "Social Drafts / Japan / Hong Kong",
       "archiveYear": "2023-2026",
       "credits": "social drafts / japan / hong kong / landscape sequence / 2023-2026",
-      "projectInformation": "Nocturne lets darkness redraw the image, turning streets and facades into withheld information, scattered glow, and long distance. Nocturne draws photographs from Social Drafts / Japan / Hong Kong across 2023-2026. The edit leans on night, cool, nocturnal and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "night",
-      "roomStatement": "Nocturne lets darkness redraw the image, turning streets and facades into withheld information, scattered glow, and long distance."
+      "projectInformation": "Nocturne lets darkness redraw the image, turning streets and facades into withheld information, scattered glow, and long distance. Nocturne draws photographs from Social Drafts / Japan / Hong Kong across 2023-2026. The edit leans on night, cool, nocturnal and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-08",
-      "slug": "08-afterlight",
       "title": "Afterlight",
+      "primaryTone": "residue",
+      "roomStatement": "Afterlight stays with the city after its peak energy, when reflected color, wet surfaces, and lingering movement become the subject.",
       "subtitle": "Neon, residue, and the city after hours.",
       "synopsis": "Late images hold reflection, color bleed, and unfinished passage.",
       "tags": [
@@ -442,18 +423,15 @@
         "8bd6011b1db2-dscf8618-enhanced-nr",
         "c06466c04932-dsc02994-enhanced-nr-hdr"
       ],
-      "portfolioIndex": 8,
       "archiveLabel": "Social Drafts / Taiwan-Malaysia-Singapore / Hong Kong",
       "archiveYear": "2023-2026",
       "credits": "social drafts / taiwan-malaysia-singapore / hong kong / landscape sequence / 2023-2026",
-      "projectInformation": "Afterlight stays with the city after its peak energy, when reflected color, wet surfaces, and lingering movement become the subject. Afterlight draws photographs from Social Drafts / Taiwan-Malaysia-Singapore / Hong Kong across 2023-2026. The edit leans on night, cool, public and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "residue",
-      "roomStatement": "Afterlight stays with the city after its peak energy, when reflected color, wet surfaces, and lingering movement become the subject."
+      "projectInformation": "Afterlight stays with the city after its peak energy, when reflected color, wet surfaces, and lingering movement become the subject. Afterlight draws photographs from Social Drafts / Taiwan-Malaysia-Singapore / Hong Kong across 2023-2026. The edit leans on night, cool, public and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-09",
-      "slug": "09-residue",
       "title": "Residue",
+      "primaryTone": "memory",
+      "roomStatement": "Residue introduces the memory-bearing image: prints, reposted surfaces, and fragments that feel carried forward rather than freshly seen.",
       "subtitle": "Prints, traces, and held memory.",
       "synopsis": "Reproduction enters the exhibit as sediment rather than document.",
       "tags": [
@@ -490,18 +468,15 @@
         "a8f4e7e1d797-photo-5",
         "7a60373781e8-dsc04411"
       ],
-      "portfolioIndex": 9,
       "archiveLabel": "Print Archive / Hong Kong / Social Drafts",
       "archiveYear": "2023-2026",
       "credits": "print archive / hong kong / social drafts / landscape sequence / 2023-2026",
-      "projectInformation": "Residue introduces the memory-bearing image: prints, reposted surfaces, and fragments that feel carried forward rather than freshly seen. Residue draws photographs from Print Archive / Hong Kong / Social Drafts across 2023-2026. The edit leans on warm, night, memory and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "memory",
-      "roomStatement": "Residue introduces the memory-bearing image: prints, reposted surfaces, and fragments that feel carried forward rather than freshly seen."
+      "projectInformation": "Residue introduces the memory-bearing image: prints, reposted surfaces, and fragments that feel carried forward rather than freshly seen. Residue draws photographs from Print Archive / Hong Kong / Social Drafts across 2023-2026. The edit leans on warm, night, memory and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-10",
-      "slug": "10-quiet-heat",
       "title": "Quiet Heat",
+      "primaryTone": "pause",
+      "roomStatement": "Quiet Heat lowers the exhibition into a slower register, where warmth and pause carry more force than spectacle.",
       "subtitle": "Warm air, pause, and private drift.",
       "synopsis": "Intensity falls into stillness without fully settling.",
       "tags": [
@@ -538,18 +513,15 @@
         "687b6b74e99b-r0000490",
         "bc2dbb34fd90-dsc03259"
       ],
-      "portfolioIndex": 10,
       "archiveLabel": "Japan / Copenhagen / Spring",
       "archiveYear": "2023-2026",
       "credits": "japan / copenhagen / spring / portrait sequence / 2023-2026",
-      "projectInformation": "Quiet Heat lowers the exhibition into a slower register, where warmth and pause carry more force than spectacle. Quiet Heat draws photographs from Japan / Copenhagen / Spring across 2023-2026. The edit leans on warm, close, figure and moves through daylight light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "pause",
-      "roomStatement": "Quiet Heat lowers the exhibition into a slower register, where warmth and pause carry more force than spectacle."
+      "projectInformation": "Quiet Heat lowers the exhibition into a slower register, where warmth and pause carry more force than spectacle. Quiet Heat draws photographs from Japan / Copenhagen / Spring across 2023-2026. The edit leans on warm, close, figure and moves through daylight light with close framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-11",
-      "slug": "11-echo-field",
       "title": "Echo Field",
+      "primaryTone": "hush",
+      "roomStatement": "Echo Field narrows the visual world into cold air, reduced detail, and the acoustics of quiet looking.",
       "subtitle": "Snow, hush, and reduced detail.",
       "synopsis": "Cold rooms pull the sequence toward silence and near-abstraction.",
       "tags": [
@@ -586,18 +558,15 @@
         "f95f1370ed2c-photo-1",
         "a4faf8b2d553-dsc00544"
       ],
-      "portfolioIndex": 11,
       "archiveLabel": "Winter Study / India-UAE / Copenhagen",
       "archiveYear": "2023-2026",
       "credits": "winter study / india-uae / copenhagen / landscape sequence / 2023-2026",
-      "projectInformation": "Echo Field narrows the visual world into cold air, reduced detail, and the acoustics of quiet looking. Echo Field draws photographs from Winter Study / India-UAE / Copenhagen across 2023-2026. The edit leans on cool, reflection, spatial-distance and moves through daylight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "hush",
-      "roomStatement": "Echo Field narrows the visual world into cold air, reduced detail, and the acoustics of quiet looking."
+      "projectInformation": "Echo Field narrows the visual world into cold air, reduced detail, and the acoustics of quiet looking. Echo Field draws photographs from Winter Study / India-UAE / Copenhagen across 2023-2026. The edit leans on cool, reflection, spatial-distance and moves through daylight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-12",
-      "slug": "12-glass-lift",
       "title": "Glass Lift",
+      "primaryTone": "vertical",
+      "roomStatement": "Glass Lift treats height and enclosure as emotional conditions, where vertical distance and reflective barriers make looking feel staged.",
       "subtitle": "Vertical distance and suspended looking.",
       "synopsis": "Height, reflection, and enclosure turn observation into staging.",
       "tags": [
@@ -634,18 +603,15 @@
         "e2cf63ef1f7b-dscf0498",
         "3221737c2722-dsc00891"
       ],
-      "portfolioIndex": 12,
       "archiveLabel": "Hong Kong / Social Drafts / Japan",
       "archiveYear": "2023-2026",
       "credits": "hong kong / social drafts / japan / landscape sequence / 2023-2026",
-      "projectInformation": "Glass Lift treats height and enclosure as emotional conditions, where vertical distance and reflective barriers make looking feel staged. Glass Lift draws photographs from Hong Kong / Social Drafts / Japan across 2023-2026. The edit leans on night, cool, reflection and moves through night light with far framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "vertical",
-      "roomStatement": "Glass Lift treats height and enclosure as emotional conditions, where vertical distance and reflective barriers make looking feel staged."
+      "projectInformation": "Glass Lift treats height and enclosure as emotional conditions, where vertical distance and reflective barriers make looking feel staged. Glass Lift draws photographs from Hong Kong / Social Drafts / Japan across 2023-2026. The edit leans on night, cool, reflection and moves through night light with far framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-13",
-      "slug": "13-air-study",
       "title": "Air Study",
+      "primaryTone": "release",
+      "roomStatement": "Air Study opens the frame back outward, using weather, wider distances, and lighter surfaces as release after compression.",
       "subtitle": "Open space, release, and thinning pressure.",
       "synopsis": "The exhibition exhales through light, weather, and wider intervals.",
       "tags": [
@@ -683,18 +649,15 @@
         "85d32c4f5db5-dscf5969-hdr-edit-3",
         "62c1ccf5b785-photo-13"
       ],
-      "portfolioIndex": 13,
       "archiveLabel": "India-UAE / Japan / Copenhagen",
       "archiveYear": "2023-2026",
       "credits": "india-uae / japan / copenhagen / landscape sequence / 2023-2026",
-      "projectInformation": "Air Study opens the frame back outward, using weather, wider distances, and lighter surfaces as release after compression. Air Study draws photographs from India-UAE / Japan / Copenhagen across 2023-2026. The edit leans on warm, public, cinematic and moves through daylight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder.",
-      "primaryTone": "release",
-      "roomStatement": "Air Study opens the frame back outward, using weather, wider distances, and lighter surfaces as release after compression."
+      "projectInformation": "Air Study opens the frame back outward, using weather, wider distances, and lighter surfaces as release after compression. Air Study draws photographs from India-UAE / Japan / Copenhagen across 2023-2026. The edit leans on warm, public, cinematic and moves through daylight light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a travel folder."
     },
     {
-      "id": "series-14",
-      "slug": "14-afterimage",
       "title": "Afterimage",
+      "primaryTone": "coda",
+      "roomStatement": "Afterimage closes the exhibit with fragments that remain active after the sequence ends: echoes, remainders, and images that refuse to settle completely.",
       "subtitle": "Departure, remainder, and visual echo.",
       "synopsis": "The final room leaves fragments that continue after viewing.",
       "tags": [
@@ -733,13 +696,10 @@
         "5b8f136c2168-dsc05555-hdr",
         "3f3836999a9d-dscf6197"
       ],
-      "portfolioIndex": 14,
       "archiveLabel": "Hong Kong / Social Drafts / India-UAE",
       "archiveYear": "2021-2026",
       "credits": "hong kong / social drafts / india-uae / landscape sequence / 2021-2026",
-      "projectInformation": "Afterimage closes the exhibit with fragments that remain active after the sequence ends: echoes, remainders, and images that refuse to settle completely. Afterimage draws photographs from Hong Kong / Social Drafts / India-UAE across 2021-2026. The edit leans on night, warm, cinematic and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a.",
-      "primaryTone": "coda",
-      "roomStatement": "Afterimage closes the exhibit with fragments that remain active after the sequence ends: echoes, remainders, and images that refuse to settle completely."
+      "projectInformation": "Afterimage closes the exhibit with fragments that remain active after the sequence ends: echoes, remainders, and images that refuse to settle completely. Afterimage draws photographs from Hong Kong / Social Drafts / India-UAE across 2021-2026. The edit leans on night, warm, cinematic and moves through night light with mid framing, so place stays secondary to atmosphere. The room is meant to read as a single curatorial chapter rather than a."
     }
   ]
 }

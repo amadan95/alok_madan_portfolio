@@ -1,8 +1,8 @@
 import { ListPageExperience } from "@/components/list-page-experience";
-import { getHomeSeriesEntries, getSiteMeta } from "@/lib/catalog";
+import { getListPageEntries, getSiteMeta } from "@/lib/catalog";
 
 export default function ListPage() {
-  const items = getHomeSeriesEntries();
+  const items = getListPageEntries();
   const siteMeta = getSiteMeta();
 
   return <ListPageExperience items={items} siteMeta={siteMeta} />;

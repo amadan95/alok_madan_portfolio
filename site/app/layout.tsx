@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 import "@/app/globals.css";
 import { AppShell } from "@/components/app-shell";
-import { getAllCanonicalAssets, getSiteMeta } from "@/lib/catalog";
-import type { IntroSlide } from "@/lib/types";
+import { getIntroSlides, getSiteMeta } from "@/lib/catalog";
 
 const siteMeta = getSiteMeta();
 const cormorant = Cormorant_Garamond({
@@ -23,16 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const introSlides = getAllCanonicalAssets()
-    .map(
-      (asset) =>
-      ({
-        id: asset.id,
-        displayPath: asset.displayPath,
-        width: asset.width,
-        height: asset.height,
-      }) satisfies IntroSlide,
-    );
+  const introSlides = getIntroSlides();
 
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth" className={cormorant.variable}>

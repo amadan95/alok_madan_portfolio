@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import SplitType from "split-type";
-import type { PhotoAsset, SiteMeta } from "@/lib/types";
+import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { splitParagraphs } from "@/lib/utils";
 
 export function TextPageExperience({
@@ -14,7 +14,7 @@ export function TextPageExperience({
 }: {
   kind: "contact" | "disclaimer";
   siteMeta: SiteMeta;
-  backgroundAsset: PhotoAsset | null;
+  backgroundAsset: DisplayAsset | null;
 }) {
   const [clock, setClock] = useState("");
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -84,6 +84,7 @@ export function TextPageExperience({
             alt=""
             width={backgroundAsset.width}
             height={backgroundAsset.height}
+            decoding="async"
           />
         </div>
       ) : null}

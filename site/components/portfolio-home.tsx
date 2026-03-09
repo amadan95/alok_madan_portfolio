@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import type { PhotoAsset, Series, SiteMeta } from "@/lib/types";
+import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
@@ -13,8 +13,16 @@ import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
 gsap.registerPlugin(ScrollTrigger);
 
 type HomeEntry = {
-  series: Series;
-  previews: PhotoAsset[];
+  series: {
+    slug: string;
+    title: string;
+    subtitle: string;
+    synopsis: string;
+    tags: string[];
+    portfolioIndex: number;
+    photoCount: number;
+  };
+  previews: DisplayAsset[];
 };
 
 export function PortfolioHome({
@@ -124,13 +132,21 @@ export function PortfolioHome({
             data-project={series.slug}
           >
             <Link href={`/portfolio/${series.slug}`} className="portfolio-home__rail" aria-label={`Open ${series.title}`}>
-              {previews.slice(0, previewCount).map((asset) => (
+              {previews.slice(0, previewCount).map((asset, previewIndex) => (
                 <figure
                   key={asset.id}
                   className="portfolio-home__frame"
                   style={{ flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%` }}
                 >
-                  <img src={asset.displayPath} alt={series.title} width={asset.width} height={asset.height} />
+                  <img
+                    src={asset.displayPath}
+                    alt={series.title}
+                    width={asset.width}
+                    height={asset.height}
+                    loading={series.portfolioIndex === 1 && previewIndex === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={series.portfolioIndex === 1 && previewIndex === 0 ? "high" : "auto"}
+                  />
                 </figure>
               ))}
             </Link>
@@ -147,7 +163,7 @@ export function PortfolioHome({
                 </div>
               </div>
               <div className="portfolio-home__meta-foot">
-                <span>{series.photoIds.length} photographs</span>
+                <span>{series.photoCount} photographs</span>
                 {series.tags.slice(0, 3).map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}

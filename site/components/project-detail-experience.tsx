@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import SplitType from "split-type";
-import type { PhotoAsset, Series } from "@/lib/types";
+import type { DisplayAsset, Series } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 
 export function ProjectDetailExperience({
@@ -13,7 +13,7 @@ export function ProjectDetailExperience({
   photographerName,
 }: {
   series: Series;
-  assets: Array<PhotoAsset & { analysis: unknown }>;
+  assets: DisplayAsset[];
   photographerName: string;
 }) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
@@ -115,6 +115,7 @@ export function ProjectDetailExperience({
                 height={asset.height}
                 data-orientation={asset.orientation}
                 loading={index === 0 ? "eager" : "lazy"}
+                decoding="async"
                 fetchPriority={index === 0 ? "high" : "auto"}
               />
             </figure>

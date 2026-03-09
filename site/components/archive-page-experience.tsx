@@ -2,14 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { useTransitionRouter } from "next-transition-router";
-import type { PhotoAsset, Series, SiteMeta } from "@/lib/types";
+import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { formatArchiveIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 
 type ArchiveItem = {
-  series: Series;
-  previews: PhotoAsset[];
+  series: {
+    slug: string;
+    title: string;
+    archiveLabel: string;
+    archiveYear: string;
+  };
+  previews: DisplayAsset[];
 };
 
 export function ArchivePageExperience({
@@ -46,6 +51,7 @@ export function ArchivePageExperience({
             width={activeHero.width}
             height={activeHero.height}
             className="archive-page-experience__hero-image"
+            decoding="async"
           />
         </div>
       ) : null}

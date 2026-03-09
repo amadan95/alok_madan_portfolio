@@ -32,6 +32,7 @@ export interface PhotoAsset {
 }
 
 export type IntroSlide = Pick<PhotoAsset, "id" | "displayPath" | "width" | "height">;
+export type DisplayAsset = Pick<PhotoAsset, "id" | "displayPath" | "width" | "height" | "aspectRatio" | "orientation">;
 
 export interface PhotoAnalysis {
   photoId: string;
@@ -42,8 +43,16 @@ export interface PhotoAnalysis {
   duplicateConfidence: number;
   sequenceRole: SequenceRole;
   confidence: number;
+  lightMode: "daylight" | "twilight" | "night";
+  humanPresence: "none" | "trace" | "present" | "dominant";
+  subjectDistance: "far" | "mid" | "close";
+  energyScore: number;
+  intimacyScore: number;
+  surrealnessScore: number;
+  toneTags: string[];
   analysisMode: "ai" | "heuristic";
   rationale: string;
+  needsReview: boolean;
 }
 
 export interface Series {
@@ -61,6 +70,8 @@ export interface Series {
   archiveYear: string;
   credits: string;
   projectInformation: string;
+  primaryTone: string;
+  roomStatement: string;
 }
 
 export interface SiteMeta {
@@ -95,5 +106,7 @@ export interface PhotoCatalog {
 export interface SeriesCatalog {
   generatedAt: string;
   totalSeries: number;
+  exhibitPhotoCount: number;
+  rawOnlyPhotoIds: string[];
   series: Series[];
 }

@@ -2,15 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { useTransitionRouter } from "next-transition-router";
-import type { PhotoAsset, Series, SiteMeta } from "@/lib/types";
+import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
 
 type ListItem = {
-  series: Series;
-  previews: PhotoAsset[];
+  series: {
+    slug: string;
+    title: string;
+    portfolioIndex: number;
+  };
+  previews: DisplayAsset[];
 };
 
 export function ListPageExperience({
@@ -49,6 +53,7 @@ export function ListPageExperience({
             alt=""
             width={activeItem.previews[0].width}
             height={activeItem.previews[0].height}
+            decoding="async"
           />
         </div>
       ) : null}

@@ -1,8 +1,8 @@
 import { PortfolioHome } from "@/components/portfolio-home";
-import { getHomeSeriesEntries, getSiteMeta } from "@/lib/catalog";
+import { getPortfolioPageEntries, getSiteMeta } from "@/lib/catalog";
 
 export default function HomePage() {
-  const items = getHomeSeriesEntries();
+  const items = getPortfolioPageEntries();
   const siteMeta = getSiteMeta();
 
   return <PortfolioHome items={items} siteMeta={siteMeta} />;
