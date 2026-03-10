@@ -5,6 +5,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import SplitType from "split-type";
 import type { DisplayAsset, Series } from "@/lib/types";
+import { useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { ResponsivePhoto } from "@/components/responsive-photo";
 
@@ -20,22 +21,28 @@ export function ProjectDetailExperience({
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const infoRef = useRef<HTMLParagraphElement | null>(null);
   const [showInfo, setShowInfo] = useState(false);
+  const viewportWidth = useViewportWidth();
+  const isMobile = viewportWidth > 0 && viewportWidth < 1024;
   const setActiveProjectSlug = useUIStore((state) => state.setActiveProjectSlug);
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
 
   useEffect(() => {
     if (scrollerRef.current) {
-      scrollerRef.current.scrollLeft = 0;
+      if (isMobile) {
+        scrollerRef.current.scrollTop = 0;
+      } else {
+        scrollerRef.current.scrollLeft = 0;
+      }
     }
     setTitle(series.title);
     setNumber(assets.length);
     setActiveProjectSlug(series.slug);
-  }, [assets.length, series.slug, series.title, setActiveProjectSlug, setNumber, setTitle]);
+  }, [assets.length, isMobile, series.slug, series.title, setActiveProjectSlug, setNumber, setTitle]);
 
   useEffect(() => {
     const scroller = scrollerRef.current;
-    if (!scroller) {
+    if (!scroller || isMobile) {
       return;
     }
 
@@ -53,7 +60,7 @@ export function ProjectDetailExperience({
 
     scroller.addEventListener("wheel", onWheel, { passive: false });
     return () => scroller.removeEventListener("wheel", onWheel);
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
     if (!showInfo || !infoRef.current) {
@@ -104,7 +111,7 @@ export function ProjectDetailExperience({
         ref={scrollerRef}
         className="project-detail-experience__scroller-wrap"
         tabIndex={0}
-        aria-label={`${series.title} horizontal reel`}
+        aria-label={`${series.title} ${isMobile ? "vertical" : "horizontal"} reel`}
       >
         <div className="project-detail-experience__scroller">
           {assets.map((asset, index) => (
@@ -116,8 +123,8 @@ export function ProjectDetailExperience({
                 sizes="100vw"
                 eager={index < 2}
                 fetchPriority={index === 0 ? "high" : "auto"}
-                observerRoot={scrollerRef.current}
-                rootMargin="0px 120% 0px 120%"
+                observerRoot={isMobile ? null : scrollerRef.current}
+                rootMargin={isMobile ? "120% 0px" : "0px 120% 0px 120%"}
                 imgProps={{
                   "data-orientation": asset.orientation,
                 }}

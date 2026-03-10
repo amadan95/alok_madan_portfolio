@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { DarkLightSwitch } from "@/components/dark-light-switch";
 import { IntroOverlay } from "@/components/intro-overlay";
 import { SiteHeaderChrome } from "@/components/site-header-chrome";
+import { SiteMobileNav } from "@/components/site-mobile-nav";
 
 export function AppShell({
   children,
@@ -119,6 +120,7 @@ export function AppShell({
       <div className={cn("app-shell", `app-shell--${routeKind}`)} data-route-kind={routeKind}>
         {showHeader ? <SiteHeaderChrome routeKind={routeKind} siteMeta={siteMeta} /> : null}
         <DarkLightSwitch routeKind={routeKind} />
+        {hasMounted && (routeKind !== "home" || hideIntro) ? <SiteMobileNav routeKind={routeKind} /> : null}
         {hasMounted && routeKind === "home" ? (
           <IntroOverlay
             slides={introSlides}

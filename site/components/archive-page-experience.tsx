@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTransitionRouter } from "next-transition-router";
 import type { DisplayAsset, SiteMeta } from "@/lib/types";
+import { useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatArchiveIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
@@ -26,6 +27,8 @@ export function ArchivePageExperience({
   siteMeta: SiteMeta;
 }) {
   const router = useTransitionRouter();
+  const viewportWidth = useViewportWidth();
+  const isMobile = viewportWidth > 0 && viewportWidth < 1024;
   const [activeIndex, setActiveIndex] = useState(0);
   const [displayedIndex, setDisplayedIndex] = useState(0);
   const setNumber = useUIStore((state) => state.setNumber);
@@ -69,7 +72,7 @@ export function ArchivePageExperience({
       ) : null}
       <InfiniteVerticalSlider
         items={items}
-        rowHeight={28}
+        rowHeight={isMobile ? 64 : 28}
         className="archive-page-experience__slider"
         itemClassName="archive-page-experience__row"
         onActiveChange={setActiveIndex}
