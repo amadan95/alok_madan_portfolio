@@ -133,9 +133,10 @@ export function PortfolioHome({
 
         bodyNodes.forEach((node) => {
           const split = new SplitType(node, { types: "chars,words" });
+          const characters = split.chars ?? [];
           splits.push(split);
-          gsap.set(split.chars, { opacity: 0 });
-          bodyCharacters.push(...split.chars);
+          gsap.set(characters, { opacity: 0 });
+          bodyCharacters.push(...characters);
         });
 
         const timeline = gsap.timeline({
