@@ -34,7 +34,7 @@ export function SiteMobileNav({ routeKind }: { routeKind: RouteKind }) {
         <Link
           key={link.href}
           href={link.href}
-          className={cn("site-mobile-nav__link", link.activeKinds.includes(routeKind) && "is-active")}
+          className={cn("site-mobile-nav__link", link.activeKinds.some((kind) => kind === routeKind) && "is-active")}
         >
           {link.label}
         </Link>
