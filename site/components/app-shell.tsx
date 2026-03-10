@@ -43,7 +43,8 @@ export function AppShell({
     routeKind === "list" ||
     routeKind === "archive" ||
     routeKind === "raw" ||
-    routeKind === "project";
+    routeKind === "project" ||
+    routeKind === "contact";
 
   useEffect(() => {
     setHasMounted(true);

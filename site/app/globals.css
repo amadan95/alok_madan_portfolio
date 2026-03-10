@@ -132,6 +132,7 @@ picture {
 
 .site-header-chrome[data-route-kind="home"],
 .site-header-chrome[data-route-kind="list"],
+.site-header-chrome[data-route-kind="contact"],
 .site-header-chrome[data-route-kind="raw"],
 .site-header-chrome[data-route-kind="project"] {
   mix-blend-mode: difference;
@@ -739,6 +740,10 @@ picture {
   top: var(--page-gutter);
   left: var(--page-gutter);
   mix-blend-mode: difference;
+}
+
+.app-shell--contact .text-page-experience__clock {
+  top: calc(var(--page-gutter) + 4rem);
 }
 
 .text-page-experience__content {

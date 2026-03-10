@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
@@ -100,6 +101,80 @@ export function PortfolioHome({
     siteMeta.photographer,
   ]);
 
+  useEffect(() => {
+    const sections = Array.from(
+      containerRef.current?.querySelectorAll<HTMLElement>("[data-home-series]") ?? [],
+    );
+    const splits: SplitType[] = [];
+
+    if (reducedMotion) {
+      sections.forEach((section) => {
+        const title = section.querySelector<HTMLElement>("[data-project-title]");
+        const bodyNodes = Array.from(section.querySelectorAll<HTMLElement>("[data-project-body]"));
+        if (title) {
+          gsap.set(title, { clearProps: "all" });
+        }
+        bodyNodes.forEach((node) => {
+          gsap.set(node, { clearProps: "all" });
+        });
+      });
+      return;
+    }
+
+    const context = gsap.context(() => {
+      sections.forEach((section) => {
+        const title = section.querySelector<HTMLElement>("[data-project-title]");
+        const bodyNodes = Array.from(section.querySelectorAll<HTMLElement>("[data-project-body]"));
+        const bodyCharacters: HTMLElement[] = [];
+
+        if (title) {
+          gsap.set(title, { autoAlpha: 0, y: 22 });
+        }
+
+        bodyNodes.forEach((node) => {
+          const split = new SplitType(node, { types: "chars,words" });
+          splits.push(split);
+          gsap.set(split.chars, { opacity: 0 });
+          bodyCharacters.push(...split.chars);
+        });
+
+        const timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top 72%",
+            once: true,
+          },
+        });
+
+        if (title) {
+          timeline.to(title, {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.48,
+            ease: "power2.out",
+          });
+        }
+
+        if (bodyCharacters.length > 0) {
+          timeline.to(
+            bodyCharacters,
+            {
+              opacity: 1,
+              duration: 0,
+              stagger: 0.007,
+            },
+            title ? "-=0.16" : 0,
+          );
+        }
+      });
+    }, containerRef);
+
+    return () => {
+      context.revert();
+      splits.forEach((split) => split.revert());
+    };
+  }, [items, reducedMotion]);
+
   const previewCount = zoomLevel === 0 ? 1 : zoomLevel === 1 ? 3 : 5;
 
   return (
@@ -162,8 +237,12 @@ export function PortfolioHome({
                   <Link href={`/portfolio/${series.slug}`} className="portfolio-home__title" data-project-title="">
                     {series.title}
                   </Link>
-                  <p className="portfolio-home__subtitle">{series.subtitle}</p>
-                  <p className="portfolio-home__synopsis">{series.synopsis}</p>
+                  <p className="portfolio-home__subtitle" data-project-body="">
+                    {series.subtitle}
+                  </p>
+                  <p className="portfolio-home__synopsis" data-project-body="">
+                    {series.synopsis}
+                  </p>
                 </div>
               </div>
               <div className="portfolio-home__meta-foot">
