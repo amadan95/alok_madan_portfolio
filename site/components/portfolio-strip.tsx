@@ -1,13 +1,14 @@
 import Link from "next/link";
-import type { PhotoAsset, Series } from "@/lib/types";
+import type { DisplayAsset, Series } from "@/lib/types";
 import { formatSeriesIndex } from "@/lib/utils";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 export function PortfolioStrip({
   series,
   previews,
 }: {
   series: Series;
-  previews: PhotoAsset[];
+  previews: DisplayAsset[];
 }) {
   return (
     <section className="folio-entry" id={series.slug}>
@@ -29,13 +30,7 @@ export function PortfolioStrip({
             className="folio-entry__frame"
             style={{ flex: `${Math.max(0.72, Math.min(asset.aspectRatio, 1.8))} 1 0%` }}
           >
-            <img
-              src={asset.displayPath}
-              alt={series.title}
-              width={asset.width}
-              height={asset.height}
-              loading="lazy"
-            />
+            <ResponsivePhoto asset={asset} alt={series.title} variants={["thumb", "rail"]} sizes="30vw" />
           </figure>
         ))}
       </Link>

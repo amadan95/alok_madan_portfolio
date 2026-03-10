@@ -7,6 +7,7 @@ import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type ListItem = {
   series: {
@@ -29,8 +30,9 @@ export function ListPageExperience({
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
   const setMobileTitle = useUIStore((state) => state.setMobileTitle);
-
+  const [displayedIndex, setDisplayedIndex] = useState(0);
   const activeItem = items[activeIndex] ?? items[0];
+  const displayedItem = items[displayedIndex] ?? items[0];
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
@@ -44,16 +46,26 @@ export function ListPageExperience({
     setMobileTitle(activeItem.series.title);
   }, [activeIndex, activeItem, setMobileTitle, setNumber]);
 
+  useEffect(() => {
+    const timeout = window.setTimeout(() => {
+      setDisplayedIndex(activeIndex);
+    }, 96);
+
+    return () => window.clearTimeout(timeout);
+  }, [activeIndex]);
+
   return (
     <main className="list-page-experience">
-      {activeItem?.previews[0] ? (
+      {displayedItem?.previews[0] ? (
         <div className="list-page-experience__background">
-          <img
-            src={activeItem.previews[0].displayPath}
+          <ResponsivePhoto
+            key={displayedItem.previews[0].id}
+            asset={displayedItem.previews[0]}
             alt=""
-            width={activeItem.previews[0].width}
-            height={activeItem.previews[0].height}
-            decoding="async"
+            variants={["hero"]}
+            sizes="100vw"
+            eager
+            fetchPriority="high"
           />
         </div>
       ) : null}

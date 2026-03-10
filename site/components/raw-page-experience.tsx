@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { DisplayAsset } from "@/lib/types";
 import { createSeededRandom } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type RawRow = {
   id: string;
@@ -48,7 +49,7 @@ export function RawPageExperience({ assets }: { assets: DisplayAsset[] }) {
       <div className="raw-page-experience__gradient" />
       {activeAsset ? (
         <div className="raw-page-experience__overlay">
-          <img src={activeAsset.displayPath} alt="" width={activeAsset.width} height={activeAsset.height} decoding="async" />
+          <ResponsivePhoto asset={activeAsset} alt="" variants={["hero"]} sizes="82vw" eager fetchPriority="high" />
         </div>
       ) : null}
       <InfiniteVerticalSlider
@@ -58,6 +59,7 @@ export function RawPageExperience({ assets }: { assets: DisplayAsset[] }) {
         itemClassName="raw-page-experience__row"
         onActiveChange={() => {}}
         autoScrollSpeed={14}
+        maxRenderedRows={12}
         renderRow={(row) => (
           <div
             className="raw-page-experience__strip"
@@ -69,15 +71,16 @@ export function RawPageExperience({ assets }: { assets: DisplayAsset[] }) {
           >
             {row.assets.map((asset) => (
               <figure key={asset.id} className="raw-page-experience__frame">
-                <img
-                  src={asset.displayPath}
+                <ResponsivePhoto
+                  asset={asset}
                   alt=""
-                  width={asset.width}
-                  height={asset.height}
-                  loading="lazy"
-                  decoding="async"
-                  onMouseEnter={() => setActiveAsset(asset)}
-                  onMouseLeave={() => setActiveAsset(null)}
+                  variants={["raw"]}
+                  sizes="20vw"
+                  rootMargin="120% 0px"
+                  imgProps={{
+                    onMouseEnter: () => setActiveAsset(asset),
+                    onMouseLeave: () => setActiveAsset(null),
+                  }}
                 />
               </figure>
             ))}

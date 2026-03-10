@@ -6,6 +6,7 @@ import gsap from "gsap";
 import SplitType from "split-type";
 import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { splitParagraphs } from "@/lib/utils";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 export function TextPageExperience({
   kind,
@@ -79,13 +80,7 @@ export function TextPageExperience({
     <main className="text-page-experience" data-kind={kind}>
       {backgroundAsset ? (
         <div className="text-page-experience__background">
-          <img
-            src={backgroundAsset.displayPath}
-            alt=""
-            width={backgroundAsset.width}
-            height={backgroundAsset.height}
-            decoding="async"
-          />
+          <ResponsivePhoto asset={backgroundAsset} alt="" variants={["hero"]} sizes="100vw" eager fetchPriority="high" />
         </div>
       ) : null}
 

@@ -9,6 +9,8 @@ import { sitePrimaryNavLinks } from "@/components/site-header-chrome";
 
 const slideDurationMs = 160;
 const flashSlideCount = 9;
+const INTRO_PLACEHOLDER =
+  "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=";
 
 function buildRandomIntroSequence(pool: IntroSlide[]) {
   if (pool.length <= 1) {
@@ -115,6 +117,19 @@ export function IntroOverlay({
   }, [currentIndex, sequenceSlides.length, visible]);
 
   useEffect(() => {
+    const nextSlide = sequenceSlides[currentIndex + 1];
+    if (!nextSlide) {
+      return;
+    }
+
+    const preloadWebp = new window.Image();
+    preloadWebp.src = nextSlide.hero.webp;
+
+    const preloadJpeg = new window.Image();
+    preloadJpeg.src = nextSlide.hero.jpeg;
+  }, [currentIndex, sequenceSlides]);
+
+  useEffect(() => {
     if (!visible || !sequenceComplete) {
       return;
     }
@@ -190,17 +205,23 @@ export function IntroOverlay({
   return (
     <div ref={overlayRef} className="intro-overlay" data-complete={String(sequenceComplete)} role="presentation">
       <div className="intro-overlay__media">
-        {sequenceSlides.map((slide, index) => (
+        <picture
+          key={activeSlide.id}
+          className="intro-overlay__image"
+          data-active="true"
+          style={{ backgroundColor: activeSlide.averageColor }}
+        >
+          <source type="image/webp" srcSet={`${activeSlide.hero.webp} ${activeSlide.hero.width}w`} sizes="100vw" />
+          <source type="image/jpeg" srcSet={`${activeSlide.hero.jpeg} ${activeSlide.hero.width}w`} sizes="100vw" />
           <img
-            key={slide.id}
-            src={slide.displayPath}
+            src={activeSlide.hero.jpeg || INTRO_PLACEHOLDER}
             alt=""
-            width={slide.width}
-            height={slide.height}
-            className="intro-overlay__image"
-            data-active={String(index === currentIndex)}
+            width={activeSlide.hero.width}
+            height={activeSlide.hero.height}
+            fetchPriority="high"
+            decoding="async"
           />
-        ))}
+        </picture>
       </div>
       <div className="intro-overlay__copy">
         <p className="intro-overlay__desktop">{siteMeta.introDesktop}</p>

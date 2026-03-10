@@ -9,6 +9,7 @@ import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,14 +139,17 @@ export function PortfolioHome({
                   className="portfolio-home__frame"
                   style={{ flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%` }}
                 >
-                  <img
-                    src={asset.displayPath}
+                  <ResponsivePhoto
+                    asset={asset}
                     alt={series.title}
-                    width={asset.width}
-                    height={asset.height}
-                    loading={series.portfolioIndex === 1 && previewIndex === 0 ? "eager" : "lazy"}
-                    decoding="async"
+                    variants={["thumb", "rail"]}
+                    sizes="(min-width: 1024px) 28vw, 92vw"
+                    eager={series.portfolioIndex === 1 && previewIndex === 0}
                     fetchPriority={series.portfolioIndex === 1 && previewIndex === 0 ? "high" : "auto"}
+                    rootMargin="150% 0px"
+                    imgProps={{
+                      "aria-hidden": previewIndex > 0 ? true : undefined,
+                    }}
                   />
                 </figure>
               ))}

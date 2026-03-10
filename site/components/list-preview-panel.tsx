@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { startTransition, useDeferredValue, useState } from "react";
-import type { PhotoAsset, Series } from "@/lib/types";
+import type { DisplayAsset, Series } from "@/lib/types";
 import { formatSeriesIndex } from "@/lib/utils";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type SeriesWithPreview = {
   series: Series;
-  previews: PhotoAsset[];
+  previews: DisplayAsset[];
 };
 
 export function ListPreviewPanel({ items }: { items: SeriesWithPreview[] }) {
@@ -53,7 +54,7 @@ export function ListPreviewPanel({ items }: { items: SeriesWithPreview[] }) {
                 className="list-preview__frame"
                 style={{ flex: `${Math.max(0.72, Math.min(asset.aspectRatio, 1.5))} 1 0%` }}
               >
-                <img src={asset.displayPath} alt={activeItem.series.title} width={asset.width} height={asset.height} />
+                <ResponsivePhoto asset={asset} alt={activeItem.series.title} variants={["thumb", "rail"]} sizes="33vw" />
               </figure>
             ))}
           </div>

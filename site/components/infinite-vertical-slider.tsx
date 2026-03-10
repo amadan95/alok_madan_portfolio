@@ -16,6 +16,7 @@ export function InfiniteVerticalSlider<T>({
   renderRow,
   lockBody = true,
   autoScrollSpeed = 0,
+  maxRenderedRows,
 }: {
   items: T[];
   rowHeight: number;
@@ -25,6 +26,7 @@ export function InfiniteVerticalSlider<T>({
   renderRow: RenderRow<T>;
   lockBody?: boolean;
   autoScrollSpeed?: number;
+  maxRenderedRows?: number;
 }) {
   useLockedBodyScroll(lockBody);
   const reducedMotion = useReducedMotion();
@@ -38,6 +40,7 @@ export function InfiniteVerticalSlider<T>({
   const draggingRef = useRef(false);
   const lastNotifiedIndexRef = useRef<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeRepeatedIndex, setActiveRepeatedIndex] = useState(items.length);
 
   const repeated = useMemo(() => [...items, ...items, ...items], [items]);
   const segmentHeight = items.length * rowHeight;
@@ -74,7 +77,9 @@ export function InfiniteVerticalSlider<T>({
 
       const viewportHeight = viewportRef.current?.offsetHeight ?? window.innerHeight;
       const centered = (-currentRef.current + viewportHeight / 2 - rowHeight / 2) / rowHeight;
-      const nextIndex = ((Math.round(centered) % items.length) + items.length) % items.length;
+      const repeatedIndex = Math.max(0, Math.min(repeated.length - 1, Math.round(centered)));
+      const nextIndex = ((repeatedIndex % items.length) + items.length) % items.length;
+      setActiveRepeatedIndex((previous) => (previous === repeatedIndex ? previous : repeatedIndex));
       setActiveIndex((previous) => (previous === nextIndex ? previous : nextIndex));
     };
 
@@ -123,6 +128,19 @@ export function InfiniteVerticalSlider<T>({
     return null;
   }
 
+  const visibleWindow =
+    typeof maxRenderedRows === "number" && maxRenderedRows > 0
+      ? {
+          start: Math.max(0, activeRepeatedIndex - Math.floor(maxRenderedRows / 2)),
+          end: Math.min(repeated.length, activeRepeatedIndex + Math.ceil(maxRenderedRows / 2)),
+        }
+      : null;
+  const renderItems = visibleWindow
+    ? repeated
+        .slice(visibleWindow.start, visibleWindow.end)
+        .map((item, offset) => ({ item, index: visibleWindow.start + offset }))
+    : repeated.map((item, index) => ({ item, index }));
+
   return (
     <div
       ref={viewportRef}
@@ -154,14 +172,34 @@ export function InfiniteVerticalSlider<T>({
         targetRef.current = dragOriginRef.current + (nextY - dragStartRef.current) * 2;
       }}
     >
-      <div ref={innerRef}>
-        {repeated.map((item, index) => {
+      <div
+        ref={innerRef}
+        style={
+          visibleWindow
+            ? {
+                position: "relative",
+                height: `${repeated.length * rowHeight}px`,
+              }
+            : undefined
+        }
+      >
+        {renderItems.map(({ item, index }) => {
           const baseIndex = index % items.length;
           return (
             <div
               key={`${baseIndex}-${index}`}
               className={itemClassName}
-              style={{ height: `${rowHeight}px` }}
+              style={
+                visibleWindow
+                  ? {
+                      height: `${rowHeight}px`,
+                      position: "absolute",
+                      top: `${index * rowHeight}px`,
+                      left: 0,
+                      right: 0,
+                    }
+                  : { height: `${rowHeight}px` }
+              }
               data-active={String(baseIndex === activeIndex)}
             >
               {renderRow(item, baseIndex, baseIndex === activeIndex)}

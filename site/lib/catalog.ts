@@ -5,9 +5,9 @@ import seriesCatalogJson from "@/content/series.json";
 import siteMetaJson from "@/content/site-meta.json";
 import type { DisplayAsset, IntroSlide, PhotoAnalysis, PhotoAsset, PhotoCatalog, Series, SeriesCatalog, SiteMeta } from "@/lib/types";
 
-const photoCatalog = photoCatalogJson as PhotoCatalog;
-const seriesCatalog = seriesCatalogJson as SeriesCatalog;
-const siteMeta = siteMetaJson as SiteMeta;
+const photoCatalog = photoCatalogJson as unknown as PhotoCatalog;
+const seriesCatalog = seriesCatalogJson as unknown as SeriesCatalog;
+const siteMeta = siteMetaJson as unknown as SiteMeta;
 
 const assetMap = new Map(photoCatalog.assets.map((asset) => [asset.id, asset]));
 const analysisMap = new Map(photoCatalog.analyses.map((analysis) => [analysis.photoId, analysis]));
@@ -16,11 +16,12 @@ const seriesMap = new Map(seriesCatalog.series.map((series) => [series.slug, ser
 function toDisplayAsset(asset: PhotoAsset): DisplayAsset {
   return {
     id: asset.id,
-    displayPath: asset.displayPath,
     width: asset.width,
     height: asset.height,
     aspectRatio: asset.aspectRatio,
     orientation: asset.orientation,
+    averageColor: asset.averageColor,
+    variants: asset.variants,
   };
 }
 
@@ -85,9 +86,8 @@ export function getAllCanonicalAssets() {
 export function getIntroSlides(): IntroSlide[] {
   return photoCatalog.assets.map((asset) => ({
     id: asset.id,
-    displayPath: asset.displayPath,
-    width: asset.width,
-    height: asset.height,
+    averageColor: asset.averageColor,
+    hero: asset.variants.hero,
   }));
 }
 

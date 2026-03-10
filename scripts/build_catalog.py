@@ -9,6 +9,7 @@ import json
 import math
 import os
 import re
+import shutil
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -34,8 +35,15 @@ SOURCE_ROOT = ARCHIVE_DIR if ARCHIVE_DIR.exists() else WORKSPACE_ROOT
 CONTENT_DIR = APP_ROOT / "content"
 PUBLIC_DIR = APP_ROOT / "public"
 GENERATED_DIR = PUBLIC_DIR / "_generated"
-DISPLAY_DIR = GENERATED_DIR / "display"
-THUMB_DIR = GENERATED_DIR / "thumbs"
+
+VARIANT_SPECS = {
+    "raw": {"max_size": 320, "jpeg_quality": 40, "webp_quality": 42},
+    "thumb": {"max_size": 640, "jpeg_quality": 48, "webp_quality": 50},
+    "rail": {"max_size": 1200, "jpeg_quality": 56, "webp_quality": 58},
+    "hero": {"max_size": 1800, "jpeg_quality": 62, "webp_quality": 60},
+}
+VARIANT_DIRS = {name: GENERATED_DIR / name for name in VARIANT_SPECS}
+LEGACY_GENERATED_DIRS = [GENERATED_DIR / "display", GENERATED_DIR / "thumbs"]
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".avif"}
 EXCLUDED_ROOTS = {
@@ -400,8 +408,7 @@ class RawRecord:
     path_parts: list[str]
     basename: str
     score: int
-    display_path: str
-    thumb_path: str
+    variants: dict[str, dict[str, Any]]
 
 
 class UnionFind:
@@ -433,12 +440,13 @@ class UnionFind:
 
 
 def main() -> None:
-    ensure_directories()
+    ensure_directories(reset_variants=os.getenv("FORCE_REGENERATE_VARIANTS") == "1")
+    cleanup_legacy_generated_dirs()
     existing_assets, hidden_variant_paths = load_existing_assets()
     existing_analyses = load_existing_analyses()
     if existing_assets and os.getenv("FORCE_RESCAN") != "1":
         files = [asset["sourcePath"] for asset in existing_assets]
-        canonical_assets = existing_assets
+        canonical_assets = normalize_existing_assets(existing_assets)
         print(f"Reusing {len(canonical_assets)} canonical assets from photo-analysis.json")
     else:
         ensure_pillow_available()
@@ -479,10 +487,18 @@ def main() -> None:
     print(f"Raw-only photos: {len(series_catalog['rawOnlyPhotoIds'])}")
 
 
-def ensure_directories() -> None:
+def ensure_directories(reset_variants: bool = False) -> None:
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
-    DISPLAY_DIR.mkdir(parents=True, exist_ok=True)
-    THUMB_DIR.mkdir(parents=True, exist_ok=True)
+    for directory in VARIANT_DIRS.values():
+        if reset_variants and directory.exists():
+            shutil.rmtree(directory)
+        directory.mkdir(parents=True, exist_ok=True)
+
+
+def cleanup_legacy_generated_dirs() -> None:
+    for directory in LEGACY_GENERATED_DIRS:
+        if directory.exists():
+            shutil.rmtree(directory)
 
 
 def walk_archive(directory: Path, source_root: Path) -> list[str]:
@@ -521,10 +537,7 @@ def build_raw_record(source_path: str) -> RawRecord:
         perceptual_hash = create_perceptual_hash(image)
 
         id_seed = f"{checksum[:12]}-{slugify(absolute_path.stem)[:28]}"
-        display_output = DISPLAY_DIR / f"{id_seed}.jpg"
-        thumb_output = THUMB_DIR / f"{id_seed}.jpg"
-        write_derivative(image, display_output, 2200, 82)
-        write_derivative(image, thumb_output, 720, 72)
+        variants = build_variants(image, id_seed)
 
     path_parts = source_path.split("/")
     top_level = path_parts[0] if path_parts else "Archive"
@@ -547,17 +560,41 @@ def build_raw_record(source_path: str) -> RawRecord:
         path_parts=path_parts,
         basename=basename,
         score=source_priority(source_path, width, height),
-        display_path=f"/_generated/display/{id_seed}.jpg",
-        thumb_path=f"/_generated/thumbs/{id_seed}.jpg",
+        variants=variants,
     )
 
 
-def write_derivative(image: Image.Image, destination: Path, max_size: int, quality: int) -> None:
+def build_variants(image: Image.Image, asset_id: str) -> dict[str, dict[str, Any]]:
+    variants: dict[str, dict[str, Any]] = {}
+
+    for name, spec in VARIANT_SPECS.items():
+        derived = image.copy()
+        derived.thumbnail((spec["max_size"], spec["max_size"]), Image.Resampling.LANCZOS)
+        jpeg_path = VARIANT_DIRS[name] / f"{asset_id}.jpg"
+        webp_path = VARIANT_DIRS[name] / f"{asset_id}.webp"
+        write_variant(derived, jpeg_path, "JPEG", spec["jpeg_quality"])
+        write_variant(derived, webp_path, "WEBP", spec["webp_quality"])
+        variants[name] = {
+            "jpeg": f"/_generated/{name}/{asset_id}.jpg",
+            "webp": f"/_generated/{name}/{asset_id}.webp",
+            "width": derived.size[0],
+            "height": derived.size[1],
+        }
+
+    return variants
+
+
+def write_variant(image: Image.Image, destination: Path, format_name: str, quality: int) -> None:
     if destination.exists():
         return
-    derived = image.copy()
-    derived.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
-    derived.save(destination, format="JPEG", quality=quality)
+
+    save_kwargs: dict[str, Any] = {"quality": quality}
+    if format_name == "JPEG":
+        save_kwargs.update({"optimize": True, "progressive": True})
+    if format_name == "WEBP":
+        save_kwargs.update({"method": 6})
+
+    image.save(destination, format=format_name, **save_kwargs)
 
 
 def group_variants(raw_records: list[RawRecord]) -> dict[str, Any]:
@@ -600,12 +637,11 @@ def group_variants(raw_records: list[RawRecord]) -> dict[str, Any]:
                 "id": canonical.id_seed,
                 "sourcePath": canonical.source_path,
                 "canonicalPath": canonical.source_path,
-                "displayPath": canonical.display_path,
-                "thumbPath": canonical.thumb_path,
                 "width": canonical.width,
                 "height": canonical.height,
                 "aspectRatio": canonical.aspect_ratio,
                 "orientation": canonical.orientation,
+                "variants": canonical.variants,
                 "checksum": canonical.checksum,
                 "perceptualHash": canonical.perceptual_hash,
                 "averageColor": canonical.average_color,
@@ -690,6 +726,49 @@ def load_existing_assets() -> tuple[list[dict[str, Any]], list[str]]:
     return assets, hidden_variant_paths
 
 
+def normalize_existing_assets(assets: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if all(asset_has_variants(asset) for asset in assets):
+        return assets
+
+    ensure_pillow_available()
+    normalized: list[dict[str, Any]] = []
+    for asset in assets:
+        source_path = asset.get("canonicalPath") or asset["sourcePath"]
+        absolute_path = SOURCE_ROOT / source_path
+        with Image.open(absolute_path) as image_handle:
+            image = ImageOps.exif_transpose(image_handle).convert("RGB")
+            variants = build_variants(image, asset["id"])
+
+        next_asset = dict(asset)
+        next_asset.pop("displayPath", None)
+        next_asset.pop("thumbPath", None)
+        next_asset["variants"] = variants
+        normalized.append(next_asset)
+
+    return normalized
+
+
+def asset_has_variants(asset: dict[str, Any]) -> bool:
+    variants = asset.get("variants")
+    if not isinstance(variants, dict):
+        return False
+
+    for name in VARIANT_SPECS:
+        entry = variants.get(name)
+        if not isinstance(entry, dict):
+            return False
+        jpeg_path = entry.get("jpeg")
+        webp_path = entry.get("webp")
+        if not isinstance(jpeg_path, str) or not isinstance(webp_path, str):
+            return False
+        if not (PUBLIC_DIR / jpeg_path.lstrip("/")).exists():
+            return False
+        if not (PUBLIC_DIR / webp_path.lstrip("/")).exists():
+            return False
+
+    return True
+
+
 def analyze_assets(assets: list[dict[str, Any]], existing_analyses: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     analyses: list[dict[str, Any]] = []
     api_key = os.getenv("OPENAI_API_KEY")
@@ -714,7 +793,7 @@ def analyze_assets(assets: list[dict[str, Any]], existing_analyses: dict[str, di
 
 def analyze_with_openai(api_key: str, asset: dict[str, Any]) -> dict[str, Any]:
     ensure_requests_available()
-    thumb_path = PUBLIC_DIR / asset["thumbPath"].lstrip("/")
+    thumb_path = PUBLIC_DIR / asset["variants"]["thumb"]["jpeg"].lstrip("/")
     payload = {
         "model": ANALYSIS_MODEL,
         "input": [

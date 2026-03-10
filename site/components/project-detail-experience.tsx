@@ -6,6 +6,7 @@ import gsap from "gsap";
 import SplitType from "split-type";
 import type { DisplayAsset, Series } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 export function ProjectDetailExperience({
   series,
@@ -108,15 +109,18 @@ export function ProjectDetailExperience({
         <div className="project-detail-experience__scroller">
           {assets.map((asset, index) => (
             <figure key={asset.id} className="project-detail-experience__frame">
-              <img
-                src={asset.displayPath}
+              <ResponsivePhoto
+                asset={asset}
                 alt={`${series.title} ${index + 1}`}
-                width={asset.width}
-                height={asset.height}
-                data-orientation={asset.orientation}
-                loading={index === 0 ? "eager" : "lazy"}
-                decoding="async"
+                variants={["rail", "hero"]}
+                sizes="100vw"
+                eager={index < 2}
                 fetchPriority={index === 0 ? "high" : "auto"}
+                observerRoot={scrollerRef.current}
+                rootMargin="0px 120% 0px 120%"
+                imgProps={{
+                  "data-orientation": asset.orientation,
+                }}
               />
             </figure>
           ))}

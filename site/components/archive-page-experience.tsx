@@ -6,6 +6,7 @@ import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { formatArchiveIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
+import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type ArchiveItem = {
   series: {
@@ -26,10 +27,12 @@ export function ArchivePageExperience({
 }) {
   const router = useTransitionRouter();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [displayedIndex, setDisplayedIndex] = useState(0);
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
   const activeItem = items[activeIndex] ?? items[0];
-  const activeHero = activeItem?.previews[0] ?? null;
+  const displayedItem = items[displayedIndex] ?? items[0];
+  const activeHero = displayedItem?.previews[0] ?? null;
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
@@ -39,19 +42,28 @@ export function ArchivePageExperience({
     setNumber(activeIndex + 1);
   }, [activeIndex, setNumber]);
 
+  useEffect(() => {
+    const timeout = window.setTimeout(() => {
+      setDisplayedIndex(activeIndex);
+    }, 96);
+
+    return () => window.clearTimeout(timeout);
+  }, [activeIndex]);
+
   return (
     <main className="archive-page-experience">
       <div className="archive-page-experience__gradient" />
-      {activeItem && activeHero ? (
+      {displayedItem && activeHero ? (
         <div className="archive-page-experience__hero">
-          <img
+          <ResponsivePhoto
             key={activeHero.id}
-            src={activeHero.displayPath}
-            alt={activeItem.series.title}
-            width={activeHero.width}
-            height={activeHero.height}
-            className="archive-page-experience__hero-image"
-            decoding="async"
+            asset={activeHero}
+            alt={displayedItem.series.title}
+            variants={["hero"]}
+            sizes="100vw"
+            eager
+            fetchPriority="high"
+            imgClassName="archive-page-experience__hero-image"
           />
         </div>
       ) : null}

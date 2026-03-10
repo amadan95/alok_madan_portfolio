@@ -1,4 +1,19 @@
 export type Orientation = "landscape" | "portrait" | "square";
+export type AssetVariantKey = "raw" | "thumb" | "rail" | "hero";
+
+export interface AssetVariantSource {
+  webp: string;
+  jpeg: string;
+  width: number;
+  height: number;
+}
+
+export interface AssetVariants {
+  raw: AssetVariantSource;
+  thumb: AssetVariantSource;
+  rail: AssetVariantSource;
+  hero: AssetVariantSource;
+}
 
 export type SequenceRole =
   | "anchor"
@@ -12,12 +27,11 @@ export interface PhotoAsset {
   id: string;
   sourcePath: string;
   canonicalPath: string;
-  displayPath: string;
-  thumbPath: string;
   width: number;
   height: number;
   aspectRatio: number;
   orientation: Orientation;
+  variants: AssetVariants;
   checksum: string;
   perceptualHash: string;
   averageColor: string;
@@ -31,8 +45,13 @@ export interface PhotoAsset {
   };
 }
 
-export type IntroSlide = Pick<PhotoAsset, "id" | "displayPath" | "width" | "height">;
-export type DisplayAsset = Pick<PhotoAsset, "id" | "displayPath" | "width" | "height" | "aspectRatio" | "orientation">;
+export interface DisplayAsset extends Pick<PhotoAsset, "id" | "width" | "height" | "aspectRatio" | "orientation" | "averageColor" | "variants"> {}
+
+export interface IntroSlide {
+  id: string;
+  averageColor: string;
+  hero: AssetVariantSource;
+}
 
 export interface PhotoAnalysis {
   photoId: string;
