@@ -87,7 +87,7 @@ export function getIntroSlides(): IntroSlide[] {
   return photoCatalog.assets.map((asset) => ({
     id: asset.id,
     averageColor: asset.averageColor,
-    flash: asset.variants.thumb,
+    flash: asset.orientation === "portrait" ? asset.variants.hero : asset.variants.rail,
     hold: asset.variants.hero,
   }));
 }
