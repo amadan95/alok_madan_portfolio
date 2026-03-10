@@ -12,6 +12,23 @@ const flashSlideCount = 9;
 const INTRO_PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=";
 
+function preloadVariant(webp: string, jpeg: string) {
+  return new Promise<void>((resolve) => {
+    const image = new window.Image();
+
+    image.onload = () => resolve();
+    image.onerror = () => {
+      if (image.src !== jpeg) {
+        image.src = jpeg;
+        return;
+      }
+
+      resolve();
+    };
+    image.src = webp || jpeg;
+  });
+}
+
 function buildRandomIntroSequence(pool: IntroSlide[]) {
   if (pool.length <= 1) {
     return pool;
@@ -46,6 +63,7 @@ export function IntroOverlay({
   const [sequenceSlides, setSequenceSlides] = useState<IntroSlide[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sequenceComplete, setSequenceComplete] = useState(false);
+  const [sequenceReady, setSequenceReady] = useState(false);
   const setHideIntro = useUIStore((state) => state.setHideIntro);
   const setMoveNavToTop = useUIStore((state) => state.setMoveNavToTop);
   const setNumber = useUIStore((state) => state.setNumber);
@@ -59,11 +77,34 @@ export function IntroOverlay({
       return;
     }
 
-    setSequenceSlides(buildRandomIntroSequence(slides));
+    let cancelled = false;
+    const selectedSlides = buildRandomIntroSequence(slides);
+
+    setSequenceReady(false);
+    setSequenceSlides(selectedSlides);
+    setCurrentIndex(0);
+    setSequenceComplete(false);
+
+    Promise.all(
+      selectedSlides.map((slide, index) => {
+        const variant = index === selectedSlides.length - 1 ? slide.hold : slide.flash;
+        return preloadVariant(variant.webp, variant.jpeg);
+      }),
+    ).then(() => {
+      if (cancelled) {
+        return;
+      }
+
+      setSequenceReady(true);
+    });
+
+    return () => {
+      cancelled = true;
+    };
   }, [activeProjectSlug, slides, visible]);
 
   useEffect(() => {
-    if (!visible || activeProjectSlug || sequenceSlides.length === 0) {
+    if (!visible || activeProjectSlug || sequenceSlides.length === 0 || !sequenceReady) {
       return;
     }
 
@@ -100,7 +141,7 @@ export function IntroOverlay({
       window.clearTimeout(completeTimeout);
       document.body.style.overflow = "";
     };
-  }, [activeProjectSlug, sequenceSlides, setMoveNavToTop, visible]);
+  }, [activeProjectSlug, sequenceReady, sequenceSlides, setMoveNavToTop, visible]);
 
   useEffect(() => {
     if (visible) {
@@ -115,19 +156,6 @@ export function IntroOverlay({
 
     setSequenceComplete(currentIndex >= sequenceSlides.length - 1);
   }, [currentIndex, sequenceSlides.length, visible]);
-
-  useEffect(() => {
-    const nextSlide = sequenceSlides[currentIndex + 1];
-    if (!nextSlide) {
-      return;
-    }
-
-    const preloadWebp = new window.Image();
-    preloadWebp.src = nextSlide.hero.webp;
-
-    const preloadJpeg = new window.Image();
-    preloadJpeg.src = nextSlide.hero.jpeg;
-  }, [currentIndex, sequenceSlides]);
 
   useEffect(() => {
     if (!visible || !sequenceComplete) {
@@ -202,24 +230,26 @@ export function IntroOverlay({
     return null;
   }
 
+  const activeVariant = sequenceComplete ? activeSlide.hold : activeSlide.flash;
+
   return (
     <div ref={overlayRef} className="intro-overlay" data-complete={String(sequenceComplete)} role="presentation">
       <div className="intro-overlay__media">
         <picture
-          key={activeSlide.id}
+          key={`${activeSlide.id}-${sequenceComplete ? "hold" : "flash"}`}
           className="intro-overlay__image"
           data-active="true"
           style={{ backgroundColor: activeSlide.averageColor }}
         >
-          <source type="image/webp" srcSet={`${activeSlide.hero.webp} ${activeSlide.hero.width}w`} sizes="100vw" />
-          <source type="image/jpeg" srcSet={`${activeSlide.hero.jpeg} ${activeSlide.hero.width}w`} sizes="100vw" />
+          <source type="image/webp" srcSet={`${activeVariant.webp} ${activeVariant.width}w`} sizes="100vw" />
+          <source type="image/jpeg" srcSet={`${activeVariant.jpeg} ${activeVariant.width}w`} sizes="100vw" />
           <img
-            src={activeSlide.hero.jpeg || INTRO_PLACEHOLDER}
+            src={(sequenceReady && activeVariant.jpeg) || INTRO_PLACEHOLDER}
             alt=""
-            width={activeSlide.hero.width}
-            height={activeSlide.hero.height}
+            width={activeVariant.width}
+            height={activeVariant.height}
             fetchPriority="high"
-            decoding="async"
+            decoding="sync"
           />
         </picture>
       </div>

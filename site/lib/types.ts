@@ -50,7 +50,8 @@ export interface DisplayAsset extends Pick<PhotoAsset, "id" | "width" | "height"
 export interface IntroSlide {
   id: string;
   averageColor: string;
-  hero: AssetVariantSource;
+  flash: AssetVariantSource;
+  hold: AssetVariantSource;
 }
 
 export interface PhotoAnalysis {

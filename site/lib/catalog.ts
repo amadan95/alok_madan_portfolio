@@ -87,7 +87,8 @@ export function getIntroSlides(): IntroSlide[] {
   return photoCatalog.assets.map((asset) => ({
     id: asset.id,
     averageColor: asset.averageColor,
-    hero: asset.variants.hero,
+    flash: asset.variants.thumb,
+    hold: asset.variants.hero,
   }));
 }
 
