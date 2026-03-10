@@ -694,6 +694,7 @@ picture {
   max-height: 88vh;
   object-fit: contain;
   mix-blend-mode: normal;
+  filter: grayscale(1) contrast(1.02) brightness(0.96);
 }
 
 .raw-page-experience__overlay picture {
@@ -717,7 +718,8 @@ picture {
   width: auto;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
+  filter: grayscale(1) contrast(1.04) brightness(0.94);
   transition: opacity 200ms ease;
 }
 
