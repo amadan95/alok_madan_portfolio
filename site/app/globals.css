@@ -296,14 +296,17 @@ picture {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 18ms linear;
+  transition: opacity 56ms linear;
   will-change: opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .intro-overlay__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .intro-overlay__image[data-active="true"] {
@@ -847,6 +850,14 @@ picture {
   display: grid;
   gap: 1.25rem;
   width: min(11rem, 100%);
+}
+
+.project-detail-experience__rail-title {
+  margin: 0;
+  font-family: var(--font-editorial), var(--font-body);
+  font-size: clamp(1.55rem, 1.1rem + 1.25vw, 2.35rem);
+  line-height: 0.96;
+  color: #111111;
 }
 
 .project-detail-experience__rail-copy {

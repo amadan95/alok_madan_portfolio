@@ -7,7 +7,7 @@ import type { IntroSlide, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { sitePrimaryNavLinks } from "@/components/site-header-chrome";
 
-const slideDurationMs = 160;
+const slideDurationMs = 165;
 const flashSlideCount = 9;
 const INTRO_PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=";
@@ -230,28 +230,31 @@ export function IntroOverlay({
     return null;
   }
 
-  const activeVariant = sequenceComplete ? activeSlide.hold : activeSlide.flash;
-
   return (
     <div ref={overlayRef} className="intro-overlay" data-complete={String(sequenceComplete)} role="presentation">
       <div className="intro-overlay__media">
-        <picture
-          key={`${activeSlide.id}-${sequenceComplete ? "hold" : "flash"}`}
-          className="intro-overlay__image"
-          data-active="true"
-          style={{ backgroundColor: activeSlide.averageColor }}
-        >
-          <source type="image/webp" srcSet={`${activeVariant.webp} ${activeVariant.width}w`} sizes="100vw" />
-          <source type="image/jpeg" srcSet={`${activeVariant.jpeg} ${activeVariant.width}w`} sizes="100vw" />
-          <img
-            src={(sequenceReady && activeVariant.jpeg) || INTRO_PLACEHOLDER}
-            alt=""
-            width={activeVariant.width}
-            height={activeVariant.height}
-            fetchPriority="high"
-            decoding="sync"
-          />
-        </picture>
+        {sequenceSlides.map((slide, index) => {
+          const variant = index === sequenceSlides.length - 1 ? slide.hold : slide.flash;
+          return (
+            <picture
+              key={slide.id}
+              className="intro-overlay__image"
+              data-active={String(index === currentIndex)}
+              style={{ backgroundColor: slide.averageColor }}
+            >
+              <source type="image/webp" srcSet={`${variant.webp} ${variant.width}w`} sizes="100vw" />
+              <source type="image/jpeg" srcSet={`${variant.jpeg} ${variant.width}w`} sizes="100vw" />
+              <img
+                src={(sequenceReady && variant.jpeg) || INTRO_PLACEHOLDER}
+                alt=""
+                width={variant.width}
+                height={variant.height}
+                fetchPriority={index <= 1 ? "high" : "auto"}
+                decoding="sync"
+              />
+            </picture>
+          );
+        })}
       </div>
       <div className="intro-overlay__copy">
         <p className="intro-overlay__desktop">{siteMeta.introDesktop}</p>

@@ -218,7 +218,7 @@ export function PortfolioHome({
                   <ResponsivePhoto
                     asset={asset}
                     alt={series.title}
-                    variants={["thumb", "rail"]}
+                    variants={["rail", "hero"]}
                     sizes="(min-width: 1024px) 28vw, 92vw"
                     eager={series.portfolioIndex === 1 && previewIndex === 0}
                     fetchPriority={series.portfolioIndex === 1 && previewIndex === 0 ? "high" : "auto"}

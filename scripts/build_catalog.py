@@ -35,12 +35,13 @@ SOURCE_ROOT = ARCHIVE_DIR if ARCHIVE_DIR.exists() else WORKSPACE_ROOT
 CONTENT_DIR = APP_ROOT / "content"
 PUBLIC_DIR = APP_ROOT / "public"
 GENERATED_DIR = PUBLIC_DIR / "_generated"
+VARIANT_VERSION = 2
 
 VARIANT_SPECS = {
-    "raw": {"max_size": 320, "jpeg_quality": 40, "webp_quality": 42},
-    "thumb": {"max_size": 640, "jpeg_quality": 48, "webp_quality": 50},
-    "rail": {"max_size": 1200, "jpeg_quality": 56, "webp_quality": 58},
-    "hero": {"max_size": 1800, "jpeg_quality": 62, "webp_quality": 60},
+    "raw": {"max_size": 360, "jpeg_quality": 42, "webp_quality": 44},
+    "thumb": {"max_size": 800, "jpeg_quality": 54, "webp_quality": 56},
+    "rail": {"max_size": 1600, "jpeg_quality": 68, "webp_quality": 64},
+    "hero": {"max_size": 2400, "jpeg_quality": 74, "webp_quality": 70},
 }
 VARIANT_DIRS = {name: GENERATED_DIR / name for name in VARIANT_SPECS}
 LEGACY_GENERATED_DIRS = [GENERATED_DIR / "display", GENERATED_DIR / "thumbs"]
@@ -442,11 +443,14 @@ class UnionFind:
 def main() -> None:
     ensure_directories(reset_variants=os.getenv("FORCE_REGENERATE_VARIANTS") == "1")
     cleanup_legacy_generated_dirs()
-    existing_assets, hidden_variant_paths = load_existing_assets()
+    existing_assets, hidden_variant_paths, existing_variant_version = load_existing_assets()
     existing_analyses = load_existing_analyses()
     if existing_assets and os.getenv("FORCE_RESCAN") != "1":
         files = [asset["sourcePath"] for asset in existing_assets]
-        canonical_assets = normalize_existing_assets(existing_assets)
+        canonical_assets = normalize_existing_assets(
+            existing_assets,
+            force_rebuild_variants=existing_variant_version != VARIANT_VERSION,
+        )
         print(f"Reusing {len(canonical_assets)} canonical assets from photo-analysis.json")
     else:
         ensure_pillow_available()
@@ -468,6 +472,7 @@ def main() -> None:
 
     photo_catalog = {
         "generatedAt": iso_now(),
+        "variantVersion": VARIANT_VERSION,
         "canonicalPhotoCount": len(canonical_assets),
         "variantGroupCount": len({asset["variantGroupId"] for asset in canonical_assets}),
         "assets": canonical_assets,
@@ -564,7 +569,7 @@ def build_raw_record(source_path: str) -> RawRecord:
     )
 
 
-def build_variants(image: Image.Image, asset_id: str) -> dict[str, dict[str, Any]]:
+def build_variants(image: Image.Image, asset_id: str, overwrite: bool = False) -> dict[str, dict[str, Any]]:
     variants: dict[str, dict[str, Any]] = {}
 
     for name, spec in VARIANT_SPECS.items():
@@ -572,8 +577,8 @@ def build_variants(image: Image.Image, asset_id: str) -> dict[str, dict[str, Any
         derived.thumbnail((spec["max_size"], spec["max_size"]), Image.Resampling.LANCZOS)
         jpeg_path = VARIANT_DIRS[name] / f"{asset_id}.jpg"
         webp_path = VARIANT_DIRS[name] / f"{asset_id}.webp"
-        write_variant(derived, jpeg_path, "JPEG", spec["jpeg_quality"])
-        write_variant(derived, webp_path, "WEBP", spec["webp_quality"])
+        write_variant(derived, jpeg_path, "JPEG", spec["jpeg_quality"], overwrite=overwrite)
+        write_variant(derived, webp_path, "WEBP", spec["webp_quality"], overwrite=overwrite)
         variants[name] = {
             "jpeg": f"/_generated/{name}/{asset_id}.jpg",
             "webp": f"/_generated/{name}/{asset_id}.webp",
@@ -584,8 +589,8 @@ def build_variants(image: Image.Image, asset_id: str) -> dict[str, dict[str, Any
     return variants
 
 
-def write_variant(image: Image.Image, destination: Path, format_name: str, quality: int) -> None:
-    if destination.exists():
+def write_variant(image: Image.Image, destination: Path, format_name: str, quality: int, overwrite: bool = False) -> None:
+    if destination.exists() and not overwrite:
         return
 
     save_kwargs: dict[str, Any] = {"quality": quality}
@@ -708,26 +713,30 @@ def load_existing_analyses() -> dict[str, dict[str, Any]]:
     return result
 
 
-def load_existing_assets() -> tuple[list[dict[str, Any]], list[str]]:
+def load_existing_assets() -> tuple[list[dict[str, Any]], list[str], int]:
     target = CONTENT_DIR / "photo-analysis.json"
     if not target.exists():
-        return [], []
+        return [], [], 0
 
     try:
         raw = json.loads(target.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
-        return [], []
+        return [], [], 0
 
     assets = raw.get("assets", [])
     hidden_variant_paths = raw.get("hiddenVariantPaths", [])
+    variant_version = raw.get("variantVersion", 0)
     if not isinstance(assets, list) or not isinstance(hidden_variant_paths, list):
-        return [], []
+        return [], [], 0
 
-    return assets, hidden_variant_paths
+    if not isinstance(variant_version, int):
+        variant_version = 0
+
+    return assets, hidden_variant_paths, variant_version
 
 
-def normalize_existing_assets(assets: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    if all(asset_has_variants(asset) for asset in assets):
+def normalize_existing_assets(assets: list[dict[str, Any]], force_rebuild_variants: bool = False) -> list[dict[str, Any]]:
+    if not force_rebuild_variants and all(asset_has_variants(asset) for asset in assets):
         return assets
 
     ensure_pillow_available()
@@ -735,9 +744,12 @@ def normalize_existing_assets(assets: list[dict[str, Any]]) -> list[dict[str, An
     for asset in assets:
         source_path = asset.get("canonicalPath") or asset["sourcePath"]
         absolute_path = SOURCE_ROOT / source_path
+        if not absolute_path.exists():
+            normalized.append(dict(asset))
+            continue
         with Image.open(absolute_path) as image_handle:
             image = ImageOps.exif_transpose(image_handle).convert("RGB")
-            variants = build_variants(image, asset["id"])
+            variants = build_variants(image, asset["id"], overwrite=force_rebuild_variants)
 
         next_asset = dict(asset)
         next_asset.pop("displayPath", None)

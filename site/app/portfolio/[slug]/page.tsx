@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProjectDetailExperience } from "@/components/project-detail-experience";
-import { getSeries, getSeriesAssets, getSeriesBySlug, getSiteMeta } from "@/lib/catalog";
+import { getSeries, getSeriesAssets, getSeriesBySlug } from "@/lib/catalog";
 
 export function generateStaticParams() {
   return getSeries().map((series) => ({ slug: series.slug }));
@@ -36,7 +36,6 @@ export default async function PortfolioDetailPage({
   }
 
   const assets = getSeriesAssets(series);
-  const siteMeta = getSiteMeta();
 
-  return <ProjectDetailExperience series={series} assets={assets} photographerName={siteMeta.photographer} />;
+  return <ProjectDetailExperience series={series} assets={assets} />;
 }

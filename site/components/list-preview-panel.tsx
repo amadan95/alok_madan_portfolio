@@ -54,7 +54,7 @@ export function ListPreviewPanel({ items }: { items: SeriesWithPreview[] }) {
                 className="list-preview__frame"
                 style={{ flex: `${Math.max(0.72, Math.min(asset.aspectRatio, 1.5))} 1 0%` }}
               >
-                <ResponsivePhoto asset={asset} alt={activeItem.series.title} variants={["thumb", "rail"]} sizes="33vw" />
+                <ResponsivePhoto asset={asset} alt={activeItem.series.title} variants={["rail", "hero"]} sizes="33vw" />
               </figure>
             ))}
           </div>
