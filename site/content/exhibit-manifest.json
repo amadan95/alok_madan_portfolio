@@ -68,7 +68,6 @@
     "8256ebae3cc3-r0000768-hdr-pano-enhanced-n",
     "dc208313252e-dscf0033",
     "64d25bb83d2a-dsc03918-edit-2",
-    "9ad75dd23fe5-dsc05560",
     "7de89ddfae18-photo-14",
     "24b6069d5aab-dsc07238",
     "d7fea7095b8d-photo-5",
@@ -114,7 +113,6 @@
     "b10683df96c1-photo-3",
     "f95f1370ed2c-photo-1",
     "a4faf8b2d553-dsc00544",
-    "0d18d9fcd731-photo-22",
     "cda69c470029-photo-7",
     "ef16fd4871e8-dsc07852-2",
     "bb7b3d534215-dsc05260-hdr",
@@ -176,11 +174,13 @@
     "529fa9484cb4-dscf6745",
     "07648ec4161f-photo-40",
     "562a97dee673-dsc00402",
-    "2f4d71e55562-dsc09628-edit",
     "b7ba2148ee16-photo-30",
     "88931133faa1-dsc08629-hdr",
     "b851ff1e1f4c-dscf8207-2-enhanced-nr-pano-",
-    "efebeec3ad25-r0000543-edit"
+    "efebeec3ad25-r0000543-edit",
+    "10f3ca274323-photo-7",
+    "b14237cc54b3-photo-15",
+    "6e33b12d2e41-dscf9713-enhanced-nr-pano"
   ],
   "rooms": [
     {
@@ -350,18 +350,18 @@
       "subtitle": "Expanding the visual field to capture the slipstream of collective movement.",
       "synopsis": "The panoramic frame refuses a single focal point, forcing the eye to scan the periphery and participate in the continuous, unspooling motion of the street.",
       "tags": [],
-      "coverPhotoId": "10f3ca274323-photo-7",
+      "coverPhotoId": "0d18d9fcd731-photo-22",
       "previewPhotoIds": [
-        "10f3ca274323-photo-7",
-        "b14237cc54b3-photo-15",
-        "6e33b12d2e41-dscf9713-enhanced-nr-pano",
+        "0d18d9fcd731-photo-22",
+        "9ad75dd23fe5-dsc05560",
+        "2f4d71e55562-dsc09628-edit",
         "225320486751-dscf2289",
         "8e60cbdf04d0-photo-15"
       ],
       "photoIds": [
-        "10f3ca274323-photo-7",
-        "b14237cc54b3-photo-15",
-        "6e33b12d2e41-dscf9713-enhanced-nr-pano",
+        "0d18d9fcd731-photo-22",
+        "9ad75dd23fe5-dsc05560",
+        "2f4d71e55562-dsc09628-edit",
         "225320486751-dscf2289",
         "8e60cbdf04d0-photo-15",
         "496b9a265c4c-dsc00396",
