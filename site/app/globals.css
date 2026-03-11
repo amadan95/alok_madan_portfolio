@@ -1180,34 +1180,11 @@ picture {
   }
 
   .site-header-chrome {
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-  }
-
-  .site-header-chrome__nav,
-  .site-header-chrome__number {
     display: none;
-  }
-
-  .site-header-chrome[data-route-kind="archive"] {
-    grid-template-columns: 1fr;
-    gap: 0.45rem;
-  }
-
-  .site-header-chrome[data-route-kind="archive"] .site-header-chrome__brand {
-    display: none;
-  }
-
-  .site-header-chrome[data-route-kind="archive"] .site-header-chrome__nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 0.35rem;
-    pointer-events: auto;
   }
 
   .route-stage {
-    padding-top: 4.85rem;
+    padding-top: 1rem;
     padding-bottom: calc(5.6rem + env(safe-area-inset-bottom));
   }
 
