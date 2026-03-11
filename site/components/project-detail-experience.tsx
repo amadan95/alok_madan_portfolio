@@ -1,9 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import gsap from "gsap";
-import SplitType from "split-type";
 import type { DisplayAsset, Series } from "@/lib/types";
 import { useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
@@ -19,8 +17,6 @@ export function ProjectDetailExperience({
   photographerName: string;
 }) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
-  const infoRef = useRef<HTMLParagraphElement | null>(null);
-  const [showInfo, setShowInfo] = useState(false);
   const viewportWidth = useViewportWidth();
   const isMobile = viewportWidth > 0 && viewportWidth < 1024;
   const setActiveProjectSlug = useUIStore((state) => state.setActiveProjectSlug);
@@ -62,50 +58,18 @@ export function ProjectDetailExperience({
     return () => scroller.removeEventListener("wheel", onWheel);
   }, [isMobile]);
 
-  useEffect(() => {
-    if (!showInfo || !infoRef.current) {
-      return;
-    }
-
-    const split = new SplitType(infoRef.current, { types: "chars,words" });
-    gsap.set(split.chars, { opacity: 0 });
-    gsap.to(split.chars, {
-      opacity: 1,
-      duration: 0,
-      stagger: 0.008,
-    });
-
-    return () => {
-      split.revert();
-    };
-  }, [showInfo]);
-
   return (
     <main className="project-detail-experience">
       <aside className="project-detail-experience__name-rail" aria-label="Photographer">
-        <Link href="/" className="project-detail-experience__name">
-          {photographerName}
-        </Link>
-      </aside>
-
-      <div className="project-detail-experience__controls">
-        <div className="project-detail-experience__info-controls">
+        <div className="project-detail-experience__rail-content">
+          <Link href="/" className="project-detail-experience__name">
+            {photographerName}
+          </Link>
           {series.projectInformation ? (
-            <button type="button" onClick={() => setShowInfo((value) => !value)}>
-              Information
-            </button>
-          ) : (
-            <span />
-          )}
-          <p>{series.archiveLabel}</p>
+            <p className="project-detail-experience__rail-copy">{series.projectInformation}</p>
+          ) : null}
         </div>
-      </div>
-
-      {showInfo ? (
-        <div className="project-detail-experience__information" onClick={() => setShowInfo(false)} role="presentation">
-          <p ref={infoRef}>{series.projectInformation}</p>
-        </div>
-      ) : null}
+      </aside>
 
       <div
         ref={scrollerRef}

@@ -60,7 +60,7 @@ export function SiteHeaderChrome({
         ))}
       </nav>
 
-      {(routeKind === "home" || routeKind === "list" || routeKind === "archive" || routeKind === "project") ? (
+      {(routeKind === "home" || routeKind === "list" || routeKind === "archive") ? (
         <p ref={numberRef} className="site-header-chrome__number">
           {displayNumber}
         </p>

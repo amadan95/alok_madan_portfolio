@@ -843,58 +843,18 @@ picture {
   display: none;
 }
 
-.project-detail-experience__controls {
-  position: fixed;
-  top: calc(var(--page-gutter) + 4.1rem);
-  left: var(--page-gutter);
-  right: var(--page-gutter);
+.project-detail-experience__rail-content {
   display: grid;
-  gap: 0.75rem;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  color: #ffffff;
+  gap: 1.25rem;
+  width: min(11rem, 100%);
 }
 
-.project-detail-experience__info-controls {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.project-detail-experience__info-controls p {
+.project-detail-experience__rail-copy {
   margin: 0;
-}
-
-.project-detail-experience__controls button {
-  pointer-events: auto;
-  opacity: 0.85;
-  padding: 0.1rem 0;
-}
-
-.project-detail-experience__controls button:disabled {
-  opacity: 0.24;
-  cursor: default;
-}
-
-.project-detail-experience__information {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: var(--page-gutter);
-  background: transparent;
-  color: #ffffff;
-  pointer-events: auto;
-}
-
-.project-detail-experience__information p {
-  max-width: 74rem;
-  margin: 0 auto;
-  font-size: clamp(1rem, 0.92rem + 0.35vw, 1.35rem);
-  line-height: 1.18;
-  text-align: center;
-  mix-blend-mode: difference;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: #111111;
+  text-wrap: pretty;
 }
 
 .project-detail-experience__scroller-wrap {
@@ -1162,12 +1122,7 @@ picture {
     font-size: 1.05rem;
     line-height: 1.05;
     text-align: left;
-    color: #ffffff;
-    mix-blend-mode: difference;
-  }
-
-  .project-detail-experience__controls {
-    left: calc(var(--project-left-rail) + var(--page-gutter));
+    color: #111111;
   }
 
   .project-detail-experience__scroller-wrap {
@@ -1340,12 +1295,6 @@ picture {
     height: auto;
     min-height: 100svh;
     overflow: visible;
-  }
-
-  .project-detail-experience__controls {
-    top: calc(var(--page-gutter) + 3.55rem);
-    bottom: auto;
-    gap: 0.4rem;
   }
 
   .project-detail-experience__scroller-wrap {
