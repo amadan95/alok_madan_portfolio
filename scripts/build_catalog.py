@@ -959,7 +959,7 @@ def manifest_is_valid(manifest: dict[str, Any], asset_ids: set[str]) -> bool:
     for room in rooms:
         if not isinstance(room, dict) or not room.get("title") or not isinstance(room.get("photoIds"), list):
             return False
-        if not ROOM_MIN_SIZE <= len(room["photoIds"]) <= ROOM_MAX_SIZE:
+        if not room["photoIds"]:
             return False
         seen.extend(room["photoIds"])
 
