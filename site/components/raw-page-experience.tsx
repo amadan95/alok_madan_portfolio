@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { DisplayAsset } from "@/lib/types";
 import { createSeededRandom } from "@/lib/utils";
@@ -40,13 +41,24 @@ function buildRows(assets: DisplayAsset[]) {
   return rows;
 }
 
-export function RawPageExperience({ assets }: { assets: DisplayAsset[] }) {
+export function RawPageExperience({
+  assets,
+  photographerName,
+}: {
+  assets: DisplayAsset[];
+  photographerName: string;
+}) {
   const [activeAsset, setActiveAsset] = useState<DisplayAsset | null>(null);
   const rows = useMemo(() => buildRows(assets), [assets]);
 
   return (
     <main className="raw-page-experience">
       <div className="raw-page-experience__gradient" />
+      <aside className="raw-page-experience__name-rail" aria-label="Photographer">
+        <Link href="/" className="raw-page-experience__name">
+          {photographerName}
+        </Link>
+      </aside>
       {activeAsset ? (
         <div className="raw-page-experience__overlay">
           <ResponsivePhoto asset={activeAsset} alt="" variants={["hero"]} sizes="82vw" eager fetchPriority="high" />
