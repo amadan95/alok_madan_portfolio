@@ -688,7 +688,7 @@ picture {
 
 .archive-page-experience__link {
   display: grid;
-  grid-template-columns: 4rem minmax(0, 2.2fr) minmax(0, 1.4fr) 4.5rem;
+  grid-template-columns: 4rem minmax(0, 1fr);
   gap: 1rem;
   width: 100%;
   padding: 0 var(--page-gutter);
@@ -973,7 +973,8 @@ picture {
   }
 
   .site-header-chrome[data-route-kind="project"] .site-header-chrome__brand,
-  .site-header-chrome[data-route-kind="raw"] .site-header-chrome__brand {
+  .site-header-chrome[data-route-kind="raw"] .site-header-chrome__brand,
+  .site-header-chrome[data-route-kind="archive"] .site-header-chrome__brand {
     opacity: 0;
     pointer-events: none;
   }
@@ -1188,6 +1189,23 @@ picture {
     display: none;
   }
 
+  .site-header-chrome[data-route-kind="archive"] {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .site-header-chrome[data-route-kind="archive"] .site-header-chrome__brand {
+    display: none;
+  }
+
+  .site-header-chrome[data-route-kind="archive"] .site-header-chrome__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    pointer-events: auto;
+  }
+
   .route-stage {
     padding-top: 4.85rem;
     padding-bottom: calc(5.6rem + env(safe-area-inset-bottom));
@@ -1258,10 +1276,7 @@ picture {
   }
 
   .archive-page-experience__link {
-    grid-template-columns: 2.5rem minmax(0, 1fr) auto;
-    grid-template-areas:
-      "index title year"
-      ". label year";
+    grid-template-columns: 2.5rem minmax(0, 1fr);
     gap: 0.2rem 0.6rem;
     padding: 0 calc(var(--page-gutter) * 1.05);
     font-size: 0.68rem;
@@ -1269,24 +1284,12 @@ picture {
   }
 
   .archive-page-experience__link span:nth-child(1) {
-    grid-area: index;
+    grid-column: 1;
   }
 
   .archive-page-experience__link span:nth-child(2) {
-    grid-area: title;
+    grid-column: 2;
     font-size: clamp(1.2rem, 1.08rem + 1.5vw, 1.55rem);
-  }
-
-  .archive-page-experience__link span:nth-child(3) {
-    grid-area: label;
-    letter-spacing: 0.16em;
-    opacity: 0.86;
-  }
-
-  .archive-page-experience__link span:nth-child(4) {
-    grid-area: year;
-    align-self: start;
-    justify-self: end;
   }
 
   .raw-page-experience__frame {

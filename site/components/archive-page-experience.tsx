@@ -13,8 +13,6 @@ type ArchiveItem = {
   series: {
     slug: string;
     title: string;
-    archiveLabel: string;
-    archiveYear: string;
   };
   previews: DisplayAsset[];
 };
@@ -85,8 +83,6 @@ export function ArchivePageExperience({
           >
             <span>{formatArchiveIndex(index + 1)}</span>
             <span>{item.series.title}</span>
-            <span>{item.series.archiveLabel}</span>
-            <span>{item.series.archiveYear || "\u2014"}</span>
           </button>
         )}
       />
