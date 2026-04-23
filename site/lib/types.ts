@@ -45,7 +45,7 @@ export interface PhotoAsset {
   };
 }
 
-export interface DisplayAsset extends Pick<PhotoAsset, "id" | "width" | "height" | "aspectRatio" | "orientation" | "averageColor" | "variants"> {}
+export type DisplayAsset = Pick<PhotoAsset, "id" | "width" | "height" | "aspectRatio" | "orientation" | "averageColor" | "variants">;
 
 export interface IntroSlide {
   id: string;

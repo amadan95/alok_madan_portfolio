@@ -3,7 +3,7 @@ import "server-only";
 import photoCatalogJson from "@/content/photo-analysis.json";
 import seriesCatalogJson from "@/content/series.json";
 import siteMetaJson from "@/content/site-meta.json";
-import type { DisplayAsset, IntroSlide, PhotoAnalysis, PhotoAsset, PhotoCatalog, Series, SeriesCatalog, SiteMeta } from "@/lib/types";
+import type { DisplayAsset, IntroSlide, PhotoAsset, PhotoCatalog, Series, SeriesCatalog, SiteMeta } from "@/lib/types";
 
 const photoCatalog = photoCatalogJson as unknown as PhotoCatalog;
 const seriesCatalog = seriesCatalogJson as unknown as SeriesCatalog;

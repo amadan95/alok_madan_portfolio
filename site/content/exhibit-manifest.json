@@ -184,115 +184,177 @@
   ],
   "rooms": [
     {
-      "title": "The Geography of Silence",
-      "primaryTone": "the-geography-of-silence",
-      "roomStatement": "A study in withheld information and the architecture of the void. These frames strip the urban landscape of its momentum, leaving only the cold resonance of uninhabited night. Light here is not revealing; it is merely outlining the dark.",
-      "subtitle": "A study in withheld information and the architecture of the void.",
-      "synopsis": "These frames strip the urban landscape of its momentum, leaving only the cold resonance of uninhabited night. Light here is not revealing; it is merely outlining the dark.",
-      "tags": [],
-      "coverPhotoId": "339ed2be993f-dsc06561",
-      "previewPhotoIds": [
-        "339ed2be993f-dsc06561",
-        "3639be8591be-dsc06971-edit",
-        "806298c1700e-dsc03546-enhanced-nr",
-        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
-        "a77bb788fc75-photo-37"
+      "slug": "03-overexposure-erasure",
+      "title": "White Distance",
+      "primaryTone": "white-distance",
+      "roomStatement": "White Distance begins the portfolio with air before incident. These photographs let brightness thin the world until architecture, shore, monument, and crowd become almost provisional.",
+      "subtitle": "Pale air, erased horizons, and the first room of distance.",
+      "synopsis": "The sequence opens in high light, where landmarks and skylines lose their edges and the world becomes a held breath.",
+      "tags": [
+        "weather",
+        "distance",
+        "erasure",
+        "open air"
       ],
-      "photoIds": [
-        "339ed2be993f-dsc06561",
-        "3639be8591be-dsc06971-edit",
-        "806298c1700e-dsc03546-enhanced-nr",
-        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
-        "a77bb788fc75-photo-37",
-        "d23068086ff3-r0001595",
-        "4c56decb826d-r0000544",
-        "86c1635ec049-dsc00757-edit",
-        "7f536dc85ff7-dsc03857-hdr",
-        "760dd44a1fd6-photo-8"
-      ],
-      "archiveLabel": "Japan / Snow / Prints / Spring",
-      "archiveYear": "2023-2026",
-      "credits": "japan / snow / prints / spring / curated sequence / 2023-2026",
-      "projectInformation": "A study in withheld information and the architecture of the void. These frames strip the urban landscape of its momentum, leaving only the cold resonance of uninhabited night. Light here is not revealing; it is merely outlining the dark."
-    },
-    {
-      "title": "Fugitive Heat",
-      "primaryTone": "fugitive-heat",
-      "roomStatement": "The lingering warmth of human presence mapped through artificial glow. This room captures the city in a state of thermal decay, where sodium light bleeds into the margins of the dark, holding the residue of the day's friction.",
-      "subtitle": "The lingering warmth of human presence mapped through artificial glow.",
-      "synopsis": "This room captures the city in a state of thermal decay, where sodium light bleeds into the margins of the dark, holding the residue of the day's friction.",
-      "tags": [],
-      "coverPhotoId": "71466b39f32e-photo-32",
-      "previewPhotoIds": [
-        "71466b39f32e-photo-32",
-        "c1247789f4b4-dsc04373-hdr",
-        "7bf1b94a7d21-photo-29",
-        "e83da8222ceb-dsc06612",
-        "959f83c44af0-dsc06383"
-      ],
-      "photoIds": [
-        "71466b39f32e-photo-32",
-        "c1247789f4b4-dsc04373-hdr",
-        "7bf1b94a7d21-photo-29",
-        "e83da8222ceb-dsc06612",
-        "959f83c44af0-dsc06383",
-        "7c53a3bd5a09-photo-1",
-        "a4a4051dfd3a-photo-25",
-        "429cd7ec783e-photo-9",
-        "ea810e796501-dscf0400-enhanced-nr",
-        "e956f3a17d65-dsc03048-hdr"
-      ],
-      "archiveLabel": "India-UAE / Japan / Snow / Hong Kong",
-      "archiveYear": "2023-2026",
-      "credits": "india-uae / japan / snow / hong kong / curated sequence / 2023-2026",
-      "projectInformation": "The lingering warmth of human presence mapped through artificial glow. This room captures the city in a state of thermal decay, where sodium light bleeds into the margins of the dark, holding the residue of the day's friction."
-    },
-    {
-      "title": "Overexposure / Erasure",
-      "primaryTone": "overexposure-erasure",
-      "roomStatement": "When light becomes a mechanism of obliteration. These wide, blanched horizons flatten distance and dissolve detail, suspending the viewer in a state of blinding atmospheric suspension. It is a room of visual breath and stark emptiness.",
-      "subtitle": "When light becomes a mechanism of obliteration.",
-      "synopsis": "These wide, blanched horizons flatten distance and dissolve detail, suspending the viewer in a state of blinding atmospheric suspension. It is a room of visual breath and stark emptiness.",
-      "tags": [],
       "coverPhotoId": "684048097746-photo-39",
       "previewPhotoIds": [
         "684048097746-photo-39",
-        "fb5b60b48a69-dscf5661",
-        "4e0d3d3f7359-dscf4850-hdr",
-        "410a05be6055-photo-19",
-        "a4c32c2c8cc1-photo-21"
+        "e65e2dc59bfa-photo-16",
+        "a0d1fdf4b0a8-photo-36",
+        "4227e40b6da0-dscf6388-edit",
+        "3221737c2722-dsc00891"
       ],
       "photoIds": [
         "684048097746-photo-39",
-        "fb5b60b48a69-dscf5661",
-        "4e0d3d3f7359-dscf4850-hdr",
         "410a05be6055-photo-19",
-        "a4c32c2c8cc1-photo-21",
-        "bdb0f8cabac3-dscf5681",
-        "dca7b0b984b0-dsc06060-hdr-edit",
         "e65e2dc59bfa-photo-16",
         "3487817b8afa-photo-17",
-        "a0d1fdf4b0a8-photo-36"
+        "a0d1fdf4b0a8-photo-36",
+        "fb5b60b48a69-dscf5661",
+        "4e0d3d3f7359-dscf4850-hdr",
+        "4227e40b6da0-dscf6388-edit",
+        "51e037cbdd59-dscf5428",
+        "3221737c2722-dsc00891"
       ],
-      "archiveLabel": "India-UAE / Copenhagen / Japan",
-      "archiveYear": "2023-2026",
-      "credits": "india-uae / copenhagen / japan / curated sequence / 2023-2026",
-      "projectInformation": "When light becomes a mechanism of obliteration. These wide, blanched horizons flatten distance and dissolve detail, suspending the viewer in a state of blinding atmospheric suspension. It is a room of visual breath and stark emptiness."
+      "archiveLabel": "India / UAE / Copenhagen / Spring / Print Archive",
+      "archiveYear": "2024-2026",
+      "credits": "india / uae / copenhagen / spring / print archive / pale-distance sequence / 2024-2026",
+      "projectInformation": "A quiet opening chapter built from haze, water, pale facades, and long sightlines. The edit favors images that withhold detail, making distance feel physical before the portfolio moves toward bodies, systems, and night."
     },
     {
-      "title": "The Gravity of Scale",
-      "primaryTone": "the-gravity-of-scale",
-      "roomStatement": "An inquiry into vertical compression and human diminishment. The portrait orientation operates as a tether, pulling the eye upward against the imposing mass of structural monoliths, trapping the subject within the geometry of the metropolis.",
-      "subtitle": "An inquiry into vertical compression and human diminishment.",
-      "synopsis": "The portrait orientation operates as a tether, pulling the eye upward against the imposing mass of structural monoliths, trapping the subject within the geometry of the metropolis.",
-      "tags": [],
+      "slug": "12-breath-and-vapor",
+      "title": "Weather Held Low",
+      "primaryTone": "weather-held-low",
+      "roomStatement": "Weather Held Low keeps the eye near the surface of things. Cloud, rain, blossom, and distant elevation make the chapter feel suspended rather than still.",
+      "subtitle": "Cloud, mountain, blossom, and city light pressed close to the ground.",
+      "synopsis": "Weather becomes the binding material, softening transit, temple, street, and mountain into one low, drifting atmosphere.",
+      "tags": [
+        "weather",
+        "drift",
+        "mountain",
+        "pause"
+      ],
+      "coverPhotoId": "dfe332135103-photo-13",
+      "previewPhotoIds": [
+        "dfe332135103-photo-13",
+        "72524cb7354d-photo-9",
+        "2b39bc363cad-photo-6",
+        "157b5cd44260-dscf2321-edit",
+        "f194c32728a5-dscf2593"
+      ],
+      "photoIds": [
+        "dfe332135103-photo-13",
+        "5df53b348647-photo-12",
+        "72524cb7354d-photo-9",
+        "d0634b5aeb03-photo-4",
+        "2b39bc363cad-photo-6",
+        "57304a4fff81-dsc07166",
+        "9216aab407f5-dsc07006",
+        "157b5cd44260-dscf2321-edit",
+        "225320486751-dscf2289",
+        "f194c32728a5-dscf2593"
+      ],
+      "archiveLabel": "Switzerland / Winter Study",
+      "archiveYear": "2024-2025",
+      "credits": "switzerland / winter study / weather sequence / 2024-2025",
+      "projectInformation": "This room carries the release after the white opener without leaving the atmosphere behind. The photographs move through soft architecture, mountain weather, and seasonal color, holding public space in a slower register."
+    },
+    {
+      "slug": "05-suspended-transits",
+      "title": "Warm Interval",
+      "primaryTone": "warm-interval",
+      "roomStatement": "Warm Interval turns color into tempo. Gold, orange, and red-brown surfaces slow the sequence, making passage feel tactile before the city tightens again.",
+      "subtitle": "Amber pauses, passing bodies, and the slow weight of late day.",
+      "synopsis": "The portfolio warms into gardens, markets, sand, and temple thresholds, where movement feels briefly held in resin.",
+      "tags": [
+        "warmth",
+        "interval",
+        "threshold",
+        "late day"
+      ],
+      "coverPhotoId": "3b36b011bc32-dscf0912",
+      "previewPhotoIds": [
+        "3b36b011bc32-dscf0912",
+        "606be3af4f6c-dsc05986",
+        "b4844bad5da6-dsc04854-hdr",
+        "3090371f68f4-dsc08722",
+        "78dab22a183b-dsc03360-hdr"
+      ],
+      "photoIds": [
+        "3b36b011bc32-dscf0912",
+        "790fdf43d472-photo-41",
+        "606be3af4f6c-dsc05986",
+        "95c9264b1aff-dscf0578-2",
+        "b4844bad5da6-dsc04854-hdr",
+        "9676153d7da3-dscf0918-hdr",
+        "42be5fabb745-dscf0842-hdr",
+        "3090371f68f4-dsc08722",
+        "dca7b0b984b0-dsc06060-hdr-edit",
+        "78dab22a183b-dsc03360-hdr"
+      ],
+      "archiveLabel": "Japan / Social Drafts / India / UAE / Taiwan / Malaysia / Singapore",
+      "archiveYear": "2023-2026",
+      "credits": "japan / social drafts / india / uae / taiwan / malaysia / singapore / warm-interval sequence / 2023-2026",
+      "projectInformation": "This chapter uses late-day color as a bridge between open weather and public pressure. Trees, markets, shrines, water, and patterned ground create a warmer form of transit, less directional than atmospheric."
+    },
+    {
+      "slug": "09-organic-resistance",
+      "title": "Green Pressure",
+      "primaryTone": "green-pressure",
+      "roomStatement": "Green Pressure treats the natural world as force rather than decoration. Leaves, water, and vertical signal interrupt the engineered city and keep it from becoming sealed.",
+      "subtitle": "Growth, neon, and humid edges pushing against the built frame.",
+      "synopsis": "The organic and the artificial share the same pressure field, from trees and water to green signal, glass, and night.",
+      "tags": [
+        "green",
+        "pressure",
+        "growth",
+        "signal"
+      ],
+      "coverPhotoId": "4abfcba4f031-dscf6815",
+      "previewPhotoIds": [
+        "4abfcba4f031-dscf6815",
+        "2ec01c20b9e7-dscf9143",
+        "302aa3b6b17e-dscf5784",
+        "63a8e3ce8aa0-r0001249",
+        "fd2ac7a05d2c-photo-20"
+      ],
+      "photoIds": [
+        "4abfcba4f031-dscf6815",
+        "5d8190828642-dsc02323-hdr",
+        "2ec01c20b9e7-dscf9143",
+        "44864ad1864a-dscf8394",
+        "302aa3b6b17e-dscf5784",
+        "bc0ca9ff945f-dsc05024-hdr",
+        "2203024d2b5b-dscf7371-edit",
+        "63a8e3ce8aa0-r0001249",
+        "a11974d37515-r0001250",
+        "fd2ac7a05d2c-photo-20"
+      ],
+      "archiveLabel": "Spring / Japan / Taiwan / Malaysia / Singapore / Pocket Camera",
+      "archiveYear": "2023-2025",
+      "credits": "spring / japan / taiwan / malaysia / singapore / pocket camera / green-pressure sequence / 2023-2025",
+      "projectInformation": "The room shifts from canopy and garden into electric green, joining organic density with urban voltage. It keeps the portfolio intimate while beginning to introduce compression, signage, and night architecture."
+    },
+    {
+      "slug": "04-the-gravity-of-scale",
+      "title": "Vertical Terms",
+      "primaryTone": "vertical-terms",
+      "roomStatement": "Vertical Terms introduces the city as an agreement made in height. The body appears small, staged, or absorbed by surfaces that insist on looking upward.",
+      "subtitle": "Height, compression, and the body measured against structure.",
+      "synopsis": "Portrait frames pull the eye upward through streets, facades, statues, and trees, turning scale into a condition of looking.",
+      "tags": [
+        "vertical",
+        "scale",
+        "structure",
+        "body"
+      ],
       "coverPhotoId": "4ae38866abdf-dsc07029",
       "previewPhotoIds": [
         "4ae38866abdf-dsc07029",
-        "869a3968fdc7-dsc09314",
         "3a158d7d89e2-dsc04697-hdr-edit",
-        "f6371e8f7f8a-dsc09315",
-        "6a46feb72c93-photo-21"
+        "6a46feb72c93-photo-21",
+        "c9fccb5c11a2-dsc06172-hdr",
+        "56383ec03ef6-dscf4759"
       ],
       "photoIds": [
         "4ae38866abdf-dsc07029",
@@ -303,92 +365,148 @@
         "aa9b377fabb3-dsc03277-hdr",
         "0a51d8bc9b56-dsc05894-hdr",
         "c9fccb5c11a2-dsc06172-hdr",
-        "51e037cbdd59-dscf5428",
-        "302aa3b6b17e-dscf5784"
+        "285fccef2c70-dscf4638-edit",
+        "56383ec03ef6-dscf4759"
       ],
-      "archiveLabel": "Snow / Japan / Hong Kong / Copenhagen",
+      "archiveLabel": "Japan / Copenhagen / Winter Study / Hong Kong",
       "archiveYear": "2023-2025",
-      "credits": "snow / japan / hong kong / copenhagen / curated sequence / 2023-2025",
-      "projectInformation": "An inquiry into vertical compression and human diminishment. The portrait orientation operates as a tether, pulling the eye upward against the imposing mass of structural monoliths, trapping the subject within the geometry of the metropolis."
+      "credits": "japan / copenhagen / winter study / hong kong / vertical sequence / 2023-2025",
+      "projectInformation": "This chapter gathers the most upright images into a study of compression. Streets, towers, statues, and foliage become measuring devices, asking how public space changes when the frame gives height more authority than horizon."
     },
     {
-      "title": "Suspended Transits",
-      "primaryTone": "suspended-transits",
-      "roomStatement": "The melancholic weight of the golden hour. Here, time feels viscous; the highly saturated, amber hues act as a physical medium, catching bodies, transit lines, and structures in the heavy resin of a passing day.",
-      "subtitle": "The melancholic weight of the golden hour.",
-      "synopsis": "Here, time feels viscous; the highly saturated, amber hues act as a physical medium, catching bodies, transit lines, and structures in the heavy resin of a passing day.",
-      "tags": [],
-      "coverPhotoId": "3b36b011bc32-dscf0912",
-      "previewPhotoIds": [
-        "3b36b011bc32-dscf0912",
-        "790fdf43d472-photo-41",
-        "b4844bad5da6-dsc04854-hdr",
-        "606be3af4f6c-dsc05986",
-        "95c9264b1aff-dscf0578-2"
+      "slug": "06-peripheral-choreography",
+      "title": "Public Current",
+      "primaryTone": "public-current",
+      "roomStatement": "Public Current lets the crowd and the horizon share authority. Attention moves sideways through skylines, crossings, rail signs, plazas, and small peripheral incidents.",
+      "subtitle": "Wide frames of crowd, route, skyline, and collective momentum.",
+      "synopsis": "The frame opens laterally, asking the viewer to scan rather than settle as cities move through many small directions at once.",
+      "tags": [
+        "public",
+        "movement",
+        "panorama",
+        "route"
       ],
-      "photoIds": [
-        "3b36b011bc32-dscf0912",
-        "790fdf43d472-photo-41",
-        "b4844bad5da6-dsc04854-hdr",
-        "606be3af4f6c-dsc05986",
-        "95c9264b1aff-dscf0578-2",
-        "9676153d7da3-dscf0918-hdr",
-        "42be5fabb745-dscf0842-hdr",
-        "3090371f68f4-dsc08722",
-        "5f6aeefc6d19-dsc06139-hdr",
-        "bc0ca9ff945f-dsc05024-hdr"
-      ],
-      "archiveLabel": "Posts / India-UAE / Japan / Taiwan-Malaysia-Singapore",
-      "archiveYear": "2023-2026",
-      "credits": "posts / india-uae / japan / taiwan-malaysia-singapore / curated sequence / 2023-2026",
-      "projectInformation": "The melancholic weight of the golden hour. Here, time feels viscous; the highly saturated, amber hues act as a physical medium, catching bodies, transit lines, and structures in the heavy resin of a passing day."
-    },
-    {
-      "title": "Peripheral Choreography",
-      "primaryTone": "peripheral-choreography",
-      "roomStatement": "Expanding the visual field to capture the slipstream of collective movement. The panoramic frame refuses a single focal point, forcing the eye to scan the periphery and participate in the continuous, unspooling motion of the street.",
-      "subtitle": "Expanding the visual field to capture the slipstream of collective movement.",
-      "synopsis": "The panoramic frame refuses a single focal point, forcing the eye to scan the periphery and participate in the continuous, unspooling motion of the street.",
-      "tags": [],
       "coverPhotoId": "0d18d9fcd731-photo-22",
       "previewPhotoIds": [
         "0d18d9fcd731-photo-22",
-        "9ad75dd23fe5-dsc05560",
+        "3703f30d0d2d-dsc05649-hdr-pano",
         "2f4d71e55562-dsc09628-edit",
-        "225320486751-dscf2289",
-        "8e60cbdf04d0-photo-15"
+        "b49d7d3b3404-dsc01517-hdr",
+        "70c081b8adf7-dsc01067-hdr-pano-edit"
       ],
       "photoIds": [
         "0d18d9fcd731-photo-22",
         "9ad75dd23fe5-dsc05560",
-        "2f4d71e55562-dsc09628-edit",
-        "225320486751-dscf2289",
-        "8e60cbdf04d0-photo-15",
-        "496b9a265c4c-dsc00396",
-        "2b39bc363cad-photo-6",
         "3703f30d0d2d-dsc05649-hdr-pano",
+        "496b9a265c4c-dsc00396",
+        "2f4d71e55562-dsc09628-edit",
         "ac69dca7c75d-photo-10",
-        "cfdc0fa8ef43-photo-20"
+        "67b186e4e012-dsc09501",
+        "b49d7d3b3404-dsc01517-hdr",
+        "883bcedefd11-dscf6133",
+        "70c081b8adf7-dsc01067-hdr-pano-edit"
       ],
-      "archiveLabel": "Hong Kong / Switzerland / Taiwan-Malaysia-Singapore / Snow",
+      "archiveLabel": "Japan / Hong Kong / India / UAE / Copenhagen",
       "archiveYear": "2023-2026",
-      "credits": "hong kong / switzerland / taiwan-malaysia-singapore / snow / curated sequence / 2023-2026",
-      "projectInformation": "Expanding the visual field to capture the slipstream of collective movement. The panoramic frame refuses a single focal point, forcing the eye to scan the periphery and participate in the continuous, unspooling motion of the street."
+      "credits": "japan / hong kong / india / uae / copenhagen / public-current sequence / 2023-2026",
+      "projectInformation": "This room widens the portfolio after the vertical chapter. Its images are built for scanning, with public space understood as current: many paths, signals, distances, and gestures flowing through the same field."
     },
     {
-      "title": "Sediment and Silver",
-      "primaryTone": "sediment-and-silver",
-      "roomStatement": "Images that feel less like documents and more like aging artifacts. Bled of color, these desaturated compositions explore the fragility of memory, appearing as deteriorating echoes or half-forgotten recollections of places once known.",
-      "subtitle": "Images that feel less like documents and more like aging artifacts.",
-      "synopsis": "Bled of color, these desaturated compositions explore the fragility of memory, appearing as deteriorating echoes or half-forgotten recollections of places once known.",
-      "tags": [],
+      "slug": "13-brutal-harmonics",
+      "title": "Signal Grammar",
+      "primaryTone": "signal-grammar",
+      "roomStatement": "Signal Grammar reads the city as a system of instructions. Roads, storefronts, fences, windows, and signs create a visual language that is practical and strangely lyrical.",
+      "subtitle": "Roads, storefronts, facades, and signs arranged as urban syntax.",
+      "synopsis": "Infrastructure becomes a language of repeated lines, warnings, advertisements, thresholds, and passing facades.",
+      "tags": [
+        "signal",
+        "infrastructure",
+        "facade",
+        "syntax"
+      ],
+      "coverPhotoId": "8fb2371a8f69-r0001010",
+      "previewPhotoIds": [
+        "8fb2371a8f69-r0001010",
+        "3e485f8b1932-photo-1-3",
+        "c00c6a79e514-r0001726-edit",
+        "4c56decb826d-r0000544",
+        "12a5512ce931-dsc09052-edit"
+      ],
+      "photoIds": [
+        "8fb2371a8f69-r0001010",
+        "28c3f0c7e2be-photo-11",
+        "3e485f8b1932-photo-1-3",
+        "cfdc0fa8ef43-photo-20",
+        "c00c6a79e514-r0001726-edit",
+        "48395174d2cb-dsc07307-hdr",
+        "d6676b1cb478-r0001350-2",
+        "4c56decb826d-r0000544",
+        "429cd7ec783e-photo-9",
+        "12a5512ce931-dsc09052-edit"
+      ],
+      "archiveLabel": "Pocket Camera / India / UAE / Winter Study / Hong Kong",
+      "archiveYear": "2024-2026",
+      "credits": "pocket camera / india / uae / winter study / hong kong / signal sequence / 2024-2026",
+      "projectInformation": "The chapter shifts from public flow into urban syntax. It favors frontal structures, directional cues, and repeated surfaces, showing how cities organize attention before any single subject becomes central."
+    },
+    {
+      "slug": "10-absolute-center",
+      "title": "Closed Frames",
+      "primaryTone": "closed-frames",
+      "roomStatement": "Closed Frames is the portfolio at its most contained. These images reduce escape routes, turning storefront, reflection, monument, and white space into compact acts of attention.",
+      "subtitle": "Square pressure, centered incidents, and images that refuse escape.",
+      "synopsis": "The square frame interrupts forward motion, holding signs, silhouettes, facades, and blankness in a closed visual chamber.",
+      "tags": [
+        "square",
+        "center",
+        "containment",
+        "pause"
+      ],
+      "coverPhotoId": "c44e80fa3ba7-dscf6349",
+      "previewPhotoIds": [
+        "c44e80fa3ba7-dscf6349",
+        "8b3257523353-photo-43",
+        "2585b8f078af-photo-33",
+        "86c1635ec049-dsc00757-edit",
+        "79f23fc2908a-dscf4872-hdr"
+      ],
+      "photoIds": [
+        "c44e80fa3ba7-dscf6349",
+        "0a3cd589f414-photo-25",
+        "8b3257523353-photo-43",
+        "0559bf9e963f-photo-24",
+        "2585b8f078af-photo-33",
+        "7a60373781e8-dsc04411",
+        "3ec0cfe43870-r0000099",
+        "86c1635ec049-dsc00757-edit",
+        "0e6d1b34bf9d-photo-19",
+        "79f23fc2908a-dscf4872-hdr"
+      ],
+      "archiveLabel": "India / UAE / Hong Kong / Print Archive / After Hours",
+      "archiveYear": "2024-2026",
+      "credits": "india / uae / hong kong / print archive / after hours / closed-frame sequence / 2024-2026",
+      "projectInformation": "Placed at the midpoint, this room slows the larger passage. The sequence uses square and centered compositions as a pause between city systems and memory, letting form tighten before the work turns darker and more residual."
+    },
+    {
+      "slug": "07-sediment-and-silver",
+      "title": "Silver Residue",
+      "primaryTone": "silver-residue",
+      "roomStatement": "Silver Residue turns the sequence toward memory. Black, white, and grey make the images feel handled, carried, and partially worn down by time.",
+      "subtitle": "Monochrome traces, print memory, and the image as leftover evidence.",
+      "synopsis": "Color falls away and the portfolio becomes archival, gathering crowds, surfaces, shorelines, and facades as lingering residue.",
+      "tags": [
+        "memory",
+        "monochrome",
+        "archive",
+        "residue"
+      ],
       "coverPhotoId": "3a63b333a4b8-photo-28",
       "previewPhotoIds": [
         "3a63b333a4b8-photo-28",
-        "5e190491e59b-photo-3",
         "03c73f07cbdb-photo-35",
-        "23e772b5e714-photo-45",
-        "0f58433afb46-photo-47"
+        "0f58433afb46-photo-47",
+        "0d81cc123c29-dscf5449",
+        "806298c1700e-dsc03546-enhanced-nr"
       ],
       "photoIds": [
         "3a63b333a4b8-photo-28",
@@ -398,238 +516,204 @@
         "0f58433afb46-photo-47",
         "2489bebdd3ae-dsc05593-hdr",
         "62addcb703f1-dsc05057-hdr",
-        "3221737c2722-dsc00891",
         "0d81cc123c29-dscf5449",
-        "3f3836999a9d-dscf6197"
+        "3f3836999a9d-dscf6197",
+        "806298c1700e-dsc03546-enhanced-nr"
       ],
-      "archiveLabel": "India-UAE / Japan / Posts / Prints",
+      "archiveLabel": "India / UAE / Print Archive / Japan / Social Drafts",
       "archiveYear": "2023-2026",
-      "credits": "india-uae / japan / posts / prints / curated sequence / 2023-2026",
-      "projectInformation": "Images that feel less like documents and more like aging artifacts. Bled of color, these desaturated compositions explore the fragility of memory, appearing as deteriorating echoes or half-forgotten recollections of places once known."
+      "credits": "india / uae / print archive / japan / social drafts / silver-residue sequence / 2023-2026",
+      "projectInformation": "The chapter bridges formal containment and night. Its photographs act less like fresh documents than recovered fragments, using monochrome, print texture, and high contrast to make public places feel remembered rather than entered."
     },
     {
-      "title": "The Blue Hour Protocol",
-      "primaryTone": "the-blue-hour-protocol",
-      "roomStatement": "A descent into the liminal space between public day and private night. Shrouded in bruised, cobalt tones, these frames observe the quiet psychological shift that occurs as natural light abandons the architecture.",
-      "subtitle": "A descent into the liminal space between public day and private night.",
-      "synopsis": "Shrouded in bruised, cobalt tones, these frames observe the quiet psychological shift that occurs as natural light abandons the architecture.",
-      "tags": [],
-      "coverPhotoId": "5ec61ddbe9a4-dsc03296-hdr",
+      "slug": "01-the-geography-of-silence",
+      "title": "Night Distance",
+      "primaryTone": "night-distance",
+      "roomStatement": "Night Distance lets darkness redraw public space. Illumination is sparse and selective, making the city feel legible only in fragments.",
+      "subtitle": "Dark streets, far windows, and the quiet geometry of after-hours space.",
+      "synopsis": "Night enters as distance first: streets, towers, skyline, and isolated figures held apart by cold artificial light.",
+      "tags": [
+        "night",
+        "distance",
+        "silence",
+        "after hours"
+      ],
+      "coverPhotoId": "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
       "previewPhotoIds": [
-        "5ec61ddbe9a4-dsc03296-hdr",
-        "82ff05eb0c09-dsc03841-hdr",
-        "72524cb7354d-photo-9",
-        "d6676b1cb478-r0001350-2",
-        "1c26c472f6b0-dsc03474-2"
-      ],
-      "photoIds": [
-        "5ec61ddbe9a4-dsc03296-hdr",
-        "82ff05eb0c09-dsc03841-hdr",
-        "72524cb7354d-photo-9",
-        "d6676b1cb478-r0001350-2",
-        "1c26c472f6b0-dsc03474-2",
-        "c06466c04932-dsc02994-enhanced-nr-hdr",
-        "5496d51aa501-photo-14",
-        "a9c340d6e0e2-dsc03236-hdr",
-        "3ba83ec23909-dsc02026-edit",
-        "d0634b5aeb03-photo-4"
-      ],
-      "archiveLabel": "Posts / Switzerland / Ricoh Griiix / Spring",
-      "archiveYear": "2023-2025",
-      "credits": "posts / switzerland / ricoh griiix / spring / curated sequence / 2023-2025",
-      "projectInformation": "A descent into the liminal space between public day and private night. Shrouded in bruised, cobalt tones, these frames observe the quiet psychological shift that occurs as natural light abandons the architecture."
-    },
-    {
-      "title": "Organic Resistance",
-      "primaryTone": "organic-resistance",
-      "roomStatement": "The quiet tension between the engineered and the grown. This room focuses on verdant tones and the subtle reclamation of concrete edges by organic life, an exploration of vitality persisting in the margins.",
-      "subtitle": "The quiet tension between the engineered and the grown.",
-      "synopsis": "This room focuses on verdant tones and the subtle reclamation of concrete edges by organic life, an exploration of vitality persisting in the margins.",
-      "tags": [],
-      "coverPhotoId": "4abfcba4f031-dscf6815",
-      "previewPhotoIds": [
-        "4abfcba4f031-dscf6815",
-        "63a8e3ce8aa0-r0001249",
-        "5d8190828642-dsc02323-hdr",
-        "2ec01c20b9e7-dscf9143",
-        "fd2ac7a05d2c-photo-20"
-      ],
-      "photoIds": [
-        "4abfcba4f031-dscf6815",
-        "63a8e3ce8aa0-r0001249",
-        "5d8190828642-dsc02323-hdr",
-        "2ec01c20b9e7-dscf9143",
-        "fd2ac7a05d2c-photo-20",
-        "a11974d37515-r0001250",
+        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
+        "3639be8591be-dsc06971-edit",
+        "760dd44a1fd6-photo-8",
         "7e0f2fbc86b1-photo-23",
-        "44864ad1864a-dscf8394",
-        "1eb4bad8ffa9-dsc09374",
-        "0e6d1b34bf9d-photo-19"
-      ],
-      "archiveLabel": "Spring / Ricoh Griiix / Japan / Taiwan-Malaysia-Singapore",
-      "archiveYear": "2023-2025",
-      "credits": "spring / ricoh griiix / japan / taiwan-malaysia-singapore / curated sequence / 2023-2025",
-      "projectInformation": "The quiet tension between the engineered and the grown. This room focuses on verdant tones and the subtle reclamation of concrete edges by organic life, an exploration of vitality persisting in the margins."
-    },
-    {
-      "title": "Absolute Center",
-      "primaryTone": "absolute-center",
-      "roomStatement": "The square frame offers no escape\u2014it is a closed system. These works demand a static, unyielding confrontation, neutralizing the narrative pull of horizontal or vertical biases to focus entirely on isolated form.",
-      "subtitle": "The square frame offers no escape\u2014it is a closed system.",
-      "synopsis": "These works demand a static, unyielding confrontation, neutralizing the narrative pull of horizontal or vertical biases to focus entirely on isolated form.",
-      "tags": [],
-      "coverPhotoId": "f3353bac61ec-dsc09127",
-      "previewPhotoIds": [
-        "f3353bac61ec-dsc09127",
-        "c44e80fa3ba7-dscf6349",
-        "0a3cd589f414-photo-25",
-        "9b0fb39ccc7c-dsc09363",
-        "8b3257523353-photo-43"
-      ],
-      "photoIds": [
-        "f3353bac61ec-dsc09127",
-        "c44e80fa3ba7-dscf6349",
-        "0a3cd589f414-photo-25",
-        "9b0fb39ccc7c-dsc09363",
-        "8b3257523353-photo-43",
-        "0559bf9e963f-photo-24",
-        "2585b8f078af-photo-33",
-        "7a60373781e8-dsc04411",
-        "57304a4fff81-dsc07166",
-        "4227e40b6da0-dscf6388-edit"
-      ],
-      "archiveLabel": "After Hours / Hong Kong / Japan / India-UAE",
-      "archiveYear": "2023-2026",
-      "credits": "after hours / hong kong / japan / india-uae / curated sequence / 2023-2026",
-      "projectInformation": "The square frame offers no escape\u2014it is a closed system. These works demand a static, unyielding confrontation, neutralizing the narrative pull of horizontal or vertical biases to focus entirely on isolated form."
-    },
-    {
-      "title": "Fractured Volumes",
-      "primaryTone": "fractured-volumes",
-      "roomStatement": "Light acting as a scalpel. This collection relies on extreme tonal friction, where severe shadows and brilliant highlights slice through the composition, rendering architecture and geometry as abstract, aggressive planes.",
-      "subtitle": "Light acting as a scalpel.",
-      "synopsis": "This collection relies on extreme tonal friction, where severe shadows and brilliant highlights slice through the composition, rendering architecture and geometry as abstract, aggressive planes.",
-      "tags": [],
-      "coverPhotoId": "f24abfe6cd81-dsc03051",
-      "previewPhotoIds": [
-        "f24abfe6cd81-dsc03051",
-        "bc2dbb34fd90-dsc03259",
-        "b8d3168d4ad9-dsc03491-hdr",
-        "9e32362737d9-dsc06313",
         "3d4d6035553d-dsc08003-edit"
       ],
       "photoIds": [
-        "f24abfe6cd81-dsc03051",
-        "bc2dbb34fd90-dsc03259",
-        "b8d3168d4ad9-dsc03491-hdr",
+        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
+        "339ed2be993f-dsc06561",
+        "3639be8591be-dsc06971-edit",
+        "7f536dc85ff7-dsc03857-hdr",
+        "760dd44a1fd6-photo-8",
+        "d23068086ff3-r0001595",
+        "a77bb788fc75-photo-37",
+        "7e0f2fbc86b1-photo-23",
         "9e32362737d9-dsc06313",
-        "3d4d6035553d-dsc08003-edit",
-        "7539be28128e-dsc08048",
-        "12a5512ce931-dsc09052-edit",
-        "285fccef2c70-dscf4638-edit",
-        "56383ec03ef6-dscf4759",
-        "79f23fc2908a-dscf4872-hdr"
+        "3d4d6035553d-dsc08003-edit"
       ],
-      "archiveLabel": "After Hours / Copenhagen",
-      "archiveYear": "2024-2025",
-      "credits": "after hours / copenhagen / curated sequence / 2024-2025",
-      "projectInformation": "Light acting as a scalpel. This collection relies on extreme tonal friction, where severe shadows and brilliant highlights slice through the composition, rendering architecture and geometry as abstract, aggressive planes."
-    },
-    {
-      "title": "Breath and Vapor",
-      "primaryTone": "breath-and-vapor",
-      "roomStatement": "An exhalation within the gallery sequence. Soft, atmospheric, and pale, these works dissolve the hard edges of reality into pastel mist and gentle clarity, prioritizing air and spatial distance over rigid structure.",
-      "subtitle": "An exhalation within the gallery sequence.",
-      "synopsis": "Soft, atmospheric, and pale, these works dissolve the hard edges of reality into pastel mist and gentle clarity, prioritizing air and spatial distance over rigid structure.",
-      "tags": [],
-      "coverPhotoId": "732c7ba7e4c2-dsc09661",
-      "previewPhotoIds": [
-        "732c7ba7e4c2-dsc09661",
-        "ceb87a09b213-dscf5188",
-        "dfe332135103-photo-13",
-        "fb9c79f01a32-dscf0933-2",
-        "3ec0cfe43870-r0000099"
-      ],
-      "photoIds": [
-        "732c7ba7e4c2-dsc09661",
-        "ceb87a09b213-dscf5188",
-        "dfe332135103-photo-13",
-        "fb9c79f01a32-dscf0933-2",
-        "3ec0cfe43870-r0000099",
-        "fa85474cc282-dsc00532-hdr-pano-edit",
-        "abf6fbee2c8a-dsc00768-hdr",
-        "2203024d2b5b-dscf7371-edit",
-        "78dab22a183b-dsc03360-hdr",
-        "5df53b348647-photo-12"
-      ],
-      "archiveLabel": "Japan / Copenhagen / Switzerland / Posts",
-      "archiveYear": "2023-2025",
-      "credits": "japan / copenhagen / switzerland / posts / curated sequence / 2023-2025",
-      "projectInformation": "An exhalation within the gallery sequence. Soft, atmospheric, and pale, these works dissolve the hard edges of reality into pastel mist and gentle clarity, prioritizing air and spatial distance over rigid structure."
-    },
-    {
-      "title": "Brutal Harmonics",
-      "primaryTone": "brutal-harmonics",
-      "roomStatement": "The poetry of infrastructure stripped of aesthetic compromise. A sequence dominated by grayscale, concrete, and steel, examining the stoic, functional rhythms of the built environment under a flat, neutral sky.",
-      "subtitle": "The poetry of infrastructure stripped of aesthetic compromise.",
-      "synopsis": "A sequence dominated by grayscale, concrete, and steel, examining the stoic, functional rhythms of the built environment under a flat, neutral sky.",
-      "tags": [],
-      "coverPhotoId": "3e485f8b1932-photo-1-3",
-      "previewPhotoIds": [
-        "3e485f8b1932-photo-1-3",
-        "67b186e4e012-dsc09501",
-        "b49d7d3b3404-dsc01517-hdr",
-        "8fb2371a8f69-r0001010",
-        "28c3f0c7e2be-photo-11"
-      ],
-      "photoIds": [
-        "3e485f8b1932-photo-1-3",
-        "67b186e4e012-dsc09501",
-        "b49d7d3b3404-dsc01517-hdr",
-        "8fb2371a8f69-r0001010",
-        "28c3f0c7e2be-photo-11",
-        "9216aab407f5-dsc07006",
-        "883bcedefd11-dscf6133",
-        "157b5cd44260-dscf2321-edit",
-        "36f808e6fa05-dsc09227",
-        "70c081b8adf7-dsc01067-hdr-pano-edit"
-      ],
-      "archiveLabel": "India-UAE / Japan / Ricoh Griiix / Snow",
+      "archiveLabel": "India / UAE / After Hours / Spring / Japan",
       "archiveYear": "2023-2026",
-      "credits": "india-uae / japan / ricoh griiix / snow / curated sequence / 2023-2026",
-      "projectInformation": "The poetry of infrastructure stripped of aesthetic compromise. A sequence dominated by grayscale, concrete, and steel, examining the stoic, functional rhythms of the built environment under a flat, neutral sky."
+      "credits": "india / uae / after hours / spring / japan / night-distance sequence / 2023-2026",
+      "projectInformation": "This is the first night room in the arc. It moves from wide urban darkness toward smaller points of human trace, ending with an image that feels less like an event than an after-signal."
     },
     {
-      "title": "Arterial Glow",
-      "primaryTone": "arterial-glow",
-      "roomStatement": "The final room pulses with synthetic urgency. Deep shadows are violently punctured by crimson light, capturing the nocturnal city not merely as a landscape, but as a living, circulatory system of current and voltage.",
-      "subtitle": "The final room pulses with synthetic urgency.",
-      "synopsis": "Deep shadows are violently punctured by crimson light, capturing the nocturnal city not merely as a landscape, but as a living, circulatory system of current and voltage.",
-      "tags": [],
-      "coverPhotoId": "882cae0f7ebb-dsc03830-hdr",
+      "slug": "08-the-blue-hour-protocol",
+      "title": "Blue Descent",
+      "primaryTone": "blue-descent",
+      "roomStatement": "Blue Descent holds the hour when the city is no longer day and not yet fully night. Cobalt atmosphere turns distance into mood and signage into pulse.",
+      "subtitle": "Cobalt city, mountain shadow, and the hour when public light thins.",
+      "synopsis": "Blue takes over the sequence, moving between skyline, street, ridge, and cloud as daylight gives up its authority.",
+      "tags": [
+        "blue hour",
+        "descent",
+        "skyline",
+        "threshold"
+      ],
+      "coverPhotoId": "3ba83ec23909-dsc02026-edit",
       "previewPhotoIds": [
-        "882cae0f7ebb-dsc03830-hdr",
-        "da20e7011579-dsc03762",
-        "668876a0af49-r0001236",
-        "d3914540ad00-dscf6674",
+        "3ba83ec23909-dsc02026-edit",
+        "82ff05eb0c09-dsc03841-hdr",
+        "c06466c04932-dsc02994-enhanced-nr-hdr",
+        "ceb87a09b213-dscf5188",
+        "fa85474cc282-dsc00532-hdr-pano-edit"
+      ],
+      "photoIds": [
+        "3ba83ec23909-dsc02026-edit",
+        "5ec61ddbe9a4-dsc03296-hdr",
+        "82ff05eb0c09-dsc03841-hdr",
+        "1c26c472f6b0-dsc03474-2",
+        "c06466c04932-dsc02994-enhanced-nr-hdr",
+        "a9c340d6e0e2-dsc03236-hdr",
+        "5496d51aa501-photo-14",
+        "ceb87a09b213-dscf5188",
+        "732c7ba7e4c2-dsc09661",
+        "fa85474cc282-dsc00532-hdr-pano-edit"
+      ],
+      "archiveLabel": "Social Drafts / Japan / Spring / Switzerland",
+      "archiveYear": "2023-2025",
+      "credits": "social drafts / japan / spring / switzerland / blue-hour sequence / 2023-2025",
+      "projectInformation": "The room deepens the night passage without losing air. City views, street light, and alpine shadow share the same blue pressure, making the transition from public day to private night feel gradual and cinematic."
+    },
+    {
+      "slug": "02-fugitive-heat",
+      "title": "Fugitive Heat",
+      "primaryTone": "fugitive-heat",
+      "roomStatement": "Fugitive Heat follows the warmer evidence left after daylight. Sodium, lantern, and interior light make the city feel briefly inhabited, then gone again.",
+      "subtitle": "Warm light slipping through night streets, gates, water, and rooms.",
+      "synopsis": "After the blue hour, warmth returns as residue: lanterns, reflections, storefronts, and bodies caught in temporary glow.",
+      "tags": [
+        "heat",
+        "lantern",
+        "glow",
+        "night"
+      ],
+      "coverPhotoId": "71466b39f32e-photo-32",
+      "previewPhotoIds": [
+        "71466b39f32e-photo-32",
+        "c1247789f4b4-dsc04373-hdr",
+        "959f83c44af0-dsc06383",
+        "ea810e796501-dscf0400-enhanced-nr",
+        "9b0fb39ccc7c-dsc09363"
+      ],
+      "photoIds": [
+        "71466b39f32e-photo-32",
+        "7bf1b94a7d21-photo-29",
+        "c1247789f4b4-dsc04373-hdr",
+        "e83da8222ceb-dsc06612",
+        "959f83c44af0-dsc06383",
+        "7c53a3bd5a09-photo-1",
+        "a4a4051dfd3a-photo-25",
+        "ea810e796501-dscf0400-enhanced-nr",
+        "e956f3a17d65-dsc03048-hdr",
+        "9b0fb39ccc7c-dsc09363"
+      ],
+      "archiveLabel": "Japan / India / UAE / Winter Study / Hong Kong",
+      "archiveYear": "2023-2026",
+      "credits": "japan / india / uae / winter study / hong kong / fugitive-heat sequence / 2023-2026",
+      "projectInformation": "This chapter lets human presence return through color rather than portraiture. The sequence gathers gold reflections, red gates, shopfronts, stairs, and street heat, holding them as small pockets of warmth inside the larger night arc."
+    },
+    {
+      "slug": "11-fractured-volumes",
+      "title": "Hard Light",
+      "primaryTone": "hard-light",
+      "roomStatement": "Hard Light is the point where atmosphere becomes incision. Bright surfaces and deep shadows break the scene into planes, fragments, and abrupt encounters.",
+      "subtitle": "Glare, shadow, lightning, and forms split by exposure.",
+      "synopsis": "The night sequence sharpens into contrast, where signs, stations, silhouettes, and statues are cut into hard planes.",
+      "tags": [
+        "glare",
+        "shadow",
+        "contrast",
+        "fracture"
+      ],
+      "coverPhotoId": "f24abfe6cd81-dsc03051",
+      "previewPhotoIds": [
+        "f24abfe6cd81-dsc03051",
+        "b8d3168d4ad9-dsc03491-hdr",
+        "35f24a86a224-photo-18",
+        "bdb0f8cabac3-dscf5681",
         "fa0fef38c85b-photo-17"
       ],
       "photoIds": [
+        "f24abfe6cd81-dsc03051",
+        "bc2dbb34fd90-dsc03259",
+        "b8d3168d4ad9-dsc03491-hdr",
+        "7539be28128e-dsc08048",
+        "35f24a86a224-photo-18",
+        "36f808e6fa05-dsc09227",
+        "8e60cbdf04d0-photo-15",
+        "bdb0f8cabac3-dscf5681",
+        "668876a0af49-r0001236",
+        "fa0fef38c85b-photo-17"
+      ],
+      "archiveLabel": "After Hours / India / UAE / Japan / Copenhagen",
+      "archiveYear": "2023-2026",
+      "credits": "after hours / india / uae / japan / copenhagen / hard-light sequence / 2023-2026",
+      "projectInformation": "This room raises the pressure before the closing chapter. It moves through red glare, overexposed interiors, storm light, stations, and backlit bodies, using contrast to make the city feel both precise and unstable."
+    },
+    {
+      "slug": "14-arterial-glow",
+      "title": "Arterial Afterimage",
+      "primaryTone": "arterial-afterimage",
+      "roomStatement": "Arterial Afterimage closes the passage with color that feels circulatory. Red light, shopfronts, and late streets keep moving after the image has stilled.",
+      "subtitle": "Red signal, late storefronts, and the closing pulse of the city.",
+      "synopsis": "The portfolio ends in saturated night, where neon, taxi light, blossoms, and snow leave a final red echo.",
+      "tags": [
+        "red",
+        "afterimage",
+        "pulse",
+        "neon"
+      ],
+      "coverPhotoId": "882cae0f7ebb-dsc03830-hdr",
+      "previewPhotoIds": [
+        "882cae0f7ebb-dsc03830-hdr",
+        "6def8c5af908-photo-24",
+        "abf6fbee2c8a-dsc00768-hdr",
+        "1eb4bad8ffa9-dsc09374",
+        "a4c32c2c8cc1-photo-21"
+      ],
+      "photoIds": [
         "882cae0f7ebb-dsc03830-hdr",
         "da20e7011579-dsc03762",
-        "668876a0af49-r0001236",
-        "d3914540ad00-dscf6674",
-        "fa0fef38c85b-photo-17",
-        "35f24a86a224-photo-18",
-        "48395174d2cb-dsc07307-hdr",
-        "c00c6a79e514-r0001726-edit",
         "6def8c5af908-photo-24",
-        "f194c32728a5-dscf2593"
+        "d3914540ad00-dscf6674",
+        "abf6fbee2c8a-dsc00768-hdr",
+        "fb9c79f01a32-dscf0933-2",
+        "5f6aeefc6d19-dsc06139-hdr",
+        "1eb4bad8ffa9-dsc09374",
+        "f3353bac61ec-dsc09127",
+        "a4c32c2c8cc1-photo-21"
       ],
-      "archiveLabel": "Japan / Posts / Ricoh Griiix / Spring",
+      "archiveLabel": "Japan / Social Drafts / Hong Kong / Spring",
       "archiveYear": "2023-2026",
-      "credits": "japan / posts / ricoh griiix / spring / curated sequence / 2023-2026",
-      "projectInformation": "The final room pulses with synthetic urgency. Deep shadows are violently punctured by crimson light, capturing the nocturnal city not merely as a landscape, but as a living, circulatory system of current and voltage."
+      "credits": "japan / social drafts / hong kong / spring / arterial-afterimage sequence / 2023-2026",
+      "projectInformation": "The final room gathers the strongest synthetic color into a coda. It returns to gates, streets, storefronts, and weather, but now every surface reads as afterimage, an active remainder of the route through the portfolio."
     }
   ]
 }
