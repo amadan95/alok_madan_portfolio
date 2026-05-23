@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "bash scripts/dev.sh",
     "catalog": "python3 scripts/build_catalog.py",
-    "build": "python3 scripts/build_catalog.py && next build site",
-    "start": "next start site",
-    "lint": "eslint site"
+    "build": "python3 scripts/build_catalog.py && cd site && npm run build:internal",
+    "start": "python3 scripts/serve_export.py",
+    "lint": "cd site && npm exec eslint ."
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -299,116 +299,144 @@ ROOM_PROFILES = [
 CURATED_ROOM_COPY = [
     {
         "slug": "03-overexposure-erasure",
-        "title": "White Distance",
-        "primaryTone": "white-distance",
-        "subtitle": "Pale air, erased horizons, and the first room of distance.",
-        "synopsis": "The sequence opens in high light, where landmarks and skylines lose their edges and the world becomes a held breath.",
-        "roomStatement": "White Distance begins the portfolio with air before incident. These photographs let brightness thin the world until architecture, shore, monument, and crowd become almost provisional.",
+        "title": "Threshold",
+        "primaryTone": "arrival",
+        "subtitle": "First light, held breath, and the edge of public life.",
+        "synopsis": "Pale horizons and open streets hold the pause before the city begins to answer back.",
+        "tags": ["arrival", "attention", "pale air", "first contact"],
+        "roomStatement": "Threshold begins before the city fully arrives. The pictures stay with pale air, distant shorelines, and small figures at the edge of entry, asking the viewer to slow down before anything becomes certain.",
+        "projectInformation": "A printed night closes the white room as memory, not place."
     },
     {
         "slug": "12-breath-and-vapor",
-        "title": "Weather Held Low",
-        "primaryTone": "weather-held-low",
-        "subtitle": "Cloud, mountain, blossom, and city light pressed close to the ground.",
-        "synopsis": "Weather becomes the binding material, softening transit, temple, street, and mountain into one low, drifting atmosphere.",
-        "roomStatement": "Weather Held Low keeps the eye near the surface of things. Cloud, rain, blossom, and distant elevation make the chapter feel suspended rather than still.",
+        "title": "Drift",
+        "primaryTone": "movement",
+        "subtitle": "Weather, street current, and attention without a fixed address.",
+        "synopsis": "Scenes pass in loose weather and public color, carried more by current than by destination.",
+        "tags": ["drift", "weather", "current", "passing"],
+        "roomStatement": "Drift loosens the route. Mountain air, wet crossings, striping, and late urban light pass before the eye can own them, leaving movement as the main subject.",
+        "projectInformation": "This room follows attention when it has stopped trying to arrive. The frame moves from open weather into public glare and back again, as if the street and the landscape are part of the same current. What matters is not where the body is going, but how much passes through it on the way."
     },
     {
         "slug": "05-suspended-transits",
-        "title": "Warm Interval",
-        "primaryTone": "warm-interval",
-        "subtitle": "Amber pauses, passing bodies, and the slow weight of late day.",
-        "synopsis": "The portfolio warms into gardens, markets, sand, and temple thresholds, where movement feels briefly held in resin.",
-        "roomStatement": "Warm Interval turns color into tempo. Gold, orange, and red-brown surfaces slow the sequence, making passage feel tactile before the city tightens again.",
+        "title": "Crossing",
+        "primaryTone": "encounter",
+        "subtitle": "Paths, gates, bodies, and the small agreements of passage.",
+        "synopsis": "Warm paths and thresholds turn movement into negotiation, each route shaped by what stands beside it.",
+        "tags": ["crossing", "threshold", "gesture", "shared ground"],
+        "roomStatement": "Crossing looks for the tiny social decisions inside passage. A path opens, a gate narrows, water or a wall changes the pace, and the body adjusts without ceremony.",
+        "projectInformation": "The city is not only crowded sidewalks. It is also the quiet choreography of entry, pause, and shared direction inside gardens, markets, courtyards, and streets. Crossing keeps the focus on adjustment: the small ways people and spaces make room for one another."
     },
     {
         "slug": "09-organic-resistance",
-        "title": "Green Pressure",
-        "primaryTone": "green-pressure",
-        "subtitle": "Growth, neon, and humid edges pushing against the built frame.",
-        "synopsis": "The organic and the artificial share the same pressure field, from trees and water to green signal, glass, and night.",
-        "roomStatement": "Green Pressure treats the natural world as force rather than decoration. Leaves, water, and vertical signal interrupt the engineered city and keep it from becoming sealed.",
+        "title": "Concourse",
+        "primaryTone": "flow",
+        "subtitle": "Public flow where growth, water, and signal share direction.",
+        "synopsis": "Greenery and electric surfaces interrupt the built route, turning passage into a living system.",
+        "tags": ["concourse", "flow", "signal", "growth"],
+        "roomStatement": "Concourse treats the city as a set of moving channels, some engineered, some organic. Trees, water, signs, and towers pull against one another, but the eye keeps finding a route through.",
+        "projectInformation": "Here the city becomes a system of circulation rather than a single street. Foliage, water, signage, and stacked buildings all push on the frame, making movement feel guided and improvised at once. The room gives public space a pulse before the pressure tightens."
     },
     {
         "slug": "04-the-gravity-of-scale",
-        "title": "Vertical Terms",
-        "primaryTone": "vertical-terms",
-        "subtitle": "Height, compression, and the body measured against structure.",
-        "synopsis": "Portrait frames pull the eye upward through streets, facades, statues, and trees, turning scale into a condition of looking.",
-        "roomStatement": "Vertical Terms introduces the city as an agreement made in height. The body appears small, staged, or absorbed by surfaces that insist on looking upward.",
+        "title": "Pressure",
+        "primaryTone": "density",
+        "subtitle": "Height, closeness, and the city pressing into the frame.",
+        "synopsis": "Vertical streets, facades, stairs, and monuments make scale feel physical, as if the city is leaning in.",
+        "tags": ["pressure", "scale", "compression", "height"],
+        "roomStatement": "Pressure is where space starts to bear down. The vertical frame measures bodies against facades, steps, statues, and trees, turning scale into a feeling rather than a fact.",
+        "projectInformation": "This room tightens the portfolio by looking up, inward, and through. Buildings and monuments do not simply occupy the background; they set the terms of the body below them. Pressure holds the tension between shelter and weight."
     },
     {
         "slug": "06-peripheral-choreography",
-        "title": "Public Current",
-        "primaryTone": "public-current",
-        "subtitle": "Wide frames of crowd, route, skyline, and collective momentum.",
-        "synopsis": "The frame opens laterally, asking the viewer to scan rather than settle as cities move through many small directions at once.",
-        "roomStatement": "Public Current lets the crowd and the horizon share authority. Attention moves sideways through skylines, crossings, rail signs, plazas, and small peripheral incidents.",
+        "title": "Voltage",
+        "primaryTone": "infrastructure",
+        "subtitle": "Skylines, routes, and signals carrying charge across distance.",
+        "synopsis": "Wide views gather crowds, towers, temples, and weather into a charged public current.",
+        "tags": ["voltage", "infrastructure", "signal", "public current"],
+        "roomStatement": "Voltage widens the frame but raises the charge. Distant skylines, crowded thresholds, rail lines, and weather-lit landmarks turn the city into an electrical field of signs and routes.",
+        "projectInformation": "The energy here is less intimate and more civic. Attention travels across crowded entrances, skylines, platforms, and icons, picking up signals from every edge of the frame. Voltage makes infrastructure feel alive because people keep moving through it."
     },
     {
         "slug": "13-brutal-harmonics",
-        "title": "Signal Grammar",
-        "primaryTone": "signal-grammar",
-        "subtitle": "Roads, storefronts, facades, and signs arranged as urban syntax.",
-        "synopsis": "Infrastructure becomes a language of repeated lines, warnings, advertisements, thresholds, and passing facades.",
-        "roomStatement": "Signal Grammar reads the city as a system of instructions. Roads, storefronts, fences, windows, and signs create a visual language that is practical and strangely lyrical.",
+        "title": "Nocturne",
+        "primaryTone": "night",
+        "subtitle": "Night signage, black glass, and figures held at a distance.",
+        "synopsis": "The city slows into storefronts, signs, and dark surfaces that reveal only part of the scene.",
+        "tags": ["nocturne", "night", "distance", "artificial light"],
+        "roomStatement": "Nocturne lets night reorganize the city's language. Signs, fences, glass, and isolated figures become small declarations inside a larger dark, each one withholding as much as it offers.",
+        "projectInformation": "This is not night as spectacle. It is night as distance, when storefronts and signals become readable while the space around them goes quiet. The images ask the viewer to stay with partial information."
     },
     {
         "slug": "10-absolute-center",
-        "title": "Closed Frames",
-        "primaryTone": "closed-frames",
-        "subtitle": "Square pressure, centered incidents, and images that refuse escape.",
-        "synopsis": "The square frame interrupts forward motion, holding signs, silhouettes, facades, and blankness in a closed visual chamber.",
-        "roomStatement": "Closed Frames is the portfolio at its most contained. These images reduce escape routes, turning storefront, reflection, monument, and white space into compact acts of attention.",
+        "title": "Afterlight",
+        "primaryTone": "residue",
+        "subtitle": "The glow left behind after movement has passed.",
+        "synopsis": "Centered lights, silhouettes, and small night scenes hold the residue of motion in place.",
+        "tags": ["afterlight", "residue", "pause", "night"],
+        "roomStatement": "Afterlight stays with what remains after the public rush has moved on. A lamp, a figure, a temple, a shadow, or a white square becomes the place where the eye waits.",
+        "projectInformation": "Afterlight is the pause after motion. The frames are more contained, almost held in the palm, with color and shadow settling around isolated events. The city is still active, but its energy has become quieter and more residual."
     },
     {
         "slug": "07-sediment-and-silver",
-        "title": "Silver Residue",
-        "primaryTone": "silver-residue",
-        "subtitle": "Monochrome traces, print memory, and the image as leftover evidence.",
-        "synopsis": "Color falls away and the portfolio becomes archival, gathering crowds, surfaces, shorelines, and facades as lingering residue.",
-        "roomStatement": "Silver Residue turns the sequence toward memory. Black, white, and grey make the images feel handled, carried, and partially worn down by time.",
+        "title": "Residue",
+        "primaryTone": "memory",
+        "subtitle": "Print trace, worn silver, and evidence after the event.",
+        "synopsis": "Color falls back so surfaces, crowds, and interiors can read as memory and sediment.",
+        "tags": ["residue", "memory", "trace", "archive"],
+        "roomStatement": "Residue treats the photograph as something handled, not just seen. Monochrome, print texture, glare, and worn surfaces make public scenes feel recovered from after the fact.",
+        "projectInformation": "This room turns the sequence toward memory. The images do not behave like fresh proof; they feel carried, reprinted, scuffed, and remembered. Residue asks what stays after the event has stopped being available."
     },
     {
         "slug": "01-the-geography-of-silence",
-        "title": "Night Distance",
-        "primaryTone": "night-distance",
-        "subtitle": "Dark streets, far windows, and the quiet geometry of after-hours space.",
-        "synopsis": "Night enters as distance first: streets, towers, skyline, and isolated figures held apart by cold artificial light.",
-        "roomStatement": "Night Distance lets darkness redraw public space. Illumination is sparse and selective, making the city feel legible only in fragments.",
+        "title": "Quiet Heat",
+        "primaryTone": "pause",
+        "subtitle": "Low warmth, private distance, and the city turned inward.",
+        "synopsis": "Night views and small illuminated streets slow the sequence into a more private register.",
+        "tags": ["quiet heat", "solitude", "interior", "late city"],
+        "roomStatement": "Quiet Heat is not bright warmth; it is the remaining temperature inside distance. Towers, roads, small shops, and weathered night scenes make the city feel private without becoming still.",
+        "projectInformation": "After the archival room, the work turns inward. Light is sparse, but it has a temperature: a sign, a road, a shopfront, a storm-lit horizon. Quiet Heat lets solitude feel active rather than empty."
     },
     {
         "slug": "08-the-blue-hour-protocol",
-        "title": "Blue Descent",
-        "primaryTone": "blue-descent",
-        "subtitle": "Cobalt city, mountain shadow, and the hour when public light thins.",
-        "synopsis": "Blue takes over the sequence, moving between skyline, street, ridge, and cloud as daylight gives up its authority.",
-        "roomStatement": "Blue Descent holds the hour when the city is no longer day and not yet fully night. Cobalt atmosphere turns distance into mood and signage into pulse.",
+        "title": "Echo Field",
+        "primaryTone": "hush",
+        "subtitle": "Blue air, softened edges, and the hush between systems.",
+        "synopsis": "Cobalt streets, ridges, and reflections reduce the city to atmosphere and echo.",
+        "tags": ["echo", "hush", "blue hour", "soft edge"],
+        "roomStatement": "Echo Field lowers the volume. Blue light, mountain distance, reflective streets, and softened architecture make place feel less certain, as if sound has dropped out of the frame.",
+        "projectInformation": "This room is a cooling chamber inside the sequence. The images hold the hour when public life thins and weather takes some of the city's authority back. Edges remain visible, but they no longer feel final."
     },
     {
         "slug": "02-fugitive-heat",
-        "title": "Fugitive Heat",
-        "primaryTone": "fugitive-heat",
-        "subtitle": "Warm light slipping through night streets, gates, water, and rooms.",
-        "synopsis": "After the blue hour, warmth returns as residue: lanterns, reflections, storefronts, and bodies caught in temporary glow.",
-        "roomStatement": "Fugitive Heat follows the warmer evidence left after daylight. Sodium, lantern, and interior light make the city feel briefly inhabited, then gone again.",
+        "title": "Glass Lift",
+        "primaryTone": "vertical",
+        "subtitle": "Enclosed light, reflected passage, and looking from inside.",
+        "synopsis": "Warm rooms, gates, windows, and wet streets turn observation into a scene behind glass.",
+        "tags": ["glass", "enclosure", "reflection", "inside"],
+        "roomStatement": "Glass Lift is about the distance made by shelter. The viewer looks from near warmth toward streets, gates, interiors, and reflections that seem close but remain just out of reach.",
+        "projectInformation": "Observation becomes staged here. A window, a gate, a shopfront, or a wet lane can feel like glass even when no pane is visible, because the image holds the viewer slightly apart. Glass Lift turns protection into another kind of separation."
     },
     {
         "slug": "11-fractured-volumes",
-        "title": "Hard Light",
-        "primaryTone": "hard-light",
-        "subtitle": "Glare, shadow, lightning, and forms split by exposure.",
-        "synopsis": "The night sequence sharpens into contrast, where signs, stations, silhouettes, and statues are cut into hard planes.",
-        "roomStatement": "Hard Light is the point where atmosphere becomes incision. Bright surfaces and deep shadows break the scene into planes, fragments, and abrupt encounters.",
+        "title": "Air Study",
+        "primaryTone": "release",
+        "subtitle": "Open intervals, exposed edges, and room enough to breathe.",
+        "synopsis": "After compression, the frame opens through water, skyline, motion, and hard weathered light.",
+        "tags": ["air", "release", "edge", "weather"],
+        "roomStatement": "Air Study begins to let pressure thin. Even where the light is hard, there is more distance in the frame: water, skyline, road, statue, and passing car becoming space to breathe through.",
+        "projectInformation": "The sequence exhales without becoming soft. Glare and shadow are still present, but the frame makes room for distance, weather, and open edges. Air Study is release with some of the city's sharpness still attached."
     },
     {
         "slug": "14-arterial-glow",
-        "title": "Arterial Afterimage",
-        "primaryTone": "arterial-afterimage",
-        "subtitle": "Red signal, late storefronts, and the closing pulse of the city.",
-        "synopsis": "The portfolio ends in saturated night, where neon, taxi light, blossoms, and snow leave a final red echo.",
-        "roomStatement": "Arterial Afterimage closes the passage with color that feels circulatory. Red light, shopfronts, and late streets keep moving after the image has stilled.",
-    },
+        "title": "Afterimage",
+        "primaryTone": "coda",
+        "subtitle": "Departure, red signal, and the image that keeps looking back.",
+        "synopsis": "The passage closes with color, storefronts, blossoms, and traces that continue after leaving.",
+        "tags": ["afterimage", "departure", "red signal", "coda"],
+        "roomStatement": "Afterimage ends without closing the door. Red gates, late streets, blossoms, and printed fragments keep sending light back toward the viewer after the sequence has moved on.",
+        "projectInformation": "The final room leaves the city active in the eye. Color returns as signal and remainder, not resolution: a gate, a sign, a wet street, a figure, a surface carrying the last trace. Afterimage is the part of looking that continues after departure."
+    }
 ]
 
 for room_profile, curated_copy in zip(ROOM_PROFILES, CURATED_ROOM_COPY, strict=True):
@@ -1033,7 +1061,7 @@ def build_exhibit_manifest(assets: list[dict[str, Any]], analyses: list[dict[str
     asset_ids = set(asset_map)
     existing_manifest = load_existing_manifest(asset_ids)
     if existing_manifest:
-        return existing_manifest
+        return refresh_existing_manifest_copy(existing_manifest)
 
     room_assignments, raw_only_ids = generate_room_assignments(asset_map, analysis_map)
     room_entries: list[dict[str, Any]] = []
@@ -1095,6 +1123,27 @@ def manifest_is_valid(manifest: dict[str, Any], asset_ids: set[str]) -> bool:
 
     seen.extend(raw_only_ids)
     return set(seen) == asset_ids and len(seen) == len(asset_ids)
+
+
+def refresh_existing_manifest_copy(manifest: dict[str, Any]) -> dict[str, Any]:
+    rooms = []
+    for room, profile in zip(manifest["rooms"], ROOM_PROFILES, strict=True):
+        updated_room = dict(room)
+        for key in ("slug", "title", "primaryTone", "roomStatement", "subtitle", "synopsis", "projectInformation"):
+            if key in profile:
+                updated_room[key] = profile[key]
+        if "tags" in profile:
+            updated_room["tags"] = profile["tags"]
+        if "photoCaptions" in profile:
+            updated_room["photoCaptions"] = profile["photoCaptions"]
+        if updated_room.get("archiveYear"):
+            updated_room["credits"] = f"curated sequence / {profile['title'].lower()} / {updated_room['archiveYear']}"
+        rooms.append(updated_room)
+
+    return {
+        **manifest,
+        "rooms": rooms,
+    }
 
 
 def generate_room_assignments(
@@ -1567,7 +1616,7 @@ def build_room_entry(
     photo_assets = [asset_map[photo_id] for photo_id in ordered_ids]
     archive_label = build_provenance_note(photo_assets)
     archive_year = build_year_range(photo_assets)
-    tags = collect_room_tags(ordered_ids, analysis_map)
+    tags = profile.get("tags") or collect_room_tags(ordered_ids, analysis_map)
 
     return {
         "slug": profile.get("slug", slugify(profile["title"])),
@@ -1580,10 +1629,14 @@ def build_room_entry(
         "coverPhotoId": ordered_ids[0],
         "previewPhotoIds": select_preview_ids(photo_assets),
         "photoIds": ordered_ids,
+        "photoCaptions": profile.get("photoCaptions", {}),
         "archiveLabel": archive_label,
         "archiveYear": archive_year,
-        "credits": build_room_credits(photo_assets, archive_label, archive_year),
-        "projectInformation": build_room_information(profile, archive_label, archive_year, tags, ordered_ids, analysis_map),
+        "credits": f"curated sequence / {profile['title'].lower()} / {archive_year}"
+        if archive_year
+        else build_room_credits(photo_assets, archive_label, archive_year),
+        "projectInformation": profile.get("projectInformation")
+        or build_room_information(profile, archive_label, archive_year, tags, ordered_ids, analysis_map),
     }
 
 
@@ -1602,6 +1655,7 @@ def build_series_catalog(manifest: dict[str, Any]) -> dict[str, Any]:
                 "coverPhotoId": room["coverPhotoId"],
                 "previewPhotoIds": room["previewPhotoIds"],
                 "photoIds": room["photoIds"],
+                "photoCaptions": room.get("photoCaptions", {}),
                 "portfolioIndex": index,
                 "archiveLabel": room["archiveLabel"],
                 "archiveYear": room["archiveYear"],

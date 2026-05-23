@@ -330,20 +330,17 @@ picture {
 
 .intro-overlay__final-nav {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  right: max(var(--page-gutter), env(safe-area-inset-right));
+  bottom: max(var(--page-gutter), env(safe-area-inset-bottom));
   display: flex;
-  gap: 0.7rem;
+  gap: 0.62rem;
   align-items: center;
-  padding: 0.6rem 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 999px;
-  background: rgba(8, 14, 30, 0.24);
-  backdrop-filter: blur(18px);
   color: #ffffff;
+  mix-blend-mode: difference;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, calc(-50% + 1.25rem)) scale(0.96);
+  text-align: right;
+  transform: translateY(0.7rem);
   transition:
     opacity 280ms ease,
     transform 500ms var(--ease-expo);
@@ -352,11 +349,33 @@ picture {
 .intro-overlay[data-complete="true"] .intro-overlay__final-nav {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateY(0);
 }
 
 .intro-overlay__name-rail {
-  display: none;
+  position: absolute;
+  left: max(var(--page-gutter), env(safe-area-inset-left));
+  bottom: max(var(--page-gutter), env(safe-area-inset-bottom));
+  z-index: 1;
+  display: flex;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.7rem);
+  transition:
+    opacity 280ms ease,
+    transform 500ms var(--ease-expo);
+}
+
+.intro-overlay__name {
+  font-size: 1.05rem;
+  line-height: 1.05;
+}
+
+.intro-overlay[data-complete="true"] .intro-overlay__name-rail {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .intro-overlay__final-link {
@@ -364,7 +383,7 @@ picture {
   line-height: 1.1;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  opacity: 0.64;
+  opacity: 0.78;
   transition: opacity 160ms ease;
 }
 
@@ -899,6 +918,7 @@ picture {
 }
 
 .project-detail-experience__frame {
+  position: relative;
   width: 100vw;
   min-width: 100vw;
   height: 100svh;
@@ -928,6 +948,22 @@ picture {
 .project-detail-experience__frame img[data-orientation="landscape"],
 .project-detail-experience__frame img[data-orientation="square"] {
   object-fit: cover;
+}
+
+.project-detail-experience__caption {
+  position: absolute;
+  inset: auto auto calc(var(--page-gutter) + env(safe-area-inset-bottom)) var(--page-gutter);
+  z-index: 2;
+  max-width: min(34rem, calc(100% - (var(--page-gutter) * 2)));
+  margin: 0;
+  padding: 0.55rem 0.7rem 0.55rem 0.8rem;
+  border-left: 1px solid rgba(17, 17, 17, 0.32);
+  background: rgba(255, 255, 255, 0.84);
+  color: #111111;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 0.74rem + 0.12vw, 0.9rem);
+  line-height: 1.34;
+  text-wrap: pretty;
 }
 
 @media (min-width: 768px) {
@@ -1020,16 +1056,8 @@ picture {
   }
 
   .intro-overlay__name-rail {
-    position: absolute;
-    inset: 0 auto 0 0;
-    z-index: 1;
-    display: flex;
-    width: var(--home-left-rail);
-    align-items: center;
-    padding: var(--page-gutter);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 220ms ease;
+    font-size: 1.05rem;
+    line-height: 1.05;
   }
 
   .intro-overlay[data-complete="true"] .intro-overlay__name-rail {
@@ -1039,8 +1067,6 @@ picture {
   .intro-overlay__name {
     font-size: 1.05rem;
     line-height: 1.05;
-    color: #ffffff;
-    mix-blend-mode: difference;
   }
 
   .portfolio-home__content {

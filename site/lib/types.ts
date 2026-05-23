@@ -85,6 +85,7 @@ export interface Series {
   coverPhotoId: string;
   previewPhotoIds: string[];
   photoIds: string[];
+  photoCaptions?: Record<string, string>;
   portfolioIndex: number;
   archiveLabel: string;
   archiveYear: string;

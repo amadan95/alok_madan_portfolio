@@ -238,9 +238,6 @@ export function PortfolioHome({
                   <Link href={`/portfolio/${series.slug}`} className="portfolio-home__title" data-project-title="">
                     {series.title}
                   </Link>
-                  <p className="portfolio-home__subtitle" data-project-body="">
-                    {series.subtitle}
-                  </p>
                   <p className="portfolio-home__synopsis" data-project-body="">
                     {series.synopsis}
                   </p>

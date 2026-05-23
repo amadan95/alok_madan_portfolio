@@ -5,8 +5,8 @@ const compat = new FlatCompat({
 });
 
 export default [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
-    ignores: ["out/**", ".next/**", "public/_generated/**"],
+    ignores: ["out/**", ".next/**", ".next*/**", "next-env.d.ts", "public/_generated/**"],
   },
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
