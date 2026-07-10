@@ -225,6 +225,7 @@ export function getPortfolioPageEntries() {
       subtitle: series.subtitle,
       synopsis: series.synopsis,
       tags: series.tags,
+      photoCaptions: series.photoCaptions,
       portfolioIndex: series.portfolioIndex,
       photoCount: (filteredSeriesAssetsBySlug.get(series.slug) ?? []).length,
     },
@@ -237,6 +238,7 @@ export function getListPageEntries() {
     series: {
       slug: series.slug,
       title: series.title,
+      photoCaptions: series.photoCaptions,
       portfolioIndex: series.portfolioIndex,
     },
     previews: getPreviewAssets(series),
@@ -248,6 +250,7 @@ export function getArchivePageEntries() {
     series: {
       slug: series.slug,
       title: series.title,
+      photoCaptions: series.photoCaptions,
       archiveLabel: series.archiveLabel,
       archiveYear: series.archiveYear,
     },

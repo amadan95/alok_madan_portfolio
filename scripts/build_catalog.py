@@ -589,6 +589,7 @@ class UnionFind:
 def main() -> None:
     ensure_directories(reset_variants=os.getenv("FORCE_REGENERATE_VARIANTS") == "1")
     cleanup_legacy_generated_dirs()
+    authored_series_copy = load_authored_series_copy()
     existing_assets, hidden_variant_paths, existing_variant_version = load_existing_assets()
     existing_analyses = load_existing_analyses()
     if existing_assets and os.getenv("FORCE_RESCAN") != "1":
@@ -614,7 +615,7 @@ def main() -> None:
         hidden_variant_paths = grouped["hidden_variant_paths"]
     analyses = analyze_assets(canonical_assets, existing_analyses)
     manifest = build_exhibit_manifest(canonical_assets, analyses)
-    series_catalog = build_series_catalog(manifest)
+    series_catalog = apply_authored_series_copy(build_series_catalog(manifest), authored_series_copy)
 
     photo_catalog = {
         "generatedAt": iso_now(),
@@ -636,6 +637,57 @@ def main() -> None:
     print(f"Exhibit rooms: {series_catalog['totalSeries']}")
     print(f"Exhibit photos: {series_catalog['exhibitPhotoCount']}")
     print(f"Raw-only photos: {len(series_catalog['rawOnlyPhotoIds'])}")
+
+
+def load_authored_series_copy() -> dict[str, dict[str, Any]]:
+    series_path = CONTENT_DIR / "series.json"
+    if not series_path.exists():
+        return {}
+
+    try:
+        payload = json.loads(series_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+    return {
+        series["slug"]: series
+        for series in payload.get("series", [])
+        if isinstance(series, dict) and isinstance(series.get("slug"), str)
+    }
+
+
+def apply_authored_series_copy(
+    series_catalog: dict[str, Any],
+    authored_copy: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    authored_fields = (
+        "title",
+        "subtitle",
+        "synopsis",
+        "tags",
+        "credits",
+        "projectInformation",
+        "primaryTone",
+        "roomStatement",
+    )
+
+    for series in series_catalog["series"]:
+        authored = authored_copy.get(series["slug"])
+        if not authored:
+            continue
+
+        for field in authored_fields:
+            if field in authored:
+                series[field] = authored[field]
+
+        current_photo_ids = set(series["photoIds"])
+        series["photoCaptions"] = {
+            photo_id: caption
+            for photo_id, caption in authored.get("photoCaptions", {}).items()
+            if photo_id in current_photo_ids
+        }
+
+    return series_catalog
 
 
 def ensure_directories(reset_variants: bool = False) -> None:

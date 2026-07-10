@@ -21,6 +21,7 @@ type HomeEntry = {
     subtitle: string;
     synopsis: string;
     tags: string[];
+    photoCaptions?: Record<string, string>;
     portfolioIndex: number;
     photoCount: number;
   };
@@ -217,7 +218,7 @@ export function PortfolioHome({
                 >
                   <ResponsivePhoto
                     asset={asset}
-                    alt={series.title}
+                    alt={series.photoCaptions?.[asset.id] || series.title}
                     variants={["rail", "hero"]}
                     sizes="(min-width: 1024px) 28vw, 92vw"
                     eager={series.portfolioIndex === 1 && previewIndex === 0}

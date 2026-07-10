@@ -13,6 +13,7 @@ type ArchiveItem = {
   series: {
     slug: string;
     title: string;
+    photoCaptions?: Record<string, string>;
   };
   previews: DisplayAsset[];
 };
@@ -59,7 +60,7 @@ export function ArchivePageExperience({
           <ResponsivePhoto
             key={activeHero.id}
             asset={activeHero}
-            alt={displayedItem.series.title}
+            alt={displayedItem.series.photoCaptions?.[activeHero.id] || displayedItem.series.title}
             variants={["hero"]}
             sizes="100vw"
             eager

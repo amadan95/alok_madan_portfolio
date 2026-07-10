@@ -225,7 +225,7 @@ export function ProjectDetailExperience({
             <figure key={asset.id} className="project-detail-experience__frame" data-project-frame="">
               <ResponsivePhoto
                 asset={asset}
-                alt={`${series.title} ${index + 1}`}
+                alt={series.photoCaptions?.[asset.id] || `${series.title}, photograph ${index + 1}`}
                 variants={["rail", "hero"]}
                 sizes="100vw"
                 eager={index < 2}
