@@ -27,7 +27,7 @@ export function TextPageExperience({
     [kind, siteMeta.contactBio, siteMeta.disclaimerText],
   );
   const sideParagraphs = useMemo(
-    () => splitParagraphs(kind === "contact" ? siteMeta.contactRepresented : "Contact for permissions, usage requests, and commission availability."),
+    () => splitParagraphs(kind === "contact" ? siteMeta.contactRepresented : "For licensing, permissions, commissions, or print inquiries."),
     [kind, siteMeta.contactRepresented],
   );
 

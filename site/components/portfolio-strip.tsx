@@ -30,7 +30,12 @@ export function PortfolioStrip({
             className="folio-entry__frame"
             style={{ flex: `${Math.max(0.72, Math.min(asset.aspectRatio, 1.8))} 1 0%` }}
           >
-            <ResponsivePhoto asset={asset} alt={series.title} variants={["thumb", "rail"]} sizes="30vw" />
+            <ResponsivePhoto
+              asset={asset}
+              alt={series.photoCaptions?.[asset.id] || series.title}
+              variants={["thumb", "rail"]}
+              sizes="30vw"
+            />
           </figure>
         ))}
       </Link>

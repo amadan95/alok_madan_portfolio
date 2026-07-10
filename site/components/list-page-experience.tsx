@@ -13,6 +13,7 @@ type ListItem = {
   series: {
     slug: string;
     title: string;
+    photoCaptions?: Record<string, string>;
     portfolioIndex: number;
   };
   previews: DisplayAsset[];
@@ -61,7 +62,7 @@ export function ListPageExperience({
           <ResponsivePhoto
             key={displayedItem.previews[0].id}
             asset={displayedItem.previews[0]}
-            alt=""
+            alt={displayedItem.series.photoCaptions?.[displayedItem.previews[0].id] || displayedItem.series.title}
             variants={["hero"]}
             sizes="100vw"
             eager
