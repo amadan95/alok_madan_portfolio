@@ -7,7 +7,10 @@
     "dev:internal": "next dev -p 3000",
     "build:internal": "next build",
     "start:internal": "next start -p 3000",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --test tests/content.test.mjs",
+    "test:export": "node --test tests/static-export.test.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -1,0 +1,3751 @@
+{
+  "catalogVersion": 1,
+  "variantVersion": 3,
+  "assetCount": 104,
+  "assets": [
+    {
+      "id": "am-23edf26e45ddc1ab",
+      "sourceChecksum": "4977b134ac5e0880bb616926d7eec593910b25222bdaf5406b60b61d5a135d8f",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#32251f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-23edf26e45ddc1ab.jpg",
+          "webp": "/_generated/raw/am-23edf26e45ddc1ab.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-23edf26e45ddc1ab.jpg",
+          "webp": "/_generated/thumb/am-23edf26e45ddc1ab.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-23edf26e45ddc1ab.jpg",
+          "webp": "/_generated/rail/am-23edf26e45ddc1ab.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-23edf26e45ddc1ab.jpg",
+          "webp": "/_generated/hero/am-23edf26e45ddc1ab.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-3176329ae951fba7",
+      "sourceChecksum": "ee19540d9f3beb289c1fe1f5be6f4e226374e637e4f80cffa95b1fb39b5cdb1a",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#171717",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3176329ae951fba7.jpg",
+          "webp": "/_generated/raw/am-3176329ae951fba7.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3176329ae951fba7.jpg",
+          "webp": "/_generated/thumb/am-3176329ae951fba7.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3176329ae951fba7.jpg",
+          "webp": "/_generated/rail/am-3176329ae951fba7.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3176329ae951fba7.jpg",
+          "webp": "/_generated/hero/am-3176329ae951fba7.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-c853ed8dc29b0c87",
+      "sourceChecksum": "d7ade7292ecc1171898627683687fd221c2d7ed799a308eaae61735d494eeb63",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1462,
+      "aspectRatio": 1.64158687,
+      "orientation": "landscape",
+      "averageColor": "#2c1f1b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c853ed8dc29b0c87.jpg",
+          "webp": "/_generated/raw/am-c853ed8dc29b0c87.webp",
+          "width": 360,
+          "height": 219
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c853ed8dc29b0c87.jpg",
+          "webp": "/_generated/thumb/am-c853ed8dc29b0c87.webp",
+          "width": 800,
+          "height": 487
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c853ed8dc29b0c87.jpg",
+          "webp": "/_generated/rail/am-c853ed8dc29b0c87.webp",
+          "width": 1600,
+          "height": 975
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c853ed8dc29b0c87.jpg",
+          "webp": "/_generated/hero/am-c853ed8dc29b0c87.webp",
+          "width": 2400,
+          "height": 1462
+        }
+      }
+    },
+    {
+      "id": "am-db4a765841a3f592",
+      "sourceChecksum": "9d382780e34ef150c48a59f0bc0d156e0d5011bf6324d27596dff4ffc6b82b22",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#0f0e0e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-db4a765841a3f592.jpg",
+          "webp": "/_generated/raw/am-db4a765841a3f592.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-db4a765841a3f592.jpg",
+          "webp": "/_generated/thumb/am-db4a765841a3f592.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-db4a765841a3f592.jpg",
+          "webp": "/_generated/rail/am-db4a765841a3f592.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-db4a765841a3f592.jpg",
+          "webp": "/_generated/hero/am-db4a765841a3f592.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-74215e4294a70395",
+      "sourceChecksum": "8d9e6b8297efdf4c7c813b812af760b10df22848eb51210476512ce57a3b31a5",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#3e3525",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-74215e4294a70395.jpg",
+          "webp": "/_generated/raw/am-74215e4294a70395.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-74215e4294a70395.jpg",
+          "webp": "/_generated/thumb/am-74215e4294a70395.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-74215e4294a70395.jpg",
+          "webp": "/_generated/rail/am-74215e4294a70395.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-74215e4294a70395.jpg",
+          "webp": "/_generated/hero/am-74215e4294a70395.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-e825c1c67b5e7d27",
+      "sourceChecksum": "10f6b94137d4146bb8576e33b49112034e784923e09c9763ecffd45c6f17d73a",
+      "variantVersion": 3,
+      "width": 1878,
+      "height": 2400,
+      "aspectRatio": 0.7825,
+      "orientation": "portrait",
+      "averageColor": "#382018",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-e825c1c67b5e7d27.jpg",
+          "webp": "/_generated/raw/am-e825c1c67b5e7d27.webp",
+          "width": 282,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-e825c1c67b5e7d27.jpg",
+          "webp": "/_generated/thumb/am-e825c1c67b5e7d27.webp",
+          "width": 626,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-e825c1c67b5e7d27.jpg",
+          "webp": "/_generated/rail/am-e825c1c67b5e7d27.webp",
+          "width": 1252,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-e825c1c67b5e7d27.jpg",
+          "webp": "/_generated/hero/am-e825c1c67b5e7d27.webp",
+          "width": 1878,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-220e3cd254232a2b",
+      "sourceChecksum": "25b378859f59dd56e69e4f9dae8d8f5d0ecfc2307a66234fb2d189cd066de39c",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#393b2f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-220e3cd254232a2b.jpg",
+          "webp": "/_generated/raw/am-220e3cd254232a2b.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-220e3cd254232a2b.jpg",
+          "webp": "/_generated/thumb/am-220e3cd254232a2b.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-220e3cd254232a2b.jpg",
+          "webp": "/_generated/rail/am-220e3cd254232a2b.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-220e3cd254232a2b.jpg",
+          "webp": "/_generated/hero/am-220e3cd254232a2b.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-81bb1d09c2c797de",
+      "sourceChecksum": "8c1e8b7c7bc24ff0015bfc26c2a8d21a5969b0a03db73938ae22c0f2a2cd0204",
+      "variantVersion": 3,
+      "width": 1537,
+      "height": 2400,
+      "aspectRatio": 0.64041667,
+      "orientation": "portrait",
+      "averageColor": "#46341e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-81bb1d09c2c797de.jpg",
+          "webp": "/_generated/raw/am-81bb1d09c2c797de.webp",
+          "width": 231,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-81bb1d09c2c797de.jpg",
+          "webp": "/_generated/thumb/am-81bb1d09c2c797de.webp",
+          "width": 512,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-81bb1d09c2c797de.jpg",
+          "webp": "/_generated/rail/am-81bb1d09c2c797de.webp",
+          "width": 1025,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-81bb1d09c2c797de.jpg",
+          "webp": "/_generated/hero/am-81bb1d09c2c797de.webp",
+          "width": 1537,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-2c6ca14afb7d3241",
+      "sourceChecksum": "490c0c774a98967d5900a0131b2bff8001915f3b4fa90e76204c201a96347c0d",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#98a09e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-2c6ca14afb7d3241.jpg",
+          "webp": "/_generated/raw/am-2c6ca14afb7d3241.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-2c6ca14afb7d3241.jpg",
+          "webp": "/_generated/thumb/am-2c6ca14afb7d3241.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-2c6ca14afb7d3241.jpg",
+          "webp": "/_generated/rail/am-2c6ca14afb7d3241.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-2c6ca14afb7d3241.jpg",
+          "webp": "/_generated/hero/am-2c6ca14afb7d3241.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-6b1001cd03a05320",
+      "sourceChecksum": "5e8d091fbd359f81da9bece7925486056fbbd099bb18d2729af45a37c0625c98",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 971,
+      "aspectRatio": 2.47167868,
+      "orientation": "landscape",
+      "averageColor": "#515151",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-6b1001cd03a05320.jpg",
+          "webp": "/_generated/raw/am-6b1001cd03a05320.webp",
+          "width": 360,
+          "height": 146
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-6b1001cd03a05320.jpg",
+          "webp": "/_generated/thumb/am-6b1001cd03a05320.webp",
+          "width": 800,
+          "height": 324
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-6b1001cd03a05320.jpg",
+          "webp": "/_generated/rail/am-6b1001cd03a05320.webp",
+          "width": 1600,
+          "height": 647
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-6b1001cd03a05320.jpg",
+          "webp": "/_generated/hero/am-6b1001cd03a05320.webp",
+          "width": 2400,
+          "height": 971
+        }
+      }
+    },
+    {
+      "id": "am-60469abec11a012e",
+      "sourceChecksum": "d57ebbc5ca5ba60d32d6a36095763d43d9184b4bd50707454befa57daf8c698a",
+      "variantVersion": 3,
+      "width": 1897,
+      "height": 2400,
+      "aspectRatio": 0.79041667,
+      "orientation": "portrait",
+      "averageColor": "#bbb19b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-60469abec11a012e.jpg",
+          "webp": "/_generated/raw/am-60469abec11a012e.webp",
+          "width": 285,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-60469abec11a012e.jpg",
+          "webp": "/_generated/thumb/am-60469abec11a012e.webp",
+          "width": 632,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-60469abec11a012e.jpg",
+          "webp": "/_generated/rail/am-60469abec11a012e.webp",
+          "width": 1265,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-60469abec11a012e.jpg",
+          "webp": "/_generated/hero/am-60469abec11a012e.webp",
+          "width": 1897,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-7ee3643e4b813063",
+      "sourceChecksum": "2e8f8fcb9a11570fa3833dc095d9028572f3db7bc7eb17ad1146e981a55bc670",
+      "variantVersion": 3,
+      "width": 1818,
+      "height": 1959,
+      "aspectRatio": 0.9280245,
+      "orientation": "portrait",
+      "averageColor": "#c5c5c5",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-7ee3643e4b813063.jpg",
+          "webp": "/_generated/raw/am-7ee3643e4b813063.webp",
+          "width": 334,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-7ee3643e4b813063.jpg",
+          "webp": "/_generated/thumb/am-7ee3643e4b813063.webp",
+          "width": 742,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-7ee3643e4b813063.jpg",
+          "webp": "/_generated/rail/am-7ee3643e4b813063.webp",
+          "width": 1485,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-7ee3643e4b813063.jpg",
+          "webp": "/_generated/hero/am-7ee3643e4b813063.webp",
+          "width": 1818,
+          "height": 1959
+        }
+      }
+    },
+    {
+      "id": "am-112e3f8ecf39b520",
+      "sourceChecksum": "d01e1e11a5fd872ec5be394f126494df6987c06ef999f679b31543f2aa6f1dd0",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1509,
+      "aspectRatio": 1.59045726,
+      "orientation": "landscape",
+      "averageColor": "#1a1a19",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-112e3f8ecf39b520.jpg",
+          "webp": "/_generated/raw/am-112e3f8ecf39b520.webp",
+          "width": 360,
+          "height": 226
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-112e3f8ecf39b520.jpg",
+          "webp": "/_generated/thumb/am-112e3f8ecf39b520.webp",
+          "width": 800,
+          "height": 503
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-112e3f8ecf39b520.jpg",
+          "webp": "/_generated/rail/am-112e3f8ecf39b520.webp",
+          "width": 1600,
+          "height": 1006
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-112e3f8ecf39b520.jpg",
+          "webp": "/_generated/hero/am-112e3f8ecf39b520.webp",
+          "width": 2400,
+          "height": 1509
+        }
+      }
+    },
+    {
+      "id": "am-8d8343421d668c96",
+      "sourceChecksum": "afb4c4827cd550e628fbccdbdba406ea6f452d9a6e5e31b7c1605d1fcacefadb",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#657891",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-8d8343421d668c96.jpg",
+          "webp": "/_generated/raw/am-8d8343421d668c96.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-8d8343421d668c96.jpg",
+          "webp": "/_generated/thumb/am-8d8343421d668c96.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-8d8343421d668c96.jpg",
+          "webp": "/_generated/rail/am-8d8343421d668c96.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-8d8343421d668c96.jpg",
+          "webp": "/_generated/hero/am-8d8343421d668c96.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-c4737f47a3abcbac",
+      "sourceChecksum": "5b09f3c92ef954e62c1689f33f16398175ad2dac0240880e1d1ad937d0d2dd38",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1587,
+      "aspectRatio": 1.51228733,
+      "orientation": "landscape",
+      "averageColor": "#43413e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c4737f47a3abcbac.jpg",
+          "webp": "/_generated/raw/am-c4737f47a3abcbac.webp",
+          "width": 360,
+          "height": 238
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c4737f47a3abcbac.jpg",
+          "webp": "/_generated/thumb/am-c4737f47a3abcbac.webp",
+          "width": 800,
+          "height": 529
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c4737f47a3abcbac.jpg",
+          "webp": "/_generated/rail/am-c4737f47a3abcbac.webp",
+          "width": 1600,
+          "height": 1058
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c4737f47a3abcbac.jpg",
+          "webp": "/_generated/hero/am-c4737f47a3abcbac.webp",
+          "width": 2400,
+          "height": 1587
+        }
+      }
+    },
+    {
+      "id": "am-91af64eeddd06790",
+      "sourceChecksum": "010095fba4793ed2e0127d09b4b7aa0f9a7f4923419a0cf9ba16041e4064426e",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#3d3f3e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-91af64eeddd06790.jpg",
+          "webp": "/_generated/raw/am-91af64eeddd06790.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-91af64eeddd06790.jpg",
+          "webp": "/_generated/thumb/am-91af64eeddd06790.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-91af64eeddd06790.jpg",
+          "webp": "/_generated/rail/am-91af64eeddd06790.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-91af64eeddd06790.jpg",
+          "webp": "/_generated/hero/am-91af64eeddd06790.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-225f74172bb04e1f",
+      "sourceChecksum": "4489c9ff85cc40dccb42789231df794d625046a45e8da643661df518bb794c80",
+      "variantVersion": 3,
+      "width": 2325,
+      "height": 2400,
+      "aspectRatio": 0.96875,
+      "orientation": "square",
+      "averageColor": "#584326",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-225f74172bb04e1f.jpg",
+          "webp": "/_generated/raw/am-225f74172bb04e1f.webp",
+          "width": 349,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-225f74172bb04e1f.jpg",
+          "webp": "/_generated/thumb/am-225f74172bb04e1f.webp",
+          "width": 775,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-225f74172bb04e1f.jpg",
+          "webp": "/_generated/rail/am-225f74172bb04e1f.webp",
+          "width": 1550,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-225f74172bb04e1f.jpg",
+          "webp": "/_generated/hero/am-225f74172bb04e1f.webp",
+          "width": 2325,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-b7949ba849fb21ec",
+      "sourceChecksum": "0104fdd11d7474d9ed97848cf2f6814df435261639d62a955b960cc3e9e11975",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 2171,
+      "aspectRatio": 1.10548135,
+      "orientation": "landscape",
+      "averageColor": "#3a383e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-b7949ba849fb21ec.jpg",
+          "webp": "/_generated/raw/am-b7949ba849fb21ec.webp",
+          "width": 360,
+          "height": 326
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-b7949ba849fb21ec.jpg",
+          "webp": "/_generated/thumb/am-b7949ba849fb21ec.webp",
+          "width": 800,
+          "height": 724
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-b7949ba849fb21ec.jpg",
+          "webp": "/_generated/rail/am-b7949ba849fb21ec.webp",
+          "width": 1600,
+          "height": 1447
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-b7949ba849fb21ec.jpg",
+          "webp": "/_generated/hero/am-b7949ba849fb21ec.webp",
+          "width": 2400,
+          "height": 2171
+        }
+      }
+    },
+    {
+      "id": "am-489978171ee43c57",
+      "sourceChecksum": "9cf08d6ba39a485972891524a68c61bdeeb035e5e1f2bef117dedf4594ff4276",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1362,
+      "aspectRatio": 1.76211454,
+      "orientation": "landscape",
+      "averageColor": "#9ba9b5",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-489978171ee43c57.jpg",
+          "webp": "/_generated/raw/am-489978171ee43c57.webp",
+          "width": 360,
+          "height": 204
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-489978171ee43c57.jpg",
+          "webp": "/_generated/thumb/am-489978171ee43c57.webp",
+          "width": 800,
+          "height": 454
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-489978171ee43c57.jpg",
+          "webp": "/_generated/rail/am-489978171ee43c57.webp",
+          "width": 1600,
+          "height": 908
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-489978171ee43c57.jpg",
+          "webp": "/_generated/hero/am-489978171ee43c57.webp",
+          "width": 2400,
+          "height": 1362
+        }
+      }
+    },
+    {
+      "id": "am-a785f8905b9c2eea",
+      "sourceChecksum": "b0b9e4b20d10b761abfd516611bb040127ae862c8ba6435c4c0aa978280d7fff",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#73846d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-a785f8905b9c2eea.jpg",
+          "webp": "/_generated/raw/am-a785f8905b9c2eea.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-a785f8905b9c2eea.jpg",
+          "webp": "/_generated/thumb/am-a785f8905b9c2eea.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-a785f8905b9c2eea.jpg",
+          "webp": "/_generated/rail/am-a785f8905b9c2eea.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-a785f8905b9c2eea.jpg",
+          "webp": "/_generated/hero/am-a785f8905b9c2eea.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-4fe4cff56ce6a21c",
+      "sourceChecksum": "8f5315a94c86b96d4a045d30b39e18387e401f498cb0faacb6c80782641126fa",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1336,
+      "aspectRatio": 1.79640719,
+      "orientation": "landscape",
+      "averageColor": "#747474",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-4fe4cff56ce6a21c.jpg",
+          "webp": "/_generated/raw/am-4fe4cff56ce6a21c.webp",
+          "width": 360,
+          "height": 200
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-4fe4cff56ce6a21c.jpg",
+          "webp": "/_generated/thumb/am-4fe4cff56ce6a21c.webp",
+          "width": 800,
+          "height": 445
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-4fe4cff56ce6a21c.jpg",
+          "webp": "/_generated/rail/am-4fe4cff56ce6a21c.webp",
+          "width": 1600,
+          "height": 891
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-4fe4cff56ce6a21c.jpg",
+          "webp": "/_generated/hero/am-4fe4cff56ce6a21c.webp",
+          "width": 2400,
+          "height": 1336
+        }
+      }
+    },
+    {
+      "id": "am-7ab470a5eb6ad129",
+      "sourceChecksum": "220634b7f42d3b05c1d93e08e01082799d88777e4309d3e2fadbc98c054a4095",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#656c5d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-7ab470a5eb6ad129.jpg",
+          "webp": "/_generated/raw/am-7ab470a5eb6ad129.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-7ab470a5eb6ad129.jpg",
+          "webp": "/_generated/thumb/am-7ab470a5eb6ad129.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-7ab470a5eb6ad129.jpg",
+          "webp": "/_generated/rail/am-7ab470a5eb6ad129.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-7ab470a5eb6ad129.jpg",
+          "webp": "/_generated/hero/am-7ab470a5eb6ad129.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-cabb4bd73e9ade54",
+      "sourceChecksum": "4f64ecb80b76219a8c4ccd8a6ea6463ade40176fa2039443c7605e784abfb7b6",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#716b62",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-cabb4bd73e9ade54.jpg",
+          "webp": "/_generated/raw/am-cabb4bd73e9ade54.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-cabb4bd73e9ade54.jpg",
+          "webp": "/_generated/thumb/am-cabb4bd73e9ade54.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-cabb4bd73e9ade54.jpg",
+          "webp": "/_generated/rail/am-cabb4bd73e9ade54.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-cabb4bd73e9ade54.jpg",
+          "webp": "/_generated/hero/am-cabb4bd73e9ade54.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-58c7cf4389646ef8",
+      "sourceChecksum": "22cb6bd2aa482cbf8e4a6aeeb5411f6c895bd29d39b6c2fbea5e83d5738212b7",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 888,
+      "aspectRatio": 2.7027027,
+      "orientation": "landscape",
+      "averageColor": "#9da4a7",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-58c7cf4389646ef8.jpg",
+          "webp": "/_generated/raw/am-58c7cf4389646ef8.webp",
+          "width": 360,
+          "height": 133
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-58c7cf4389646ef8.jpg",
+          "webp": "/_generated/thumb/am-58c7cf4389646ef8.webp",
+          "width": 800,
+          "height": 296
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-58c7cf4389646ef8.jpg",
+          "webp": "/_generated/rail/am-58c7cf4389646ef8.webp",
+          "width": 1600,
+          "height": 592
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-58c7cf4389646ef8.jpg",
+          "webp": "/_generated/hero/am-58c7cf4389646ef8.webp",
+          "width": 2400,
+          "height": 888
+        }
+      }
+    },
+    {
+      "id": "am-cd707567232af5cb",
+      "sourceChecksum": "b93b40fd67a17c989819d4a2dc798b8197767567180c32865e98a988b1fe263d",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#6b5247",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-cd707567232af5cb.jpg",
+          "webp": "/_generated/raw/am-cd707567232af5cb.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-cd707567232af5cb.jpg",
+          "webp": "/_generated/thumb/am-cd707567232af5cb.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-cd707567232af5cb.jpg",
+          "webp": "/_generated/rail/am-cd707567232af5cb.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-cd707567232af5cb.jpg",
+          "webp": "/_generated/hero/am-cd707567232af5cb.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-d4c0e62052be8b3c",
+      "sourceChecksum": "b19ffa034283b93289e41360779f7fb90b44f57db7db72181006a939b9324d02",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#3f352d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-d4c0e62052be8b3c.jpg",
+          "webp": "/_generated/raw/am-d4c0e62052be8b3c.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-d4c0e62052be8b3c.jpg",
+          "webp": "/_generated/thumb/am-d4c0e62052be8b3c.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-d4c0e62052be8b3c.jpg",
+          "webp": "/_generated/rail/am-d4c0e62052be8b3c.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-d4c0e62052be8b3c.jpg",
+          "webp": "/_generated/hero/am-d4c0e62052be8b3c.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-3cbe8483d4976946",
+      "sourceChecksum": "4f09103066f906a52d62fd5306b6b3950a9068fa3cc732dad8b67247eee3baba",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#2e2824",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3cbe8483d4976946.jpg",
+          "webp": "/_generated/raw/am-3cbe8483d4976946.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3cbe8483d4976946.jpg",
+          "webp": "/_generated/thumb/am-3cbe8483d4976946.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3cbe8483d4976946.jpg",
+          "webp": "/_generated/rail/am-3cbe8483d4976946.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3cbe8483d4976946.jpg",
+          "webp": "/_generated/hero/am-3cbe8483d4976946.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-26a51d7f32e9348a",
+      "sourceChecksum": "62348ea8f6447c8c65f793e6aa1c158310c2edd47b17ff7c29e03934d1aef033",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#484746",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-26a51d7f32e9348a.jpg",
+          "webp": "/_generated/raw/am-26a51d7f32e9348a.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-26a51d7f32e9348a.jpg",
+          "webp": "/_generated/thumb/am-26a51d7f32e9348a.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-26a51d7f32e9348a.jpg",
+          "webp": "/_generated/rail/am-26a51d7f32e9348a.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-26a51d7f32e9348a.jpg",
+          "webp": "/_generated/hero/am-26a51d7f32e9348a.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-4c1bfea89073a49d",
+      "sourceChecksum": "0981a6d590f7be8bc310cf408dbecd88abc00f3fabfc774c8d5c07a5758eb1b8",
+      "variantVersion": 3,
+      "width": 2032,
+      "height": 2032,
+      "aspectRatio": 1.0,
+      "orientation": "square",
+      "averageColor": "#3b4042",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-4c1bfea89073a49d.jpg",
+          "webp": "/_generated/raw/am-4c1bfea89073a49d.webp",
+          "width": 360,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-4c1bfea89073a49d.jpg",
+          "webp": "/_generated/thumb/am-4c1bfea89073a49d.webp",
+          "width": 800,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-4c1bfea89073a49d.jpg",
+          "webp": "/_generated/rail/am-4c1bfea89073a49d.webp",
+          "width": 1600,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-4c1bfea89073a49d.jpg",
+          "webp": "/_generated/hero/am-4c1bfea89073a49d.webp",
+          "width": 2032,
+          "height": 2032
+        }
+      }
+    },
+    {
+      "id": "am-ad21d97883bd4565",
+      "sourceChecksum": "4fa088049d39e602ad92e042e40fee70119d5d8427636633a062c2e0a543a5ec",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 2314,
+      "aspectRatio": 1.03716508,
+      "orientation": "square",
+      "averageColor": "#453d35",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-ad21d97883bd4565.jpg",
+          "webp": "/_generated/raw/am-ad21d97883bd4565.webp",
+          "width": 360,
+          "height": 347
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-ad21d97883bd4565.jpg",
+          "webp": "/_generated/thumb/am-ad21d97883bd4565.webp",
+          "width": 800,
+          "height": 771
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-ad21d97883bd4565.jpg",
+          "webp": "/_generated/rail/am-ad21d97883bd4565.webp",
+          "width": 1600,
+          "height": 1543
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-ad21d97883bd4565.jpg",
+          "webp": "/_generated/hero/am-ad21d97883bd4565.webp",
+          "width": 2400,
+          "height": 2314
+        }
+      }
+    },
+    {
+      "id": "am-089eeeaf09efd0cc",
+      "sourceChecksum": "01e0204ca3ea7a85363d414df479f3c3259a79670a0a88656cfb2f87b04caacf",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1197,
+      "aspectRatio": 2.00501253,
+      "orientation": "landscape",
+      "averageColor": "#695752",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-089eeeaf09efd0cc.jpg",
+          "webp": "/_generated/raw/am-089eeeaf09efd0cc.webp",
+          "width": 360,
+          "height": 180
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-089eeeaf09efd0cc.jpg",
+          "webp": "/_generated/thumb/am-089eeeaf09efd0cc.webp",
+          "width": 800,
+          "height": 399
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-089eeeaf09efd0cc.jpg",
+          "webp": "/_generated/rail/am-089eeeaf09efd0cc.webp",
+          "width": 1600,
+          "height": 798
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-089eeeaf09efd0cc.jpg",
+          "webp": "/_generated/hero/am-089eeeaf09efd0cc.webp",
+          "width": 2400,
+          "height": 1197
+        }
+      }
+    },
+    {
+      "id": "am-33c3cccd41394550",
+      "sourceChecksum": "443cbc3f5999e694eeedb0efdf32489cd435f2701db810fb1ddb80bc72d924c0",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#181612",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-33c3cccd41394550.jpg",
+          "webp": "/_generated/raw/am-33c3cccd41394550.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-33c3cccd41394550.jpg",
+          "webp": "/_generated/thumb/am-33c3cccd41394550.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-33c3cccd41394550.jpg",
+          "webp": "/_generated/rail/am-33c3cccd41394550.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-33c3cccd41394550.jpg",
+          "webp": "/_generated/hero/am-33c3cccd41394550.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-bcac38cfa7e61f39",
+      "sourceChecksum": "747ebdc1de499bb2a9ed59dfa74be7e2a454b7cf12e49a67c54505d1813b8d38",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#5b5a5a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-bcac38cfa7e61f39.jpg",
+          "webp": "/_generated/raw/am-bcac38cfa7e61f39.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-bcac38cfa7e61f39.jpg",
+          "webp": "/_generated/thumb/am-bcac38cfa7e61f39.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-bcac38cfa7e61f39.jpg",
+          "webp": "/_generated/rail/am-bcac38cfa7e61f39.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-bcac38cfa7e61f39.jpg",
+          "webp": "/_generated/hero/am-bcac38cfa7e61f39.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-350d6de16e359aa8",
+      "sourceChecksum": "d3cc5457bb074b256b0b36175c26cb3dec1cdb39cb441c893170c719c31b1cb7",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#40413d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-350d6de16e359aa8.jpg",
+          "webp": "/_generated/raw/am-350d6de16e359aa8.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-350d6de16e359aa8.jpg",
+          "webp": "/_generated/thumb/am-350d6de16e359aa8.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-350d6de16e359aa8.jpg",
+          "webp": "/_generated/rail/am-350d6de16e359aa8.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-350d6de16e359aa8.jpg",
+          "webp": "/_generated/hero/am-350d6de16e359aa8.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-153617e873dc3def",
+      "sourceChecksum": "b8471fdd7f71f219889d78cac7db0d55df13cee07d282afed6e9c1a9d7533360",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#65543e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-153617e873dc3def.jpg",
+          "webp": "/_generated/raw/am-153617e873dc3def.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-153617e873dc3def.jpg",
+          "webp": "/_generated/thumb/am-153617e873dc3def.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-153617e873dc3def.jpg",
+          "webp": "/_generated/rail/am-153617e873dc3def.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-153617e873dc3def.jpg",
+          "webp": "/_generated/hero/am-153617e873dc3def.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-cfc00fae5c9d61fb",
+      "sourceChecksum": "b212ab79e823616d29cf85d7faba841775bc04161c366c4557045b45e27c53a0",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#503733",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-cfc00fae5c9d61fb.jpg",
+          "webp": "/_generated/raw/am-cfc00fae5c9d61fb.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-cfc00fae5c9d61fb.jpg",
+          "webp": "/_generated/thumb/am-cfc00fae5c9d61fb.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-cfc00fae5c9d61fb.jpg",
+          "webp": "/_generated/rail/am-cfc00fae5c9d61fb.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-cfc00fae5c9d61fb.jpg",
+          "webp": "/_generated/hero/am-cfc00fae5c9d61fb.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-e663ae8ae77b510a",
+      "sourceChecksum": "5385e0e347b4ca03e3061ce5fb49c5ec72a1d656b7f60bd4c5796eb4e5a33095",
+      "variantVersion": 3,
+      "width": 2366,
+      "height": 2400,
+      "aspectRatio": 0.98583333,
+      "orientation": "square",
+      "averageColor": "#333d35",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-e663ae8ae77b510a.jpg",
+          "webp": "/_generated/raw/am-e663ae8ae77b510a.webp",
+          "width": 355,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-e663ae8ae77b510a.jpg",
+          "webp": "/_generated/thumb/am-e663ae8ae77b510a.webp",
+          "width": 789,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-e663ae8ae77b510a.jpg",
+          "webp": "/_generated/rail/am-e663ae8ae77b510a.webp",
+          "width": 1577,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-e663ae8ae77b510a.jpg",
+          "webp": "/_generated/hero/am-e663ae8ae77b510a.webp",
+          "width": 2366,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-3fa233c5682cd3cc",
+      "sourceChecksum": "d3d1a41c61051d1f189c7f95f52f7782da9c88a114df25d92720edc0b218f6d2",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#65605b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3fa233c5682cd3cc.jpg",
+          "webp": "/_generated/raw/am-3fa233c5682cd3cc.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3fa233c5682cd3cc.jpg",
+          "webp": "/_generated/thumb/am-3fa233c5682cd3cc.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3fa233c5682cd3cc.jpg",
+          "webp": "/_generated/rail/am-3fa233c5682cd3cc.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3fa233c5682cd3cc.jpg",
+          "webp": "/_generated/hero/am-3fa233c5682cd3cc.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-fd20109a1ee55caa",
+      "sourceChecksum": "29d072b0db0efc1cab112d60607b4311ee49fbfd6fde55760371068ed03ae65e",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#93969a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-fd20109a1ee55caa.jpg",
+          "webp": "/_generated/raw/am-fd20109a1ee55caa.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-fd20109a1ee55caa.jpg",
+          "webp": "/_generated/thumb/am-fd20109a1ee55caa.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-fd20109a1ee55caa.jpg",
+          "webp": "/_generated/rail/am-fd20109a1ee55caa.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-fd20109a1ee55caa.jpg",
+          "webp": "/_generated/hero/am-fd20109a1ee55caa.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-df574cc2f3e3f9d7",
+      "sourceChecksum": "a14eb84cb199cf4314c779cf1b36ae2fa2a5a79318d36944428e71a5115d8e8a",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#535558",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-df574cc2f3e3f9d7.jpg",
+          "webp": "/_generated/raw/am-df574cc2f3e3f9d7.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-df574cc2f3e3f9d7.jpg",
+          "webp": "/_generated/thumb/am-df574cc2f3e3f9d7.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-df574cc2f3e3f9d7.jpg",
+          "webp": "/_generated/rail/am-df574cc2f3e3f9d7.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-df574cc2f3e3f9d7.jpg",
+          "webp": "/_generated/hero/am-df574cc2f3e3f9d7.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-1e6de3fa2dbb5a9e",
+      "sourceChecksum": "3c7e4b46754c3ecf5ddb98318da218396d0c6432620fe9ec92813c11e267230b",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#291e1e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-1e6de3fa2dbb5a9e.jpg",
+          "webp": "/_generated/raw/am-1e6de3fa2dbb5a9e.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-1e6de3fa2dbb5a9e.jpg",
+          "webp": "/_generated/thumb/am-1e6de3fa2dbb5a9e.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-1e6de3fa2dbb5a9e.jpg",
+          "webp": "/_generated/rail/am-1e6de3fa2dbb5a9e.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-1e6de3fa2dbb5a9e.jpg",
+          "webp": "/_generated/hero/am-1e6de3fa2dbb5a9e.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-2586c8ae96696145",
+      "sourceChecksum": "74e9bdcfe11816abae4ac35a59545508883d3be6550dc570870d01d4d728d674",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#706355",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-2586c8ae96696145.jpg",
+          "webp": "/_generated/raw/am-2586c8ae96696145.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-2586c8ae96696145.jpg",
+          "webp": "/_generated/thumb/am-2586c8ae96696145.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-2586c8ae96696145.jpg",
+          "webp": "/_generated/rail/am-2586c8ae96696145.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-2586c8ae96696145.jpg",
+          "webp": "/_generated/hero/am-2586c8ae96696145.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-abc4dd5917818d11",
+      "sourceChecksum": "9b9bed387c1367d21d55c60922b19575afcc681422986a035d6a5483888c6a34",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#73726f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-abc4dd5917818d11.jpg",
+          "webp": "/_generated/raw/am-abc4dd5917818d11.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-abc4dd5917818d11.jpg",
+          "webp": "/_generated/thumb/am-abc4dd5917818d11.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-abc4dd5917818d11.jpg",
+          "webp": "/_generated/rail/am-abc4dd5917818d11.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-abc4dd5917818d11.jpg",
+          "webp": "/_generated/hero/am-abc4dd5917818d11.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-d327bba5b1a4ae04",
+      "sourceChecksum": "d6d5cc7f87858b5e86489f6472b952b61ac8efefed424eeafa762f2bd26fcf85",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#271c13",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-d327bba5b1a4ae04.jpg",
+          "webp": "/_generated/raw/am-d327bba5b1a4ae04.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-d327bba5b1a4ae04.jpg",
+          "webp": "/_generated/thumb/am-d327bba5b1a4ae04.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-d327bba5b1a4ae04.jpg",
+          "webp": "/_generated/rail/am-d327bba5b1a4ae04.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-d327bba5b1a4ae04.jpg",
+          "webp": "/_generated/hero/am-d327bba5b1a4ae04.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-338d5945e3f7be37",
+      "sourceChecksum": "f23ccfc3a1ef46d8681a7069a8ef9b48e5c27f8181f47c9b4513c4cf81e76531",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1878,
+      "aspectRatio": 1.27795527,
+      "orientation": "landscape",
+      "averageColor": "#101518",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-338d5945e3f7be37.jpg",
+          "webp": "/_generated/raw/am-338d5945e3f7be37.webp",
+          "width": 360,
+          "height": 282
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-338d5945e3f7be37.jpg",
+          "webp": "/_generated/thumb/am-338d5945e3f7be37.webp",
+          "width": 800,
+          "height": 626
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-338d5945e3f7be37.jpg",
+          "webp": "/_generated/rail/am-338d5945e3f7be37.webp",
+          "width": 1600,
+          "height": 1252
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-338d5945e3f7be37.jpg",
+          "webp": "/_generated/hero/am-338d5945e3f7be37.webp",
+          "width": 2400,
+          "height": 1878
+        }
+      }
+    },
+    {
+      "id": "am-9bd193e97e1eb1bc",
+      "sourceChecksum": "e9c6d959e4ef24afa4a01418642d6ed1ea49b4264d240dc2c507ea11340ae193",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 2400,
+      "aspectRatio": 1.0,
+      "orientation": "square",
+      "averageColor": "#2c1911",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-9bd193e97e1eb1bc.jpg",
+          "webp": "/_generated/raw/am-9bd193e97e1eb1bc.webp",
+          "width": 360,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-9bd193e97e1eb1bc.jpg",
+          "webp": "/_generated/thumb/am-9bd193e97e1eb1bc.webp",
+          "width": 800,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-9bd193e97e1eb1bc.jpg",
+          "webp": "/_generated/rail/am-9bd193e97e1eb1bc.webp",
+          "width": 1600,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-9bd193e97e1eb1bc.jpg",
+          "webp": "/_generated/hero/am-9bd193e97e1eb1bc.webp",
+          "width": 2400,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-59fd4cfbe4bf60f0",
+      "sourceChecksum": "e9945142384060c575e153d4cd73a4199e08134f50f016217a265ec743e2a20f",
+      "variantVersion": 3,
+      "width": 1788,
+      "height": 2400,
+      "aspectRatio": 0.745,
+      "orientation": "portrait",
+      "averageColor": "#422818",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-59fd4cfbe4bf60f0.jpg",
+          "webp": "/_generated/raw/am-59fd4cfbe4bf60f0.webp",
+          "width": 268,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-59fd4cfbe4bf60f0.jpg",
+          "webp": "/_generated/thumb/am-59fd4cfbe4bf60f0.webp",
+          "width": 596,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-59fd4cfbe4bf60f0.jpg",
+          "webp": "/_generated/rail/am-59fd4cfbe4bf60f0.webp",
+          "width": 1192,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-59fd4cfbe4bf60f0.jpg",
+          "webp": "/_generated/hero/am-59fd4cfbe4bf60f0.webp",
+          "width": 1788,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-cfad3d27d48b4105",
+      "sourceChecksum": "072f0a535fd01edf50f924c9ca28cc78b67d11c8bd5b5f067227c63d5ee612e3",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#2f312e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-cfad3d27d48b4105.jpg",
+          "webp": "/_generated/raw/am-cfad3d27d48b4105.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-cfad3d27d48b4105.jpg",
+          "webp": "/_generated/thumb/am-cfad3d27d48b4105.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-cfad3d27d48b4105.jpg",
+          "webp": "/_generated/rail/am-cfad3d27d48b4105.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-cfad3d27d48b4105.jpg",
+          "webp": "/_generated/hero/am-cfad3d27d48b4105.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-af71b5722d858a52",
+      "sourceChecksum": "95141408634bf354b8ae59cdcd80b481446ec0d558b9feed8193125424304879",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#808080",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-af71b5722d858a52.jpg",
+          "webp": "/_generated/raw/am-af71b5722d858a52.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-af71b5722d858a52.jpg",
+          "webp": "/_generated/thumb/am-af71b5722d858a52.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-af71b5722d858a52.jpg",
+          "webp": "/_generated/rail/am-af71b5722d858a52.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-af71b5722d858a52.jpg",
+          "webp": "/_generated/hero/am-af71b5722d858a52.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-30c806d0e0c6d913",
+      "sourceChecksum": "eb2128bd57df787f5a42d5e9d15a05b1e8176d76865bf3abb06ed8691c87b8c9",
+      "variantVersion": 3,
+      "width": 2287,
+      "height": 1525,
+      "aspectRatio": 1.49967213,
+      "orientation": "landscape",
+      "averageColor": "#3a3a3a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-30c806d0e0c6d913.jpg",
+          "webp": "/_generated/raw/am-30c806d0e0c6d913.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-30c806d0e0c6d913.jpg",
+          "webp": "/_generated/thumb/am-30c806d0e0c6d913.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-30c806d0e0c6d913.jpg",
+          "webp": "/_generated/rail/am-30c806d0e0c6d913.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-30c806d0e0c6d913.jpg",
+          "webp": "/_generated/hero/am-30c806d0e0c6d913.webp",
+          "width": 2287,
+          "height": 1525
+        }
+      }
+    },
+    {
+      "id": "am-45209f68ca5ad071",
+      "sourceChecksum": "d8fd468c7333a68e6661119a65e5f8cec65e19ad5dd035b5bca59ad938400f88",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#4d3f35",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-45209f68ca5ad071.jpg",
+          "webp": "/_generated/raw/am-45209f68ca5ad071.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-45209f68ca5ad071.jpg",
+          "webp": "/_generated/thumb/am-45209f68ca5ad071.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-45209f68ca5ad071.jpg",
+          "webp": "/_generated/rail/am-45209f68ca5ad071.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-45209f68ca5ad071.jpg",
+          "webp": "/_generated/hero/am-45209f68ca5ad071.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-1ec943f39f0f0c4e",
+      "sourceChecksum": "5cf80e4b496df148ba786d6d8bbbc016dec94986af7e79fe0e2deaa7a85b8fd9",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#666574",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-1ec943f39f0f0c4e.jpg",
+          "webp": "/_generated/raw/am-1ec943f39f0f0c4e.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-1ec943f39f0f0c4e.jpg",
+          "webp": "/_generated/thumb/am-1ec943f39f0f0c4e.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-1ec943f39f0f0c4e.jpg",
+          "webp": "/_generated/rail/am-1ec943f39f0f0c4e.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-1ec943f39f0f0c4e.jpg",
+          "webp": "/_generated/hero/am-1ec943f39f0f0c4e.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-2e8d671d11dd2719",
+      "sourceChecksum": "26cf3ad82bcb0c0e3d89a8d0cd87d9e2c1bb3ee623a7c40e6bbeebef7bf54308",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1890,
+      "aspectRatio": 1.26984127,
+      "orientation": "landscape",
+      "averageColor": "#9599a0",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-2e8d671d11dd2719.jpg",
+          "webp": "/_generated/raw/am-2e8d671d11dd2719.webp",
+          "width": 360,
+          "height": 284
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-2e8d671d11dd2719.jpg",
+          "webp": "/_generated/thumb/am-2e8d671d11dd2719.webp",
+          "width": 800,
+          "height": 630
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-2e8d671d11dd2719.jpg",
+          "webp": "/_generated/rail/am-2e8d671d11dd2719.webp",
+          "width": 1600,
+          "height": 1260
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-2e8d671d11dd2719.jpg",
+          "webp": "/_generated/hero/am-2e8d671d11dd2719.webp",
+          "width": 2400,
+          "height": 1890
+        }
+      }
+    },
+    {
+      "id": "am-89dd1107bfa084e9",
+      "sourceChecksum": "4be5b8004217128261c15934c6a55f301379e027c9721a283b9ae8d45bda66ab",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#bbb3b7",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-89dd1107bfa084e9.jpg",
+          "webp": "/_generated/raw/am-89dd1107bfa084e9.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-89dd1107bfa084e9.jpg",
+          "webp": "/_generated/thumb/am-89dd1107bfa084e9.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-89dd1107bfa084e9.jpg",
+          "webp": "/_generated/rail/am-89dd1107bfa084e9.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-89dd1107bfa084e9.jpg",
+          "webp": "/_generated/hero/am-89dd1107bfa084e9.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-c82a13b707c56294",
+      "sourceChecksum": "087f42464dfe4fccbc6722be53dea5fc04774d380aa266335eb64629cb10fd22",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1761,
+      "aspectRatio": 1.36286201,
+      "orientation": "landscape",
+      "averageColor": "#6f4d4b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c82a13b707c56294.jpg",
+          "webp": "/_generated/raw/am-c82a13b707c56294.webp",
+          "width": 360,
+          "height": 264
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c82a13b707c56294.jpg",
+          "webp": "/_generated/thumb/am-c82a13b707c56294.webp",
+          "width": 800,
+          "height": 587
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c82a13b707c56294.jpg",
+          "webp": "/_generated/rail/am-c82a13b707c56294.webp",
+          "width": 1600,
+          "height": 1174
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c82a13b707c56294.jpg",
+          "webp": "/_generated/hero/am-c82a13b707c56294.webp",
+          "width": 2400,
+          "height": 1761
+        }
+      }
+    },
+    {
+      "id": "am-b9734ca6cc409190",
+      "sourceChecksum": "67b7337997b0b4a273d882d1cf68510cfaa9da469effef741c7830ee7677aca2",
+      "variantVersion": 3,
+      "width": 1920,
+      "height": 2400,
+      "aspectRatio": 0.8,
+      "orientation": "portrait",
+      "averageColor": "#a8a1a8",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-b9734ca6cc409190.jpg",
+          "webp": "/_generated/raw/am-b9734ca6cc409190.webp",
+          "width": 288,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-b9734ca6cc409190.jpg",
+          "webp": "/_generated/thumb/am-b9734ca6cc409190.webp",
+          "width": 640,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-b9734ca6cc409190.jpg",
+          "webp": "/_generated/rail/am-b9734ca6cc409190.webp",
+          "width": 1280,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-b9734ca6cc409190.jpg",
+          "webp": "/_generated/hero/am-b9734ca6cc409190.webp",
+          "width": 1920,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-31e30eea19bf79e9",
+      "sourceChecksum": "edbc3f4bf8c1321e02601bcd79c241f52314a2da4ec9a86f332319f42b092bf3",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#383533",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-31e30eea19bf79e9.jpg",
+          "webp": "/_generated/raw/am-31e30eea19bf79e9.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-31e30eea19bf79e9.jpg",
+          "webp": "/_generated/thumb/am-31e30eea19bf79e9.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-31e30eea19bf79e9.jpg",
+          "webp": "/_generated/rail/am-31e30eea19bf79e9.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-31e30eea19bf79e9.jpg",
+          "webp": "/_generated/hero/am-31e30eea19bf79e9.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-68f89394b99bd531",
+      "sourceChecksum": "e11fb913a64e4c1ea52ecfd1b24f52c635bc89fa537cd441e19f459e65f8b292",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1350,
+      "aspectRatio": 1.77777778,
+      "orientation": "landscape",
+      "averageColor": "#262625",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-68f89394b99bd531.jpg",
+          "webp": "/_generated/raw/am-68f89394b99bd531.webp",
+          "width": 360,
+          "height": 202
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-68f89394b99bd531.jpg",
+          "webp": "/_generated/thumb/am-68f89394b99bd531.webp",
+          "width": 800,
+          "height": 450
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-68f89394b99bd531.jpg",
+          "webp": "/_generated/rail/am-68f89394b99bd531.webp",
+          "width": 1600,
+          "height": 900
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-68f89394b99bd531.jpg",
+          "webp": "/_generated/hero/am-68f89394b99bd531.webp",
+          "width": 2400,
+          "height": 1350
+        }
+      }
+    },
+    {
+      "id": "am-39e4d68365292bc6",
+      "sourceChecksum": "b9bd3775cd1610891da93a1c69358d10ee0218df0bba5500605a03e933eb22f6",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#6b6d6e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-39e4d68365292bc6.jpg",
+          "webp": "/_generated/raw/am-39e4d68365292bc6.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-39e4d68365292bc6.jpg",
+          "webp": "/_generated/thumb/am-39e4d68365292bc6.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-39e4d68365292bc6.jpg",
+          "webp": "/_generated/rail/am-39e4d68365292bc6.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-39e4d68365292bc6.jpg",
+          "webp": "/_generated/hero/am-39e4d68365292bc6.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-f79ab0aa635d2429",
+      "sourceChecksum": "08dda3b891a74392e3ff33173538190ae777bc84ff8b47779e00d289ec7a7b1a",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#2a181e",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-f79ab0aa635d2429.jpg",
+          "webp": "/_generated/raw/am-f79ab0aa635d2429.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-f79ab0aa635d2429.jpg",
+          "webp": "/_generated/thumb/am-f79ab0aa635d2429.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-f79ab0aa635d2429.jpg",
+          "webp": "/_generated/rail/am-f79ab0aa635d2429.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-f79ab0aa635d2429.jpg",
+          "webp": "/_generated/hero/am-f79ab0aa635d2429.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-8d6ec059db2ab2b8",
+      "sourceChecksum": "608b63d35d19186ee9e5e58d8a10ca13dff73616c8ac8e966099ba44bf6bdddc",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#386568",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-8d6ec059db2ab2b8.jpg",
+          "webp": "/_generated/raw/am-8d6ec059db2ab2b8.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-8d6ec059db2ab2b8.jpg",
+          "webp": "/_generated/thumb/am-8d6ec059db2ab2b8.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-8d6ec059db2ab2b8.jpg",
+          "webp": "/_generated/rail/am-8d6ec059db2ab2b8.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-8d6ec059db2ab2b8.jpg",
+          "webp": "/_generated/hero/am-8d6ec059db2ab2b8.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-927e31041dd0f943",
+      "sourceChecksum": "7e1c5a34389cbf98dd70ac11a7ec5dc4ec1ed30f65e50bc763f0d7f37b37e0d3",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#51383f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-927e31041dd0f943.jpg",
+          "webp": "/_generated/raw/am-927e31041dd0f943.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-927e31041dd0f943.jpg",
+          "webp": "/_generated/thumb/am-927e31041dd0f943.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-927e31041dd0f943.jpg",
+          "webp": "/_generated/rail/am-927e31041dd0f943.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-927e31041dd0f943.jpg",
+          "webp": "/_generated/hero/am-927e31041dd0f943.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-9d6acdaa202038cc",
+      "sourceChecksum": "dfa6102907d1a49983c7aa5d9dcb44639681f34d639d940a6276c5363cdccb29",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#473c3b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-9d6acdaa202038cc.jpg",
+          "webp": "/_generated/raw/am-9d6acdaa202038cc.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-9d6acdaa202038cc.jpg",
+          "webp": "/_generated/thumb/am-9d6acdaa202038cc.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-9d6acdaa202038cc.jpg",
+          "webp": "/_generated/rail/am-9d6acdaa202038cc.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-9d6acdaa202038cc.jpg",
+          "webp": "/_generated/hero/am-9d6acdaa202038cc.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-06a2490eabcfcbb1",
+      "sourceChecksum": "47f72be39cb17b0561b33c88a69213445c3b564f3def231757cf5b8fb852853f",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#676767",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-06a2490eabcfcbb1.jpg",
+          "webp": "/_generated/raw/am-06a2490eabcfcbb1.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-06a2490eabcfcbb1.jpg",
+          "webp": "/_generated/thumb/am-06a2490eabcfcbb1.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-06a2490eabcfcbb1.jpg",
+          "webp": "/_generated/rail/am-06a2490eabcfcbb1.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-06a2490eabcfcbb1.jpg",
+          "webp": "/_generated/hero/am-06a2490eabcfcbb1.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-3ecd133c8fd14bbe",
+      "sourceChecksum": "ee6ac80cf4ad14af8bd6b0f57a7c9820ece4c5c210796485f52f5f3de6cd7ec6",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 2083,
+      "aspectRatio": 1.15218435,
+      "orientation": "landscape",
+      "averageColor": "#141315",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3ecd133c8fd14bbe.jpg",
+          "webp": "/_generated/raw/am-3ecd133c8fd14bbe.webp",
+          "width": 360,
+          "height": 312
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3ecd133c8fd14bbe.jpg",
+          "webp": "/_generated/thumb/am-3ecd133c8fd14bbe.webp",
+          "width": 800,
+          "height": 694
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3ecd133c8fd14bbe.jpg",
+          "webp": "/_generated/rail/am-3ecd133c8fd14bbe.webp",
+          "width": 1600,
+          "height": 1389
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3ecd133c8fd14bbe.jpg",
+          "webp": "/_generated/hero/am-3ecd133c8fd14bbe.webp",
+          "width": 2400,
+          "height": 2083
+        }
+      }
+    },
+    {
+      "id": "am-54c71ce66ee578e9",
+      "sourceChecksum": "5303c2b6b416ecb752b54ad05995b710a49fa788fa27904dbe78f01e160f8bcd",
+      "variantVersion": 3,
+      "width": 1628,
+      "height": 2400,
+      "aspectRatio": 0.67833333,
+      "orientation": "portrait",
+      "averageColor": "#3f2d1d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-54c71ce66ee578e9.jpg",
+          "webp": "/_generated/raw/am-54c71ce66ee578e9.webp",
+          "width": 244,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-54c71ce66ee578e9.jpg",
+          "webp": "/_generated/thumb/am-54c71ce66ee578e9.webp",
+          "width": 543,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-54c71ce66ee578e9.jpg",
+          "webp": "/_generated/rail/am-54c71ce66ee578e9.webp",
+          "width": 1085,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-54c71ce66ee578e9.jpg",
+          "webp": "/_generated/hero/am-54c71ce66ee578e9.webp",
+          "width": 1628,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-a952491c15a57135",
+      "sourceChecksum": "6326553c9ae787176c29f1e9b4afa8437f3239eda76e50063077681e67afc930",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#492e26",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-a952491c15a57135.jpg",
+          "webp": "/_generated/raw/am-a952491c15a57135.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-a952491c15a57135.jpg",
+          "webp": "/_generated/thumb/am-a952491c15a57135.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-a952491c15a57135.jpg",
+          "webp": "/_generated/rail/am-a952491c15a57135.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-a952491c15a57135.jpg",
+          "webp": "/_generated/hero/am-a952491c15a57135.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-cf68dcaa5692c929",
+      "sourceChecksum": "8363b85dbf4105f841d01a6dc01689165e80542d7537342d52f076ddbda4073a",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#403c32",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-cf68dcaa5692c929.jpg",
+          "webp": "/_generated/raw/am-cf68dcaa5692c929.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-cf68dcaa5692c929.jpg",
+          "webp": "/_generated/thumb/am-cf68dcaa5692c929.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-cf68dcaa5692c929.jpg",
+          "webp": "/_generated/rail/am-cf68dcaa5692c929.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-cf68dcaa5692c929.jpg",
+          "webp": "/_generated/hero/am-cf68dcaa5692c929.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-3ad8f6acdf4a6eed",
+      "sourceChecksum": "6d83e32cb32ec20c87156e571a580ea3d613d44f06fb4c2a57d88433abcc24de",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1350,
+      "aspectRatio": 1.77777778,
+      "orientation": "landscape",
+      "averageColor": "#a4a6a3",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3ad8f6acdf4a6eed.jpg",
+          "webp": "/_generated/raw/am-3ad8f6acdf4a6eed.webp",
+          "width": 360,
+          "height": 202
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3ad8f6acdf4a6eed.jpg",
+          "webp": "/_generated/thumb/am-3ad8f6acdf4a6eed.webp",
+          "width": 800,
+          "height": 450
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3ad8f6acdf4a6eed.jpg",
+          "webp": "/_generated/rail/am-3ad8f6acdf4a6eed.webp",
+          "width": 1600,
+          "height": 900
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3ad8f6acdf4a6eed.jpg",
+          "webp": "/_generated/hero/am-3ad8f6acdf4a6eed.webp",
+          "width": 2400,
+          "height": 1350
+        }
+      }
+    },
+    {
+      "id": "am-a546c31f139a70a4",
+      "sourceChecksum": "c7509dab5c6458ebbd010adbfdd36915ed378244c17964b49c80aca9ee2703c7",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1888,
+      "aspectRatio": 1.27118644,
+      "orientation": "landscape",
+      "averageColor": "#342d29",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-a546c31f139a70a4.jpg",
+          "webp": "/_generated/raw/am-a546c31f139a70a4.webp",
+          "width": 360,
+          "height": 283
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-a546c31f139a70a4.jpg",
+          "webp": "/_generated/thumb/am-a546c31f139a70a4.webp",
+          "width": 800,
+          "height": 629
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-a546c31f139a70a4.jpg",
+          "webp": "/_generated/rail/am-a546c31f139a70a4.webp",
+          "width": 1600,
+          "height": 1259
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-a546c31f139a70a4.jpg",
+          "webp": "/_generated/hero/am-a546c31f139a70a4.webp",
+          "width": 2400,
+          "height": 1888
+        }
+      }
+    },
+    {
+      "id": "am-b6c010254e7a47c9",
+      "sourceChecksum": "c9c2e058d199b7cb72b2321934b5ed659aaabc8883dacfeb92241ae964f6be4f",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#363d3f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-b6c010254e7a47c9.jpg",
+          "webp": "/_generated/raw/am-b6c010254e7a47c9.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-b6c010254e7a47c9.jpg",
+          "webp": "/_generated/thumb/am-b6c010254e7a47c9.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-b6c010254e7a47c9.jpg",
+          "webp": "/_generated/rail/am-b6c010254e7a47c9.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-b6c010254e7a47c9.jpg",
+          "webp": "/_generated/hero/am-b6c010254e7a47c9.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-602754a62e8541db",
+      "sourceChecksum": "bffeff243193c8ddb2bf57b1f3f5997bba1e36b0b7e7eb7fff5b2f82d3447d5d",
+      "variantVersion": 3,
+      "width": 1200,
+      "height": 1800,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#20241c",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-602754a62e8541db.jpg",
+          "webp": "/_generated/raw/am-602754a62e8541db.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-602754a62e8541db.jpg",
+          "webp": "/_generated/thumb/am-602754a62e8541db.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-602754a62e8541db.jpg",
+          "webp": "/_generated/rail/am-602754a62e8541db.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-602754a62e8541db.jpg",
+          "webp": "/_generated/hero/am-602754a62e8541db.webp",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    },
+    {
+      "id": "am-f072aa931df56bf5",
+      "sourceChecksum": "9ea401284cd27698d47f05a7ed58e801ac38ca770c713f90e04f39cbcbe5b859",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 2255,
+      "aspectRatio": 1.06430155,
+      "orientation": "landscape",
+      "averageColor": "#173332",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-f072aa931df56bf5.jpg",
+          "webp": "/_generated/raw/am-f072aa931df56bf5.webp",
+          "width": 360,
+          "height": 338
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-f072aa931df56bf5.jpg",
+          "webp": "/_generated/thumb/am-f072aa931df56bf5.webp",
+          "width": 800,
+          "height": 752
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-f072aa931df56bf5.jpg",
+          "webp": "/_generated/rail/am-f072aa931df56bf5.webp",
+          "width": 1600,
+          "height": 1503
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-f072aa931df56bf5.jpg",
+          "webp": "/_generated/hero/am-f072aa931df56bf5.webp",
+          "width": 2400,
+          "height": 2255
+        }
+      }
+    },
+    {
+      "id": "am-03c247475f40ba3b",
+      "sourceChecksum": "42bf2abcac7e876a809997c7fd5bc0ac0d426c394cc90920455752a4c1293d65",
+      "variantVersion": 3,
+      "width": 1827,
+      "height": 2400,
+      "aspectRatio": 0.76125,
+      "orientation": "portrait",
+      "averageColor": "#343b35",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-03c247475f40ba3b.jpg",
+          "webp": "/_generated/raw/am-03c247475f40ba3b.webp",
+          "width": 274,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-03c247475f40ba3b.jpg",
+          "webp": "/_generated/thumb/am-03c247475f40ba3b.webp",
+          "width": 609,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-03c247475f40ba3b.jpg",
+          "webp": "/_generated/rail/am-03c247475f40ba3b.webp",
+          "width": 1218,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-03c247475f40ba3b.jpg",
+          "webp": "/_generated/hero/am-03c247475f40ba3b.webp",
+          "width": 1827,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-a11f713aba363b4a",
+      "sourceChecksum": "17ffdb879a606a6eca9e24ca193aa4616a50a12608fd8881287d3a6959964daa",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1505,
+      "aspectRatio": 1.59468439,
+      "orientation": "landscape",
+      "averageColor": "#32383a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-a11f713aba363b4a.jpg",
+          "webp": "/_generated/raw/am-a11f713aba363b4a.webp",
+          "width": 360,
+          "height": 226
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-a11f713aba363b4a.jpg",
+          "webp": "/_generated/thumb/am-a11f713aba363b4a.webp",
+          "width": 800,
+          "height": 502
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-a11f713aba363b4a.jpg",
+          "webp": "/_generated/rail/am-a11f713aba363b4a.webp",
+          "width": 1600,
+          "height": 1003
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-a11f713aba363b4a.jpg",
+          "webp": "/_generated/hero/am-a11f713aba363b4a.webp",
+          "width": 2400,
+          "height": 1505
+        }
+      }
+    },
+    {
+      "id": "am-c24619aa3deb0966",
+      "sourceChecksum": "36418709dfbfffefbcbdcb942bf52ac41c695a85f18bc82da77e9c75af8bb60e",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#1d1d1d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c24619aa3deb0966.jpg",
+          "webp": "/_generated/raw/am-c24619aa3deb0966.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c24619aa3deb0966.jpg",
+          "webp": "/_generated/thumb/am-c24619aa3deb0966.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c24619aa3deb0966.jpg",
+          "webp": "/_generated/rail/am-c24619aa3deb0966.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c24619aa3deb0966.jpg",
+          "webp": "/_generated/hero/am-c24619aa3deb0966.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-c5d5bdc41048b858",
+      "sourceChecksum": "958e0931b5e760e87d26b0c804dd12fc85e1c9d8711022ee6b8bdb6d1189cce8",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#424242",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c5d5bdc41048b858.jpg",
+          "webp": "/_generated/raw/am-c5d5bdc41048b858.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c5d5bdc41048b858.jpg",
+          "webp": "/_generated/thumb/am-c5d5bdc41048b858.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c5d5bdc41048b858.jpg",
+          "webp": "/_generated/rail/am-c5d5bdc41048b858.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c5d5bdc41048b858.jpg",
+          "webp": "/_generated/hero/am-c5d5bdc41048b858.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-83552e881d7ffcac",
+      "sourceChecksum": "a0a7389a788e9ef7107f15c838636b3e3cf9865c9bbec7327af710e30c6aa85a",
+      "variantVersion": 3,
+      "width": 1989,
+      "height": 2400,
+      "aspectRatio": 0.82875,
+      "orientation": "portrait",
+      "averageColor": "#281c15",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-83552e881d7ffcac.jpg",
+          "webp": "/_generated/raw/am-83552e881d7ffcac.webp",
+          "width": 298,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-83552e881d7ffcac.jpg",
+          "webp": "/_generated/thumb/am-83552e881d7ffcac.webp",
+          "width": 663,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-83552e881d7ffcac.jpg",
+          "webp": "/_generated/rail/am-83552e881d7ffcac.webp",
+          "width": 1326,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-83552e881d7ffcac.jpg",
+          "webp": "/_generated/hero/am-83552e881d7ffcac.webp",
+          "width": 1989,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-805d011440f41af2",
+      "sourceChecksum": "07cec0710ab99839b69501e0b036bd1a662f6e2ca79e65364b165fcced53634b",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1456,
+      "aspectRatio": 1.64835165,
+      "orientation": "landscape",
+      "averageColor": "#613429",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-805d011440f41af2.jpg",
+          "webp": "/_generated/raw/am-805d011440f41af2.webp",
+          "width": 360,
+          "height": 218
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-805d011440f41af2.jpg",
+          "webp": "/_generated/thumb/am-805d011440f41af2.webp",
+          "width": 800,
+          "height": 485
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-805d011440f41af2.jpg",
+          "webp": "/_generated/rail/am-805d011440f41af2.webp",
+          "width": 1600,
+          "height": 971
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-805d011440f41af2.jpg",
+          "webp": "/_generated/hero/am-805d011440f41af2.webp",
+          "width": 2400,
+          "height": 1456
+        }
+      }
+    },
+    {
+      "id": "am-c3d36a9647cbed64",
+      "sourceChecksum": "bf9dcda24f19f8b3789d02d903099a8cf296ba91387ad9603e1d15b44071d6f8",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#1d1813",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c3d36a9647cbed64.jpg",
+          "webp": "/_generated/raw/am-c3d36a9647cbed64.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c3d36a9647cbed64.jpg",
+          "webp": "/_generated/thumb/am-c3d36a9647cbed64.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c3d36a9647cbed64.jpg",
+          "webp": "/_generated/rail/am-c3d36a9647cbed64.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c3d36a9647cbed64.jpg",
+          "webp": "/_generated/hero/am-c3d36a9647cbed64.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-bfaeab87cbce15f6",
+      "sourceChecksum": "6708224075506f86a6282887443dc2c742cb15fdf2a129584e317b118b5c69ca",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1217,
+      "aspectRatio": 1.97206245,
+      "orientation": "landscape",
+      "averageColor": "#494f52",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-bfaeab87cbce15f6.jpg",
+          "webp": "/_generated/raw/am-bfaeab87cbce15f6.webp",
+          "width": 360,
+          "height": 183
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-bfaeab87cbce15f6.jpg",
+          "webp": "/_generated/thumb/am-bfaeab87cbce15f6.webp",
+          "width": 800,
+          "height": 406
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-bfaeab87cbce15f6.jpg",
+          "webp": "/_generated/rail/am-bfaeab87cbce15f6.webp",
+          "width": 1600,
+          "height": 811
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-bfaeab87cbce15f6.jpg",
+          "webp": "/_generated/hero/am-bfaeab87cbce15f6.webp",
+          "width": 2400,
+          "height": 1217
+        }
+      }
+    },
+    {
+      "id": "am-57b7a5ad4ed3aafd",
+      "sourceChecksum": "ad085b0de5c52e7d83a6150a1a8aaf7fad342f05f6acd9ff63d8792e6892b3ce",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1942,
+      "aspectRatio": 1.23583934,
+      "orientation": "landscape",
+      "averageColor": "#515857",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-57b7a5ad4ed3aafd.jpg",
+          "webp": "/_generated/raw/am-57b7a5ad4ed3aafd.webp",
+          "width": 360,
+          "height": 291
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-57b7a5ad4ed3aafd.jpg",
+          "webp": "/_generated/thumb/am-57b7a5ad4ed3aafd.webp",
+          "width": 800,
+          "height": 647
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-57b7a5ad4ed3aafd.jpg",
+          "webp": "/_generated/rail/am-57b7a5ad4ed3aafd.webp",
+          "width": 1600,
+          "height": 1295
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-57b7a5ad4ed3aafd.jpg",
+          "webp": "/_generated/hero/am-57b7a5ad4ed3aafd.webp",
+          "width": 2400,
+          "height": 1942
+        }
+      }
+    },
+    {
+      "id": "am-1c20ed13cf269e0c",
+      "sourceChecksum": "b0948bae94ffe7417544def52f00f8ad7042808596bc533e25eb04d8766493ae",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1225,
+      "aspectRatio": 1.95918367,
+      "orientation": "landscape",
+      "averageColor": "#7a7e83",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-1c20ed13cf269e0c.jpg",
+          "webp": "/_generated/raw/am-1c20ed13cf269e0c.webp",
+          "width": 360,
+          "height": 184
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-1c20ed13cf269e0c.jpg",
+          "webp": "/_generated/thumb/am-1c20ed13cf269e0c.webp",
+          "width": 800,
+          "height": 408
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-1c20ed13cf269e0c.jpg",
+          "webp": "/_generated/rail/am-1c20ed13cf269e0c.webp",
+          "width": 1600,
+          "height": 817
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-1c20ed13cf269e0c.jpg",
+          "webp": "/_generated/hero/am-1c20ed13cf269e0c.webp",
+          "width": 2400,
+          "height": 1225
+        }
+      }
+    },
+    {
+      "id": "am-de51ec92b01ed78d",
+      "sourceChecksum": "611290de3feb2cf5c0fb3b5cf8c6c5f4e68844bd2e56f34ab08d3a324b7f3c7c",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1142,
+      "aspectRatio": 2.10157618,
+      "orientation": "landscape",
+      "averageColor": "#544e4d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-de51ec92b01ed78d.jpg",
+          "webp": "/_generated/raw/am-de51ec92b01ed78d.webp",
+          "width": 360,
+          "height": 171
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-de51ec92b01ed78d.jpg",
+          "webp": "/_generated/thumb/am-de51ec92b01ed78d.webp",
+          "width": 800,
+          "height": 381
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-de51ec92b01ed78d.jpg",
+          "webp": "/_generated/rail/am-de51ec92b01ed78d.webp",
+          "width": 1600,
+          "height": 761
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-de51ec92b01ed78d.jpg",
+          "webp": "/_generated/hero/am-de51ec92b01ed78d.webp",
+          "width": 2400,
+          "height": 1142
+        }
+      }
+    },
+    {
+      "id": "am-dbb339fb3d245e65",
+      "sourceChecksum": "980a39f6c90d6241ede7348c7d18b43c992f1aa1cbfe726003fe77440c40402d",
+      "variantVersion": 3,
+      "width": 1555,
+      "height": 928,
+      "aspectRatio": 1.67564655,
+      "orientation": "landscape",
+      "averageColor": "#827d84",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-dbb339fb3d245e65.jpg",
+          "webp": "/_generated/raw/am-dbb339fb3d245e65.webp",
+          "width": 360,
+          "height": 215
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-dbb339fb3d245e65.jpg",
+          "webp": "/_generated/thumb/am-dbb339fb3d245e65.webp",
+          "width": 800,
+          "height": 477
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-dbb339fb3d245e65.jpg",
+          "webp": "/_generated/rail/am-dbb339fb3d245e65.webp",
+          "width": 1555,
+          "height": 928
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-dbb339fb3d245e65.jpg",
+          "webp": "/_generated/hero/am-dbb339fb3d245e65.webp",
+          "width": 1555,
+          "height": 928
+        }
+      }
+    },
+    {
+      "id": "am-a6a679bb3f96bb25",
+      "sourceChecksum": "bf8350dc063d06e9bf417c07e8aaa842f0a9825025c4b09f161fdc8f6fa06d4f",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1316,
+      "aspectRatio": 1.82370821,
+      "orientation": "landscape",
+      "averageColor": "#5e3f23",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-a6a679bb3f96bb25.jpg",
+          "webp": "/_generated/raw/am-a6a679bb3f96bb25.webp",
+          "width": 360,
+          "height": 197
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-a6a679bb3f96bb25.jpg",
+          "webp": "/_generated/thumb/am-a6a679bb3f96bb25.webp",
+          "width": 800,
+          "height": 439
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-a6a679bb3f96bb25.jpg",
+          "webp": "/_generated/rail/am-a6a679bb3f96bb25.webp",
+          "width": 1600,
+          "height": 877
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-a6a679bb3f96bb25.jpg",
+          "webp": "/_generated/hero/am-a6a679bb3f96bb25.webp",
+          "width": 2400,
+          "height": 1316
+        }
+      }
+    },
+    {
+      "id": "am-4a1448ea4903f42e",
+      "sourceChecksum": "97fe88868cc3e70c803131ce473a4121c83250a53500b38626c8225e39ce6808",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#455255",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-4a1448ea4903f42e.jpg",
+          "webp": "/_generated/raw/am-4a1448ea4903f42e.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-4a1448ea4903f42e.jpg",
+          "webp": "/_generated/thumb/am-4a1448ea4903f42e.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-4a1448ea4903f42e.jpg",
+          "webp": "/_generated/rail/am-4a1448ea4903f42e.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-4a1448ea4903f42e.jpg",
+          "webp": "/_generated/hero/am-4a1448ea4903f42e.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-97b6795a384b3004",
+      "sourceChecksum": "a3cda840a0d15d8e7f3bbf539501bc73214fde60677457fe6210bb71ffee43b7",
+      "variantVersion": 3,
+      "width": 1583,
+      "height": 2400,
+      "aspectRatio": 0.65958333,
+      "orientation": "portrait",
+      "averageColor": "#72605b",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-97b6795a384b3004.jpg",
+          "webp": "/_generated/raw/am-97b6795a384b3004.webp",
+          "width": 237,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-97b6795a384b3004.jpg",
+          "webp": "/_generated/thumb/am-97b6795a384b3004.webp",
+          "width": 528,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-97b6795a384b3004.jpg",
+          "webp": "/_generated/rail/am-97b6795a384b3004.webp",
+          "width": 1055,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-97b6795a384b3004.jpg",
+          "webp": "/_generated/hero/am-97b6795a384b3004.webp",
+          "width": 1583,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-6fd4d56a70bf2976",
+      "sourceChecksum": "85c37c9716769e3364e0c873c9200e18f1a53afb277a3d68c9f79be6b9e48f5c",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1197,
+      "aspectRatio": 2.00501253,
+      "orientation": "landscape",
+      "averageColor": "#b3b1ba",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-6fd4d56a70bf2976.jpg",
+          "webp": "/_generated/raw/am-6fd4d56a70bf2976.webp",
+          "width": 360,
+          "height": 180
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-6fd4d56a70bf2976.jpg",
+          "webp": "/_generated/thumb/am-6fd4d56a70bf2976.webp",
+          "width": 800,
+          "height": 399
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-6fd4d56a70bf2976.jpg",
+          "webp": "/_generated/rail/am-6fd4d56a70bf2976.webp",
+          "width": 1600,
+          "height": 798
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-6fd4d56a70bf2976.jpg",
+          "webp": "/_generated/hero/am-6fd4d56a70bf2976.webp",
+          "width": 2400,
+          "height": 1197
+        }
+      }
+    },
+    {
+      "id": "am-2213e61b7e6559e1",
+      "sourceChecksum": "8d985f7a51a079cca2a3b1c3ee0681ac86a42e42296fe67c34fbaa303e043e81",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#2f170d",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-2213e61b7e6559e1.jpg",
+          "webp": "/_generated/raw/am-2213e61b7e6559e1.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-2213e61b7e6559e1.jpg",
+          "webp": "/_generated/thumb/am-2213e61b7e6559e1.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-2213e61b7e6559e1.jpg",
+          "webp": "/_generated/rail/am-2213e61b7e6559e1.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-2213e61b7e6559e1.jpg",
+          "webp": "/_generated/hero/am-2213e61b7e6559e1.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-9dd88efd08f3e65b",
+      "sourceChecksum": "a421c7270db2e95805448c1975497e0932325f78405046fadc253ba68c3fe527",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#53595a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-9dd88efd08f3e65b.jpg",
+          "webp": "/_generated/raw/am-9dd88efd08f3e65b.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-9dd88efd08f3e65b.jpg",
+          "webp": "/_generated/thumb/am-9dd88efd08f3e65b.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-9dd88efd08f3e65b.jpg",
+          "webp": "/_generated/rail/am-9dd88efd08f3e65b.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-9dd88efd08f3e65b.jpg",
+          "webp": "/_generated/hero/am-9dd88efd08f3e65b.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-f1ea864f1945699d",
+      "sourceChecksum": "76d5f6b56a8dbd1aa7451f382091c436dcf3f749b7fb01c9e45eeb381114a954",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#19120f",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-f1ea864f1945699d.jpg",
+          "webp": "/_generated/raw/am-f1ea864f1945699d.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-f1ea864f1945699d.jpg",
+          "webp": "/_generated/thumb/am-f1ea864f1945699d.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-f1ea864f1945699d.jpg",
+          "webp": "/_generated/rail/am-f1ea864f1945699d.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-f1ea864f1945699d.jpg",
+          "webp": "/_generated/hero/am-f1ea864f1945699d.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-3ebecc22942c2be4",
+      "sourceChecksum": "ea759d479f934276d6cd2aa14bf0bd8dfac9558989e4b09d7acd1d773167176c",
+      "variantVersion": 3,
+      "width": 1825,
+      "height": 2400,
+      "aspectRatio": 0.76041667,
+      "orientation": "portrait",
+      "averageColor": "#535353",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-3ebecc22942c2be4.jpg",
+          "webp": "/_generated/raw/am-3ebecc22942c2be4.webp",
+          "width": 274,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-3ebecc22942c2be4.jpg",
+          "webp": "/_generated/thumb/am-3ebecc22942c2be4.webp",
+          "width": 608,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-3ebecc22942c2be4.jpg",
+          "webp": "/_generated/rail/am-3ebecc22942c2be4.webp",
+          "width": 1217,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-3ebecc22942c2be4.jpg",
+          "webp": "/_generated/hero/am-3ebecc22942c2be4.webp",
+          "width": 1825,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-1e5f9d4cfb16898b",
+      "sourceChecksum": "f903cb9110e482cecb55d565237e8a360216921e24d6209b718bfcbe25b7a2e0",
+      "variantVersion": 3,
+      "width": 1758,
+      "height": 1763,
+      "aspectRatio": 0.99716393,
+      "orientation": "square",
+      "averageColor": "#50483c",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-1e5f9d4cfb16898b.jpg",
+          "webp": "/_generated/raw/am-1e5f9d4cfb16898b.webp",
+          "width": 359,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-1e5f9d4cfb16898b.jpg",
+          "webp": "/_generated/thumb/am-1e5f9d4cfb16898b.webp",
+          "width": 798,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-1e5f9d4cfb16898b.jpg",
+          "webp": "/_generated/rail/am-1e5f9d4cfb16898b.webp",
+          "width": 1595,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-1e5f9d4cfb16898b.jpg",
+          "webp": "/_generated/hero/am-1e5f9d4cfb16898b.webp",
+          "width": 1758,
+          "height": 1763
+        }
+      }
+    },
+    {
+      "id": "am-640f0065d310b5b5",
+      "sourceChecksum": "3d4c11a1fe000528a262b64301145ae71a9b41789615baa6c51a3edb1cad6ec6",
+      "variantVersion": 3,
+      "width": 1604,
+      "height": 2400,
+      "aspectRatio": 0.66833333,
+      "orientation": "portrait",
+      "averageColor": "#181310",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-640f0065d310b5b5.jpg",
+          "webp": "/_generated/raw/am-640f0065d310b5b5.webp",
+          "width": 241,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-640f0065d310b5b5.jpg",
+          "webp": "/_generated/thumb/am-640f0065d310b5b5.webp",
+          "width": 535,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-640f0065d310b5b5.jpg",
+          "webp": "/_generated/rail/am-640f0065d310b5b5.webp",
+          "width": 1069,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-640f0065d310b5b5.jpg",
+          "webp": "/_generated/hero/am-640f0065d310b5b5.webp",
+          "width": 1604,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-61ec236b9e557eb6",
+      "sourceChecksum": "a96cdcd997902c0ec9f668663cf37f47a9a435642130bd6d5a6341b5c2dc2e96",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1916,
+      "aspectRatio": 1.2526096,
+      "orientation": "landscape",
+      "averageColor": "#292929",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-61ec236b9e557eb6.jpg",
+          "webp": "/_generated/raw/am-61ec236b9e557eb6.webp",
+          "width": 360,
+          "height": 287
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-61ec236b9e557eb6.jpg",
+          "webp": "/_generated/thumb/am-61ec236b9e557eb6.webp",
+          "width": 800,
+          "height": 639
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-61ec236b9e557eb6.jpg",
+          "webp": "/_generated/rail/am-61ec236b9e557eb6.webp",
+          "width": 1600,
+          "height": 1277
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-61ec236b9e557eb6.jpg",
+          "webp": "/_generated/hero/am-61ec236b9e557eb6.webp",
+          "width": 2400,
+          "height": 1916
+        }
+      }
+    },
+    {
+      "id": "am-1ccb18b7185ac456",
+      "sourceChecksum": "6c40b03816b11335dfbed4bde5084d2feda38cb4ddd53645fa440a143f470e4e",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#96a0af",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-1ccb18b7185ac456.jpg",
+          "webp": "/_generated/raw/am-1ccb18b7185ac456.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-1ccb18b7185ac456.jpg",
+          "webp": "/_generated/thumb/am-1ccb18b7185ac456.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-1ccb18b7185ac456.jpg",
+          "webp": "/_generated/rail/am-1ccb18b7185ac456.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-1ccb18b7185ac456.jpg",
+          "webp": "/_generated/hero/am-1ccb18b7185ac456.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-521797f1c77c15a4",
+      "sourceChecksum": "d531f6eda6df45b98d0c66cc645a0064ed840be76479a2467f1f8517af11a4cc",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#301f13",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-521797f1c77c15a4.jpg",
+          "webp": "/_generated/raw/am-521797f1c77c15a4.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-521797f1c77c15a4.jpg",
+          "webp": "/_generated/thumb/am-521797f1c77c15a4.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-521797f1c77c15a4.jpg",
+          "webp": "/_generated/rail/am-521797f1c77c15a4.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-521797f1c77c15a4.jpg",
+          "webp": "/_generated/hero/am-521797f1c77c15a4.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-c260de4945be81b7",
+      "sourceChecksum": "599d73b2b30af11099d2f61ee5a7e06f736bf9a85be8cfe302045003e6abbcbc",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#9d7d61",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-c260de4945be81b7.jpg",
+          "webp": "/_generated/raw/am-c260de4945be81b7.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-c260de4945be81b7.jpg",
+          "webp": "/_generated/thumb/am-c260de4945be81b7.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-c260de4945be81b7.jpg",
+          "webp": "/_generated/rail/am-c260de4945be81b7.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-c260de4945be81b7.jpg",
+          "webp": "/_generated/hero/am-c260de4945be81b7.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-6feab60ce435bd7f",
+      "sourceChecksum": "1132a5a9e19e9a336f52d15466a7b852dc52ea39409d6e205814cb237cea55c2",
+      "variantVersion": 3,
+      "width": 1600,
+      "height": 2400,
+      "aspectRatio": 0.66666667,
+      "orientation": "portrait",
+      "averageColor": "#e1edf9",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-6feab60ce435bd7f.jpg",
+          "webp": "/_generated/raw/am-6feab60ce435bd7f.webp",
+          "width": 240,
+          "height": 360
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-6feab60ce435bd7f.jpg",
+          "webp": "/_generated/thumb/am-6feab60ce435bd7f.webp",
+          "width": 533,
+          "height": 800
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-6feab60ce435bd7f.jpg",
+          "webp": "/_generated/rail/am-6feab60ce435bd7f.webp",
+          "width": 1067,
+          "height": 1600
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-6feab60ce435bd7f.jpg",
+          "webp": "/_generated/hero/am-6feab60ce435bd7f.webp",
+          "width": 1600,
+          "height": 2400
+        }
+      }
+    },
+    {
+      "id": "am-d0df354c843a79ff",
+      "sourceChecksum": "ef41bd0bfdb16fc31f0bd2ef196c44ca86b650c6f295d609b5dfddd0ba780101",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1387,
+      "aspectRatio": 1.73035328,
+      "orientation": "landscape",
+      "averageColor": "#30353a",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-d0df354c843a79ff.jpg",
+          "webp": "/_generated/raw/am-d0df354c843a79ff.webp",
+          "width": 360,
+          "height": 208
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-d0df354c843a79ff.jpg",
+          "webp": "/_generated/thumb/am-d0df354c843a79ff.webp",
+          "width": 800,
+          "height": 462
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-d0df354c843a79ff.jpg",
+          "webp": "/_generated/rail/am-d0df354c843a79ff.webp",
+          "width": 1600,
+          "height": 925
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-d0df354c843a79ff.jpg",
+          "webp": "/_generated/hero/am-d0df354c843a79ff.webp",
+          "width": 2400,
+          "height": 1387
+        }
+      }
+    },
+    {
+      "id": "am-aa3a115ac0f3ec3d",
+      "sourceChecksum": "6af710cb343913037063137d9a349cd621c9c783dbc50500c62c0995c32af1b2",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#4d4f5c",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-aa3a115ac0f3ec3d.jpg",
+          "webp": "/_generated/raw/am-aa3a115ac0f3ec3d.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-aa3a115ac0f3ec3d.jpg",
+          "webp": "/_generated/thumb/am-aa3a115ac0f3ec3d.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-aa3a115ac0f3ec3d.jpg",
+          "webp": "/_generated/rail/am-aa3a115ac0f3ec3d.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-aa3a115ac0f3ec3d.jpg",
+          "webp": "/_generated/hero/am-aa3a115ac0f3ec3d.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-664e0e1aa184cec8",
+      "sourceChecksum": "e7af9aae06b949380cc85b7022e1aefa1dfb923afeeb65b059e6088de2d24b33",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": 1.5,
+      "orientation": "landscape",
+      "averageColor": "#424242",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-664e0e1aa184cec8.jpg",
+          "webp": "/_generated/raw/am-664e0e1aa184cec8.webp",
+          "width": 360,
+          "height": 240
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-664e0e1aa184cec8.jpg",
+          "webp": "/_generated/thumb/am-664e0e1aa184cec8.webp",
+          "width": 800,
+          "height": 533
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-664e0e1aa184cec8.jpg",
+          "webp": "/_generated/rail/am-664e0e1aa184cec8.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-664e0e1aa184cec8.jpg",
+          "webp": "/_generated/hero/am-664e0e1aa184cec8.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      }
+    },
+    {
+      "id": "am-fa65496b8b41999a",
+      "sourceChecksum": "135ac7799345fbe2a8bdc1328405948ce1dffe9eaf568d88495e1fa0113805dc",
+      "variantVersion": 3,
+      "width": 2400,
+      "height": 1511,
+      "aspectRatio": 1.58835208,
+      "orientation": "landscape",
+      "averageColor": "#292929",
+      "variants": {
+        "raw": {
+          "jpeg": "/_generated/raw/am-fa65496b8b41999a.jpg",
+          "webp": "/_generated/raw/am-fa65496b8b41999a.webp",
+          "width": 360,
+          "height": 227
+        },
+        "thumb": {
+          "jpeg": "/_generated/thumb/am-fa65496b8b41999a.jpg",
+          "webp": "/_generated/thumb/am-fa65496b8b41999a.webp",
+          "width": 800,
+          "height": 504
+        },
+        "rail": {
+          "jpeg": "/_generated/rail/am-fa65496b8b41999a.jpg",
+          "webp": "/_generated/rail/am-fa65496b8b41999a.webp",
+          "width": 1600,
+          "height": 1007
+        },
+        "hero": {
+          "jpeg": "/_generated/hero/am-fa65496b8b41999a.jpg",
+          "webp": "/_generated/hero/am-fa65496b8b41999a.webp",
+          "width": 2400,
+          "height": 1511
+        }
+      }
+    }
+  ]
+}

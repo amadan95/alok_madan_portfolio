@@ -87,7 +87,7 @@ export function InfiniteVerticalSlider<T>({
     return () => {
       gsap.ticker.remove(tick);
     };
-  }, [autoScrollSpeed, items, onActiveChange, reducedMotion, rowHeight, segmentHeight]);
+  }, [autoScrollSpeed, items, onActiveChange, reducedMotion, repeated.length, rowHeight, segmentHeight]);
 
   useEffect(() => {
     if (lastNotifiedIndexRef.current === activeIndex) {

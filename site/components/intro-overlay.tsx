@@ -1,14 +1,14 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import type { IntroSlide, SiteMeta } from "@/lib/types";
+import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { sitePrimaryNavLinks } from "@/components/site-header-chrome";
 
 const slideDurationMs = 165;
-const flashSlideCount = 9;
 const INTRO_PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=";
 
@@ -29,24 +29,6 @@ function preloadVariant(webp: string, jpeg: string) {
   });
 }
 
-function buildRandomIntroSequence(pool: IntroSlide[]) {
-  if (pool.length <= 1) {
-    return pool;
-  }
-
-  const shuffled = [...pool];
-
-  for (let index = shuffled.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
-  }
-
-  const temporarySlide = shuffled[0];
-  const flashSlides = shuffled.slice(1, Math.min(shuffled.length, flashSlideCount + 1));
-
-  return [...flashSlides, temporarySlide];
-}
-
 export function IntroOverlay({
   slides,
   siteMeta,
@@ -60,6 +42,7 @@ export function IntroOverlay({
 }) {
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const hasDismissed = useRef(false);
+  const reducedMotion = useReducedMotion();
   const [sequenceSlides, setSequenceSlides] = useState<IntroSlide[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sequenceComplete, setSequenceComplete] = useState(false);
@@ -72,116 +55,20 @@ export function IntroOverlay({
     [currentIndex, sequenceSlides],
   );
 
-  useEffect(() => {
-    if (!visible || activeProjectSlug || slides.length === 0) {
-      return;
-    }
-
-    let cancelled = false;
-    const selectedSlides = buildRandomIntroSequence(slides);
-
-    setSequenceReady(false);
-    setSequenceSlides(selectedSlides);
-    setCurrentIndex(0);
-    setSequenceComplete(false);
-
-    Promise.all(
-      selectedSlides.map((slide, index) => {
-        const variant = index === selectedSlides.length - 1 ? slide.hold : slide.flash;
-        return preloadVariant(variant.webp, variant.jpeg);
-      }),
-    ).then(() => {
-      if (cancelled) {
-        return;
-      }
-
-      setSequenceReady(true);
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [activeProjectSlug, slides, visible]);
-
-  useEffect(() => {
-    if (!visible || activeProjectSlug || sequenceSlides.length === 0 || !sequenceReady) {
-      return;
-    }
-
-    hasDismissed.current = false;
-    setCurrentIndex(0);
-    setSequenceComplete(false);
-    setMoveNavToTop(false);
-    document.body.style.overflow = "hidden";
-
-    if (sequenceSlides.length <= 1) {
-      setSequenceComplete(true);
-      return () => {
-        document.body.style.overflow = "";
-      };
-    }
-
-    const interval = window.setInterval(() => {
-      setCurrentIndex((value) => {
-        if (value >= sequenceSlides.length - 1) {
-          return value;
-        }
-        return value + 1;
-      });
-    }, slideDurationMs);
-
-    const completeTimeout = window.setTimeout(() => {
-      window.clearInterval(interval);
-      setCurrentIndex(sequenceSlides.length - 1);
-      setSequenceComplete(true);
-    }, Math.max(0, sequenceSlides.length - 1) * slideDurationMs);
-
-    return () => {
-      window.clearInterval(interval);
-      window.clearTimeout(completeTimeout);
-      document.body.style.overflow = "";
-    };
-  }, [activeProjectSlug, sequenceReady, sequenceSlides, setMoveNavToTop, visible]);
-
-  useEffect(() => {
-    if (visible) {
-      setNumber(currentIndex + 1);
-    }
-  }, [currentIndex, setNumber, visible]);
-
-  useEffect(() => {
-    if (!visible || sequenceSlides.length === 0) {
-      return;
-    }
-
-    setSequenceComplete(currentIndex >= sequenceSlides.length - 1);
-  }, [currentIndex, sequenceSlides.length, visible]);
-
-  useEffect(() => {
-    if (!visible || !sequenceComplete) {
-      return;
-    }
-
-    const onWheel = (event: WheelEvent) => {
-      if (event.deltaY <= 0) {
-        return;
-      }
-
-      event.preventDefault();
-      dismiss("scroll");
-    };
-
-    window.addEventListener("wheel", onWheel, { passive: false });
-    return () => window.removeEventListener("wheel", onWheel);
-  }, [sequenceComplete, visible]);
-
-  const dismiss = (mode: "fade" | "scroll" = "fade") => {
+  const dismiss = useCallback((mode: "fade" | "scroll" = "fade") => {
     if (!visible || hasDismissed.current) {
       return;
     }
 
     hasDismissed.current = true;
     setNumber(1);
+
+    if (reducedMotion) {
+      document.body.style.overflow = "";
+      setMoveNavToTop(true);
+      setHideIntro(true);
+      return;
+    }
 
     const stage = document.querySelector<HTMLElement>("[data-route-stage]");
     const timeline = gsap.timeline({
@@ -224,29 +111,142 @@ export function IntroOverlay({
       duration: 0.42,
       ease: "expo.out",
     });
-  };
+  }, [reducedMotion, setHideIntro, setMoveNavToTop, setNumber, visible]);
+
+  useEffect(() => {
+    if (!visible || activeProjectSlug || slides.length === 0) {
+      return;
+    }
+
+    let cancelled = false;
+    const selectedSlides = [...slides];
+    const initialIndex = reducedMotion ? selectedSlides.length - 1 : 0;
+
+    setSequenceReady(false);
+    setSequenceSlides(selectedSlides);
+    setCurrentIndex(initialIndex);
+    setSequenceComplete(reducedMotion || selectedSlides.length <= 1);
+
+    Promise.all(
+      selectedSlides.map((slide, index) => {
+        const variant =
+          reducedMotion || index === selectedSlides.length - 1 ? slide.hold : slide.flash;
+        return preloadVariant(variant.webp, variant.jpeg);
+      }),
+    ).then(() => {
+      if (cancelled) {
+        return;
+      }
+
+      setSequenceReady(true);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeProjectSlug, reducedMotion, slides, visible]);
+
+  useEffect(() => {
+    if (!visible || activeProjectSlug || sequenceSlides.length === 0 || !sequenceReady) {
+      return;
+    }
+
+    hasDismissed.current = false;
+    setCurrentIndex(reducedMotion ? sequenceSlides.length - 1 : 0);
+    setSequenceComplete(reducedMotion || sequenceSlides.length <= 1);
+    setMoveNavToTop(false);
+    document.body.style.overflow = "hidden";
+
+    if (reducedMotion || sequenceSlides.length <= 1) {
+      return () => {
+        document.body.style.overflow = "";
+      };
+    }
+
+    const interval = window.setInterval(() => {
+      setCurrentIndex((value) => {
+        if (value >= sequenceSlides.length - 1) {
+          return value;
+        }
+        return value + 1;
+      });
+    }, slideDurationMs);
+
+    const completeTimeout = window.setTimeout(() => {
+      window.clearInterval(interval);
+      setCurrentIndex(sequenceSlides.length - 1);
+      setSequenceComplete(true);
+    }, Math.max(0, sequenceSlides.length - 1) * slideDurationMs);
+
+    return () => {
+      window.clearInterval(interval);
+      window.clearTimeout(completeTimeout);
+      document.body.style.overflow = "";
+    };
+  }, [activeProjectSlug, reducedMotion, sequenceReady, sequenceSlides, setMoveNavToTop, visible]);
+
+  useEffect(() => {
+    if (visible) {
+      setNumber(currentIndex + 1);
+    }
+  }, [currentIndex, setNumber, visible]);
+
+  useEffect(() => {
+    if (!visible || sequenceSlides.length === 0) {
+      return;
+    }
+
+    setSequenceComplete(currentIndex >= sequenceSlides.length - 1);
+  }, [currentIndex, sequenceSlides.length, visible]);
+
+  useEffect(() => {
+    if (!visible || !sequenceComplete) {
+      return;
+    }
+
+    const onWheel = (event: WheelEvent) => {
+      if (event.deltaY <= 0) {
+        return;
+      }
+
+      event.preventDefault();
+      dismiss("scroll");
+    };
+
+    window.addEventListener("wheel", onWheel, { passive: false });
+    return () => window.removeEventListener("wheel", onWheel);
+  }, [dismiss, sequenceComplete, visible]);
 
   if (!visible || activeProjectSlug || sequenceSlides.length === 0 || !activeSlide) {
     return null;
   }
 
   return (
-    <div ref={overlayRef} className="intro-overlay" data-complete={String(sequenceComplete)} role="presentation">
+    <div
+      ref={overlayRef}
+      className="intro-overlay"
+      data-complete={String(sequenceComplete)}
+      data-reduced-motion={String(reducedMotion)}
+      role="region"
+      aria-label="Portfolio introduction"
+    >
       <div className="intro-overlay__media">
         {sequenceSlides.map((slide, index) => {
-          const variant = index === sequenceSlides.length - 1 ? slide.hold : slide.flash;
+          const isActive = index === currentIndex;
+          const variant =
+            reducedMotion || index === sequenceSlides.length - 1 ? slide.hold : slide.flash;
           return (
             <picture
               key={slide.id}
               className="intro-overlay__image"
-              data-active={String(index === currentIndex)}
+              data-active={String(isActive)}
               style={{ backgroundColor: slide.averageColor }}
             >
               <source type="image/webp" srcSet={`${variant.webp} ${variant.width}w`} sizes="100vw" />
               <source type="image/jpeg" srcSet={`${variant.jpeg} ${variant.width}w`} sizes="100vw" />
               <img
                 src={(sequenceReady && variant.jpeg) || INTRO_PLACEHOLDER}
-                alt=""
+                alt={isActive ? slide.alt : ""}
                 width={variant.width}
                 height={variant.height}
                 fetchPriority={index <= 1 ? "high" : "auto"}
@@ -265,12 +265,17 @@ export function IntroOverlay({
         <span className="intro-overlay__name">{siteMeta.photographer}</span>
       </aside>
 
-      <nav className="intro-overlay__final-nav" aria-label="Portfolio intro navigation">
+      <nav
+        className="intro-overlay__final-nav"
+        aria-label="Portfolio intro navigation"
+        aria-hidden={!sequenceComplete}
+      >
         {sitePrimaryNavLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
             className="intro-overlay__final-link"
+            tabIndex={sequenceComplete ? undefined : -1}
             onClick={(event) => {
               if (link.href === "/") {
                 event.preventDefault();

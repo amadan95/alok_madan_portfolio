@@ -1,60 +1,208 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { KeyboardEvent as ReactKeyboardEvent } from "react";
 import gsap from "gsap";
-import SplitType from "split-type";
-import type { DisplayAsset, Series } from "@/lib/types";
+import type { CuratedDisplayImage, ExhibitCollection } from "@/lib/types";
 import { useReducedMotion, useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { ResponsivePhoto } from "@/components/responsive-photo";
 
+type ActiveRailCopy = {
+  number: string;
+  title: string;
+  prose: string;
+};
+
 export function ProjectDetailExperience({
-  series,
-  assets,
+  collection,
+  images,
 }: {
-  series: Series;
-  assets: DisplayAsset[];
+  collection: ExhibitCollection;
+  images: CuratedDisplayImage[];
 }) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
-  const titleRef = useRef<HTMLParagraphElement | null>(null);
-  const bodyRef = useRef<HTMLParagraphElement | null>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const railUpdateRef = useRef<HTMLDivElement | null>(null);
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const viewportWidth = useViewportWidth();
   const reducedMotion = useReducedMotion();
   const isMobile = viewportWidth > 0 && viewportWidth < 1024;
   const setActiveProjectSlug = useUIStore((state) => state.setActiveProjectSlug);
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
-  const photoCopies = useMemo(
-    () => assets.map((asset) => series.photoCaptions?.[asset.id] || series.projectInformation),
-    [assets, series.photoCaptions, series.projectInformation],
-  );
-  const activeAsset = assets[Math.min(activeIndex, Math.max(assets.length - 1, 0))] ?? null;
-  const activeCopy = useMemo(
-    () => (activeAsset ? photoCopies[activeIndex] : null) || series.projectInformation,
-    [activeAsset, activeIndex, photoCopies, series.projectInformation],
+
+  const activeRailCopy = useMemo<ActiveRailCopy>(() => {
+    if (activeSlideIndex === 0) {
+      return {
+        number: "Collection essay",
+        title: collection.title,
+        prose: collection.synopsis,
+      };
+    }
+
+    const imageIndex = Math.min(activeSlideIndex - 1, Math.max(images.length - 1, 0));
+    const image = images[imageIndex];
+    return image
+      ? {
+          number: `${String(imageIndex + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}`,
+          title: image.title,
+          prose: image.prose,
+        }
+      : {
+          number: "Collection essay",
+          title: collection.title,
+          prose: collection.synopsis,
+        };
+  }, [activeSlideIndex, collection.synopsis, collection.title, images]);
+
+  const getSlides = useCallback(() => {
+    return Array.from(
+      scrollerRef.current?.querySelectorAll<HTMLElement>("[data-project-slide]") ?? [],
+    );
+  }, []);
+
+  const updateActiveSlideFromElements = useCallback(() => {
+    const scroller = scrollerRef.current;
+    const slides = getSlides();
+    if (!scroller || slides.length === 0) {
+      return;
+    }
+
+    const scrollerRect = scroller.getBoundingClientRect();
+    const viewportCenter = isMobile
+      ? window.innerHeight / 2
+      : scrollerRect.left + scroller.clientWidth / 2;
+
+    let nearestIndex = 0;
+    let nearestDistance = Number.POSITIVE_INFINITY;
+
+    slides.forEach((slide, index) => {
+      const rect = slide.getBoundingClientRect();
+      const slideCenter = isMobile
+        ? rect.top + rect.height / 2
+        : rect.left + rect.width / 2;
+      const distance = Math.abs(slideCenter - viewportCenter);
+
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestIndex = index;
+      }
+    });
+
+    setActiveSlideIndex((currentIndex) =>
+      currentIndex === nearestIndex ? currentIndex : nearestIndex,
+    );
+  }, [getSlides, isMobile]);
+
+  const scrollToSlide = useCallback(
+    (nextIndex: number) => {
+      const scroller = scrollerRef.current;
+      const slides = getSlides();
+      if (!scroller || slides.length === 0) {
+        return;
+      }
+
+      const boundedIndex = Math.min(slides.length - 1, Math.max(0, nextIndex));
+      const nextSlide = slides[boundedIndex];
+      if (!nextSlide) {
+        return;
+      }
+
+      setActiveSlideIndex(boundedIndex);
+      if (isMobile) {
+        nextSlide.scrollIntoView({
+          behavior: reducedMotion ? "auto" : "smooth",
+          block: "start",
+        });
+        return;
+      }
+
+      scroller.scrollTo({
+        left: nextSlide.offsetLeft,
+        behavior: reducedMotion ? "auto" : "smooth",
+      });
+    },
+    [getSlides, isMobile, reducedMotion],
   );
 
-  const updateRailCopy = useCallback((nextIndex: number) => {
-    const nextCopy = photoCopies[nextIndex] || series.projectInformation;
-    if (bodyRef.current && nextCopy && bodyRef.current.textContent !== nextCopy) {
-      bodyRef.current.textContent = nextCopy;
-    }
-  }, [photoCopies, series.projectInformation]);
+  const onKeyDown = useCallback(
+    (event: ReactKeyboardEvent<HTMLDivElement>) => {
+      const target = event.target as HTMLElement;
+      if (target.closest("a, button, input, select, textarea")) {
+        return;
+      }
+
+      let nextIndex: number | null = null;
+      switch (event.key) {
+        case "Home":
+          nextIndex = 0;
+          break;
+        case "End":
+          nextIndex = images.length;
+          break;
+        case "PageUp":
+          nextIndex = activeSlideIndex - 1;
+          break;
+        case "PageDown":
+          nextIndex = activeSlideIndex + 1;
+          break;
+        case "ArrowLeft":
+          if (!isMobile) {
+            nextIndex = activeSlideIndex - 1;
+          }
+          break;
+        case "ArrowRight":
+          if (!isMobile) {
+            nextIndex = activeSlideIndex + 1;
+          }
+          break;
+        case "ArrowUp":
+          if (isMobile) {
+            nextIndex = activeSlideIndex - 1;
+          }
+          break;
+        case "ArrowDown":
+          if (isMobile) {
+            nextIndex = activeSlideIndex + 1;
+          }
+          break;
+        default:
+          break;
+      }
+
+      if (nextIndex === null) {
+        return;
+      }
+
+      event.preventDefault();
+      scrollToSlide(nextIndex);
+    },
+    [activeSlideIndex, images.length, isMobile, scrollToSlide],
+  );
 
   useEffect(() => {
-    if (scrollerRef.current) {
+    const scroller = scrollerRef.current;
+    if (scroller) {
       if (isMobile) {
-        scrollerRef.current.scrollTop = 0;
+        window.scrollTo({ top: 0, behavior: "auto" });
       } else {
-        scrollerRef.current.scrollLeft = 0;
+        scroller.scrollTo({ left: 0, behavior: "auto" });
       }
     }
-    setTitle(series.title);
-    setNumber(assets.length);
-    setActiveProjectSlug(series.slug);
-    setActiveIndex(0);
-  }, [assets.length, isMobile, series.slug, series.title, setActiveProjectSlug, setNumber, setTitle]);
+
+    setTitle(collection.title);
+    setNumber(images.length);
+    setActiveProjectSlug(collection.slug);
+    setActiveSlideIndex(0);
+  }, [
+    collection.slug,
+    collection.title,
+    images.length,
+    isMobile,
+    setActiveProjectSlug,
+    setNumber,
+    setTitle,
+  ]);
 
   useEffect(() => {
     const scroller = scrollerRef.current;
@@ -68,76 +216,44 @@ export function ProjectDetailExperience({
       }
 
       event.preventDefault();
-      const firstFrame = scroller.querySelector<HTMLElement>("[data-project-frame]");
-      const frameSize = firstFrame?.offsetWidth ?? scroller.clientWidth;
-      const nextScrollLeft = scroller.scrollLeft + event.deltaY;
-      const nextIndex = Math.min(
-        assets.length - 1,
-        Math.max(0, Math.round(nextScrollLeft / Math.max(frameSize, 1))),
-      );
-
-      updateRailCopy(nextIndex);
-      setActiveIndex((currentIndex) => (currentIndex === nextIndex ? currentIndex : nextIndex));
-      scroller.scrollBy({
-        left: event.deltaY,
-        behavior: "auto",
-      });
+      scroller.scrollBy({ left: event.deltaY, behavior: "auto" });
     };
 
     scroller.addEventListener("wheel", onWheel, { passive: false });
     return () => scroller.removeEventListener("wheel", onWheel);
-  }, [assets.length, isMobile, updateRailCopy]);
+  }, [isMobile]);
 
   useEffect(() => {
     const scroller = scrollerRef.current;
-    if (!scroller || assets.length <= 1) {
+    const slides = getSlides();
+    if (!scroller || slides.length === 0) {
       return;
     }
 
     let frameHandle = 0;
-
-    const updateActiveIndex = () => {
-      frameHandle = 0;
-      const firstFrame = scroller.querySelector<HTMLElement>("[data-project-frame]");
-      const scrollPosition = isMobile ? window.scrollY : scroller.scrollLeft;
-      const frameSize = isMobile ? window.innerHeight : firstFrame?.offsetWidth ?? scroller.clientWidth;
-      const nextIndex = Math.min(
-        assets.length - 1,
-        Math.max(0, Math.round(scrollPosition / Math.max(frameSize, 1))),
-      );
-
-      updateRailCopy(nextIndex);
-      setActiveIndex((currentIndex) => (currentIndex === nextIndex ? currentIndex : nextIndex));
-    };
-
     const scheduleUpdate = () => {
       if (frameHandle) {
         return;
       }
-      frameHandle = window.requestAnimationFrame(updateActiveIndex);
+      frameHandle = window.requestAnimationFrame(() => {
+        frameHandle = 0;
+        updateActiveSlideFromElements();
+      });
     };
 
     const scrollTarget: HTMLElement | Window = isMobile ? window : scroller;
     const observer =
       "IntersectionObserver" in window
-        ? new IntersectionObserver(
-            () => {
-              scheduleUpdate();
-            },
-            {
-              root: isMobile ? null : scroller,
-              threshold: [0.4, 0.6, 0.8, 1],
-            },
-          )
+        ? new IntersectionObserver(scheduleUpdate, {
+            root: isMobile ? null : scroller,
+            rootMargin: isMobile ? "-20% 0px -20%" : "0px -20%",
+            threshold: [0, 0.25, 0.5, 0.75, 1],
+          })
         : null;
 
-    scroller.querySelectorAll<HTMLElement>("[data-project-frame]").forEach((frame) => {
-      observer?.observe(frame);
-    });
-
-    updateActiveIndex();
+    slides.forEach((slide) => observer?.observe(slide));
+    updateActiveSlideFromElements();
     scrollTarget.addEventListener("scroll", scheduleUpdate, { passive: true });
-    scroller.addEventListener("wheel", scheduleUpdate, { passive: true });
     window.addEventListener("resize", scheduleUpdate);
 
     return () => {
@@ -146,71 +262,53 @@ export function ProjectDetailExperience({
       }
       observer?.disconnect();
       scrollTarget.removeEventListener("scroll", scheduleUpdate);
-      scroller.removeEventListener("wheel", scheduleUpdate);
       window.removeEventListener("resize", scheduleUpdate);
     };
-  }, [assets.length, isMobile, updateRailCopy]);
+  }, [getSlides, isMobile, updateActiveSlideFromElements]);
 
   useEffect(() => {
-    const titleNode = titleRef.current;
-    const bodyNode = bodyRef.current;
-
-    if (!titleNode || !bodyNode || reducedMotion) {
-      if (titleNode) {
-        gsap.set(titleNode, { clearProps: "all" });
-      }
-      if (bodyNode) {
-        gsap.set(bodyNode, { clearProps: "all" });
-      }
+    const railUpdate = railUpdateRef.current;
+    if (!railUpdate) {
       return;
     }
 
-    const split = new SplitType(bodyNode, { types: "chars,words" });
-    const characters = split.chars ?? [];
+    if (reducedMotion) {
+      gsap.set(railUpdate, { clearProps: "all" });
+      return;
+    }
 
-    const context = gsap.context(() => {
-      gsap.set(titleNode, { autoAlpha: 0, y: 22 });
-      gsap.set(characters, { opacity: 0 });
-
-      const timeline = gsap.timeline();
-      timeline.to(titleNode, {
-        autoAlpha: 1,
-        y: 0,
-        duration: 0.48,
-        ease: "power2.out",
-      });
-
-      if (characters.length > 0) {
-        timeline.to(
-          characters,
-          {
-            opacity: 1,
-            duration: 0,
-            stagger: 0.007,
-          },
-          "-=0.16",
-        );
-      }
-    });
-
+    const tween = gsap.fromTo(
+      railUpdate,
+      { autoAlpha: 0, y: 12 },
+      { autoAlpha: 1, y: 0, duration: 0.38, ease: "power2.out" },
+    );
     return () => {
-      context.revert();
-      split.revert();
+      tween.revert();
     };
-  }, [activeCopy, reducedMotion, series.title]);
+  }, [activeRailCopy, reducedMotion]);
 
   return (
     <main className="project-detail-experience">
-      <aside className="project-detail-experience__name-rail" aria-label="Project details">
-        <div className="project-detail-experience__rail-content">
-          <p ref={titleRef} className="project-detail-experience__rail-title">
-            {series.title}
+      <aside
+        className="project-detail-experience__name-rail"
+        aria-label="Active collection passage"
+        data-desktop-rail=""
+      >
+        <div
+          ref={railUpdateRef}
+          className="project-detail-experience__rail-content"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <p className="project-detail-experience__rail-number">
+            {activeRailCopy.number}
           </p>
-          {activeCopy ? (
-            <p ref={bodyRef} className="project-detail-experience__rail-copy">
-              {activeCopy}
-            </p>
-          ) : null}
+          <p className="project-detail-experience__rail-title" data-image-title="">
+            {activeRailCopy.title}
+          </p>
+          <p className="project-detail-experience__rail-copy" data-image-prose="">
+            {activeRailCopy.prose}
+          </p>
         </div>
       </aside>
 
@@ -218,26 +316,79 @@ export function ProjectDetailExperience({
         ref={scrollerRef}
         className="project-detail-experience__scroller-wrap"
         tabIndex={0}
-        aria-label={`${series.title} ${isMobile ? "vertical" : "horizontal"} reel`}
+        aria-label={`${collection.title} ${isMobile ? "vertical" : "horizontal"} gallery. Use arrow, Page Up, Page Down, Home, or End keys to navigate.`}
+        onKeyDown={onKeyDown}
       >
         <div className="project-detail-experience__scroller">
-          {assets.map((asset, index) => (
-            <figure key={asset.id} className="project-detail-experience__frame" data-project-frame="">
-              <ResponsivePhoto
-                asset={asset}
-                alt={series.photoCaptions?.[asset.id] || `${series.title}, photograph ${index + 1}`}
-                variants={["rail", "hero"]}
-                sizes="100vw"
-                eager={index < 2}
-                fetchPriority={index === 0 ? "high" : "auto"}
-                observerRoot={isMobile ? null : scrollerRef.current}
-                rootMargin={isMobile ? "120% 0px" : "0px 120% 0px 120%"}
-                imgProps={{
-                  "data-orientation": asset.orientation,
-                }}
-              />
-            </figure>
-          ))}
+          <section
+            className="project-detail-experience__essay project-detail-experience__frame"
+            data-project-slide=""
+            data-project-essay=""
+            data-slide-index="0"
+            aria-label={`${collection.title} collection essay`}
+            aria-current={activeSlideIndex === 0 ? "true" : undefined}
+          >
+            <div className="project-detail-experience__essay-inner">
+              <p className="project-detail-experience__essay-eyebrow">Collection essay</p>
+              <h1 className="project-detail-experience__essay-title">{collection.title}</h1>
+              <p className="project-detail-experience__essay-synopsis">{collection.synopsis}</p>
+              <p className="project-detail-experience__essay-body">{collection.essay}</p>
+            </div>
+          </section>
+
+          {images.map((image, index) => {
+            const number = `${String(index + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}`;
+            const slideIndex = index + 1;
+
+            return (
+              <figure
+                key={image.id}
+                className="project-detail-experience__frame project-detail-experience__image-frame"
+                data-project-slide=""
+                data-project-frame=""
+                data-project-image=""
+                data-slide-index={slideIndex}
+                data-asset-id={image.id}
+                aria-current={activeSlideIndex === slideIndex ? "true" : undefined}
+              >
+                <ResponsivePhoto
+                  asset={image}
+                  alt={image.alt}
+                  variants={["rail", "hero"]}
+                  sizes="100vw"
+                  eager={index === 0}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  observerRoot={isMobile ? null : scrollerRef.current}
+                  rootMargin={isMobile ? "120% 0px" : "0px 120% 0px 120%"}
+                  pictureClassName="project-detail-experience__picture"
+                  imgClassName="project-detail-experience__image"
+                  imgProps={{
+                    "data-orientation": image.orientation,
+                    "data-asset-id": image.id,
+                    style: { objectFit: "contain" },
+                  }}
+                />
+                <figcaption
+                  className="project-detail-experience__mobile-caption"
+                  data-mobile-caption=""
+                >
+                  <p className="project-detail-experience__mobile-caption-number">{number}</p>
+                  <p
+                    className="project-detail-experience__mobile-caption-title"
+                    data-image-title=""
+                  >
+                    {image.title}
+                  </p>
+                  <p
+                    className="project-detail-experience__mobile-caption-prose"
+                    data-image-prose=""
+                  >
+                    {image.prose}
+                  </p>
+                </figcaption>
+              </figure>
+            );
+          })}
         </div>
       </div>
     </main>

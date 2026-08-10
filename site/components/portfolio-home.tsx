@@ -5,7 +5,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
-import type { DisplayAsset, SiteMeta } from "@/lib/types";
+import type { CuratedDisplayImage, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
@@ -15,17 +15,16 @@ import { ResponsivePhoto } from "@/components/responsive-photo";
 gsap.registerPlugin(ScrollTrigger);
 
 type HomeEntry = {
-  series: {
+  collection: {
     slug: string;
     title: string;
-    subtitle: string;
     synopsis: string;
     tags: string[];
-    photoCaptions?: Record<string, string>;
     portfolioIndex: number;
     photoCount: number;
   };
-  previews: DisplayAsset[];
+  cover: CuratedDisplayImage;
+  previews: CuratedDisplayImage[];
 };
 
 export function PortfolioHome({
@@ -35,7 +34,7 @@ export function PortfolioHome({
   items: HomeEntry[];
   siteMeta: SiteMeta;
 }) {
-  const firstSeries = items[0]?.series;
+  const firstCollection = items[0]?.collection;
   const reducedMotion = useReducedMotion();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const activeProjectSlug = useUIStore((state) => state.activeProjectSlug);
@@ -50,9 +49,9 @@ export function PortfolioHome({
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
-    if (!activeProjectSlug && scrollPosition <= 0 && firstSeries) {
-      setMobileTitle(firstSeries.title);
-      setNumber(firstSeries.portfolioIndex);
+    if (!activeProjectSlug && scrollPosition <= 0 && firstCollection) {
+      setMobileTitle(firstCollection.title);
+      setNumber(firstCollection.portfolioIndex);
     }
 
     const sections = Array.from(
@@ -92,7 +91,7 @@ export function PortfolioHome({
     };
   }, [
     activeProjectSlug,
-    firstSeries,
+    firstCollection,
     reducedMotion,
     scrollPosition,
     setActiveProjectSlug,
@@ -177,7 +176,7 @@ export function PortfolioHome({
     };
   }, [items, reducedMotion]);
 
-  const previewCount = zoomLevel === 0 ? 1 : zoomLevel === 1 ? 3 : 5;
+  const previewCount = zoomLevel === 1 ? 3 : 5;
 
   return (
     <main className="portfolio-home" ref={containerRef}>
@@ -199,60 +198,77 @@ export function PortfolioHome({
       </aside>
 
       <div className="portfolio-home__content">
-        {items.map(({ series, previews }) => (
-          <section
-            key={series.slug}
-            id={series.slug}
-            className="portfolio-home__section"
-            data-home-series=""
-            data-series-title={series.title}
-            data-series-index={series.portfolioIndex}
-            data-project={series.slug}
-          >
-            <Link href={`/portfolio/${series.slug}`} className="portfolio-home__rail" aria-label={`Open ${series.title}`}>
-              {previews.slice(0, previewCount).map((asset, previewIndex) => (
-                <figure
-                  key={asset.id}
-                  className="portfolio-home__frame"
-                  style={{ flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%` }}
-                >
-                  <ResponsivePhoto
-                    asset={asset}
-                    alt={series.photoCaptions?.[asset.id] || series.title}
-                    variants={["rail", "hero"]}
-                    sizes="(min-width: 1024px) 28vw, 92vw"
-                    eager={series.portfolioIndex === 1 && previewIndex === 0}
-                    fetchPriority={series.portfolioIndex === 1 && previewIndex === 0 ? "high" : "auto"}
-                    rootMargin="150% 0px"
-                    imgProps={{
-                      "aria-hidden": previewIndex > 0 ? true : undefined,
-                    }}
-                  />
-                </figure>
-              ))}
-            </Link>
+        {items.map(({ collection, cover, previews }) => {
+          const displayedPreviews = zoomLevel === 0 ? [cover] : previews.slice(0, previewCount);
 
-            <div className="portfolio-home__meta">
-              <div className="portfolio-home__meta-top">
-                <span className="portfolio-home__index">{formatSeriesIndex(series.portfolioIndex)}</span>
-                <div className="portfolio-home__title-block">
-                  <Link href={`/portfolio/${series.slug}`} className="portfolio-home__title" data-project-title="">
-                    {series.title}
-                  </Link>
-                  <p className="portfolio-home__synopsis" data-project-body="">
-                    {series.synopsis}
-                  </p>
+          return (
+            <section
+              key={collection.slug}
+              id={collection.slug}
+              className="portfolio-home__section"
+              data-home-series=""
+              data-series-title={collection.title}
+              data-series-index={collection.portfolioIndex}
+              data-project={collection.slug}
+            >
+              <Link
+                href={`/portfolio/${collection.slug}`}
+                className="portfolio-home__rail"
+                aria-label={`Open ${collection.title}`}
+              >
+                {displayedPreviews.map((asset, previewIndex) => (
+                  <figure
+                    key={asset.id}
+                    className="portfolio-home__frame"
+                    style={{
+                      flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%`,
+                    }}
+                  >
+                    <ResponsivePhoto
+                      asset={asset}
+                      alt={asset.alt}
+                      variants={["rail", "hero"]}
+                      sizes="(min-width: 1024px) 28vw, 92vw"
+                      eager={collection.portfolioIndex === 1 && previewIndex === 0}
+                      fetchPriority={
+                        collection.portfolioIndex === 1 && previewIndex === 0
+                          ? "high"
+                          : "auto"
+                      }
+                      rootMargin="150% 0px"
+                    />
+                  </figure>
+                ))}
+              </Link>
+
+              <div className="portfolio-home__meta">
+                <div className="portfolio-home__meta-top">
+                  <span className="portfolio-home__index">
+                    {formatSeriesIndex(collection.portfolioIndex)}
+                  </span>
+                  <div className="portfolio-home__title-block">
+                    <Link
+                      href={`/portfolio/${collection.slug}`}
+                      className="portfolio-home__title"
+                      data-project-title=""
+                    >
+                      {collection.title}
+                    </Link>
+                    <p className="portfolio-home__synopsis" data-project-body="">
+                      {collection.synopsis}
+                    </p>
+                  </div>
+                </div>
+                <div className="portfolio-home__meta-foot">
+                  <span>{collection.photoCount} photographs</span>
+                  {collection.tags.slice(0, 3).map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
                 </div>
               </div>
-              <div className="portfolio-home__meta-foot">
-                <span>{series.photoCount} photographs</span>
-                {series.tags.slice(0, 3).map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
-            </div>
-          </section>
-        ))}
+            </section>
+          );
+        })}
       </div>
     </main>
   );

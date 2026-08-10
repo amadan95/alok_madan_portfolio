@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTransitionRouter } from "next-transition-router";
-import type { DisplayAsset, SiteMeta } from "@/lib/types";
+import type { CuratedDisplayImage, SiteMeta } from "@/lib/types";
 import { useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatArchiveIndex } from "@/lib/utils";
@@ -10,12 +10,12 @@ import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type ArchiveItem = {
-  series: {
+  collection: {
     slug: string;
     title: string;
-    photoCaptions?: Record<string, string>;
+    portfolioIndex: number;
   };
-  previews: DisplayAsset[];
+  cover: CuratedDisplayImage;
 };
 
 export function ArchivePageExperience({
@@ -34,15 +34,17 @@ export function ArchivePageExperience({
   const setTitle = useUIStore((state) => state.setTitle);
   const activeItem = items[activeIndex] ?? items[0];
   const displayedItem = items[displayedIndex] ?? items[0];
-  const activeHero = displayedItem?.previews[0] ?? null;
+  const activeHero = displayedItem?.cover ?? null;
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
   }, [setTitle, siteMeta.photographer]);
 
   useEffect(() => {
-    setNumber(activeIndex + 1);
-  }, [activeIndex, setNumber]);
+    if (activeItem) {
+      setNumber(activeItem.collection.portfolioIndex);
+    }
+  }, [activeItem, setNumber]);
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
@@ -60,7 +62,7 @@ export function ArchivePageExperience({
           <ResponsivePhoto
             key={activeHero.id}
             asset={activeHero}
-            alt={displayedItem.series.photoCaptions?.[activeHero.id] || displayedItem.series.title}
+            alt={activeHero.alt}
             variants={["hero"]}
             sizes="100vw"
             eager
@@ -75,15 +77,15 @@ export function ArchivePageExperience({
         className="archive-page-experience__slider"
         itemClassName="archive-page-experience__row"
         onActiveChange={setActiveIndex}
-        renderRow={(item, index, isActive) => (
+        renderRow={(item, _index, isActive) => (
           <button
             type="button"
             className="archive-page-experience__link"
             data-active={String(isActive)}
-            onClick={() => router.push(`/portfolio/${item.series.slug}`)}
+            onClick={() => router.push(`/portfolio/${item.collection.slug}`)}
           >
-            <span>{formatArchiveIndex(index + 1)}</span>
-            <span>{item.series.title}</span>
+            <span>{formatArchiveIndex(item.collection.portfolioIndex)}</span>
+            <span>{item.collection.title}</span>
           </button>
         )}
       />

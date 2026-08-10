@@ -16,6 +16,7 @@ interface UIState {
   scrollPosition: number;
   activeProjectSlug: string | null;
   clickZoomDirection: ZoomDirection;
+  toggleDarkMode: () => void;
   setHideIntro: (value: boolean) => void;
   setIsDarkMode: (value: boolean) => void;
   setIsWhite: (value: boolean) => void;
@@ -41,6 +42,7 @@ export const useUIStore = create<UIState>((set) => ({
   scrollPosition: 0,
   activeProjectSlug: null,
   clickZoomDirection: "out",
+  toggleDarkMode: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
   setHideIntro: (value) => set({ hideIntro: value }),
   setIsDarkMode: (value) => set({ isDarkMode: value }),
   setIsWhite: (value) => set({ isWhite: value }),
