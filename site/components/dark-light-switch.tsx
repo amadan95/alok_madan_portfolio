@@ -5,17 +5,26 @@ import { useUIStore } from "@/lib/ui-store";
 
 export function DarkLightSwitch({ routeKind }: { routeKind: RouteKind }) {
   const isDarkMode = useUIStore((state) => state.isDarkMode);
-  const setIsDarkMode = useUIStore((state) => state.setIsDarkMode);
+  const toggleDarkMode = useUIStore((state) => state.toggleDarkMode);
   const iconColor = isDarkMode ? "#ffffff" : "#000000";
+
+  const handleThemeToggle = () => {
+    const nextTheme = isDarkMode ? "light" : "dark";
+
+    // Apply the palette immediately; AppShell then synchronizes state and persistence.
+    document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.style.colorScheme = nextTheme;
+    toggleDarkMode();
+  };
 
   return (
     <div className="dark-light-switch" data-route-kind={routeKind} data-theme-mode={isDarkMode ? "dark" : "light"}>
       <button
         type="button"
         className="dark-light-switch__button"
-        aria-label="Toggle dark mode"
+        aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
         aria-pressed={isDarkMode}
-        onClick={() => setIsDarkMode(!isDarkMode)}
+        onClick={handleThemeToggle}
       >
         <svg viewBox="0 0 512.012 512.012" aria-hidden="true" className="dark-light-switch__icon">
           <g fill={iconColor}>

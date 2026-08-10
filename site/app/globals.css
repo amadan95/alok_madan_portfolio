@@ -209,6 +209,7 @@ picture {
 
 .dark-light-switch {
   position: fixed;
+  z-index: 40;
   top: var(--page-gutter);
   right: var(--page-gutter);
   pointer-events: auto;
@@ -528,16 +529,10 @@ picture {
   line-height: 0.92;
 }
 
-.portfolio-home__subtitle,
 .portfolio-home__synopsis {
   margin: 0;
   max-width: 30rem;
   color: var(--color-muted);
-}
-
-.portfolio-home__subtitle {
-  font-size: 1rem;
-  line-height: 1.25;
 }
 
 .portfolio-home__synopsis {
@@ -785,6 +780,20 @@ picture {
   flex: 0 0 auto;
 }
 
+.raw-page-experience__thumbnail {
+  display: block;
+  width: auto;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.raw-page-experience__thumbnail:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .raw-page-experience__frame img {
   width: auto;
   height: 100%;
@@ -874,8 +883,19 @@ picture {
 
 .project-detail-experience__rail-content {
   display: grid;
-  gap: 1.25rem;
+  gap: 0.85rem;
   width: min(11rem, 100%);
+}
+
+.project-detail-experience__rail-number,
+.project-detail-experience__essay-eyebrow,
+.project-detail-experience__mobile-caption-number {
+  margin: 0;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.58);
 }
 
 .project-detail-experience__rail-title {
@@ -917,6 +937,47 @@ picture {
   margin: 0;
 }
 
+.project-detail-experience__essay {
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(4rem, 10vw, 9rem);
+  text-align: left;
+}
+
+.project-detail-experience__essay-inner {
+  display: grid;
+  gap: 1.1rem;
+  width: min(44rem, 100%);
+}
+
+.project-detail-experience__essay-title {
+  margin: 0;
+  font-family: var(--font-editorial), var(--font-body);
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -0.025em;
+  color: #111111;
+}
+
+.project-detail-experience__essay-synopsis {
+  max-width: 34rem;
+  margin: 0.35rem 0 0;
+  font-family: var(--font-editorial), var(--font-body);
+  font-size: clamp(1.15rem, 1rem + 0.45vw, 1.6rem);
+  line-height: 1.2;
+  color: rgba(17, 17, 17, 0.72);
+}
+
+.project-detail-experience__essay-body {
+  max-width: 42rem;
+  margin: 0.55rem 0 0;
+  font-size: clamp(0.95rem, 0.9rem + 0.18vw, 1.08rem);
+  line-height: 1.62;
+  color: #111111;
+  text-wrap: pretty;
+}
+
 .project-detail-experience__frame {
   position: relative;
   width: 100vw;
@@ -945,9 +1006,18 @@ picture {
   height: 100svh;
 }
 
-.project-detail-experience__frame img[data-orientation="landscape"],
-.project-detail-experience__frame img[data-orientation="square"] {
-  object-fit: cover;
+.project-detail-experience__picture,
+.project-detail-experience__image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-detail-experience__image {
+  object-fit: contain;
+}
+
+.project-detail-experience__mobile-caption {
+  display: none;
 }
 
 .project-detail-experience__caption {
@@ -1120,12 +1190,6 @@ picture {
     line-height: 0.98;
   }
 
-  .portfolio-home__subtitle {
-    font-size: 0.94rem;
-    line-height: 1.18;
-    color: var(--color-text);
-  }
-
   .portfolio-home__synopsis {
     max-width: 17rem;
     font-size: 0.82rem;
@@ -1193,6 +1257,10 @@ picture {
   .project-detail-experience__frame img {
     width: calc(100vw - var(--project-left-rail));
   }
+
+  .project-detail-experience__essay {
+    padding: clamp(4rem, 7vw, 8rem);
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1250,10 +1318,6 @@ picture {
 
   .portfolio-home__frame img {
     height: clamp(12.5rem, 42vw, 18.5rem);
-  }
-
-  .portfolio-home__subtitle {
-    font-size: 0.92rem;
   }
 
   .portfolio-home__synopsis {
@@ -1348,19 +1412,92 @@ picture {
   }
 
   .project-detail-experience__frame,
-  .project-detail-experience__frame img {
+  .project-detail-experience__frame img,
+  .project-detail-experience__frame picture {
     width: 100%;
     min-width: 0;
   }
 
   .project-detail-experience__frame {
+    height: auto;
+    min-height: 0;
+    scroll-snap-align: start;
+  }
+
+  .project-detail-experience__essay {
     min-height: 100svh;
+    padding: 7.5rem var(--page-gutter) calc(7rem + env(safe-area-inset-bottom));
+  }
+
+  .project-detail-experience__essay-inner {
+    gap: 1rem;
+  }
+
+  .project-detail-experience__essay-title {
+    font-size: clamp(2.8rem, 14vw, 5.6rem);
+  }
+
+  .project-detail-experience__image-frame {
+    display: grid;
+    align-items: start;
+    justify-items: stretch;
+    background: #ffffff;
+  }
+
+  .project-detail-experience__image-frame picture {
+    width: 100%;
     height: auto;
   }
 
-  .project-detail-experience__frame picture {
+  .project-detail-experience__image-frame img {
     width: 100%;
-    height: 100svh;
+    height: auto;
+    max-height: 82svh;
+  }
+
+  .project-detail-experience__mobile-caption {
+    display: grid;
+    gap: 0.6rem;
+    width: 100%;
+    min-height: 12rem;
+    margin: 0;
+    padding: 1.35rem var(--page-gutter) calc(3rem + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(17, 17, 17, 0.08);
+    background: #ffffff;
+    color: #111111;
+  }
+
+  .project-detail-experience__mobile-caption-title,
+  .project-detail-experience__mobile-caption-prose {
+    margin: 0;
+  }
+
+  .project-detail-experience__mobile-caption-title {
+    font-family: var(--font-editorial), var(--font-body);
+    font-size: clamp(1.45rem, 6vw, 2.1rem);
+    line-height: 1;
+  }
+
+  .project-detail-experience__mobile-caption-prose {
+    max-width: 38rem;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

@@ -56,4 +56,6 @@ cd "${SITE_DIR}"
 stop_stale_workspace_servers
 clear_stale_app_artifacts
 
+python3 "${ROOT_DIR}/scripts/build_catalog.py" --check
+
 exec npm run dev:internal -- "$@"

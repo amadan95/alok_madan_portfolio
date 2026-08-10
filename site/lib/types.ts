@@ -15,84 +15,111 @@ export interface AssetVariants {
   hero: AssetVariantSource;
 }
 
-export type SequenceRole =
-  | "anchor"
-  | "bridge"
-  | "pivot"
-  | "texture"
-  | "release"
-  | "coda";
-
-export interface PhotoAsset {
+export interface TechnicalAsset {
   id: string;
-  sourcePath: string;
-  canonicalPath: string;
+  sourceChecksum: string;
+  variantVersion: number;
   width: number;
   height: number;
   aspectRatio: number;
   orientation: Orientation;
-  variants: AssetVariants;
-  checksum: string;
-  perceptualHash: string;
   averageColor: string;
-  brightness: number;
-  variantGroupId: string;
-  captureYear: string;
-  provenance: {
-    topLevel: string;
-    pathParts: string[];
-    basename: string;
-  };
+  variants: AssetVariants;
 }
 
-export type DisplayAsset = Pick<PhotoAsset, "id" | "width" | "height" | "aspectRatio" | "orientation" | "averageColor" | "variants">;
+export interface AssetCatalog {
+  catalogVersion: 1;
+  variantVersion: number;
+  assetCount: number;
+  assets: TechnicalAsset[];
+}
+
+export type DisplayAsset = Pick<
+  TechnicalAsset,
+  "id" | "width" | "height" | "aspectRatio" | "orientation" | "averageColor" | "variants"
+>;
+
+export type SequenceRole =
+  | "threshold"
+  | "development-1"
+  | "development-2"
+  | "development-3"
+  | "hinge"
+  | "rupture"
+  | "echo-1"
+  | "echo-2"
+  | "release";
+
+export interface ExhibitImage {
+  assetId: string;
+  title: string;
+  prose: string;
+  alt: string;
+  sequenceRole: SequenceRole;
+}
+
+export interface ExhibitCollection {
+  slug: string;
+  title: string;
+  subtitle: string;
+  synopsis: string;
+  essay: string;
+  tags: string[];
+  coverPhotoId: string;
+  previewPhotoIds: [string, string, string, string, string];
+  images: ExhibitImage[];
+}
+
+export interface ExhibitMetadata {
+  title: string;
+  subtitle: string;
+  statement: string;
+}
+
+export type ExhibitIntroV2 = ExhibitMetadata;
+
+export interface ExhibitManifestV2 {
+  manifestVersion: 2;
+  exhibit: ExhibitMetadata;
+  introPhotoIds: string[];
+  collections: ExhibitCollection[];
+}
+
+export interface CuratedDisplayImage extends DisplayAsset {
+  assetId: string;
+  title: string;
+  prose: string;
+  alt: string;
+  sequenceRole: SequenceRole;
+}
+
+/**
+ * Runtime collection shape. Editorial fields come directly from the manifest;
+ * the remaining fields are deterministic conveniences for route rendering.
+ */
+export interface CuratedCollection extends ExhibitCollection {
+  portfolioIndex: number;
+  photoCount: number;
+}
 
 export interface IntroSlide {
   id: string;
+  alt: string;
   averageColor: string;
   flash: AssetVariantSource;
   hold: AssetVariantSource;
 }
 
-export interface PhotoAnalysis {
-  photoId: string;
-  sceneType: string;
-  locationCue: string | null;
-  narrativeKeywords: string[];
-  moodKeywords: string[];
-  duplicateConfidence: number;
-  sequenceRole: SequenceRole;
-  confidence: number;
-  lightMode: "daylight" | "twilight" | "night";
-  humanPresence: "none" | "trace" | "present" | "dominant";
-  subjectDistance: "far" | "mid" | "close";
-  energyScore: number;
-  intimacyScore: number;
-  surrealnessScore: number;
-  toneTags: string[];
-  analysisMode: "ai" | "heuristic";
-  rationale: string;
-  needsReview: boolean;
+export interface PortfolioPageEntry {
+  collection: CuratedCollection;
+  cover: CuratedDisplayImage;
+  previews: CuratedDisplayImage[];
+  photoCount: number;
 }
 
-export interface Series {
-  id: string;
-  slug: string;
-  title: string;
-  subtitle: string;
-  synopsis: string;
-  tags: string[];
-  coverPhotoId: string;
-  previewPhotoIds: string[];
-  photoIds: string[];
-  photoCaptions?: Record<string, string>;
-  portfolioIndex: number;
-  archiveLabel: string;
-  archiveYear: string;
-  credits: string;
-  projectInformation: string;
-  primaryTone: string;
-  roomStatement: string;
+export interface CollectionCoverEntry {
+  collection: CuratedCollection;
+  cover: CuratedDisplayImage;
 }
 
 export interface SiteMeta {
@@ -113,21 +140,4 @@ export interface SiteMeta {
     label: string;
     href: string;
   }>;
-}
-
-export interface PhotoCatalog {
-  generatedAt: string;
-  canonicalPhotoCount: number;
-  variantGroupCount: number;
-  assets: PhotoAsset[];
-  analyses: PhotoAnalysis[];
-  hiddenVariantPaths: string[];
-}
-
-export interface SeriesCatalog {
-  generatedAt: string;
-  totalSeries: number;
-  exhibitPhotoCount: number;
-  rawOnlyPhotoIds: string[];
-  series: Series[];
 }

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProjectDetailExperience } from "@/components/project-detail-experience";
-import { getSeries, getSeriesAssets, getSeriesBySlug } from "@/lib/catalog";
+import {
+  getCollectionBySlug,
+  getCollectionImages,
+  getCollections,
+} from "@/lib/catalog";
 
 export function generateStaticParams() {
-  return getSeries().map((series) => ({ slug: series.slug }));
+  return getCollections().map((collection) => ({ slug: collection.slug }));
 }
 
 export async function generateMetadata({
@@ -13,14 +17,14 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const series = getSeriesBySlug(slug);
-  if (!series) {
+  const collection = getCollectionBySlug(slug);
+  if (!collection) {
     return {};
   }
 
   return {
-    title: `${series.title} | Portfolio`,
-    description: series.synopsis,
+    title: `${collection.title} | Portfolio`,
+    description: collection.synopsis,
   };
 }
 
@@ -30,12 +34,12 @@ export default async function PortfolioDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const series = getSeriesBySlug(slug);
-  if (!series) {
+  const collection = getCollectionBySlug(slug);
+  if (!collection) {
     notFound();
   }
 
-  const assets = getSeriesAssets(series);
+  const images = getCollectionImages(collection);
 
-  return <ProjectDetailExperience series={series} assets={assets} />;
+  return <ProjectDetailExperience collection={collection} images={images} />;
 }

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTransitionRouter } from "next-transition-router";
-import type { DisplayAsset, SiteMeta } from "@/lib/types";
+import type { CuratedDisplayImage, SiteMeta } from "@/lib/types";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
@@ -10,13 +10,12 @@ import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
 import { ResponsivePhoto } from "@/components/responsive-photo";
 
 type ListItem = {
-  series: {
+  collection: {
     slug: string;
     title: string;
-    photoCaptions?: Record<string, string>;
     portfolioIndex: number;
   };
-  previews: DisplayAsset[];
+  cover: CuratedDisplayImage;
 };
 
 export function ListPageExperience({
@@ -43,8 +42,8 @@ export function ListPageExperience({
     if (!activeItem) {
       return;
     }
-    setNumber(activeIndex + 1);
-    setMobileTitle(activeItem.series.title);
+    setNumber(activeItem.collection.portfolioIndex);
+    setMobileTitle(activeItem.collection.title);
   }, [activeIndex, activeItem, setMobileTitle, setNumber]);
 
   useEffect(() => {
@@ -57,12 +56,12 @@ export function ListPageExperience({
 
   return (
     <main className="list-page-experience">
-      {displayedItem?.previews[0] ? (
+      {displayedItem ? (
         <div className="list-page-experience__background">
           <ResponsivePhoto
-            key={displayedItem.previews[0].id}
-            asset={displayedItem.previews[0]}
-            alt={displayedItem.series.photoCaptions?.[displayedItem.previews[0].id] || displayedItem.series.title}
+            key={displayedItem.cover.id}
+            asset={displayedItem.cover}
+            alt={displayedItem.cover.alt}
             variants={["hero"]}
             sizes="100vw"
             eager
@@ -78,15 +77,15 @@ export function ListPageExperience({
         className="list-page-experience__slider"
         itemClassName="list-page-experience__row"
         onActiveChange={setActiveIndex}
-        renderRow={(item, index, isActive) => (
+        renderRow={(item, _index, isActive) => (
           <button
             type="button"
             className="list-page-experience__link"
             data-active={String(isActive)}
-            onClick={() => router.push(`/portfolio/${item.series.slug}`)}
+            onClick={() => router.push(`/portfolio/${item.collection.slug}`)}
           >
-            <span>{formatSeriesIndex(index + 1)}</span>
-            <span>{item.series.title}</span>
+            <span>{formatSeriesIndex(item.collection.portfolioIndex)}</span>
+            <span>{item.collection.title}</span>
           </button>
         )}
       />

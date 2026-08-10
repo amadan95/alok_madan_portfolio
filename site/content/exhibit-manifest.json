@@ -1,887 +1,1035 @@
 {
-  "generatedAt": "2026-03-11T01:32:18.856735+00:00",
-  "manifestVersion": 1,
-  "totalCanonicalPhotos": 316,
-  "targetExhibitCount": 140,
-  "exhibitPhotoCount": 140,
-  "rawOnlyPhotoIds": [
-    "8ba759271118-photo-2",
-    "bee017c6ee32-dscf8524",
-    "7780d0882987-dscf2310",
-    "9106cbd3c677-dscf6816-edit",
-    "2fcee6394e1c-dscf6120",
-    "574d14e38e30-dsc03499-edit",
-    "150b2327aaa8-photo-26",
-    "12ab2c167e90-dsc02027-hdr",
-    "4c674024ec3c-r0000433-hdr",
-    "0797697d9483-r0001094",
-    "325e09034302-r0001403-2",
-    "da7c3276e26a-photo-12",
-    "4301b280d51d-r0000164",
-    "f73816a9f271-dscf1271",
-    "a475e5b1927d-r0000952",
-    "c9060b81b82e-dsc02440-hdr",
-    "497244bf4f9c-r0001419-2",
-    "1bd23369cff2-r0001297-2",
-    "3e11caf8cca7-photo-2",
-    "9c1db07b282b-photo-8",
-    "ce219aa15ae7-r0001839",
-    "1907076e5291-dsc02696",
-    "882a8af34513-dscf9294",
-    "a74c3dc7305f-dsc06833",
-    "72d1af01a23d-photo-14",
-    "b9e09123af38-dscf0219",
-    "7a237b6662a2-dsc00157",
-    "746d62951cee-dsc03434-edit",
-    "5e56ec538141-dsc02008",
-    "f992f425a9dc-photo-10",
-    "2f3273db5cbe-dsc01052-hdr",
-    "400bfbb33e19-dsc02524-hdr",
-    "b805fbc10b61-dscf5988-hdr",
-    "98ce300fc043-dscf5987-hdr",
-    "5312dffb37a4-photo-27",
-    "b5d8e6b3305a-photo-1-2",
-    "3b7e74b4d3d2-dsc05479-edit",
-    "2ec9a4efc654-r0001456-2",
-    "436edcb134b5-r0001728",
-    "bd1a3c471587-dsc06449-hdr",
-    "2248f0fcf40e-dscf0573",
-    "28f6c601bd09-dscf8932-edit",
-    "1d31d16f7799-photo-38",
-    "e705e5bba66c-dsc07385",
-    "f1fe96ac11d5-photo-26",
-    "d374109e5021-dsc02699-edit",
-    "e28627254248-dsc02714-hdr",
-    "e0b52b0525d0-dsc03732-hdr",
-    "802ed9d8e4d6-dscf6797",
-    "b50fe7498964-dsc03767-hdr",
-    "75d88e92e1b5-dscf9999",
-    "8102d7268f06-photo-3",
-    "69827b1df5c9-photo-15",
-    "f34b0cca792f-dscf9441-pano",
-    "8027e3f34d6f-dscf9399",
-    "3b8be9041556-photo-18",
-    "db7f11d4d90b-photo-1",
-    "8f0a03e692ff-r0000665-enhanced-nr",
-    "56796e86beb6-dsc03850-hdr",
-    "b71b09adeb7b-dsc02215-hdr",
-    "8256ebae3cc3-r0000768-hdr-pano-enhanced-n",
-    "dc208313252e-dscf0033",
-    "64d25bb83d2a-dsc03918-edit-2",
-    "7de89ddfae18-photo-14",
-    "24b6069d5aab-dsc07238",
-    "d7fea7095b8d-photo-5",
-    "84b90a093846-dscf9426",
-    "b4623490f21e-dsc07314",
-    "a59362b0b711-photo-11",
-    "6ef2bd5db12d-photo-10",
-    "abb99a91ead6-img-4611-hdr-edit",
-    "7868a50dd409-dscf8808-edit",
-    "c64c73da8987-dsc09512",
-    "07adf8533c64-photo-1-2",
-    "1c4e2f9bf125-dscf6839",
-    "7260db24d666-dscf0546",
-    "af8f4d32a9cd-photo-4",
-    "950da7f986ee-dsc03934-hdr",
-    "9765e692ff59-dsc00117",
-    "8bd6011b1db2-dscf8618-enhanced-nr",
-    "5c579a9d2799-dsc01442-edit-edit",
-    "a83b832554a8-dsc09556",
-    "73a220f635bf-dscf0692-pano-edit",
-    "91887e6fcb95-dscf0976",
-    "b2b6a3cc1a9c-img-4351-edit",
-    "5cc8cd70cb94-dscf9227",
-    "0c8fe2748d90-photo-6",
-    "e4fd99769d0b-dscf5184-2",
-    "46276b1534cb-photo-8",
-    "8a1851022b72-dscf7100-hdr",
-    "ba57a5c11cf8-dsc03755-hdr",
-    "a8f4e7e1d797-photo-5",
-    "471207599c89-dsc00182",
-    "286f11d751ba-dscf6377",
-    "0aab7d91781c-dscf5551-hdr",
-    "a1027115472d-dscf6338",
-    "78c6c2d17e0c-photo-46",
-    "23f2a435b925-dsc03417-hdr",
-    "a195c48371c9-dscf7347",
-    "687b6b74e99b-r0000490",
-    "574c6a35d9fb-dsc06626-edit",
-    "3cb5b24c5a31-dsc06854",
-    "38d96a82734a-dscf8315",
-    "a3dedab7b63a-photo-16",
-    "35ffd15178d9-dsc07229",
-    "b10683df96c1-photo-3",
-    "f95f1370ed2c-photo-1",
-    "a4faf8b2d553-dsc00544",
-    "cda69c470029-photo-7",
-    "ef16fd4871e8-dsc07852-2",
-    "bb7b3d534215-dsc05260-hdr",
-    "e64bc02aabf5-photo-31",
-    "9f3e8e692119-dscf6866",
-    "e0981087b017-dsc01366-hdr",
-    "ca5afed3d21a-dsc02200-hdr-edit",
-    "28be2bd83e0f-photo-2",
-    "e2cf63ef1f7b-dscf0498",
-    "0bb17ce0a073-photo-22",
-    "c3ff9a35ad3c-dsc05184",
-    "462822cd3e5f-dscf0853-hdr",
-    "63194684d31c-dscf5135",
-    "af46956483d7-dscf6304",
-    "71ada4694401-dscf6200",
-    "c91ec30285a6-dsc09621-hdr",
-    "85d32c4f5db5-dscf5969-hdr-edit-3",
-    "62c1ccf5b785-photo-13",
-    "deae5cf59e05-screen-shot-2021-04-17-at-12",
-    "0aec362b9497-img-4131-edit-2",
-    "994c3b6cddc5-dscf5090",
-    "97e1a44df631-dsc03710-hdr",
-    "3a4b06888aee-dscf6827",
-    "d6fa5c81fa1c-photo-27",
-    "6d9570c888c2-photo-34",
-    "7e580d3b1909-dsc03973",
-    "a65897b00238-dsc05411-edit",
-    "f8383b065e11-photo-11",
-    "2cd37d3cad63-photo-9",
-    "5b8f136c2168-dsc05555-hdr",
-    "4f3e85f8ee67-dsc02233-hdr",
-    "78d037736163-r0001116",
-    "c0e7d7a36892-r0001680",
-    "4ca5dfdd416b-dsc02750-hdr",
-    "44b4f1cb2ae1-r0000966",
-    "a55880472d74-dsc05588",
-    "f6d0073529d6-dsc05564-hdr",
-    "c6602851d821-r0000528",
-    "f1baec7746c9-dsc02639-hdr",
-    "6ae1ce240bc8-r0001770",
-    "e9ee9dff4203-dsc09414-hdr",
-    "cedb5f469be2-dsc07041",
-    "7c25cc7c0d5d-photo-12",
-    "ed553b93d0b6-dsc05571",
-    "e906f3da5510-photo-5",
-    "3c7473fc4be6-photo-23",
-    "4bb9678a0248-photo-4",
-    "d66c903d85e8-photo-6",
-    "a3c936b2ae18-photo-13",
-    "e89d329642dd-dsc09263",
-    "7a6c33e32953-dsc07176",
-    "70dd9f58a6e7-dsc06406-hdr",
-    "adf3d1623896-dsc09326",
-    "e68182280732-dsc02893-hdr",
-    "1322a2425f87-dscf6609",
-    "e7dd038ffabb-dsc06085",
-    "3d6dc3564e43-dsc00161",
-    "82c42073a305-photo-42",
-    "529fa9484cb4-dscf6745",
-    "07648ec4161f-photo-40",
-    "562a97dee673-dsc00402",
-    "b7ba2148ee16-photo-30",
-    "88931133faa1-dsc08629-hdr",
-    "b851ff1e1f4c-dscf8207-2-enhanced-nr-pano-",
-    "efebeec3ad25-r0000543-edit",
-    "10f3ca274323-photo-7",
-    "b14237cc54b3-photo-15",
-    "6e33b12d2e41-dscf9713-enhanced-nr-pano"
+  "manifestVersion": 2,
+  "exhibit": {
+    "title": "What Remains in Passage",
+    "subtitle": "A geography of thresholds, weather, and the light that outlives us",
+    "statement": "Every photograph is a door that closes at the instant it opens. It admits us into a fraction of light while withholding the life that surrounds it. What Remains in Passage follows that contradiction across thirteen rooms. Here stone borrows the shape of shelter; water rehearses the world and withdraws it; cities gather their sleepless machinery around bodies already moving on.\n\nThe sequence does not ask geography to explain what the eye has felt. A gate in foliage may answer a tunnel elsewhere; snow may complete a sentence begun by neon; one figure may give scale to a mountain, a façade, or an unfinished thought. Distance becomes less a measure of miles than of longing. Weather enters not as backdrop but as pressure, erasing edges until bodies and atmosphere share a single uncertainty. After the crowds pass, rooms, signs, glass, and pavement retain their quiet evidence.\n\nThese images inhabit the interval between arrival and disappearance, the brief architecture of attention. Light touches a surface, someone crosses it, and the world alters without announcing the change. Photography cannot keep the moment; it can only keep the place where the moment was. What remains is not possession, but residue: a red reflection, a lit window, a path bending out of sight, the faint conviction that passage itself may be our most enduring form."
+  },
+  "introPhotoIds": [
+    "am-23edf26e45ddc1ab",
+    "am-8d8343421d668c96",
+    "am-b7949ba849fb21ec",
+    "am-350d6de16e359aa8",
+    "am-d327bba5b1a4ae04",
+    "am-af71b5722d858a52",
+    "am-b6c010254e7a47c9",
+    "am-bfaeab87cbce15f6",
+    "am-fa65496b8b41999a"
   ],
-  "rooms": [
+  "collections": [
     {
-      "slug": "03-overexposure-erasure",
-      "title": "Threshold",
-      "primaryTone": "arrival",
-      "roomStatement": "Threshold begins before the city fully arrives. The pictures stay with pale air, distant shorelines, and small figures at the edge of entry, asking the viewer to slow down before anything becomes certain.",
-      "subtitle": "First light, held breath, and the edge of public life.",
-      "synopsis": "Pale horizons and open streets hold the pause before the city begins to answer back.",
+      "slug": "first-apertures",
+      "title": "First Apertures",
+      "subtitle": "Thresholds, shelter, and the withheld world.",
+      "synopsis": "Openings gather across stone, darkness, leaf, and bamboo, asking what passage reveals and what remains protected beyond sight.",
+      "essay": "Every opening edits the world. Red stone divides warmth from shadow, placing a distant silhouette where geometry can neither contain nor release it. Fluorescent bars then count down a tunnel toward daylight, while a latticed window admits only slender beams, enough to reveal the air inside darkness. Night answers with one yellow rectangle across a snowy street: shelter reduced to color and scale. The pavilion widens that private signal into three shared silhouettes, framed by garden light and the restless shadows of branches. From there, architecture yields to growth. Rust foliage nearly consumes a pale gate; bamboo rises in severe green ranks around an empty path. At last, fallen leaves draw the eye toward a small shrine entrance beneath a canopy. Nothing fully opens. Each threshold offers a measured portion of elsewhere, preserving the remainder beyond the frame. Passage begins not with arrival, but with the quiet recognition that seeing and entering are different acts.",
       "tags": [
-        "arrival",
-        "attention",
-        "pale air",
-        "first contact"
+        "thresholds",
+        "architecture",
+        "light"
       ],
-      "coverPhotoId": "684048097746-photo-39",
+      "coverPhotoId": "am-23edf26e45ddc1ab",
       "previewPhotoIds": [
-        "684048097746-photo-39",
-        "e65e2dc59bfa-photo-16",
-        "a0d1fdf4b0a8-photo-36",
-        "4227e40b6da0-dscf6388-edit",
-        "3221737c2722-dsc00891"
+        "am-23edf26e45ddc1ab",
+        "am-c853ed8dc29b0c87",
+        "am-74215e4294a70395",
+        "am-220e3cd254232a2b",
+        "am-81bb1d09c2c797de"
       ],
-      "photoIds": [
-        "684048097746-photo-39",
-        "410a05be6055-photo-19",
-        "e65e2dc59bfa-photo-16",
-        "3487817b8afa-photo-17",
-        "a0d1fdf4b0a8-photo-36",
-        "fb5b60b48a69-dscf5661",
-        "4e0d3d3f7359-dscf4850-hdr",
-        "4227e40b6da0-dscf6388-edit",
-        "51e037cbdd59-dscf5428",
-        "3221737c2722-dsc00891"
-      ],
-      "archiveLabel": "India / UAE / Copenhagen / Spring / Print Archive",
-      "archiveYear": "2024-2026",
-      "credits": "curated sequence / threshold / 2024-2026",
-      "projectInformation": "A printed night closes the white room as memory, not place.",
-      "photoCaptions": {
-        "684048097746-photo-39": "A pale horizon opens the sequence by almost refusing form.",
-        "410a05be6055-photo-19": "Heat and distance turn the city into a soft mirage.",
-        "e65e2dc59bfa-photo-16": "The shoreline becomes a line of breath between water and glare.",
-        "3487817b8afa-photo-17": "Architecture appears as evidence inside an unfinished sky.",
-        "a0d1fdf4b0a8-photo-36": "A warm public trace holds the frame before it clears.",
-        "fb5b60b48a69-dscf5661": "Northern light flattens the street into a quiet threshold.",
-        "4e0d3d3f7359-dscf4850-hdr": "Facade and sky meet where detail begins to dissolve.",
-        "4227e40b6da0-dscf6388-edit": "A figure enters the white field, giving scale to absence.",
-        "51e037cbdd59-dscf5428": "The body becomes a dark measure inside surrounding brightness.",
-        "3221737c2722-dsc00891": "A printed night closes the white room as memory, not place."
-      }
+      "images": [
+        {
+          "assetId": "am-23edf26e45ddc1ab",
+          "title": "Red Measure",
+          "prose": "Light enters in strict polygons, yet the distant silhouette resists the room’s arithmetic. Between patterned floor and black doorway, presence registers as the one measure geometry cannot settle.",
+          "alt": "Wide red-stone interior with geometric floor shadows and one small silhouette in a distant doorway.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-3176329ae951fba7",
+          "title": "Exit Line",
+          "prose": "Fluorescent bars diminish toward white daylight, counting distance through the tunnel’s dark curve. One backlit body carries the unanswered interval between departure and emergence.",
+          "alt": "Dark symmetrical tunnel with receding fluorescent lights and one figure near the bright exit.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-c853ed8dc29b0c87",
+          "title": "Dust of Light",
+          "prose": "Slender sunbeams cross carved red stone and disclose what darkness ordinarily keeps weightless. Dust acquires direction here; illumination arrives less as revelation than as touch.",
+          "alt": "Sunbeams pass through an arched lattice window into a dark red-stone interior.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-db4a765841a3f592",
+          "title": "Yellow Room",
+          "prose": "Across the snow-dark street, one yellow doorway burns at human scale. Its silhouette neither welcomes nor warns; warmth survives as a small, undeciphered fact.",
+          "alt": "Dark snowy street with a narrow yellow-lit doorway containing one small silhouetted figure.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-74215e4294a70395",
+          "title": "Shared Opening",
+          "prose": "Three silhouettes divide the pavilion’s shade while branch shadows travel across warm walls. Beyond them, garden light offers openness without dissolving the intimacy of pause.",
+          "alt": "Three dark silhouettes sit inside a pavilion opening bordered by warm walls and branch shadows.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-e825c1c67b5e7d27",
+          "title": "Gate in the Thicket",
+          "prose": "Rust foliage crowds the pale stone frame until entry nearly vanishes. Bright cones interrupt the autumn hush, reminding the eye that not every opening is presently available.",
+          "alt": "Pale stone gate partly obscured by dense rust-colored autumn branches and deep shadow.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-220e3cd254232a2b",
+          "title": "Bamboo Draws Inward",
+          "prose": "Green light narrows between rising bamboo, and the empty path receives its discipline from living columns. The farther it extends, the more inward distance feels.",
+          "alt": "Straight path receding between tall inward-leaning bamboo trunks under a narrow opening of green light.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-81bb1d09c2c797de",
+          "title": "The Distant Gate",
+          "prose": "Leaves soften the path’s straight insistence while red banners mark a shrine entrance far ahead. Arrival recedes into scale, valuable precisely because it remains unfinished.",
+          "alt": "Leaf-covered garden path leading beneath dense trees toward a small red gate in the distance.",
+          "sequenceRole": "release"
+        }
+      ]
     },
     {
-      "slug": "12-breath-and-vapor",
-      "title": "Drift",
-      "primaryTone": "movement",
-      "roomStatement": "Drift loosens the route. Mountain air, wet crossings, striping, and late urban light pass before the eye can own them, leaving movement as the main subject.",
-      "subtitle": "Weather, street current, and attention without a fixed address.",
-      "synopsis": "Scenes pass in loose weather and public color, carried more by current than by destination.",
+      "slug": "bodies-against-scale",
+      "title": "Bodies Against Scale",
+      "subtitle": "The figure measured against structures and distances.",
+      "synopsis": "The body becomes a small weather inside vast structures, carrying its fragile measure through stone, altitude, shadow, and light.",
+      "essay": "Scale first appears as a quiet imbalance: one basketball hoop facing a wall dense with domestic windows. Black-and-white fins then reduce people to intervals; a white colonnade extends that arithmetic until one figure anchors its vanishing point. The landscape strips even those measurements away. A lone body interrupts a black ridge beneath blank sky, followed by a musician enclosed in amber light and monumental darkness. From that inward concentration, an uplifted figure faces a mountain vast enough to absorb the gesture without erasing it. The crowd beneath illuminated towers reverses the relation; many bodies gather into one restless plane while screens retain their rigid glare. Finally, a seated figure rests exactly where tunnel shadow meets bright water. The room never asks whether the body is large or small. It asks what surrounds it, what answers it, and which fragment of space allows attention to remain human.",
       "tags": [
-        "drift",
-        "weather",
-        "current",
-        "passing"
-      ],
-      "coverPhotoId": "dfe332135103-photo-13",
-      "previewPhotoIds": [
-        "dfe332135103-photo-13",
-        "72524cb7354d-photo-9",
-        "2b39bc363cad-photo-6",
-        "157b5cd44260-dscf2321-edit",
-        "f194c32728a5-dscf2593"
-      ],
-      "photoIds": [
-        "dfe332135103-photo-13",
-        "5df53b348647-photo-12",
-        "72524cb7354d-photo-9",
-        "d0634b5aeb03-photo-4",
-        "2b39bc363cad-photo-6",
-        "57304a4fff81-dsc07166",
-        "9216aab407f5-dsc07006",
-        "157b5cd44260-dscf2321-edit",
-        "225320486751-dscf2289",
-        "f194c32728a5-dscf2593"
-      ],
-      "archiveLabel": "Switzerland / Winter Study",
-      "archiveYear": "2024-2025",
-      "credits": "curated sequence / drift / 2024-2025",
-      "projectInformation": "This room follows attention when it has stopped trying to arrive. The frame moves from open weather into public glare and back again, as if the street and the landscape are part of the same current. What matters is not where the body is going, but how much passes through it on the way.",
-      "photoCaptions": {
-        "dfe332135103-photo-13": "Mountain weather gathers around the frame like a lowered ceiling.",
-        "5df53b348647-photo-12": "The valley holds warmth inside a cold, passing atmosphere.",
-        "72524cb7354d-photo-9": "Night arrives early, turning altitude into a distant signal.",
-        "d0634b5aeb03-photo-4": "A figure meets the weather at the scale of breath.",
-        "2b39bc363cad-photo-6": "The landscape withdraws until passage feels suspended.",
-        "57304a4fff81-dsc07166": "Snow reduces the street to hush, trace, and direction.",
-        "9216aab407f5-dsc07006": "Warm winter light makes the empty path feel inhabited.",
-        "157b5cd44260-dscf2321-edit": "The white ground keeps a record of what moved through.",
-        "225320486751-dscf2289": "A far lamp burns like shelter inside the cold field.",
-        "f194c32728a5-dscf2593": "The chapter settles where snow and dusk share one silence."
-      }
-    },
-    {
-      "slug": "05-suspended-transits",
-      "title": "Crossing",
-      "primaryTone": "encounter",
-      "roomStatement": "Crossing looks for the tiny social decisions inside passage. A path opens, a gate narrows, water or a wall changes the pace, and the body adjusts without ceremony.",
-      "subtitle": "Paths, gates, bodies, and the small agreements of passage.",
-      "synopsis": "Warm paths and thresholds turn movement into negotiation, each route shaped by what stands beside it.",
-      "tags": [
-        "crossing",
-        "threshold",
-        "gesture",
-        "shared ground"
-      ],
-      "coverPhotoId": "3b36b011bc32-dscf0912",
-      "previewPhotoIds": [
-        "3b36b011bc32-dscf0912",
-        "606be3af4f6c-dsc05986",
-        "b4844bad5da6-dsc04854-hdr",
-        "3090371f68f4-dsc08722",
-        "78dab22a183b-dsc03360-hdr"
-      ],
-      "photoIds": [
-        "3b36b011bc32-dscf0912",
-        "790fdf43d472-photo-41",
-        "606be3af4f6c-dsc05986",
-        "95c9264b1aff-dscf0578-2",
-        "b4844bad5da6-dsc04854-hdr",
-        "9676153d7da3-dscf0918-hdr",
-        "42be5fabb745-dscf0842-hdr",
-        "3090371f68f4-dsc08722",
-        "dca7b0b984b0-dsc06060-hdr-edit",
-        "78dab22a183b-dsc03360-hdr"
-      ],
-      "archiveLabel": "Japan / Social Drafts / India / UAE / Taiwan / Malaysia / Singapore",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / crossing / 2023-2026",
-      "projectInformation": "The city is not only crowded sidewalks. It is also the quiet choreography of entry, pause, and shared direction inside gardens, markets, courtyards, and streets. Crossing keeps the focus on adjustment: the small ways people and spaces make room for one another.",
-      "photoCaptions": {
-        "3b36b011bc32-dscf0912": "Amber light turns the first pause into stored memory.",
-        "790fdf43d472-photo-41": "Warm architecture holds distance without letting it harden.",
-        "606be3af4f6c-dsc05986": "Open daylight makes the garden feel temporarily ceremonial.",
-        "95c9264b1aff-dscf0578-2": "A humid threshold slows movement into color and touch.",
-        "b4844bad5da6-dsc04854-hdr": "The figure gives the warm surface its human temperature.",
-        "9676153d7da3-dscf0918-hdr": "Even the ordinary wall seems to remember the sun.",
-        "42be5fabb745-dscf0842-hdr": "Color gathers like dust on the edge of passage.",
-        "3090371f68f4-dsc08722": "The route opens briefly, generous and earth-toned.",
-        "dca7b0b984b0-dsc06060-hdr-edit": "A second warmth answers the first, quieter and more lived in.",
-        "78dab22a183b-dsc03360-hdr": "The coda leaves the room in late, breathable light."
-      }
-    },
-    {
-      "slug": "09-organic-resistance",
-      "title": "Concourse",
-      "primaryTone": "flow",
-      "roomStatement": "Concourse treats the city as a set of moving channels, some engineered, some organic. Trees, water, signs, and towers pull against one another, but the eye keeps finding a route through.",
-      "subtitle": "Public flow where growth, water, and signal share direction.",
-      "synopsis": "Greenery and electric surfaces interrupt the built route, turning passage into a living system.",
-      "tags": [
-        "concourse",
-        "flow",
-        "signal",
-        "growth"
-      ],
-      "coverPhotoId": "4abfcba4f031-dscf6815",
-      "previewPhotoIds": [
-        "4abfcba4f031-dscf6815",
-        "2ec01c20b9e7-dscf9143",
-        "302aa3b6b17e-dscf5784",
-        "63a8e3ce8aa0-r0001249",
-        "fd2ac7a05d2c-photo-20"
-      ],
-      "photoIds": [
-        "4abfcba4f031-dscf6815",
-        "5d8190828642-dsc02323-hdr",
-        "2ec01c20b9e7-dscf9143",
-        "44864ad1864a-dscf8394",
-        "302aa3b6b17e-dscf5784",
-        "bc0ca9ff945f-dsc05024-hdr",
-        "2203024d2b5b-dscf7371-edit",
-        "63a8e3ce8aa0-r0001249",
-        "a11974d37515-r0001250",
-        "fd2ac7a05d2c-photo-20"
-      ],
-      "archiveLabel": "Spring / Japan / Taiwan / Malaysia / Singapore / Pocket Camera",
-      "archiveYear": "2023-2025",
-      "credits": "curated sequence / concourse / 2023-2025",
-      "projectInformation": "Here the city becomes a system of circulation rather than a single street. Foliage, water, signage, and stacked buildings all push on the frame, making movement feel guided and improvised at once. The room gives public space a pulse before the pressure tightens.",
-      "photoCaptions": {
-        "4abfcba4f031-dscf6815": "Spring pushes through the frame with a softness that insists.",
-        "5d8190828642-dsc02323-hdr": "Green night light turns infrastructure into living atmosphere.",
-        "2ec01c20b9e7-dscf9143": "Humidity and signal share the same uneasy pulse.",
-        "44864ad1864a-dscf8394": "The city glows with color that feels grown, not installed.",
-        "302aa3b6b17e-dscf5784": "A close figure measures the pressure of the vegetal field.",
-        "bc0ca9ff945f-dsc05024-hdr": "Daylight lets green occupy the architecture without apology.",
-        "2203024d2b5b-dscf7371-edit": "Leaves press against the frame as if claiming territory.",
-        "63a8e3ce8aa0-r0001249": "Street light turns the body into a charged green note.",
-        "a11974d37515-r0001250": "A second figure deepens the pulse into confrontation.",
-        "fd2ac7a05d2c-photo-20": "The room exits through vertical glow and nocturnal resistance."
-      }
-    },
-    {
-      "slug": "04-the-gravity-of-scale",
-      "title": "Pressure",
-      "primaryTone": "density",
-      "roomStatement": "Pressure is where space starts to bear down. The vertical frame measures bodies against facades, steps, statues, and trees, turning scale into a feeling rather than a fact.",
-      "subtitle": "Height, closeness, and the city pressing into the frame.",
-      "synopsis": "Vertical streets, facades, stairs, and monuments make scale feel physical, as if the city is leaning in.",
-      "tags": [
-        "pressure",
         "scale",
-        "compression",
-        "height"
+        "figures",
+        "distance"
       ],
-      "coverPhotoId": "4ae38866abdf-dsc07029",
+      "coverPhotoId": "am-2c6ca14afb7d3241",
       "previewPhotoIds": [
-        "4ae38866abdf-dsc07029",
-        "3a158d7d89e2-dsc04697-hdr-edit",
-        "6a46feb72c93-photo-21",
-        "c9fccb5c11a2-dsc06172-hdr",
-        "56383ec03ef6-dscf4759"
+        "am-2c6ca14afb7d3241",
+        "am-60469abec11a012e",
+        "am-112e3f8ecf39b520",
+        "am-c4737f47a3abcbac",
+        "am-91af64eeddd06790"
       ],
-      "photoIds": [
-        "4ae38866abdf-dsc07029",
-        "869a3968fdc7-dsc09314",
-        "3a158d7d89e2-dsc04697-hdr-edit",
-        "f6371e8f7f8a-dsc09315",
-        "6a46feb72c93-photo-21",
-        "aa9b377fabb3-dsc03277-hdr",
-        "0a51d8bc9b56-dsc05894-hdr",
-        "c9fccb5c11a2-dsc06172-hdr",
-        "285fccef2c70-dscf4638-edit",
-        "56383ec03ef6-dscf4759"
-      ],
-      "archiveLabel": "Japan / Copenhagen / Winter Study / Hong Kong",
-      "archiveYear": "2023-2025",
-      "credits": "curated sequence / pressure / 2023-2025",
-      "projectInformation": "This room tightens the portfolio by looking up, inward, and through. Buildings and monuments do not simply occupy the background; they set the terms of the body below them. Pressure holds the tension between shelter and weight.",
-      "photoCaptions": {
-        "4ae38866abdf-dsc07029": "Snow and height make the body feel newly accountable.",
-        "869a3968fdc7-dsc09314": "A vertical street teaches the eye to look upward.",
-        "3a158d7d89e2-dsc04697-hdr-edit": "Facade, sign, and figure compress into one tall demand.",
-        "f6371e8f7f8a-dsc09315": "The next surface repeats the lesson with warmer force.",
-        "6a46feb72c93-photo-21": "Daylight height turns the city into a system of measure.",
-        "aa9b377fabb3-dsc03277-hdr": "Architecture rises while the human scale stays fragile.",
-        "0a51d8bc9b56-dsc05894-hdr": "Trees and buildings share the same upward pressure.",
-        "c9fccb5c11a2-dsc06172-hdr": "The frame keeps climbing, even where the street rests.",
-        "285fccef2c70-dscf4638-edit": "A northern facade converts stillness into vertical weight.",
-        "56383ec03ef6-dscf4759": "The coda holds the body beneath a calmer height."
-      }
+      "images": [
+        {
+          "assetId": "am-2c6ca14afb7d3241",
+          "title": "Court of Windows",
+          "prose": "Play waits beneath an immense ledger of windows. Centered hoop and painted court offer one clear proportion against the countless private rectangles rising behind them.",
+          "alt": "Empty colorful basketball court and hoop centered before a dense pastel apartment façade.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-6b1001cd03a05320",
+          "title": "Between the Fins",
+          "prose": "Vertical fins impose a relentless rhythm; tiny figures occupy the narrow rests between bars. Architecture counts bodies here, but cannot reduce their differences to pattern.",
+          "alt": "Black-and-white architectural fins repeat vertically, with several tiny people visible between them.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-60469abec11a012e",
+          "title": "Distant Center",
+          "prose": "Gold-crowned columns repeat toward a dark pinpoint, making symmetry almost absolute. That remote figure breaks perfection gently, giving endless order somewhere to arrive.",
+          "alt": "Long white colonnade with gold capitals and one distant dark figure at the vanishing point.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-7ee3643e4b813063",
+          "title": "Single Mark",
+          "prose": "Blank sky removes every customary measure except horizon and body. The solitary mark is almost nothing, yet the whole image depends upon its refusal to disappear.",
+          "alt": "Single small figure on a black ridge beneath a nearly featureless white sky.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-112e3f8ecf39b520",
+          "title": "Held Note",
+          "prose": "Amber light isolates one musician beneath a circular glow, while the surrounding interior withdraws into black. Sound remains unseen; attention takes on its shape.",
+          "alt": "A solitary musician performs in a small amber spotlight within a vast dark interior.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-8d8343421d668c96",
+          "title": "Answering the Mountain",
+          "prose": "Raised arms punctuate the narrow ridge beneath a blue mountain, too small to rival its mass. Their force comes from remaining visible against such scale.",
+          "alt": "Tiny person raising both arms below dark alpine peaks and bands of white cloud.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-c4737f47a3abcbac",
+          "title": "Crowd Beneath Light",
+          "prose": "Illuminated towers keep their hard edges while pedestrians blur into a restless foreground. Public brightness enlarges the scene and makes individual presence harder to retain.",
+          "alt": "Large nighttime crossing filled with blurred pedestrians beneath tall buildings and bright advertising screens.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-91af64eeddd06790",
+          "title": "Figure at the Seam",
+          "prose": "Tunnel shadow ends exactly beside moving water, and one seated figure occupies the border. Scale finally offers shelter: not enclosure, but a precise place to pause.",
+          "alt": "One seated figure in yellow at the boundary between a dark tunnel and sunlit water.",
+          "sequenceRole": "release"
+        }
+      ]
     },
     {
-      "slug": "06-peripheral-choreography",
-      "title": "Voltage",
-      "primaryTone": "infrastructure",
-      "roomStatement": "Voltage widens the frame but raises the charge. Distant skylines, crowded thresholds, rail lines, and weather-lit landmarks turn the city into an electrical field of signs and routes.",
-      "subtitle": "Skylines, routes, and signals carrying charge across distance.",
-      "synopsis": "Wide views gather crowds, towers, temples, and weather into a charged public current.",
+      "slug": "water-remembers",
+      "title": "Water Remembers",
+      "subtitle": "Reflections, currents, and the afterlife of light.",
+      "synopsis": "Water alters every witness: architecture loosens, light fractures, reflections deepen, and distance carries crowded surfaces toward air.",
+      "essay": "Water refuses the role of mirror; it revises whatever approaches. Two seated silhouettes face gold doubled across stillness, their quiet presence dividing radiance from reflection. On rain-streaked glass, towers loosen into vertical traces. Blue-white current and amber light compress the world to texture, before a narrow creek returns stones, grass, willow, and depth. Foam then scores the dark shore with the cleanest mark in the room, and the least permanent. A pond draws a bent tree downward, creating an interior below the visible bank. Along the quay, architecture keeps its edge while a pale horizontal streak records passage. The final hillside gathers hundreds of colored roofs, yet distant harbor light opens a breath within their density. Water remembers without preserving. It carries shape forward by changing its terms: monument to shimmer, skyline to stain, landscape to double, transit to current, habitation to a field already leaning toward distance.",
       "tags": [
-        "voltage",
-        "infrastructure",
-        "signal",
-        "public current"
-      ],
-      "coverPhotoId": "0d18d9fcd731-photo-22",
-      "previewPhotoIds": [
-        "0d18d9fcd731-photo-22",
-        "3703f30d0d2d-dsc05649-hdr-pano",
-        "2f4d71e55562-dsc09628-edit",
-        "b49d7d3b3404-dsc01517-hdr",
-        "70c081b8adf7-dsc01067-hdr-pano-edit"
-      ],
-      "photoIds": [
-        "0d18d9fcd731-photo-22",
-        "9ad75dd23fe5-dsc05560",
-        "3703f30d0d2d-dsc05649-hdr-pano",
-        "496b9a265c4c-dsc00396",
-        "2f4d71e55562-dsc09628-edit",
-        "ac69dca7c75d-photo-10",
-        "67b186e4e012-dsc09501",
-        "b49d7d3b3404-dsc01517-hdr",
-        "883bcedefd11-dscf6133",
-        "70c081b8adf7-dsc01067-hdr-pano-edit"
-      ],
-      "archiveLabel": "Japan / Hong Kong / India / UAE / Copenhagen",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / voltage / 2023-2026",
-      "projectInformation": "The energy here is less intimate and more civic. Attention travels across crowded entrances, skylines, platforms, and icons, picking up signals from every edge of the frame. Voltage makes infrastructure feel alive because people keep moving through it.",
-      "photoCaptions": {
-        "0d18d9fcd731-photo-22": "The harbor opens wide, making distance part of the crowd.",
-        "9ad75dd23fe5-dsc05560": "Night traffic spreads through the frame like low weather.",
-        "3703f30d0d2d-dsc05649-hdr-pano": "The city lengthens into routes, signs, and passing decisions.",
-        "496b9a265c4c-dsc00396": "A public crossing gathers many directions into one surface.",
-        "2f4d71e55562-dsc09628-edit": "Momentum builds where architecture and bodies share the horizon.",
-        "ac69dca7c75d-photo-10": "Warm dusk carries the crowd forward without a center.",
-        "67b186e4e012-dsc09501": "The middle distance becomes a field of small negotiations.",
-        "b49d7d3b3404-dsc01517-hdr": "Cool light steadies the flow without stopping it.",
-        "883bcedefd11-dscf6133": "A northern passage keeps the current quiet and lateral.",
-        "70c081b8adf7-dsc01067-hdr-pano-edit": "The panorama releases the crowd back into open movement."
-      }
-    },
-    {
-      "slug": "13-brutal-harmonics",
-      "title": "Nocturne",
-      "primaryTone": "night",
-      "roomStatement": "Nocturne lets night reorganize the city's language. Signs, fences, glass, and isolated figures become small declarations inside a larger dark, each one withholding as much as it offers.",
-      "subtitle": "Night signage, black glass, and figures held at a distance.",
-      "synopsis": "The city slows into storefronts, signs, and dark surfaces that reveal only part of the scene.",
-      "tags": [
-        "nocturne",
-        "night",
-        "distance",
-        "artificial light"
-      ],
-      "coverPhotoId": "8fb2371a8f69-r0001010",
-      "previewPhotoIds": [
-        "8fb2371a8f69-r0001010",
-        "3e485f8b1932-photo-1-3",
-        "c00c6a79e514-r0001726-edit",
-        "4c56decb826d-r0000544",
-        "12a5512ce931-dsc09052-edit"
-      ],
-      "photoIds": [
-        "8fb2371a8f69-r0001010",
-        "28c3f0c7e2be-photo-11",
-        "3e485f8b1932-photo-1-3",
-        "cfdc0fa8ef43-photo-20",
-        "c00c6a79e514-r0001726-edit",
-        "48395174d2cb-dsc07307-hdr",
-        "d6676b1cb478-r0001350-2",
-        "4c56decb826d-r0000544",
-        "429cd7ec783e-photo-9",
-        "12a5512ce931-dsc09052-edit"
-      ],
-      "archiveLabel": "Pocket Camera / India / UAE / Winter Study / Hong Kong",
-      "archiveYear": "2024-2026",
-      "credits": "curated sequence / nocturne / 2024-2026",
-      "projectInformation": "This is not night as spectacle. It is night as distance, when storefronts and signals become readable while the space around them goes quiet. The images ask the viewer to stay with partial information.",
-      "photoCaptions": {
-        "8fb2371a8f69-r0001010": "A roadside fragment begins the chapter as a sentence half-read.",
-        "28c3f0c7e2be-photo-11": "Dusk turns instruction into atmosphere before it becomes command.",
-        "3e485f8b1932-photo-1-3": "The open road writes distance in lanes and warm air.",
-        "cfdc0fa8ef43-photo-20": "Daylight clarifies the system without removing its strangeness.",
-        "c00c6a79e514-r0001726-edit": "Night signage speaks louder once the street grows uncertain.",
-        "48395174d2cb-dsc07307-hdr": "Snow translates public direction into a softer code.",
-        "d6676b1cb478-r0001350-2": "A lit facade punctuates the city with commercial breath.",
-        "4c56decb826d-r0000544": "Windows and signs repeat until utility becomes rhythm.",
-        "429cd7ec783e-photo-9": "Harbor night adds glow to the grammar of movement.",
-        "12a5512ce931-dsc09052-edit": "The room closes on signal as a form of memory."
-      }
-    },
-    {
-      "slug": "10-absolute-center",
-      "title": "Afterlight",
-      "primaryTone": "residue",
-      "roomStatement": "Afterlight stays with what remains after the public rush has moved on. A lamp, a figure, a temple, a shadow, or a white square becomes the place where the eye waits.",
-      "subtitle": "The glow left behind after movement has passed.",
-      "synopsis": "Centered lights, silhouettes, and small night scenes hold the residue of motion in place.",
-      "tags": [
-        "afterlight",
-        "residue",
-        "pause",
-        "night"
-      ],
-      "coverPhotoId": "c44e80fa3ba7-dscf6349",
-      "previewPhotoIds": [
-        "c44e80fa3ba7-dscf6349",
-        "8b3257523353-photo-43",
-        "2585b8f078af-photo-33",
-        "86c1635ec049-dsc00757-edit",
-        "79f23fc2908a-dscf4872-hdr"
-      ],
-      "photoIds": [
-        "c44e80fa3ba7-dscf6349",
-        "0a3cd589f414-photo-25",
-        "8b3257523353-photo-43",
-        "0559bf9e963f-photo-24",
-        "2585b8f078af-photo-33",
-        "7a60373781e8-dsc04411",
-        "3ec0cfe43870-r0000099",
-        "86c1635ec049-dsc00757-edit",
-        "0e6d1b34bf9d-photo-19",
-        "79f23fc2908a-dscf4872-hdr"
-      ],
-      "archiveLabel": "India / UAE / Hong Kong / Print Archive / After Hours",
-      "archiveYear": "2024-2026",
-      "credits": "curated sequence / afterlight / 2024-2026",
-      "projectInformation": "Afterlight is the pause after motion. The frames are more contained, almost held in the palm, with color and shadow settling around isolated events. The city is still active, but its energy has become quieter and more residual.",
-      "photoCaptions": {
-        "c44e80fa3ba7-dscf6349": "The square frame seals the night into a single room.",
-        "0a3cd589f414-photo-25": "A centered glow makes the city feel briefly absolute.",
-        "8b3257523353-photo-43": "Warm darkness holds an incident without explaining it.",
-        "0559bf9e963f-photo-24": "The frame refuses escape, making shadow carry the story.",
-        "2585b8f078af-photo-33": "Dusk presses the subject into a compact visual chamber.",
-        "7a60373781e8-dsc04411": "Print memory turns enclosure into a handled object.",
-        "3ec0cfe43870-r0000099": "A street fragment becomes ritual by staying centered.",
-        "86c1635ec049-dsc00757-edit": "The dark print keeps its secret inside the square.",
-        "0e6d1b34bf9d-photo-19": "Cool night holds the facade like a closed thought.",
-        "79f23fc2908a-dscf4872-hdr": "Daylight returns as a final, exact enclosure."
-      }
-    },
-    {
-      "slug": "07-sediment-and-silver",
-      "title": "Residue",
-      "primaryTone": "memory",
-      "roomStatement": "Residue treats the photograph as something handled, not just seen. Monochrome, print texture, glare, and worn surfaces make public scenes feel recovered from after the fact.",
-      "subtitle": "Print trace, worn silver, and evidence after the event.",
-      "synopsis": "Color falls back so surfaces, crowds, and interiors can read as memory and sediment.",
-      "tags": [
-        "residue",
-        "memory",
-        "trace",
-        "archive"
-      ],
-      "coverPhotoId": "3a63b333a4b8-photo-28",
-      "previewPhotoIds": [
-        "3a63b333a4b8-photo-28",
-        "03c73f07cbdb-photo-35",
-        "0f58433afb46-photo-47",
-        "0d81cc123c29-dscf5449",
-        "806298c1700e-dsc03546-enhanced-nr"
-      ],
-      "photoIds": [
-        "3a63b333a4b8-photo-28",
-        "5e190491e59b-photo-3",
-        "03c73f07cbdb-photo-35",
-        "23e772b5e714-photo-45",
-        "0f58433afb46-photo-47",
-        "2489bebdd3ae-dsc05593-hdr",
-        "62addcb703f1-dsc05057-hdr",
-        "0d81cc123c29-dscf5449",
-        "3f3836999a9d-dscf6197",
-        "806298c1700e-dsc03546-enhanced-nr"
-      ],
-      "archiveLabel": "India / UAE / Print Archive / Japan / Social Drafts",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / residue / 2023-2026",
-      "projectInformation": "This room turns the sequence toward memory. The images do not behave like fresh proof; they feel carried, reprinted, scuffed, and remembered. Residue asks what stays after the event has stopped being available.",
-      "photoCaptions": {
-        "3a63b333a4b8-photo-28": "A figure hardens into silver, more trace than encounter.",
-        "5e190491e59b-photo-3": "Daylight turns pale ground into archival evidence.",
-        "03c73f07cbdb-photo-35": "Night loses color and keeps only its pressure.",
-        "23e772b5e714-photo-45": "A transitional scene feels recovered from the edge of memory.",
-        "0f58433afb46-photo-47": "The city becomes a negative, lit by what remains.",
-        "2489bebdd3ae-dsc05593-hdr": "Artificial light turns public space into worn metal.",
-        "62addcb703f1-dsc05057-hdr": "Distance enters the archive as a cool, cinematic proof.",
-        "0d81cc123c29-dscf5449": "The print surface carries time like a second exposure.",
-        "3f3836999a9d-dscf6197": "Far memory thins the scene into grey air.",
-        "806298c1700e-dsc03546-enhanced-nr": "The room closes where night and paper become one substance."
-      }
-    },
-    {
-      "slug": "01-the-geography-of-silence",
-      "title": "Quiet Heat",
-      "primaryTone": "pause",
-      "roomStatement": "Quiet Heat is not bright warmth; it is the remaining temperature inside distance. Towers, roads, small shops, and weathered night scenes make the city feel private without becoming still.",
-      "subtitle": "Low warmth, private distance, and the city turned inward.",
-      "synopsis": "Night views and small illuminated streets slow the sequence into a more private register.",
-      "tags": [
-        "quiet heat",
-        "solitude",
-        "interior",
-        "late city"
-      ],
-      "coverPhotoId": "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
-      "previewPhotoIds": [
-        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
-        "3639be8591be-dsc06971-edit",
-        "760dd44a1fd6-photo-8",
-        "7e0f2fbc86b1-photo-23",
-        "3d4d6035553d-dsc08003-edit"
-      ],
-      "photoIds": [
-        "1c2312731698-dsc03412-enhanced-nr-hdr-pan",
-        "339ed2be993f-dsc06561",
-        "3639be8591be-dsc06971-edit",
-        "7f536dc85ff7-dsc03857-hdr",
-        "760dd44a1fd6-photo-8",
-        "d23068086ff3-r0001595",
-        "a77bb788fc75-photo-37",
-        "7e0f2fbc86b1-photo-23",
-        "9e32362737d9-dsc06313",
-        "3d4d6035553d-dsc08003-edit"
-      ],
-      "archiveLabel": "India / UAE / After Hours / Spring / Japan",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / quiet heat / 2023-2026",
-      "projectInformation": "After the archival room, the work turns inward. Light is sparse, but it has a temperature: a sign, a road, a shopfront, a storm-lit horizon. Quiet Heat lets solitude feel active rather than empty.",
-      "photoCaptions": {
-        "1c2312731698-dsc03412-enhanced-nr-hdr-pan": "The first night image opens as a road into separation.",
-        "339ed2be993f-dsc06561": "Cool streetlight lets the city keep its distance.",
-        "3639be8591be-dsc06971-edit": "Snow at night turns emptiness into a held note.",
-        "7f536dc85ff7-dsc03857-hdr": "A remembered night returns as reflection and blue static.",
-        "760dd44a1fd6-photo-8": "Far towers mark presence without offering arrival.",
-        "d23068086ff3-r0001595": "Warm pavement interrupts the cold logic of distance.",
-        "a77bb788fc75-photo-37": "A close figure makes the night briefly intimate.",
-        "7e0f2fbc86b1-photo-23": "Harbor darkness stretches the city beyond touch.",
-        "9e32362737d9-dsc06313": "The middle night steadies into quiet, withheld geometry.",
-        "3d4d6035553d-dsc08003-edit": "The coda leaves only scattered light and the space between."
-      }
-    },
-    {
-      "slug": "08-the-blue-hour-protocol",
-      "title": "Echo Field",
-      "primaryTone": "hush",
-      "roomStatement": "Echo Field lowers the volume. Blue light, mountain distance, reflective streets, and softened architecture make place feel less certain, as if sound has dropped out of the frame.",
-      "subtitle": "Blue air, softened edges, and the hush between systems.",
-      "synopsis": "Cobalt streets, ridges, and reflections reduce the city to atmosphere and echo.",
-      "tags": [
-        "echo",
-        "hush",
-        "blue hour",
-        "soft edge"
-      ],
-      "coverPhotoId": "3ba83ec23909-dsc02026-edit",
-      "previewPhotoIds": [
-        "3ba83ec23909-dsc02026-edit",
-        "82ff05eb0c09-dsc03841-hdr",
-        "c06466c04932-dsc02994-enhanced-nr-hdr",
-        "ceb87a09b213-dscf5188",
-        "fa85474cc282-dsc00532-hdr-pano-edit"
-      ],
-      "photoIds": [
-        "3ba83ec23909-dsc02026-edit",
-        "5ec61ddbe9a4-dsc03296-hdr",
-        "82ff05eb0c09-dsc03841-hdr",
-        "1c26c472f6b0-dsc03474-2",
-        "c06466c04932-dsc02994-enhanced-nr-hdr",
-        "a9c340d6e0e2-dsc03236-hdr",
-        "5496d51aa501-photo-14",
-        "ceb87a09b213-dscf5188",
-        "732c7ba7e4c2-dsc09661",
-        "fa85474cc282-dsc00532-hdr-pano-edit"
-      ],
-      "archiveLabel": "Social Drafts / Japan / Spring / Switzerland",
-      "archiveYear": "2023-2025",
-      "credits": "curated sequence / echo field / 2023-2025",
-      "projectInformation": "This room is a cooling chamber inside the sequence. The images hold the hour when public life thins and weather takes some of the city's authority back. Edges remain visible, but they no longer feel final.",
-      "photoCaptions": {
-        "3ba83ec23909-dsc02026-edit": "Twilight begins its descent through cool, reflective air.",
-        "5ec61ddbe9a4-dsc03296-hdr": "Blue night turns memory into a surface of glass.",
-        "82ff05eb0c09-dsc03841-hdr": "The second blue deepens until reflection becomes weather.",
-        "1c26c472f6b0-dsc03474-2": "Spring darkness keeps a soft pulse under the color.",
-        "c06466c04932-dsc02994-enhanced-nr-hdr": "The archive holds blue as a delayed sensation.",
-        "a9c340d6e0e2-dsc03236-hdr": "Another nocturne folds the city into colder memory.",
-        "5496d51aa501-photo-14": "A figure enters the blue hour like a brief witness.",
-        "ceb87a09b213-dscf5188": "Northern twilight widens the room before night completes it.",
-        "732c7ba7e4c2-dsc09661": "The street keeps its breath inside the cobalt field.",
-        "fa85474cc282-dsc00532-hdr-pano-edit": "The panorama releases blue into distance and low light."
-      }
-    },
-    {
-      "slug": "02-fugitive-heat",
-      "title": "Glass Lift",
-      "primaryTone": "vertical",
-      "roomStatement": "Glass Lift is about the distance made by shelter. The viewer looks from near warmth toward streets, gates, interiors, and reflections that seem close but remain just out of reach.",
-      "subtitle": "Enclosed light, reflected passage, and looking from inside.",
-      "synopsis": "Warm rooms, gates, windows, and wet streets turn observation into a scene behind glass.",
-      "tags": [
-        "glass",
-        "enclosure",
+        "water",
         "reflection",
-        "inside"
+        "memory"
       ],
-      "coverPhotoId": "71466b39f32e-photo-32",
+      "coverPhotoId": "am-225f74172bb04e1f",
       "previewPhotoIds": [
-        "71466b39f32e-photo-32",
-        "c1247789f4b4-dsc04373-hdr",
-        "959f83c44af0-dsc06383",
-        "ea810e796501-dscf0400-enhanced-nr",
-        "9b0fb39ccc7c-dsc09363"
+        "am-225f74172bb04e1f",
+        "am-489978171ee43c57",
+        "am-4fe4cff56ce6a21c",
+        "am-cabb4bd73e9ade54",
+        "am-58c7cf4389646ef8"
       ],
-      "photoIds": [
-        "71466b39f32e-photo-32",
-        "7bf1b94a7d21-photo-29",
-        "c1247789f4b4-dsc04373-hdr",
-        "e83da8222ceb-dsc06612",
-        "959f83c44af0-dsc06383",
-        "7c53a3bd5a09-photo-1",
-        "a4a4051dfd3a-photo-25",
-        "ea810e796501-dscf0400-enhanced-nr",
-        "e956f3a17d65-dsc03048-hdr",
-        "9b0fb39ccc7c-dsc09363"
-      ],
-      "archiveLabel": "Japan / India / UAE / Winter Study / Hong Kong",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / glass lift / 2023-2026",
-      "projectInformation": "Observation becomes staged here. A window, a gate, a shopfront, or a wet lane can feel like glass even when no pane is visible, because the image holds the viewer slightly apart. Glass Lift turns protection into another kind of separation.",
-      "photoCaptions": {
-        "71466b39f32e-photo-32": "Warm night begins close to the body, already passing.",
-        "7bf1b94a7d21-photo-29": "A distant glow offers shelter without promising rest.",
-        "c1247789f4b4-dsc04373-hdr": "Lantern color gathers around the street like borrowed heat.",
-        "e83da8222ceb-dsc06612": "Snow receives the warmth and makes it more fragile.",
-        "959f83c44af0-dsc06383": "The figure carries interior light into the public dark.",
-        "7c53a3bd5a09-photo-1": "Heat becomes intimate where night presses closest.",
-        "a4a4051dfd3a-photo-25": "A warm signal flickers as proof of passing life.",
-        "ea810e796501-dscf0400-enhanced-nr": "Humidity turns the streetlight soft, temporary, almost bodily.",
-        "e956f3a17d65-dsc03048-hdr": "Another close encounter keeps the warmth from dispersing.",
-        "9b0fb39ccc7c-dsc09363": "The room ends with heat held at human scale."
-      }
+      "images": [
+        {
+          "assetId": "am-225f74172bb04e1f",
+          "title": "Golden Witness",
+          "prose": "Gold crosses the water twice: first as building, then as broken reflection. Two seated silhouettes occupy the dark interval, giving radiance a human edge.",
+          "alt": "Two dark seated silhouettes facing a golden illuminated building reflected in still water.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-b7949ba849fb21ec",
+          "title": "City in Water",
+          "prose": "Condensation pulls bright towers downward across the glass. The skyline remains recognizable but unstable, its certainty undone by water too near the eye to overlook.",
+          "alt": "Blurred city towers seen through dark glass covered with vertical condensation streaks.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-489978171ee43c57",
+          "title": "Ice Holding Gold",
+          "prose": "Blue-white turbulence carries seams of amber through a nearly horizonless field. Matter and reflection mingle so completely that the surface refuses one stable reading.",
+          "alt": "Close abstract surface of blue ice, white froth, dark stones, and golden reflection.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-a785f8905b9c2eea",
+          "title": "Green Seam",
+          "prose": "Spring gathers loosely around a narrow creek: stone, grass, willow, yellow bloom. Water supplies the dark sentence through this abundance, a modest line that restores depth.",
+          "alt": "Narrow vertical creek winding among stones, grass, yellow flowers, and a willow tree.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-4fe4cff56ce6a21c",
+          "title": "Foam Script",
+          "prose": "White foam inscribes a scalloped edge across black sand, then prepares to erase it. Contact produces the room’s clearest line and its shortest memory.",
+          "alt": "White scalloped sea foam crossing a black sand shoreline in a monochrome composition.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-7ab470a5eb6ad129",
+          "title": "Pond Turned Inward",
+          "prose": "Dark water receives the bent tree and crowded bank without opening them outward. Reflection doubles the landscape, then folds both versions into the same enclosure.",
+          "alt": "Bent tree and dense green bank reflected in the dark surface of a small pond.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-cabb4bd73e9ade54",
+          "title": "Current Along the Quay",
+          "prose": "Facades and moored boats keep their edges above a pale streak of passage. Fixed harbor and moving current occupy one frame without resolving their disagreement.",
+          "alt": "Colorful waterfront buildings and moored boats above horizontal motion streaks along the quay.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-58c7cf4389646ef8",
+          "title": "Harbor Between Houses",
+          "prose": "Colored houses climb toward wooded slopes while pale water appears at the far margin. Density loosens by degrees; distance enters without asking habitation to vanish.",
+          "alt": "Wide view of densely layered pastel hillside houses with a pale harbor in the distance.",
+          "sequenceRole": "release"
+        }
+      ]
     },
     {
-      "slug": "11-fractured-volumes",
-      "title": "Air Study",
-      "primaryTone": "release",
-      "roomStatement": "Air Study begins to let pressure thin. Even where the light is hard, there is more distance in the frame: water, skyline, road, statue, and passing car becoming space to breathe through.",
-      "subtitle": "Open intervals, exposed edges, and room enough to breathe.",
-      "synopsis": "After compression, the frame opens through water, skyline, motion, and hard weathered light.",
+      "slug": "gestures-of-time",
+      "title": "Gestures of Time",
+      "subtitle": "Small human acts held inside public time.",
+      "synopsis": "Posture, touch, blur, and eclipse trace time through bodies, public light, and the small evidence each instant leaves.",
+      "essay": "Time leaves no single kind of mark. Two seated figures repeat a bowed posture against a wall layered with notices and wear. A clock stall multiplies competing faces while pointing hands choose among them; nearby, an uplifted fan fixes one brief gesture against shutter and shop light. Neon encloses a dark profile, setting one lifted hand inside public brightness. The room then opens down a market aisle, where two small figures join hands along its central axis. Motion accelerates after that contact. A dancer’s bright rotation gathers exposure time into one radiant center; a crowd farther on softens beneath converging shopfronts while a red gate keeps its architectural clarity. Finally, the crescent eclipse removes almost everything: street, body, color. Time remains legible as a luminous remainder. These photographs do not arrest an instant. They show how an instant accumulates: in repeated posture, lifted hand, shared passage, exposure blur, and the small bright portion still visible after subtraction.",
       "tags": [
-        "air",
-        "release",
-        "edge",
-        "weather"
+        "gesture",
+        "public life",
+        "time"
       ],
-      "coverPhotoId": "f24abfe6cd81-dsc03051",
+      "coverPhotoId": "am-cd707567232af5cb",
       "previewPhotoIds": [
-        "f24abfe6cd81-dsc03051",
-        "b8d3168d4ad9-dsc03491-hdr",
-        "35f24a86a224-photo-18",
-        "bdb0f8cabac3-dscf5681",
-        "fa0fef38c85b-photo-17"
+        "am-cd707567232af5cb",
+        "am-3cbe8483d4976946",
+        "am-4c1bfea89073a49d",
+        "am-089eeeaf09efd0cc",
+        "am-33c3cccd41394550"
       ],
-      "photoIds": [
-        "f24abfe6cd81-dsc03051",
-        "bc2dbb34fd90-dsc03259",
-        "b8d3168d4ad9-dsc03491-hdr",
-        "7539be28128e-dsc08048",
-        "35f24a86a224-photo-18",
-        "36f808e6fa05-dsc09227",
-        "8e60cbdf04d0-photo-15",
-        "bdb0f8cabac3-dscf5681",
-        "668876a0af49-r0001236",
-        "fa0fef38c85b-photo-17"
-      ],
-      "archiveLabel": "After Hours / India / UAE / Japan / Copenhagen",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / air study / 2023-2026",
-      "projectInformation": "The sequence exhales without becoming soft. Glare and shadow are still present, but the frame makes room for distance, weather, and open edges. Air Study is release with some of the city's sharpness still attached.",
-      "photoCaptions": {
-        "f24abfe6cd81-dsc03051": "Daylight arrives hard, stripping the scene to structure.",
-        "bc2dbb34fd90-dsc03259": "A close frame makes exposure feel like confrontation.",
-        "b8d3168d4ad9-dsc03491-hdr": "Night glare cuts the street into bright and dark.",
-        "7539be28128e-dsc08048": "The station-like glow turns waiting into graphic pressure.",
-        "35f24a86a224-photo-18": "A warm sign breaks the darkness with blunt certainty.",
-        "36f808e6fa05-dsc09227": "Cool distance interrupts the heat with a sharper line.",
-        "8e60cbdf04d0-photo-15": "The far scene holds contrast like a drawn edge.",
-        "bdb0f8cabac3-dscf5681": "Northern daylight returns, clean enough to feel severe.",
-        "668876a0af49-r0001236": "A body enters the hard light as a silhouette of pressure.",
-        "fa0fef38c85b-photo-17": "The final night plane keeps the incision open."
-      }
+      "images": [
+        {
+          "assetId": "am-cd707567232af5cb",
+          "title": "Paired Pause",
+          "prose": "Two bowed postures repeat against a wall already layered with notices, stains, and repairs. Present attention and accumulated use share the bench without meeting.",
+          "alt": "Two seated adults looking down at phones on a bright bench against a weathered signed wall.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-d4c0e62052be8b3c",
+          "title": "Choosing Time",
+          "prose": "Clocks crowd the stall with incompatible certainties while two hands point among them. Measurement multiplies; choosing one face only sharpens how many times coexist.",
+          "alt": "Clock stall filled with analog and digital faces as two shoppers point upward.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-3cbe8483d4976946",
+          "title": "Raised Fan",
+          "prose": "One lifted fan occupies the bright hinge between shuttered metal and a stocked cabinet. An ordinary gesture gains precision from everything compressed around it.",
+          "alt": "Adult in a white turban raises a folding fan beside a small storefront.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-26a51d7f32e9348a",
+          "title": "Appetite in Neon",
+          "prose": "Orange bulbs warm the dark profile while cyan signs press from every side. A lifted hand creates a private interval inside light designed for public attention.",
+          "alt": "Dark standing profile among bright orange lamps and dense cyan night signage.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-4c1bfea89073a49d",
+          "title": "Held in the Current",
+          "prose": "Market stalls form two luminous banks around an open central aisle. At its middle, joined hands temper the long perspective, holding intimacy against the market’s current.",
+          "alt": "Elevated view down a night market aisle with two small figures holding hands centrally.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-ad21d97883bd4565",
+          "title": "Turning Axis",
+          "prose": "One white-clad dancer gathers successive instants around a brilliant palm-lit axis. Blur does not erase the body; it reveals how motion exceeds a single outline.",
+          "alt": "One white-clad dancer blurs while spinning around a bright palm-lit axis at night.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-089eeeaf09efd0cc",
+          "title": "Crowd as Interval",
+          "prose": "Converging shopfronts guide softened pedestrians toward the red gate’s hard geometry. Many passing gestures accumulate below an architecture whose sharp measure outlasts each exposure.",
+          "alt": "Blurred pedestrians moving between shopfronts toward a large red temple gate at the end of a market street.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-33c3cccd41394550",
+          "title": "Small Subtraction",
+          "prose": "Almost all the sky has gone dark around one glowing crescent. Time registers through subtraction, measured by the slender portion of light that remains.",
+          "alt": "Small glowing crescent eclipse isolated within a nearly black sky with a faint soft corona.",
+          "sequenceRole": "release"
+        }
+      ]
     },
     {
-      "slug": "14-arterial-glow",
-      "title": "Afterimage",
-      "primaryTone": "coda",
-      "roomStatement": "Afterimage ends without closing the door. Red gates, late streets, blossoms, and printed fragments keep sending light back toward the viewer after the sequence has moved on.",
-      "subtitle": "Departure, red signal, and the image that keeps looking back.",
-      "synopsis": "The passage closes with color, storefronts, blossoms, and traces that continue after leaving.",
+      "slug": "the-citys-machinery",
+      "title": "The City’s Machinery",
+      "subtitle": "Transit systems, engineered flow, and urban force.",
+      "synopsis": "Every passage borrows our momentum: steel remembers pressure, streets collect intention, and even painted arrows make desire feel engineered.",
+      "essay": "Movement enters here as obedience. Fluorescent bars narrow the first descent, then an orange avenue carries the same compulsion through the night. Steel measures a passing body; red vehicles gather into pressure, each system promising efficiency while quietly deciding where attention may go. Green scaffolding interrupts circulation with another urban truth: endurance depends on repair, and repair must occupy space. Roads, rails, markings, and towers resume their argument, none permitted to represent the whole. A yellow bus crosses old masonry like a bright second hand, setting brief motion against structures that count differently. The final roadway opens wide. Blue arrows reverse the visual current, opening the asphalt back toward us instead of surrendering it to a distant monument. The machine has not vanished; its commands now read as choices, and the room ends where our own motion begins.",
       "tags": [
-        "afterimage",
-        "departure",
-        "red signal",
-        "coda"
+        "infrastructure",
+        "transit",
+        "geometry"
       ],
-      "coverPhotoId": "882cae0f7ebb-dsc03830-hdr",
+      "coverPhotoId": "am-bcac38cfa7e61f39",
       "previewPhotoIds": [
-        "882cae0f7ebb-dsc03830-hdr",
-        "6def8c5af908-photo-24",
-        "abf6fbee2c8a-dsc00768-hdr",
-        "1eb4bad8ffa9-dsc09374",
-        "a4c32c2c8cc1-photo-21"
+        "am-bcac38cfa7e61f39",
+        "am-153617e873dc3def",
+        "am-e663ae8ae77b510a",
+        "am-fd20109a1ee55caa",
+        "am-df574cc2f3e3f9d7"
       ],
-      "photoIds": [
-        "882cae0f7ebb-dsc03830-hdr",
-        "da20e7011579-dsc03762",
-        "6def8c5af908-photo-24",
-        "d3914540ad00-dscf6674",
-        "abf6fbee2c8a-dsc00768-hdr",
-        "fb9c79f01a32-dscf0933-2",
-        "5f6aeefc6d19-dsc06139-hdr",
-        "1eb4bad8ffa9-dsc09374",
-        "f3353bac61ec-dsc09127",
-        "a4c32c2c8cc1-photo-21"
+      "images": [
+        {
+          "assetId": "am-bcac38cfa7e61f39",
+          "title": "Descent Engine",
+          "prose": "Fluorescent bars count downward with impersonal patience. Between the rails, emptiness feels less like absence than consent: the eye enters first, accepting a route before the body moves.",
+          "alt": "An empty stairway descends beneath repeating fluorescent bars, symmetrical rails, and small yellow accents.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-350d6de16e359aa8",
+          "title": "Orange Artery",
+          "prose": "Far below, one orange route binds the night. Countless windows scatter as private coordinates, while circulation writes the only sentence large enough to cross them.",
+          "alt": "An illuminated orange avenue cuts through a dense nighttime city viewed from high above.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-153617e873dc3def",
+          "title": "Under Steel",
+          "prose": "Steel divides the light into hard diagonals, briefly lending its scale to one passerby. What was built for permanence is understood through a body already leaving it behind.",
+          "alt": "A silhouetted pedestrian walks beneath diagonal bridge girders casting long amber and blue shadows.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-cfc00fae5c9d61fb",
+          "title": "Red Compression",
+          "prose": "Red vehicles gather until transit resembles pressure made visible. Cyan shadow cools the surrounding density, yet the eye keeps returning to that crowded vertical pulse.",
+          "alt": "Red minibuses fill a dense street beneath an elevated roadway with cyan-toned surroundings.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-e663ae8ae77b510a",
+          "title": "Green Repair",
+          "prose": "Green scaffolding burns inside a canyon of dark homes. Maintenance occupies the brightest architecture in view, asking whether a city reveals itself most clearly where it admits incompletion.",
+          "alt": "Green-wrapped scaffolding rises between dark, closely packed residential buildings beneath a pale sky.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-3fa233c5682cd3cc",
+          "title": "Systems Interlock",
+          "prose": "Curves, decks, markings, and towers refuse a single center. Order emerges from overlap, resembling thought itself: several routes active at once, none able to claim the whole.",
+          "alt": "Curving roads, elevated rail lines, painted markings, and tall buildings overlap beneath gray sky.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-fd20109a1ee55caa",
+          "title": "Transit Against Stone",
+          "prose": "Yellow motion crosses weathered stone while the spire keeps another kind of time. Between blur and masonry, permanence registers not as stillness but as a slower velocity.",
+          "alt": "A yellow bus and blurred pedestrians cross a square before old buildings and a green spire.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-df574cc2f3e3f9d7",
+          "title": "Blue Vectors",
+          "prose": "Painted blue arrows push toward the foreground and fan laterally across open asphalt. After so much enclosure, instruction reverses direction, arriving at the viewer as possibility rather than command.",
+          "alt": "Blue directional arrows point toward the foreground and laterally across a broad roadway beneath a distant slender tower.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "labor-after-light",
+      "title": "Labor After Light",
+      "subtitle": "Work gathering light after the public day recedes.",
+      "synopsis": "Work gathers light around ordinary gestures, making each stall a provisional shelter where attention, exchange, and endurance remain visible.",
+      "essay": "Nothing here is effortless, though light can make it appear so. Packets, shutters, carts, counters, and timber define the narrow territories where attention sustains livelihood. Daylight cuts one wall with unforgiving precision; snow reduces another workplace to a fragile pool of color. Night deepens the enclosures. Between buses, beneath cold blue timber, or under a single red lantern, labor is disclosed in partial views: bent posture, working hands, a face withheld by shadow. Warm curtains and crowded signs promise entry, but the sequence never mistakes brightness for ease. Its final florist kiosk remains intensely lit and visibly occupied: seated workers rest within the abundance they tend. Their presence changes the ending. Color does not continue by itself; every display is sustained by bodies, including bodies that pause. Across the room, illumination offers acknowledgment, locating effort where the larger city might otherwise pass without seeing.",
+      "tags": [
+        "labor",
+        "night",
+        "shelter"
       ],
-      "archiveLabel": "Japan / Social Drafts / Hong Kong / Spring",
-      "archiveYear": "2023-2026",
-      "credits": "curated sequence / afterimage / 2023-2026",
-      "projectInformation": "The final room leaves the city active in the eye. Color returns as signal and remainder, not resolution: a gate, a sign, a wet street, a figure, a surface carrying the last trace. Afterimage is the part of looking that continues after departure.",
-      "photoCaptions": {
-        "882cae0f7ebb-dsc03830-hdr": "Red enters softly, a pulse under the evening air.",
-        "da20e7011579-dsc03762": "The remembered frame warms like color returning to skin.",
-        "6def8c5af908-photo-24": "Harbor night carries its signal in saturated red.",
-        "d3914540ad00-dscf6674": "Blossom and daylight turn afterimage into living surface.",
-        "abf6fbee2c8a-dsc00768-hdr": "Dusk holds the road as a line of circulation.",
-        "fb9c79f01a32-dscf0933-2": "A posted memory keeps the warm pulse in suspension.",
-        "5f6aeefc6d19-dsc06139-hdr": "A close figure gives the red room a human beat.",
-        "1eb4bad8ffa9-dsc09374": "Cool night answers the warmth with a final distance.",
-        "f3353bac61ec-dsc09127": "The late street leaves its glow on the eye.",
-        "a4c32c2c8cc1-photo-21": "The last image closes by continuing to pulse."
-      }
+      "coverPhotoId": "am-1e6de3fa2dbb5a9e",
+      "previewPhotoIds": [
+        "am-1e6de3fa2dbb5a9e",
+        "am-abc4dd5917818d11",
+        "am-338d5945e3f7be37",
+        "am-59fd4cfbe4bf60f0",
+        "am-cfad3d27d48b4105"
+      ],
+      "images": [
+        {
+          "assetId": "am-1e6de3fa2dbb5a9e",
+          "title": "Inventory Under Bark",
+          "prose": "Manufactured color accumulates beneath the tree’s dark weight, leaving the seated shopkeeper a narrow clearing. Commerce and bark share one frame, each bearing a different kind of weathering.",
+          "alt": "A seated shopkeeper is framed by a dark tree trunk, hanging packets, and a red wall.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-2586c8ae96696145",
+          "title": "Shutter Measure",
+          "prose": "Hard sunlight cleaves the shutter; the vendor remains at its edge, neither erased nor enlarged. Distance steadies the encounter, letting one life resist the wall’s immense surface.",
+          "alt": "A vendor stands beside a large closed shutter divided by hard diagonal sunlight.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-abc4dd5917818d11",
+          "title": "Cart in Snow",
+          "prose": "Yellow and red defend their ground inside the snowfall. Beside the cart, an umbrella marks the radius of temporary shelter, where exchange and endurance occupy the same warmth.",
+          "alt": "A glowing yellow and red food cart stands in heavy snow beside an umbrella-carrying figure.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-d327bba5b1a4ae04",
+          "title": "Night Counter",
+          "prose": "Two buses press darkness against a narrow counter. Beneath three amber lamps, the worker’s bent posture keeps a modest center intact while the city’s larger machinery closes around it.",
+          "alt": "A worker stands at an amber-lit food stall framed tightly between two dark buses.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-338d5945e3f7be37",
+          "title": "Cold Shelter",
+          "prose": "Blue light shapes rough timber into an uncertain shell. Seated amid dense surfaces, the worker occupies the uneasy border between being protected and being exposed.",
+          "alt": "A solitary worker sits inside a densely textured wooden stall illuminated by cold blue light.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-9bd193e97e1eb1bc",
+          "title": "Hands Under Lantern",
+          "prose": "Only the lantern and working hands receive visibility. Darkness removes every distraction, leaving gesture as evidence that care can be exact even when its maker remains partly withheld.",
+          "alt": "Working hands appear beneath a red lantern at a food stall surrounded by darkness.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-59fd4cfbe4bf60f0",
+          "title": "Doorway Heat",
+          "prose": "Red lanterns and fabric gather heat at the entrance; surrounding night sharpens every threshold. Invitation and reserve occupy the same rectangle, neither cancelling the other.",
+          "alt": "A warmly lit ramen doorway with red lanterns, curtains, and signs glows at night.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-cfad3d27d48b4105",
+          "title": "After the Flowers",
+          "prose": "Blue-green light saturates the florist kiosk, where seated workers remain among flowers and empty stools. Abundance surrounds their pause, binding rest to the labor that keeps color available.",
+          "alt": "A brightly lit florist kiosk contains abundant flowers, empty stools, and seated workers at night.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "weather-has-bodies",
+      "title": "Weather Has Bodies",
+      "subtitle": "Bodies altered by snow, rain, and atmosphere.",
+      "synopsis": "Weather crosses every boundary it reveals, finding its measure in silhouettes, umbrellas, reflections, and bodies that continue through pressure.",
+      "essay": "Weather does not enter these photographs as background; it redraws the terms of visibility. Wind scores four silhouettes until their edges belong partly to the air. Fire escapes resist diagonal snow, lanterns deepen a solitary route, and violet rain breaks the crossing into bodies and reflections. One umbrella then carries private shelter across a field of public brightness. The sequence increases its pressure. White glare nearly consumes architecture, leaving a distant pedestrian to establish proportion. Red storefront light stains snow and pavement alike, binding two back-turned walkers to the atmosphere they traverse. Release arrives without calm: a cyclist advances through the storm, red cap and dark frame cutting a deliberate vector into the brightness. Nothing clears. Instead, movement provides its own aperture. The room asks how a body remains distinct without pretending it can stand outside the conditions passing through it.",
+      "tags": [
+        "weather",
+        "bodies",
+        "motion"
+      ],
+      "coverPhotoId": "am-af71b5722d858a52",
+      "previewPhotoIds": [
+        "am-af71b5722d858a52",
+        "am-45209f68ca5ad071",
+        "am-2e8d671d11dd2719",
+        "am-c82a13b707c56294",
+        "am-b9734ca6cc409190"
+      ],
+      "images": [
+        {
+          "assetId": "am-af71b5722d858a52",
+          "title": "Bodies Becoming Weather",
+          "prose": "Wind frays four dark silhouettes, loosening the certainty of their edges. Human form persists, but ownership of the outline has passed partly to the snow.",
+          "alt": "Four bundled figures stand as dark silhouettes against a field of bright, wind-driven snow.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-30c806d0e0c6d913",
+          "title": "Laddered Snow",
+          "prose": "Fire escapes impose a black grammar on diagonal snow. Nearly hidden below, one figure gives the conflict proportion: structure insists, weather revises.",
+          "alt": "Heavy snow crosses a monochrome façade with fire escapes, windows, and a small figure.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-45209f68ca5ad071",
+          "title": "Umbrella into Lanterns",
+          "prose": "Darkness travels beneath one umbrella while lanterns recede into snowfall. The centered route feels both chosen and given, a narrow passage composed from cold air and borrowed warmth.",
+          "alt": "A lone umbrella figure walks down a snowy street lined with warm red lanterns.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-1ec943f39f0f0c4e",
+          "title": "The Crossing Trembles",
+          "prose": "Violet rain fractures the crossing into figures and reflections. No outline arrives intact; the pavement receives each body, alters it, and returns a second city underfoot.",
+          "alt": "A crowd with umbrellas crosses a rain-soaked street amid violet haze and reflections.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-2e8d671d11dd2719",
+          "title": "Rain Against Stripes",
+          "prose": "Private shelter passes before public radiance, one dark umbrella interrupting the striped display. Rain traverses both, refusing the clean border between protection and exposure.",
+          "alt": "A silhouetted umbrella pedestrian crosses heavy rain before a bright striped display and wet reflections.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-89dd1107bfa084e9",
+          "title": "White Pressure",
+          "prose": "Commercial glare nearly erases the street, yet one distant pedestrian restores proportion. Against so much white, a dark body carries the quiet authority of measure.",
+          "alt": "A distant bundled pedestrian stands amid wind-driven snow and intense white city light.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-c82a13b707c56294",
+          "title": "Red Weather",
+          "prose": "Red storefront light enters the snowfall and spreads across wet pavement. Two back-turned walkers share its field without surrendering their separateness, brief dark marks inside saturated weather.",
+          "alt": "Two back-turned pedestrians cross wet pavement during snowfall beside bright red storefronts.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-b9734ca6cc409190",
+          "title": "Rider into Snow",
+          "prose": "Forward motion cuts a clean line through snow and broken color. The cyclist does not resolve the storm; the body simply gives pressure a direction.",
+          "alt": "A bundled cyclist in a red cap rides toward the camera through falling snow.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "velocity-has-passengers",
+      "title": "Velocity Has Passengers",
+      "subtitle": "Passengers carried by speed, blur, and signal.",
+      "synopsis": "Velocity leaves bodies neither fixed nor erased; light, weather, and roads record passage as pressure, interval, and release.",
+      "essay": "Motion first appears suspended: one rider centered in an illuminated street, a red point storing distance. Then the frame begins to move around its passengers. The rickshaw keeps its amber-green core as the night pulls laterally; pedestrians pass a sealed façade as translucent durations; chevrons sharpen the taxi’s red-violet momentum into graphic command. Rain breaks individual trajectories into a cyan crowd, briefly granting one pale figure coherence before the current closes. From there, red transit threads through dense housing, and another taxi sheds a scarlet trace beneath vertical neon. The final roadway exchanges compression for breadth. Two cars follow opposing curves through open gray space, each blur released from the crowds, signs, and weather that previously defined speed. The room never treats velocity as freedom by itself. Passage is always carried, framed, and measured, an outward force whose meaning depends on the bodies and structures it leaves momentarily altered.",
+      "tags": [
+        "velocity",
+        "transit",
+        "blur"
+      ],
+      "coverPhotoId": "am-31e30eea19bf79e9",
+      "previewPhotoIds": [
+        "am-31e30eea19bf79e9",
+        "am-39e4d68365292bc6",
+        "am-8d6ec059db2ab2b8",
+        "am-9d6acdaa202038cc",
+        "am-06a2490eabcfcbb1"
+      ],
+      "images": [
+        {
+          "assetId": "am-31e30eea19bf79e9",
+          "title": "Waiting at the Axis",
+          "prose": "Centered beneath a corridor of light, the rider gathers distance into one red point. Stillness here is not rest; it is velocity folded tightly before release.",
+          "alt": "A lone rider with a red tail light stands centered on an illuminated snowy street.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-68f89394b99bd531",
+          "title": "Passenger Capsule",
+          "prose": "Amber and green remain briefly coherent while midnight blue streams sideways. Driver and passenger occupy a small moving interior, protected only by the clarity that motion has spared.",
+          "alt": "An amber and green auto-rickshaw carrying people moves through a blue, laterally blurred street.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-39e4d68365292bc6",
+          "title": "Durations Passing",
+          "prose": "Two translucent figures pass across a sealed rhythm of panels. Closure stays rigid; time acquires bodies, each crossing written lightly enough to reveal what resists it.",
+          "alt": "Two motion-blurred pedestrians pass a boarded storefront with repeating panels and blue tape.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-f79ab0aa635d2429",
+          "title": "Chevrons of Speed",
+          "prose": "White chevrons ride the taxi’s red-violet flank while the street dissolves laterally. Speed has entered the vehicle’s skin, turning graphic command into a moving, unstable emblem.",
+          "alt": "A red-violet taxi bearing bold white directional chevrons moves through a horizontally blurred night street.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-8d6ec059db2ab2b8",
+          "title": "Crowd Current",
+          "prose": "Cyan rain loosens the crowd into a shared current. One pale figure gathers momentary definition, then yields again to the larger motion carrying every outline.",
+          "alt": "A rain-soaked crowd with umbrellas blurs through a cyan-lit street around one pale figure.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-927e31041dd0f943",
+          "title": "Red Transit",
+          "prose": "Scarlet light connects the passing car to stacked housing, stitching motion into density for a fraction of a second. The city remains, but velocity changes its temperature.",
+          "alt": "A moving car streaks past red neon signage and densely stacked apartments on a wet road.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-9d6acdaa202038cc",
+          "title": "Red Taxi Trace",
+          "prose": "Vertical neon fixes the façade while a taxi drags red across its base. Vehicle and trace part company, leaving speed visible after form has already moved on.",
+          "alt": "A motion-blurred taxi passes beneath red and white neon signs on a dark street.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-06a2490eabcfcbb1",
+          "title": "Curves Carry Cars",
+          "prose": "Opposing white curves offer two cars a wider grammar of departure. With weather and crowds removed, motion approaches abstraction, yet each blur still carries an interior.",
+          "alt": "Two motion-blurred cars follow curving lanes through a broad urban roadway beneath gray sky.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "electrical-weather",
+      "title": "Electrical Weather",
+      "subtitle": "Neon, rain, and the charged grammar of night.",
+      "synopsis": "Natural and manufactured charge migrate through sun, neon, rain, lightning, and traffic, then settle into the city’s vertical pulse.",
+      "essay": "Charge begins quietly, an amber sun lowered between blue-black towers until nature resembles a signal. Wet alleys take over that language, drawing color into narrow depths and layering a doorway, signs, and reflections until architecture grows electrically porous. Rain gives red traffic a horizontal stroke beneath a fixed hotel sign. The scale then breaks open: lightning branches above city and river, an instant of white force answered by accumulated windows below. Returning to street level, a distant walker carries human proportion into a dark corridor of neon. Another strike lands above bridge and grid, its violence disciplined by a level horizon. Release arrives through geometry rather than silence. A vertical hotel sign crosses white and amber traffic trails, fixed word against passing light. Across the room, electricity is never only spectacle; it measures what endures, what passes, and what briefly permits the two to share one surface.",
+      "tags": [
+        "neon",
+        "night",
+        "electricity"
+      ],
+      "coverPhotoId": "am-3ecd133c8fd14bbe",
+      "previewPhotoIds": [
+        "am-3ecd133c8fd14bbe",
+        "am-a952491c15a57135",
+        "am-3ad8f6acdf4a6eed",
+        "am-b6c010254e7a47c9",
+        "am-602754a62e8541db"
+      ],
+      "images": [
+        {
+          "assetId": "am-3ecd133c8fd14bbe",
+          "title": "Sun at Street Level",
+          "prose": "Amber light reaches street level between blue-black towers, compressed until sunset resembles a distant signal. Vast natural time enters the city through an opening scarcely wider than traffic.",
+          "alt": "An amber setting sun appears at street level between blue-shadowed towers and dense traffic.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-54c71ce66ee578e9",
+          "title": "Voltage Corridor",
+          "prose": "Neon descends through the wet alley in vertical pulses, giving darkness an internal structure. Depth conducts color farther than any single sign can claim.",
+          "alt": "A narrow wet alley recedes beneath dense vertical neon signs and colored reflections at night.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-a952491c15a57135",
+          "title": "Layered Current",
+          "prose": "Warm and cool planes press across one compact threshold, the doorway half-revealed by reflection. Illumination does not clarify the street; it grants complexity a visible surface.",
+          "alt": "Layered neon signs, reflected colors, and a doorway overlap in a compact nighttime streetscape.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-cf68dcaa5692c929",
+          "title": "Hotel Signal",
+          "prose": "Red traffic crosses wet asphalt beneath white letters edged in red. Rain joins motion to reflection, while the upright hotel sign refuses the lateral pull.",
+          "alt": "Red traffic light trails cross wet pavement beneath a vertical white hotel sign outlined in red.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-3ad8f6acdf4a6eed",
+          "title": "Forked Horizon",
+          "prose": "White branches divide the dark sky above a patient grid of windows. River light receives the shock at another tempo, spreading duration beneath the instant.",
+          "alt": "Several lightning branches spread above a nighttime city grid and river beneath dark clouds.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-a546c31f139a70a4",
+          "title": "Walker in the Circuit",
+          "prose": "Far inside the neon corridor, one pedestrian supplies the smallest unit of scale. Red, blue, and white light continue past the body, conducting solitude without enclosing it.",
+          "alt": "A small pedestrian walks through a wet narrow alley lined with colorful neon signs.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-b6c010254e7a47c9",
+          "title": "Ground Strike",
+          "prose": "Lightning descends with the precision of drawn geometry, yet nothing below controls its line. Bridge and city absorb the rupture into their accumulated lights.",
+          "alt": "A branching lightning bolt strikes above a lit suspension bridge and dense nighttime city grid.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-602754a62e8541db",
+          "title": "Hotel Current",
+          "prose": "One vertical word anchors the façade while white and amber trails cross below. Fixed language and passing light meet briefly, each defining the other’s direction.",
+          "alt": "White and amber traffic trails pass below a vertical hotel sign on a dark city façade.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "rooms-after-people",
+      "title": "Rooms After People",
+      "subtitle": "Vacancy retaining the shape of departed lives.",
+      "synopsis": "Darkness gathers around emptied rooms, where thresholds, reflections, and unattended objects keep rehearsing the shapes of those who have gone.",
+      "essay": "Departure has no clean edge. It lingers as green darkness around one passing figure, as wet pavement waiting beneath a web of wires, as snow laid across a stilled motorbike. One lit balcony then makes solitude feel architectural: a life reduced to a small interval inside repeating rails. Mirrors refuse a stable account, breaking ornament into incompatible versions of the same interior. After that fracture, human bodies vanish, but their scale remains. Cups attend an empty counter; vermilion gates protect an unclaimed glow; a rectangle of sun crosses timber and stone, measuring the duration of silence. These rooms are not empty in any simple sense. They have absorbed posture, appetite, arrival, and retreat. Light serves as their memory, not a record of who stood where, but a tender pressure on the places that could receive us again.",
+      "tags": [
+        "interiors",
+        "absence",
+        "residue"
+      ],
+      "coverPhotoId": "am-f072aa931df56bf5",
+      "previewPhotoIds": [
+        "am-f072aa931df56bf5",
+        "am-a11f713aba363b4a",
+        "am-c5d5bdc41048b858",
+        "am-805d011440f41af2",
+        "am-c3d36a9647cbed64"
+      ],
+      "images": [
+        {
+          "assetId": "am-f072aa931df56bf5",
+          "title": "Figures Under Green",
+          "prose": "Green-black night presses around one passing silhouette while a modest window keeps its square of warmth. How little of us remains visible; how much the surrounding dark remembers.",
+          "alt": "One silhouetted person walks past a glowing storefront window on a dark green nighttime street.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-03c247475f40ba3b",
+          "title": "Alley Without Footsteps",
+          "prose": "Wet pavement draws borrowed light beneath a nervous web of wires. With no footsteps to settle it, the alley feels suspended between invitation and refusal.",
+          "alt": "An empty wet alley at night contains hanging wires, layered signs, teal shadows, and reflected light.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-a11f713aba363b4a",
+          "title": "Closed for Weather",
+          "prose": "Snow gathers around the waiting motorbike and closes the storefront in blue-gray quiet. Commerce has withdrawn; weather draws a softer boundary no lock could make.",
+          "alt": "A snow-covered motorbike stands before a closed storefront rendered in muted teal and gray tones.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-c24619aa3deb0966",
+          "title": "One Light Between Floors",
+          "prose": "Repeating rails darken into a vast notation around one distant figure. Solitude here is not emptiness, but a single human measure confronting a structure without end.",
+          "alt": "A small silhouetted figure stands among repeating interior balconies lit by sparse cool blue lights.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-c5d5bdc41048b858",
+          "title": "The Room Splinters",
+          "prose": "Mirrors break ornament into rival truths, each angle lucid and incomplete. The room can no longer contain one version of itself, and perhaps neither can memory.",
+          "alt": "Black-and-white mirrors fracture an ornate interior into overlapping triangular planes and contrasting tonal fields.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-83552e881d7ffcac",
+          "title": "Counter After Closing",
+          "prose": "Lamplight attends the vessels and stools with undiminished care. Order survives its users, lending the vacant counter the intimate ache of a sentence left open.",
+          "alt": "An empty wooden shop counter glows at night, surrounded by vessels, stools, shelves, and plants.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-805d011440f41af2",
+          "title": "Rooms Within Gates",
+          "prose": "Vermilion frames repeat toward an amber interior, each threshold narrowing the promise of arrival. The empty center asks whether entrance is ever the same as access.",
+          "alt": "Empty vermilion gates and stone rails frame a warmly lit inner shrine along a narrow path.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-c3d36a9647cbed64",
+          "title": "Sunlit Vacancy",
+          "prose": "Hard sunlight crosses stone and timber but cannot enter the black doorway. Illumination reveals the room’s surfaces while deepening the mystery of whom it awaits.",
+          "alt": "Dark doorway frames an empty wooden courtyard where hard sunlight falls across stone and timber.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "writing-on-the-surface",
+      "title": "Writing on the Surface",
+      "subtitle": "Walls, signs, and cities learning to speak.",
+      "synopsis": "Paint, weather, commerce, and passage inscribe the city together, leaving every surface legible as both statement and revision.",
+      "essay": "No surface speaks alone. Posters gather beneath snow; signs press against windows, fire escapes, shutters, and old paint. Each mark arrives with confidence, yet time places another hand over it. The pale storefronts introduce restraint, spacing their doors like pauses, before a dark roofline meets an orange-lit façade and contrasting structures share one uneasy margin. Rows of calligraphy then exceed individual reading and enter the body as cadence. Red beams answer with heavier strokes; pipes and awnings carry the line uphill through a narrow alley. Finally, a high view sets vertical signage against bodies dissolving through wet brightness. The street composes and erases itself at once. The city here resembles a page only because both resist completion. Weather edits ownership, use revises design, and movement unsettles every fixed claim. Reading such surfaces means accepting that meaning may reside less in any single message than in the friction among them.",
+      "tags": [
+        "language",
+        "facades",
+        "snow"
+      ],
+      "coverPhotoId": "am-bfaeab87cbce15f6",
+      "previewPhotoIds": [
+        "am-bfaeab87cbce15f6",
+        "am-1c20ed13cf269e0c",
+        "am-dbb339fb3d245e65",
+        "am-4a1448ea4903f42e",
+        "am-97b6795a384b3004"
+      ],
+      "images": [
+        {
+          "assetId": "am-bfaeab87cbce15f6",
+          "title": "Snow Revises the Wall",
+          "prose": "Snow attempts a white revision, yet posters, stickers, and several red messages insist through it. Public memory survives not by staying clear, but by accumulating interference.",
+          "alt": "A snowy storefront wall is covered with posters and stickers around a small bright red neon sign.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-57b7a5ad4ed3aafd",
+          "title": "Facade as Sentence",
+          "prose": "Signs, windows, painted marks, and iron stairs crowd the façade without surrendering its order. The building reads like thought under pressure: layered, amended, still coherent.",
+          "alt": "A snowy grocery storefront combines a fire escape, signs, painted marks, windows, and green-red lights.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-1c20ed13cf269e0c",
+          "title": "Facade as Measure",
+          "prose": "Pale rectangles pace the street in shutters, columns, and doors. Their restraint offers a quieter alphabet, where intervals matter as much as anything written upon them.",
+          "alt": "Pale storefront facade with Japanese signs, dark shutters, windows, doors, and blue-gray structural columns.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-de51ec92b01ed78d",
+          "title": "Old Roof, New Light",
+          "prose": "Dark roof tiles meet an orange-lit façade beneath evening blue. Weight and radiance share one compound without resolving the tension between continuity and change.",
+          "alt": "Traditional dark roofs and trees face a brightly lit orange building under an evening sky.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-dbb339fb3d245e65",
+          "title": "Language Becomes Pattern",
+          "prose": "Repeated calligraphy loosens from individual words and enters the eye as rhythm. Meaning remains near, but pattern reaches us first, before translation can establish distance.",
+          "alt": "Rows of white paper lanterns carry dense black calligraphy in a repeating rectangular pattern.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-a6a679bb3f96bb25",
+          "title": "Inscribed Red",
+          "prose": "Red beams cut across green foliage with the authority of underlining. Black inscriptions descend the uprights, binding passage to language and structure to memory.",
+          "alt": "Cropped red gate with black vertical inscriptions stands against dense green trees and pale sky.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-4a1448ea4903f42e",
+          "title": "Alley Notation",
+          "prose": "Blue walls, amber planes, pipes, and awnings compress around the rising lane. Every practical addition redirects the eye, composing beauty from necessity’s revisions.",
+          "alt": "Narrow uphill alley winds between blue, amber, and dark walls with pipes, doors, and awnings.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-97b6795a384b3004",
+          "title": "City as Page",
+          "prose": "Neon stands upright while blurred bodies cross the wet brightness below. From this height, the city resembles a page still being written by those passing through.",
+          "alt": "Elevated nighttime view of a bright pedestrian street lined with vertical signs and blurred walking figures.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "old-forms-moving-time",
+      "title": "Old Forms, Moving Time",
+      "subtitle": "History held between endurance and passing weather.",
+      "synopsis": "Monuments endure by changing: blur, weather, shadow, crowds, and electric light loosen stone from certainty and return it to lived time.",
+      "essay": "Stone enters this room already unsteady. A white monument drifts at the edge of recognition, less an object than the mind’s imperfect retrieval of one. Sunlight then divides repeating gates into intervals of flame and darkness. Farther on, a solitary walker descends between tiled roofs toward a hazed skyline, carrying centuries along the same slope. Carved details surface from blackness; what shadow withholds exerts its own pressure. An equestrian figure keeps its official posture while the crowd below dissolves into current. Human silhouettes return among golden columns, then narrow to one small body beneath an illuminated gate. The final lane offers no figure at all, only a pagoda, storm cloud, and one electric star. Continuity here does not mean immunity from change. These forms persist because every encounter alters their scale: the body passes, light cuts across, weather bears down, and memory supplies what the frame cannot keep.",
+      "tags": [
+        "history",
+        "monuments",
+        "time"
+      ],
+      "coverPhotoId": "am-6fd4d56a70bf2976",
+      "previewPhotoIds": [
+        "am-6fd4d56a70bf2976",
+        "am-9dd88efd08f3e65b",
+        "am-3ebecc22942c2be4",
+        "am-640f0065d310b5b5",
+        "am-61ec236b9e557eb6"
+      ],
+      "images": [
+        {
+          "assetId": "am-6fd4d56a70bf2976",
+          "title": "Monument as Afterimage",
+          "prose": "Motion releases the white monument from perfect recognition. Its domes and towers persist like a memory revisited: unmistakable in feeling, unstable at every edge.",
+          "alt": "A white domed monument and four minarets appear softly blurred above dark trees and lawn.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-2213e61b7e6559e1",
+          "title": "Gates Holding Fire",
+          "prose": "Sunlit orange and deep shadow alternate down the empty passage. Repetition promises permanence, yet each step would encounter a different temperature of time.",
+          "alt": "A long passage of orange gates contains patterned sunlight, deep shadows, and an empty stone path.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-9dd88efd08f3e65b",
+          "title": "Between Two Centuries",
+          "prose": "One walker descends between dark tiled roofs toward towers dissolved in haze. The slope joins two centuries without reconciling them; passage supplies the only bridge.",
+          "alt": "A lone walker moves between traditional tiled roofs toward a distant modern skyline in haze.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-f1ea864f1945699d",
+          "title": "Fragments in Amber",
+          "prose": "Amber edges rescue carved columns from surrounding blackness. Shadow and cropping refuse a complete account, giving imagination room to continue beyond the visible frame.",
+          "alt": "Carved stone columns and arches emerge from deep black shadow under amber side light.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-3ebecc22942c2be4",
+          "title": "History Standing Still",
+          "prose": "Above the crowd’s blurred current, the mounted figure retains a bright, fixed posture. Official memory prefers stillness; lived time keeps refusing the arrangement.",
+          "alt": "A bright equestrian monument stands above a motion-blurred crowd in a dark monochrome public space.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-1e5f9d4cfb16898b",
+          "title": "The Crowd Becomes Shadow",
+          "prose": "Golden pillars divide the visitors into a moving frieze of shadow. Architecture lends them rhythm, while their passing returns human time to inherited geometry.",
+          "alt": "Silhouetted visitors gather between ornate columns and bright openings in a gold-lit historic structure.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-640f0065d310b5b5",
+          "title": "The Last Figure",
+          "prose": "Dense color rises from blackness around one small figure beneath the gate. Splendor enlarges the passage, yet the lone body gives it consequence.",
+          "alt": "A lone figure stands beneath a richly illuminated vertical gate surrounded by deep darkness.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-61ec236b9e557eb6",
+          "title": "Street Beneath the Storm",
+          "prose": "Storm cloud bears down on the empty lane while one star of electric light resists it. Beyond, the pagoda waits where endurance and exposure meet.",
+          "alt": "A monochrome empty street leads toward a pagoda beneath storm clouds and one bright starburst.",
+          "sequenceRole": "release"
+        }
+      ]
+    },
+    {
+      "slug": "air-after-pressure",
+      "title": "Air After Pressure",
+      "subtitle": "Distance returning after the world’s compression.",
+      "synopsis": "Space returns by degrees, until water, weather, and distant light teach pressure to loosen without pretending it has disappeared.",
+      "essay": "Release begins cautiously, with two small walkers balanced between water and cloud. Gold foliage offers a corridor, but its destination remains concealed; the path grants movement, not certainty. Human scale then recedes. Dunes register wind in bands of amber and black, while a blue tower nearly surrenders its edges to white air. Pressure returns over the water: a storm front lowers above the minute wheel and pier, reminding us that openness can still feel immense. Warm village lights gather beneath a mountain, neither conquering the dark nor lost within it. Next, the city contracts to a thin seam under rain. Only then does the final mountain emerge, snow-bright against black ground, with small clouds free around its shoulders. Nothing has been resolved; the pressure has merely found a larger vessel. Distance offers the eye what reflection sometimes offers the self: enough room for a burden to change shape without requiring it to vanish.",
+      "tags": [
+        "distance",
+        "weather",
+        "release"
+      ],
+      "coverPhotoId": "am-1ccb18b7185ac456",
+      "previewPhotoIds": [
+        "am-1ccb18b7185ac456",
+        "am-c260de4945be81b7",
+        "am-d0df354c843a79ff",
+        "am-664e0e1aa184cec8",
+        "am-fa65496b8b41999a"
+      ],
+      "images": [
+        {
+          "assetId": "am-1ccb18b7185ac456",
+          "title": "The First Clearing",
+          "prose": "Two walkers occupy the slender margin between reflective water and clouded mountain. Their smallness is not defeat; it is the measure that brings vastness within human reach.",
+          "alt": "Two distant hikers cross a narrow grassy shore beside a reflective alpine lake and clouded mountain.",
+          "sequenceRole": "threshold"
+        },
+        {
+          "assetId": "am-521797f1c77c15a4",
+          "title": "Gold Corridor",
+          "prose": "Amber trees gather over the solitary walker, making a passage from light itself. The symmetry directs the body forward while keeping its destination beyond sight.",
+          "alt": "A lone person walks down a symmetrical tree-lined path beneath a dense golden autumn canopy.",
+          "sequenceRole": "development-1"
+        },
+        {
+          "assetId": "am-c260de4945be81b7",
+          "title": "Land Made of Light",
+          "prose": "Raking sun gives the dunes an austere grammar of gold and black. Wind has written every curve, then left no signature except change.",
+          "alt": "Layered desert dunes form repeating golden curves and dark shadows beneath a pale open sky.",
+          "sequenceRole": "development-2"
+        },
+        {
+          "assetId": "am-6feab60ce435bd7f",
+          "title": "Tower Nearly Gone",
+          "prose": "White cloud takes the blue tower apart from its edges inward. Mass approaches pure atmosphere, leaving ambition suspended between presence and erasure.",
+          "alt": "A slender blue skyscraper is partly dissolved by bright white cloud and a high-key sky.",
+          "sequenceRole": "development-3"
+        },
+        {
+          "assetId": "am-d0df354c843a79ff",
+          "title": "Weather at the Pier",
+          "prose": "Under the descending storm shelf, the wheel and pier contract to fragile marks. Open water offers no escape from pressure; it merely reveals its scale.",
+          "alt": "A ferris wheel and pier sit beneath a massive dark storm front over open water.",
+          "sequenceRole": "hinge"
+        },
+        {
+          "assetId": "am-aa3a115ac0f3ec3d",
+          "title": "Lights Under the Mountain",
+          "prose": "Warm lights collect at the mountain’s foot without challenging its darkness. From a distance, habitation resembles a quiet answer to immensity rather than its conquest.",
+          "alt": "A mountain village glows at dusk beneath steep dark peaks and a cool blue evening sky.",
+          "sequenceRole": "echo-1"
+        },
+        {
+          "assetId": "am-664e0e1aa184cec8",
+          "title": "Skyline Dissolving",
+          "prose": "Rain absorbs the towers until the city survives only as a dark seam. Density relinquishes its detail, and the horizon learns to breathe through uncertainty.",
+          "alt": "Monochrome city skyline dissolves into layered rain clouds and mist beneath a dark sky.",
+          "sequenceRole": "echo-2"
+        },
+        {
+          "assetId": "am-fa65496b8b41999a",
+          "title": "Mountain After Noise",
+          "prose": "Snow lifts the mountain from black ground with startling clarity. Small clouds cross its shoulders; after so much compression, distance returns as a form of mercy.",
+          "alt": "Monochrome snow-covered mountain rises from dark land between small drifting clouds and black sky.",
+          "sequenceRole": "release"
+        }
+      ]
     }
   ]
 }

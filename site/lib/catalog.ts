@@ -1,132 +1,29 @@
 import "server-only";
 
-import photoCatalogJson from "@/content/photo-analysis.json";
-import seriesCatalogJson from "@/content/series.json";
+import assetCatalogJson from "@/content/asset-catalog.json";
+import exhibitManifestJson from "@/content/exhibit-manifest.json";
 import siteMetaJson from "@/content/site-meta.json";
-import type { DisplayAsset, IntroSlide, PhotoAsset, PhotoCatalog, Series, SeriesCatalog, SiteMeta } from "@/lib/types";
+import { parseExhibitContent, parseSiteMeta } from "@/lib/exhibit-schema";
+import type {
+  CollectionCoverEntry,
+  CuratedCollection,
+  CuratedDisplayImage,
+  DisplayAsset,
+  ExhibitCollection,
+  ExhibitImage,
+  IntroSlide,
+  PortfolioPageEntry,
+  SiteMeta,
+  TechnicalAsset,
+} from "@/lib/types";
 
-const photoCatalog = photoCatalogJson as unknown as PhotoCatalog;
-const seriesCatalog = seriesCatalogJson as unknown as SeriesCatalog;
-const siteMeta = siteMetaJson as unknown as SiteMeta;
+const { manifest, assetCatalog } = parseExhibitContent(exhibitManifestJson, assetCatalogJson);
+const parsedSiteMeta = parseSiteMeta(siteMetaJson);
 
-const assetMap = new Map(photoCatalog.assets.map((asset) => [asset.id, asset]));
-const analysisMap = new Map(photoCatalog.analyses.map((analysis) => [analysis.photoId, analysis]));
-const seriesMap = new Map(seriesCatalog.series.map((series) => [series.slug, series]));
-
-function hammingDistance(left: string, right: string) {
-  const length = Math.min(left.length, right.length);
-  let distance = Math.abs(left.length - right.length) * 4;
-
-  for (let index = 0; index < length; index += 1) {
-    const leftValue = parseInt(left[index] ?? "0", 16);
-    const rightValue = parseInt(right[index] ?? "0", 16);
-    const delta = leftValue ^ rightValue;
-    distance += delta.toString(2).replace(/0/g, "").length;
-  }
-
-  return distance;
-}
-
-function normalizeBasename(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/\.[a-z0-9]+$/i, "")
-    .replace(/(?:-enhanced(?:-nr)?|-edited?|-hdr|-pano|-copy|-final|-web|-large|-small|\(\d+\)|-\d+)$/g, "")
-    .replace(/[^a-z0-9]+/g, "");
-}
-
-function areAssetsNearDuplicate(left: PhotoAsset, right: PhotoAsset) {
-  const hashDistance = hammingDistance(left.perceptualHash, right.perceptualHash);
-  const aspectGap = Math.abs(left.aspectRatio - right.aspectRatio);
-  const brightnessGap = Math.abs(left.brightness - right.brightness);
-  const sameOrientation = left.orientation === right.orientation;
-  const sameTopLevel = left.provenance.topLevel === right.provenance.topLevel;
-  const sameStem = normalizeBasename(left.provenance.basename) === normalizeBasename(right.provenance.basename);
-
-  if (left.id === right.id || left.variantGroupId === right.variantGroupId) {
-    return true;
-  }
-  if (sameStem && hashDistance <= 10) {
-    return true;
-  }
-  if (hashDistance <= 3 && aspectGap < 0.1 && brightnessGap < 0.12) {
-    return true;
-  }
-  if (sameOrientation && sameTopLevel && hashDistance <= 5 && aspectGap < 0.08 && brightnessGap < 0.08) {
-    return true;
-  }
-
-  return false;
-}
-
-function filterNearDuplicateAssets(assets: PhotoAsset[], compareAgainst: PhotoAsset[] = []) {
-  const accepted = [...compareAgainst];
-  const unique: PhotoAsset[] = [];
-
-  assets.forEach((asset) => {
-    if (accepted.some((current) => areAssetsNearDuplicate(asset, current))) {
-      return;
-    }
-
-    accepted.push(asset);
-    unique.push(asset);
-  });
-
-  return unique;
-}
-
-function pickPreviewAssets(assets: PhotoAsset[], count = 5) {
-  if (assets.length <= count) {
-    return assets;
-  }
-
-  const selected: PhotoAsset[] = [];
-  const seen = new Set<string>();
-  for (let step = 0; step < count; step += 1) {
-    const index = Math.round((step / (count - 1)) * (assets.length - 1));
-    const asset = assets[index];
-    if (!asset || seen.has(asset.id)) {
-      continue;
-    }
-    selected.push(asset);
-    seen.add(asset.id);
-  }
-
-  if (selected.length >= count) {
-    return selected;
-  }
-
-  for (const asset of assets) {
-    if (seen.has(asset.id)) {
-      continue;
-    }
-    selected.push(asset);
-    seen.add(asset.id);
-    if (selected.length >= count) {
-      break;
-    }
-  }
-
-  return selected;
-}
-
-const filteredSeriesAssetsBySlug = new Map(
-  seriesCatalog.series.map((series) => {
-    const fullAssets = series.photoIds
-      .map((id) => assetMap.get(id))
-      .filter((item): item is PhotoAsset => item !== undefined);
-    return [series.slug, filterNearDuplicateAssets(fullAssets)];
-  }),
+const technicalAssetMap = new Map<string, TechnicalAsset>(
+  assetCatalog.assets.map((asset) => [asset.id, asset]),
 );
-
-const filteredRawOnlyAssets = filterNearDuplicateAssets(
-  seriesCatalog.rawOnlyPhotoIds
-    .map((id) => assetMap.get(id))
-    .filter((item): item is PhotoAsset => item !== undefined),
-  [...filteredSeriesAssetsBySlug.values()].flat(),
-);
-
-function toDisplayAsset(asset: PhotoAsset): DisplayAsset {
+function toDisplayAsset(asset: TechnicalAsset): DisplayAsset {
   return {
     id: asset.id,
     width: asset.width,
@@ -138,133 +35,163 @@ function toDisplayAsset(asset: PhotoAsset): DisplayAsset {
   };
 }
 
-export function getSiteMeta() {
-  const fallbackCover = seriesCatalog.series[0]?.coverPhotoId ?? "";
+function joinImage(image: ExhibitImage): CuratedDisplayImage {
+  const asset = technicalAssetMap.get(image.assetId);
+  if (!asset) {
+    throw new Error(`Selected image ${JSON.stringify(image.assetId)} has no technical asset`);
+  }
 
   return {
-    ...siteMeta,
-    introDesktop: siteMeta.introDesktop || siteMeta.intro,
-    introMobile: siteMeta.introMobile || siteMeta.intro,
-    cityLabel: siteMeta.cityLabel || "New York",
-    timeZone: siteMeta.timeZone || "America/New_York",
-    contactBio: siteMeta.contactBio || siteMeta.intro,
-    contactRepresented: siteMeta.contactRepresented || siteMeta.contactEmail,
-    contactBackgroundPhotoId: siteMeta.contactBackgroundPhotoId || fallbackCover,
-    disclaimerText:
-      siteMeta.disclaimerText ||
-      "All photographs are presented for editorial review and commission inquiry. Reproduction requires written permission.",
-  } satisfies SiteMeta;
+    ...toDisplayAsset(asset),
+    assetId: image.assetId,
+    title: image.title,
+    prose: image.prose,
+    alt: image.alt,
+    sequenceRole: image.sequenceRole,
+  };
 }
 
-export function getSeries() {
-  return seriesCatalog.series;
+const collections: CuratedCollection[] = manifest.collections.map((collection, index) => ({
+  ...collection,
+  portfolioIndex: index + 1,
+  photoCount: collection.images.length,
+}));
+
+const collectionMap = new Map(collections.map((collection) => [collection.slug, collection]));
+const collectionImagesMap = new Map(
+  collections.map((collection) => [
+    collection.slug,
+    collection.images.map((image) => joinImage(image)),
+  ]),
+);
+const selectedSequenceImages = collections.flatMap(
+  (collection) => collectionImagesMap.get(collection.slug) ?? [],
+);
+const selectedImageMap = new Map(selectedSequenceImages.map((image) => [image.id, image]));
+const selectedIdSet = new Set(selectedSequenceImages.map((image) => image.id));
+
+function requireCollection(collection: ExhibitCollection): CuratedCollection {
+  const current = collectionMap.get(collection.slug);
+  if (!current) {
+    throw new Error(`Unknown exhibit collection ${JSON.stringify(collection.slug)}`);
+  }
+  return current;
 }
 
-export function getSeriesBySlug(slug: string) {
-  return seriesMap.get(slug) ?? null;
+function requireSelectedImage(id: string, context: string): CuratedDisplayImage {
+  const image = selectedImageMap.get(id);
+  if (!image) {
+    throw new Error(`${context} references missing or unselected image ${JSON.stringify(id)}`);
+  }
+  return image;
 }
 
-export function getAsset(id: string) {
-  return assetMap.get(id) ?? null;
+export function getExhibitManifest() {
+  return manifest;
 }
 
-export function getAnalysis(id: string) {
-  return analysisMap.get(id) ?? null;
+export function getExhibit() {
+  return manifest.exhibit;
 }
 
-export function getSeriesAssets(series: Series): DisplayAsset[] {
-  return (filteredSeriesAssetsBySlug.get(series.slug) ?? [])
-    .map(toDisplayAsset);
+export function getSiteMeta(): SiteMeta {
+  const selectedFallbackId = manifest.introPhotoIds[0] ?? collections[0]?.coverPhotoId;
+  const configuredId = parsedSiteMeta.contactBackgroundPhotoId;
+  const contactBackgroundPhotoId =
+    configuredId && selectedIdSet.has(configuredId) ? configuredId : selectedFallbackId;
+
+  if (!contactBackgroundPhotoId || !selectedIdSet.has(contactBackgroundPhotoId)) {
+    throw new Error("No selected photograph is available for the contact background");
+  }
+
+  return {
+    ...parsedSiteMeta,
+    contactBackgroundPhotoId,
+  };
 }
 
-export function getPreviewAssets(series: Series) {
-  return pickPreviewAssets(filteredSeriesAssetsBySlug.get(series.slug) ?? [])
-    .map(toDisplayAsset);
+export function getCollections(): CuratedCollection[] {
+  return collections;
 }
 
-export function getAllCanonicalAssets() {
-  return photoCatalog.assets;
+export function getCollectionBySlug(slug: string): CuratedCollection | null {
+  return collectionMap.get(slug) ?? null;
+}
+
+export function getCollectionImages(collection: ExhibitCollection): CuratedDisplayImage[] {
+  const current = requireCollection(collection);
+  const images = collectionImagesMap.get(current.slug);
+  if (!images || images.length !== current.images.length) {
+    throw new Error(`Collection ${JSON.stringify(current.slug)} could not be resolved in authored order`);
+  }
+  return images;
+}
+
+export function getCollectionCover(collection: ExhibitCollection): CuratedDisplayImage {
+  const current = requireCollection(collection);
+  return requireSelectedImage(current.coverPhotoId, `Collection ${JSON.stringify(current.slug)} cover`);
+}
+
+export function getPreviewImages(collection: ExhibitCollection): CuratedDisplayImage[] {
+  const current = requireCollection(collection);
+  return current.previewPhotoIds.map((id, index) =>
+    requireSelectedImage(id, `Collection ${JSON.stringify(current.slug)} preview ${index + 1}`),
+  );
+}
+
+export function getSelectedSequenceImages(): CuratedDisplayImage[] {
+  return selectedSequenceImages;
+}
+
+export function getSelectedSequenceIds(): string[] {
+  return selectedSequenceImages.map((image) => image.id);
+}
+
+export function getAsset(id: string): TechnicalAsset | null {
+  return technicalAssetMap.get(id) ?? null;
+}
+
+export function getSelectedImage(id: string): CuratedDisplayImage | null {
+  return selectedImageMap.get(id) ?? null;
 }
 
 export function getIntroSlides(): IntroSlide[] {
-  return filterNearDuplicateAssets(photoCatalog.assets).map((asset) => ({
-    id: asset.id,
-    averageColor: asset.averageColor,
-    flash: asset.variants.hero,
-    hold: asset.variants.hero,
+  return manifest.introPhotoIds.map((id, index) => {
+    const image = requireSelectedImage(id, `Intro image ${index + 1}`);
+    return {
+      id: image.id,
+      alt: image.alt,
+      averageColor: image.averageColor,
+      flash: image.variants.rail,
+      hold: image.variants.hero,
+    };
+  });
+}
+
+export function getPortfolioPageEntries(): PortfolioPageEntry[] {
+  return collections.map((collection) => ({
+    collection,
+    cover: getCollectionCover(collection),
+    previews: getPreviewImages(collection),
+    photoCount: collection.photoCount,
   }));
 }
 
-export function getRawSequenceIds() {
-  return [
-    ...seriesCatalog.series.flatMap((series) => (filteredSeriesAssetsBySlug.get(series.slug) ?? []).map((asset) => asset.id)),
-    ...filteredRawOnlyAssets.map((asset) => asset.id),
-  ];
-}
-
-export function getRawSequenceAssets() {
-  const order = getRawSequenceIds();
-  return photoCatalog.assets
-    .slice()
-    .sort((left, right) => order.indexOf(left.id) - order.indexOf(right.id) || left.sourcePath.localeCompare(right.sourcePath))
-    .map(toDisplayAsset);
-}
-
-export function getHomeSeriesEntries() {
-  return seriesCatalog.series.map((series) => ({
-    series,
-    previews: getPreviewAssets(series),
+export function getListPageEntries(): CollectionCoverEntry[] {
+  return collections.map((collection) => ({
+    collection,
+    cover: getCollectionCover(collection),
   }));
 }
 
-export function getPortfolioPageEntries() {
-  return seriesCatalog.series.map((series) => ({
-    series: {
-      slug: series.slug,
-      title: series.title,
-      subtitle: series.subtitle,
-      synopsis: series.synopsis,
-      tags: series.tags,
-      photoCaptions: series.photoCaptions,
-      portfolioIndex: series.portfolioIndex,
-      photoCount: (filteredSeriesAssetsBySlug.get(series.slug) ?? []).length,
-    },
-    previews: getPreviewAssets(series),
+export function getArchivePageEntries(): CollectionCoverEntry[] {
+  return collections.map((collection) => ({
+    collection,
+    cover: getCollectionCover(collection),
   }));
 }
 
-export function getListPageEntries() {
-  return seriesCatalog.series.map((series) => ({
-    series: {
-      slug: series.slug,
-      title: series.title,
-      photoCaptions: series.photoCaptions,
-      portfolioIndex: series.portfolioIndex,
-    },
-    previews: getPreviewAssets(series),
-  }));
-}
-
-export function getArchivePageEntries() {
-  return seriesCatalog.series.map((series) => ({
-    series: {
-      slug: series.slug,
-      title: series.title,
-      photoCaptions: series.photoCaptions,
-      archiveLabel: series.archiveLabel,
-      archiveYear: series.archiveYear,
-    },
-    previews: getPreviewAssets(series),
-  }));
-}
-
-export function getSeriesIndexBySlug(slug: string) {
-  const index = seriesCatalog.series.findIndex((series) => series.slug === slug);
-  return index >= 0 ? index : null;
-}
-
-export function getContactBackgroundAsset() {
+export function getContactBackgroundAsset(): CuratedDisplayImage {
   const meta = getSiteMeta();
-  const asset = getAsset(meta.contactBackgroundPhotoId) ?? getAsset(seriesCatalog.series[0]?.coverPhotoId ?? "");
-  return asset ? toDisplayAsset(asset) : null;
+  return requireSelectedImage(meta.contactBackgroundPhotoId, "Contact background");
 }

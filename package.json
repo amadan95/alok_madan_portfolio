@@ -5,10 +5,17 @@
   "packageManager": "npm@10.9.2",
   "scripts": {
     "dev": "bash scripts/dev.sh",
-    "catalog": "python3 scripts/build_catalog.py",
-    "build": "python3 scripts/build_catalog.py && cd site && npm run build:internal",
+    "catalog": "python3 scripts/build_catalog.py --check",
+    "catalog:generate": "python3 scripts/build_catalog.py --generate --check",
+    "catalog:prune": "python3 scripts/build_catalog.py --prune-stale",
+    "build": "python3 scripts/build_catalog.py --check && cd site && npm run build:internal",
     "start": "python3 scripts/serve_export.py",
-    "lint": "cd site && npm exec eslint ."
+    "typecheck": "cd site && npm run typecheck",
+    "lint": "cd site && npm run lint",
+    "test": "python3 -m unittest discover -s tests && cd site && npm run test",
+    "test:export": "cd site && npm run test:export",
+    "check": "npm run catalog && npm run typecheck && npm run lint && npm run test",
+    "release:check": "npm run check && npm run build && npm run test:export"
   },
   "dependencies": {
     "clsx": "^2.1.1",
