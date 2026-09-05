@@ -174,6 +174,28 @@ export function ProjectDetailExperience({
   );
 
   useEffect(() => {
+    const onWindowKeyDown = (event: KeyboardEvent) => {
+      if (event.defaultPrevented) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest("a, button, input, select, textarea")) return;
+
+      let nextIndex: number | null = null;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+        nextIndex = activeSlideIndex - 1;
+      } else if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+        nextIndex = activeSlideIndex + 1;
+      }
+      if (nextIndex === null) return;
+
+      event.preventDefault();
+      scrollToSlide(nextIndex);
+    };
+
+    window.addEventListener("keydown", onWindowKeyDown);
+    return () => window.removeEventListener("keydown", onWindowKeyDown);
+  }, [activeSlideIndex, scrollToSlide]);
+
+  useEffect(() => {
     const scroller = scrollerRef.current;
     if (scroller) {
       if (isMobile) {
