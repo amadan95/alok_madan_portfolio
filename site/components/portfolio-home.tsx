@@ -227,12 +227,6 @@ export function PortfolioHome({
                     </p>
                   </div>
                 </div>
-                <div className="portfolio-home__meta-foot">
-                  <span>{collection.photoCount} photographs</span>
-                  {collection.tags.slice(0, 3).map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
               </div>
             </section>
           );
