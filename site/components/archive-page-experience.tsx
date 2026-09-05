@@ -7,7 +7,7 @@ import { useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatArchiveIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
-import { ResponsivePhoto } from "@/components/responsive-photo";
+import { DecodedBackground } from "@/components/decoded-background";
 
 type ArchiveItem = {
   collection: {
@@ -29,12 +29,10 @@ export function ArchivePageExperience({
   const viewportWidth = useViewportWidth();
   const isMobile = viewportWidth > 0 && viewportWidth < 1024;
   const [activeIndex, setActiveIndex] = useState(0);
-  const [displayedIndex, setDisplayedIndex] = useState(0);
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
   const activeItem = items[activeIndex] ?? items[0];
-  const displayedItem = items[displayedIndex] ?? items[0];
-  const activeHero = displayedItem?.cover ?? null;
+  const activeHero = activeItem?.cover ?? null;
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
@@ -46,30 +44,11 @@ export function ArchivePageExperience({
     }
   }, [activeItem, setNumber]);
 
-  useEffect(() => {
-    const timeout = window.setTimeout(() => {
-      setDisplayedIndex(activeIndex);
-    }, 96);
-
-    return () => window.clearTimeout(timeout);
-  }, [activeIndex]);
-
   return (
     <main className="archive-page-experience">
       <div className="archive-page-experience__gradient" />
-      {displayedItem && activeHero ? (
-        <div className="archive-page-experience__hero">
-          <ResponsivePhoto
-            key={activeHero.id}
-            asset={activeHero}
-            alt={activeHero.alt}
-            variants={["hero"]}
-            sizes="100vw"
-            eager
-            fetchPriority="high"
-            imgClassName="archive-page-experience__hero-image"
-          />
-        </div>
+      {activeItem && activeHero ? (
+        <DecodedBackground asset={activeHero} className="archive-page-experience__hero" imageClassName="archive-page-experience__hero-image" />
       ) : null}
       <InfiniteVerticalSlider
         items={items}

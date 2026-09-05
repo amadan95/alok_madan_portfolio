@@ -3,7 +3,7 @@
   "exhibit": {
     "title": "What Remains in Passage",
     "subtitle": "A geography of thresholds, weather, and the light that outlives us",
-    "statement": "Every photograph is a door that closes at the instant it opens. It admits us into a fraction of light while withholding the life that surrounds it. What Remains in Passage follows that contradiction across thirteen rooms. Here stone borrows the shape of shelter; water rehearses the world and withdraws it; cities gather their sleepless machinery around bodies already moving on.\n\nThe sequence does not ask geography to explain what the eye has felt. A gate in foliage may answer a tunnel elsewhere; snow may complete a sentence begun by neon; one figure may give scale to a mountain, a façade, or an unfinished thought. Distance becomes less a measure of miles than of longing. Weather enters not as backdrop but as pressure, erasing edges until bodies and atmosphere share a single uncertainty. After the crowds pass, rooms, signs, glass, and pavement retain their quiet evidence.\n\nThese images inhabit the interval between arrival and disappearance, the brief architecture of attention. Light touches a surface, someone crosses it, and the world alters without announcing the change. Photography cannot keep the moment; it can only keep the place where the moment was. What remains is not possession, but residue: a red reflection, a lit window, a path bending out of sight, the faint conviction that passage itself may be our most enduring form."
+    "statement": "Thirteen passages through weather, distance, labor, and the traces that remain after people move beyond the frame."
   },
   "introPhotoIds": [
     "am-23edf26e45ddc1ab",
@@ -21,7 +21,7 @@
       "slug": "first-apertures",
       "title": "First Apertures",
       "subtitle": "Thresholds, shelter, and the withheld world.",
-      "synopsis": "Openings gather across stone, darkness, leaf, and bamboo, asking what passage reveals and what remains protected beyond sight.",
+      "synopsis": "Doorways, tunnels, and wooded paths offer shelter in fragments, leaving arrival visible but always just beyond reach.",
       "essay": "Every opening edits the world. Red stone divides warmth from shadow, placing a distant silhouette where geometry can neither contain nor release it. Fluorescent bars then count down a tunnel toward daylight, while a latticed window admits only slender beams, enough to reveal the air inside darkness. Night answers with one yellow rectangle across a snowy street: shelter reduced to color and scale. The pavilion widens that private signal into three shared silhouettes, framed by garden light and the restless shadows of branches. From there, architecture yields to growth. Rust foliage nearly consumes a pale gate; bamboo rises in severe green ranks around an empty path. At last, fallen leaves draw the eye toward a small shrine entrance beneath a canopy. Nothing fully opens. Each threshold offers a measured portion of elsewhere, preserving the remainder beyond the frame. Passage begins not with arrival, but with the quiet recognition that seeing and entering are different acts.",
       "tags": [
         "thresholds",
@@ -40,56 +40,56 @@
         {
           "assetId": "am-23edf26e45ddc1ab",
           "title": "Red Measure",
-          "prose": "Light enters in strict polygons, yet the distant silhouette resists the room’s arithmetic. Between patterned floor and black doorway, presence registers as the one measure geometry cannot settle.",
+          "prose": "A blade of afternoon crosses the red stone, stopping short of the distant doorway. The small figure beyond it belongs to another room, almost another hour.",
           "alt": "Wide red-stone interior with geometric floor shadows and one small silhouette in a distant doorway.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-3176329ae951fba7",
           "title": "Exit Line",
-          "prose": "Fluorescent bars diminish toward white daylight, counting distance through the tunnel’s dark curve. One backlit body carries the unanswered interval between departure and emergence.",
+          "prose": "Fluorescent bars count the dark above a solitary walker. Daylight waits at the tunnel mouth, close enough to promise passage and too bright to describe.",
           "alt": "Dark symmetrical tunnel with receding fluorescent lights and one figure near the bright exit.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-c853ed8dc29b0c87",
           "title": "Dust of Light",
-          "prose": "Slender sunbeams cross carved red stone and disclose what darkness ordinarily keeps weightless. Dust acquires direction here; illumination arrives less as revelation than as touch.",
+          "prose": "Through the carved lattice, thin beams settle on walls worn red with time. The room receives only this narrow weather, beautiful because it cannot stay.",
           "alt": "Sunbeams pass through an arched lattice window into a dark red-stone interior.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-db4a765841a3f592",
           "title": "Yellow Room",
-          "prose": "Across the snow-dark street, one yellow doorway burns at human scale. Its silhouette neither welcomes nor warns; warmth survives as a small, undeciphered fact.",
+          "prose": "Snow holds the street in darkness while one yellow doorway keeps a human outline. Warmth appears as a small permission granted somewhere else.",
           "alt": "Dark snowy street with a narrow yellow-lit doorway containing one small silhouetted figure.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-74215e4294a70395",
           "title": "Shared Opening",
-          "prose": "Three silhouettes divide the pavilion’s shade while branch shadows travel across warm walls. Beyond them, garden light offers openness without dissolving the intimacy of pause.",
+          "prose": "Three silhouettes rest inside the pavilion as branch shadows cross the walls. The garden is near, yet the shaded opening keeps their pause apart from it.",
           "alt": "Three dark silhouettes sit inside a pavilion opening bordered by warm walls and branch shadows.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-e825c1c67b5e7d27",
           "title": "Gate in the Thicket",
-          "prose": "Rust foliage crowds the pale stone frame until entry nearly vanishes. Bright cones interrupt the autumn hush, reminding the eye that not every opening is presently available.",
+          "prose": "Autumn has nearly hidden the pale gate; two bright cones deny the path below. An entrance remains, though the season has made it difficult to believe in.",
           "alt": "Pale stone gate partly obscured by dense rust-colored autumn branches and deep shadow.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-220e3cd254232a2b",
           "title": "Bamboo Draws Inward",
-          "prose": "Green light narrows between rising bamboo, and the empty path receives its discipline from living columns. The farther it extends, the more inward distance feels.",
+          "prose": "Bamboo leans toward the empty road until sky becomes a slender seam. The path continues without witness, drawing distance inward like a held breath.",
           "alt": "Straight path receding between tall inward-leaning bamboo trunks under a narrow opening of green light.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-81bb1d09c2c797de",
           "title": "The Distant Gate",
-          "prose": "Leaves soften the path’s straight insistence while red banners mark a shrine entrance far ahead. Arrival recedes into scale, valuable precisely because it remains unfinished.",
+          "prose": "Leaves soften the long approach to a red gate under trees. Nothing blocks the way, yet the small entrance seems to withdraw with every step toward it.",
           "alt": "Leaf-covered garden path leading beneath dense trees toward a small red gate in the distance.",
           "sequenceRole": "release"
         }
@@ -99,7 +99,7 @@
       "slug": "bodies-against-scale",
       "title": "Bodies Against Scale",
       "subtitle": "The figure measured against structures and distances.",
-      "synopsis": "The body becomes a small weather inside vast structures, carrying its fragile measure through stone, altitude, shadow, and light.",
+      "synopsis": "Figures hold their fragile proportions against towers, mountains, crowds, and rooms built too large for any single life.",
       "essay": "Scale first appears as a quiet imbalance: one basketball hoop facing a wall dense with domestic windows. Black-and-white fins then reduce people to intervals; a white colonnade extends that arithmetic until one figure anchors its vanishing point. The landscape strips even those measurements away. A lone body interrupts a black ridge beneath blank sky, followed by a musician enclosed in amber light and monumental darkness. From that inward concentration, an uplifted figure faces a mountain vast enough to absorb the gesture without erasing it. The crowd beneath illuminated towers reverses the relation; many bodies gather into one restless plane while screens retain their rigid glare. Finally, a seated figure rests exactly where tunnel shadow meets bright water. The room never asks whether the body is large or small. It asks what surrounds it, what answers it, and which fragment of space allows attention to remain human.",
       "tags": [
         "scale",
@@ -118,56 +118,56 @@
         {
           "assetId": "am-2c6ca14afb7d3241",
           "title": "Court of Windows",
-          "prose": "Play waits beneath an immense ledger of windows. Centered hoop and painted court offer one clear proportion against the countless private rectangles rising behind them.",
+          "prose": "An empty hoop waits below hundreds of apartment windows, each rectangle keeping its separate life. The painted court offers color without a player to claim it.",
           "alt": "Empty colorful basketball court and hoop centered before a dense pastel apartment façade.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-6b1001cd03a05320",
           "title": "Between the Fins",
-          "prose": "Vertical fins impose a relentless rhythm; tiny figures occupy the narrow rests between bars. Architecture counts bodies here, but cannot reduce their differences to pattern.",
+          "prose": "Black fins divide the façade into a severe rhythm, with people caught in the narrow intervals. Their differences survive as gestures too small for the structure to organize.",
           "alt": "Black-and-white architectural fins repeat vertically, with several tiny people visible between them.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-60469abec11a012e",
           "title": "Distant Center",
-          "prose": "Gold-crowned columns repeat toward a dark pinpoint, making symmetry almost absolute. That remote figure breaks perfection gently, giving endless order somewhere to arrive.",
+          "prose": "White arches repeat toward one dark figure at the vanishing point. The person gives the corridor an ending, though the architecture seems prepared to continue forever.",
           "alt": "Long white colonnade with gold capitals and one distant dark figure at the vanishing point.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-7ee3643e4b813063",
           "title": "Single Mark",
-          "prose": "Blank sky removes every customary measure except horizon and body. The solitary mark is almost nothing, yet the whole image depends upon its refusal to disappear.",
+          "prose": "A single body interrupts the black ridge beneath an emptied sky. Almost erased by scale, it becomes the one mark the vastness cannot absorb.",
           "alt": "Single small figure on a black ridge beneath a nearly featureless white sky.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-112e3f8ecf39b520",
           "title": "Held Note",
-          "prose": "Amber light isolates one musician beneath a circular glow, while the surrounding interior withdraws into black. Sound remains unseen; attention takes on its shape.",
+          "prose": "One musician occupies a pool of amber under a distant ceiling. The surrounding hall falls away, leaving performance as a small brightness carried alone.",
           "alt": "A solitary musician performs in a small amber spotlight within a vast dark interior.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-8d8343421d668c96",
           "title": "Answering the Mountain",
-          "prose": "Raised arms punctuate the narrow ridge beneath a blue mountain, too small to rival its mass. Their force comes from remaining visible against such scale.",
+          "prose": "Raised arms answer a blue mountain across a bank of cloud. The gesture cannot rival the peaks; its tenderness lies in being made anyway.",
           "alt": "Tiny person raising both arms below dark alpine peaks and bands of white cloud.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-c4737f47a3abcbac",
           "title": "Crowd Beneath Light",
-          "prose": "Illuminated towers keep their hard edges while pedestrians blur into a restless foreground. Public brightness enlarges the scene and makes individual presence harder to retain.",
+          "prose": "Screens and towers keep their sharp authority while the crossing loosens into faces and motion. A crowd fills the foreground, yet no one remains long enough to settle there.",
           "alt": "Large nighttime crossing filled with blurred pedestrians beneath tall buildings and bright advertising screens.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-91af64eeddd06790",
           "title": "Figure at the Seam",
-          "prose": "Tunnel shadow ends exactly beside moving water, and one seated figure occupies the border. Scale finally offers shelter: not enclosure, but a precise place to pause.",
+          "prose": "At the seam between tunnel shadow and falling water, a seated figure finds a narrow place to rest. The city’s scale briefly makes room for stillness.",
           "alt": "One seated figure in yellow at the boundary between a dark tunnel and sunlit water.",
           "sequenceRole": "release"
         }
@@ -177,7 +177,7 @@
       "slug": "water-remembers",
       "title": "Water Remembers",
       "subtitle": "Reflections, currents, and the afterlife of light.",
-      "synopsis": "Water alters every witness: architecture loosens, light fractures, reflections deepen, and distance carries crowded surfaces toward air.",
+      "synopsis": "Water receives buildings, trees, weather, and passing bodies, returning each one altered before the eye can hold it.",
       "essay": "Water refuses the role of mirror; it revises whatever approaches. Two seated silhouettes face gold doubled across stillness, their quiet presence dividing radiance from reflection. On rain-streaked glass, towers loosen into vertical traces. Blue-white current and amber light compress the world to texture, before a narrow creek returns stones, grass, willow, and depth. Foam then scores the dark shore with the cleanest mark in the room, and the least permanent. A pond draws a bent tree downward, creating an interior below the visible bank. Along the quay, architecture keeps its edge while a pale horizontal streak records passage. The final hillside gathers hundreds of colored roofs, yet distant harbor light opens a breath within their density. Water remembers without preserving. It carries shape forward by changing its terms: monument to shimmer, skyline to stain, landscape to double, transit to current, habitation to a field already leaning toward distance.",
       "tags": [
         "water",
@@ -196,56 +196,56 @@
         {
           "assetId": "am-225f74172bb04e1f",
           "title": "Golden Witness",
-          "prose": "Gold crosses the water twice: first as building, then as broken reflection. Two seated silhouettes occupy the dark interval, giving radiance a human edge.",
+          "prose": "Across still water, the gold building appears twice while two seated figures remain dark. The reflection trembles at their feet, already less certain than the night above it.",
           "alt": "Two dark seated silhouettes facing a golden illuminated building reflected in still water.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-b7949ba849fb21ec",
           "title": "City in Water",
-          "prose": "Condensation pulls bright towers downward across the glass. The skyline remains recognizable but unstable, its certainty undone by water too near the eye to overlook.",
+          "prose": "Rain trails down the glass and pulls the towers into wavering columns. The city survives behind the water, recognizable only in the act of coming apart.",
           "alt": "Blurred city towers seen through dark glass covered with vertical condensation streaks.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-489978171ee43c57",
           "title": "Ice Holding Gold",
-          "prose": "Blue-white turbulence carries seams of amber through a nearly horizonless field. Matter and reflection mingle so completely that the surface refuses one stable reading.",
+          "prose": "Blue current, white foam, and a thread of amber fold together around one dark stone. The surface keeps changing before any color can become its own.",
           "alt": "Close abstract surface of blue ice, white froth, dark stones, and golden reflection.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-a785f8905b9c2eea",
           "title": "Green Seam",
-          "prose": "Spring gathers loosely around a narrow creek: stone, grass, willow, yellow bloom. Water supplies the dark sentence through this abundance, a modest line that restores depth.",
+          "prose": "A narrow creek darkens the spring grass between stones and yellow flowers. Its modest passage gives the bright garden a depth that cannot be crossed at once.",
           "alt": "Narrow vertical creek winding among stones, grass, yellow flowers, and a willow tree.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-4fe4cff56ce6a21c",
           "title": "Foam Script",
-          "prose": "White foam inscribes a scalloped edge across black sand, then prepares to erase it. Contact produces the room’s clearest line and its shortest memory.",
+          "prose": "White foam reaches across black sand in delicate, scalloped fingers. The shore receives a perfect edge for one moment, then prepares to lose it.",
           "alt": "White scalloped sea foam crossing a black sand shoreline in a monochrome composition.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-7ab470a5eb6ad129",
           "title": "Pond Turned Inward",
-          "prose": "Dark water receives the bent tree and crowded bank without opening them outward. Reflection doubles the landscape, then folds both versions into the same enclosure.",
+          "prose": "A bent tree descends again into the pond, tangled with the bank below. Reflection makes another landscape, enclosed and unreachable beneath the first.",
           "alt": "Bent tree and dense green bank reflected in the dark surface of a small pond.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-cabb4bd73e9ade54",
           "title": "Current Along the Quay",
-          "prose": "Facades and moored boats keep their edges above a pale streak of passage. Fixed harbor and moving current occupy one frame without resolving their disagreement.",
+          "prose": "Colorful façades hold their line above the quay while a pale streak records what passed. Water and traffic share the habit of leaving no still account.",
           "alt": "Colorful waterfront buildings and moored boats above horizontal motion streaks along the quay.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-58c7cf4389646ef8",
           "title": "Harbor Between Houses",
-          "prose": "Colored houses climb toward wooded slopes while pale water appears at the far margin. Density loosens by degrees; distance enters without asking habitation to vanish.",
+          "prose": "Past the crowded hillside of painted roofs, a strip of harbor opens into pale distance. The houses loosen at the edge, where habitation can no longer follow.",
           "alt": "Wide view of densely layered pastel hillside houses with a pale harbor in the distance.",
           "sequenceRole": "release"
         }
@@ -255,7 +255,7 @@
       "slug": "gestures-of-time",
       "title": "Gestures of Time",
       "subtitle": "Small human acts held inside public time.",
-      "synopsis": "Posture, touch, blur, and eclipse trace time through bodies, public light, and the small evidence each instant leaves.",
+      "synopsis": "Bowed heads, lifted hands, shared steps, and moving bodies leave brief marks inside the larger current of public time.",
       "essay": "Time leaves no single kind of mark. Two seated figures repeat a bowed posture against a wall layered with notices and wear. A clock stall multiplies competing faces while pointing hands choose among them; nearby, an uplifted fan fixes one brief gesture against shutter and shop light. Neon encloses a dark profile, setting one lifted hand inside public brightness. The room then opens down a market aisle, where two small figures join hands along its central axis. Motion accelerates after that contact. A dancer’s bright rotation gathers exposure time into one radiant center; a crowd farther on softens beneath converging shopfronts while a red gate keeps its architectural clarity. Finally, the crescent eclipse removes almost everything: street, body, color. Time remains legible as a luminous remainder. These photographs do not arrest an instant. They show how an instant accumulates: in repeated posture, lifted hand, shared passage, exposure blur, and the small bright portion still visible after subtraction.",
       "tags": [
         "gesture",
@@ -274,56 +274,56 @@
         {
           "assetId": "am-cd707567232af5cb",
           "title": "Paired Pause",
-          "prose": "Two bowed postures repeat against a wall already layered with notices, stains, and repairs. Present attention and accumulated use share the bench without meeting.",
+          "prose": "Two people repeat the same bowed posture on a bright bench, separated by color and private screens. Behind them, old notices fade more slowly than attention.",
           "alt": "Two seated adults looking down at phones on a bright bench against a weathered signed wall.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-d4c0e62052be8b3c",
           "title": "Choosing Time",
-          "prose": "Clocks crowd the stall with incompatible certainties while two hands point among them. Measurement multiplies; choosing one face only sharpens how many times coexist.",
+          "prose": "Dozens of clocks offer competing hours while two hands point into the display. Time becomes merchandise here, abundant and impossible to choose correctly.",
           "alt": "Clock stall filled with analog and digital faces as two shoppers point upward.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-3cbe8483d4976946",
           "title": "Raised Fan",
-          "prose": "One lifted fan occupies the bright hinge between shuttered metal and a stocked cabinet. An ordinary gesture gains precision from everything compressed around it.",
+          "prose": "A white fan rises beside a shuttered shop, fixing one graceful angle in the narrow stall. The gesture lasts only because the photograph refuses its ending.",
           "alt": "Adult in a white turban raises a folding fan beside a small storefront.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-26a51d7f32e9348a",
           "title": "Appetite in Neon",
-          "prose": "Orange bulbs warm the dark profile while cyan signs press from every side. A lifted hand creates a private interval inside light designed for public attention.",
+          "prose": "Orange lamps and cyan signs surround a dark profile with one hand lifted. Appetite, commerce, and pause meet briefly under a brightness meant for passing strangers.",
           "alt": "Dark standing profile among bright orange lamps and dense cyan night signage.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-4c1bfea89073a49d",
           "title": "Held in the Current",
-          "prose": "Market stalls form two luminous banks around an open central aisle. At its middle, joined hands temper the long perspective, holding intimacy against the market’s current.",
+          "prose": "Down the market’s illuminated aisle, two small figures join hands along the center line. Around them, stalls continue their business as if contact required no witness.",
           "alt": "Elevated view down a night market aisle with two small figures holding hands centrally.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-ad21d97883bd4565",
           "title": "Turning Axis",
-          "prose": "One white-clad dancer gathers successive instants around a brilliant palm-lit axis. Blur does not erase the body; it reveals how motion exceeds a single outline.",
+          "prose": "A white-clad dancer turns around a hard point of light, body opening into several transparent instants. The center holds while every edge becomes departure.",
           "alt": "One white-clad dancer blurs while spinning around a bright palm-lit axis at night.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-089eeeaf09efd0cc",
           "title": "Crowd as Interval",
-          "prose": "Converging shopfronts guide softened pedestrians toward the red gate’s hard geometry. Many passing gestures accumulate below an architecture whose sharp measure outlasts each exposure.",
+          "prose": "The red gate stays sharp beyond pedestrians softened by motion. Bodies occupy the street as intervals, each crossing briefly obscuring the destination ahead.",
           "alt": "Blurred pedestrians moving between shopfronts toward a large red temple gate at the end of a market street.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-33c3cccd41394550",
           "title": "Small Subtraction",
-          "prose": "Almost all the sky has gone dark around one glowing crescent. Time registers through subtraction, measured by the slender portion of light that remains.",
+          "prose": "A thin crescent remains after the dark has taken almost everything else. Without street or body for scale, time appears as a quiet subtraction in the sky.",
           "alt": "Small glowing crescent eclipse isolated within a nearly black sky with a faint soft corona.",
           "sequenceRole": "release"
         }
@@ -333,7 +333,7 @@
       "slug": "the-citys-machinery",
       "title": "The City’s Machinery",
       "subtitle": "Transit systems, engineered flow, and urban force.",
-      "synopsis": "Every passage borrows our momentum: steel remembers pressure, streets collect intention, and even painted arrows make desire feel engineered.",
+      "synopsis": "Rails, roads, steel, and repeated signals organize movement until individual intention becomes another current inside the city.",
       "essay": "Movement enters here as obedience. Fluorescent bars narrow the first descent, then an orange avenue carries the same compulsion through the night. Steel measures a passing body; red vehicles gather into pressure, each system promising efficiency while quietly deciding where attention may go. Green scaffolding interrupts circulation with another urban truth: endurance depends on repair, and repair must occupy space. Roads, rails, markings, and towers resume their argument, none permitted to represent the whole. A yellow bus crosses old masonry like a bright second hand, setting brief motion against structures that count differently. The final roadway opens wide. Blue arrows reverse the visual current, opening the asphalt back toward us instead of surrendering it to a distant monument. The machine has not vanished; its commands now read as choices, and the room ends where our own motion begins.",
       "tags": [
         "infrastructure",
@@ -352,56 +352,56 @@
         {
           "assetId": "am-bcac38cfa7e61f39",
           "title": "Descent Engine",
-          "prose": "Fluorescent bars count downward with impersonal patience. Between the rails, emptiness feels less like absence than consent: the eye enters first, accepting a route before the body moves.",
+          "prose": "Rails descend beneath fluorescent bars toward an unseen platform. The empty stair carries the pressure of thousands of practiced journeys, paused between one train and the next.",
           "alt": "An empty stairway descends beneath repeating fluorescent bars, symmetrical rails, and small yellow accents.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-350d6de16e359aa8",
           "title": "Orange Artery",
-          "prose": "Far below, one orange route binds the night. Countless windows scatter as private coordinates, while circulation writes the only sentence large enough to cross them.",
+          "prose": "An orange avenue burns through the city’s blue density, joining intersections beyond sight. From this height, countless departures become one impersonal line.",
           "alt": "An illuminated orange avenue cuts through a dense nighttime city viewed from high above.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-153617e873dc3def",
           "title": "Under Steel",
-          "prose": "Steel divides the light into hard diagonals, briefly lending its scale to one passerby. What was built for permanence is understood through a body already leaving it behind.",
+          "prose": "A pedestrian crosses beneath riveted girders while amber shadows repeat across the steel. The bridge makes a cage of movement, open at both ends and owned by neither.",
           "alt": "A silhouetted pedestrian walks beneath diagonal bridge girders casting long amber and blue shadows.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-cfc00fae5c9d61fb",
           "title": "Red Compression",
-          "prose": "Red vehicles gather until transit resembles pressure made visible. Cyan shadow cools the surrounding density, yet the eye keeps returning to that crowded vertical pulse.",
+          "prose": "Red minibuses gather under the elevated road, pressed between concrete and blue façades. Traffic turns every private destination into the same bright congestion.",
           "alt": "Red minibuses fill a dense street beneath an elevated roadway with cyan-toned surroundings.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-e663ae8ae77b510a",
           "title": "Green Repair",
-          "prose": "Green scaffolding burns inside a canyon of dark homes. Maintenance occupies the brightest architecture in view, asking whether a city reveals itself most clearly where it admits incompletion.",
+          "prose": "Green scaffolding interrupts a wall of dark apartments, announcing repair without relief. The wrapped tower rises like a temporary organ inside an exhausted block.",
           "alt": "Green-wrapped scaffolding rises between dark, closely packed residential buildings beneath a pale sky.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-3fa233c5682cd3cc",
           "title": "Systems Interlock",
-          "prose": "Curves, decks, markings, and towers refuse a single center. Order emerges from overlap, resembling thought itself: several routes active at once, none able to claim the whole.",
+          "prose": "Roads curve beneath rail lines, painted warnings, and office towers. Each system enters another until direction itself feels borrowed from the machinery overhead.",
           "alt": "Curving roads, elevated rail lines, painted markings, and tall buildings overlap beneath gray sky.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-fd20109a1ee55caa",
           "title": "Transit Against Stone",
-          "prose": "Yellow motion crosses weathered stone while the spire keeps another kind of time. Between blur and masonry, permanence registers not as stillness but as a slower velocity.",
+          "prose": "A yellow bus crosses old stone while pedestrians dissolve around it. The square keeps its monuments; transit keeps the present moving before them.",
           "alt": "A yellow bus and blurred pedestrians cross a square before old buildings and a green spire.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-df574cc2f3e3f9d7",
           "title": "Blue Vectors",
-          "prose": "Painted blue arrows push toward the foreground and fan laterally across open asphalt. After so much enclosure, instruction reverses direction, arriving at the viewer as possibility rather than command.",
+          "prose": "Blue arrows command the broad roadway beneath a distant tower. Their certainty exceeds the blurred cars they direct, pointing cleanly through weather and hesitation.",
           "alt": "Blue directional arrows point toward the foreground and laterally across a broad roadway beneath a distant slender tower.",
           "sequenceRole": "release"
         }
@@ -411,7 +411,7 @@
       "slug": "labor-after-light",
       "title": "Labor After Light",
       "subtitle": "Work gathering light after the public day recedes.",
-      "synopsis": "Work gathers light around ordinary gestures, making each stall a provisional shelter where attention, exchange, and endurance remain visible.",
+      "synopsis": "Stalls and counters gather small pools of warmth around work that continues after the city turns its attention elsewhere.",
       "essay": "Nothing here is effortless, though light can make it appear so. Packets, shutters, carts, counters, and timber define the narrow territories where attention sustains livelihood. Daylight cuts one wall with unforgiving precision; snow reduces another workplace to a fragile pool of color. Night deepens the enclosures. Between buses, beneath cold blue timber, or under a single red lantern, labor is disclosed in partial views: bent posture, working hands, a face withheld by shadow. Warm curtains and crowded signs promise entry, but the sequence never mistakes brightness for ease. Its final florist kiosk remains intensely lit and visibly occupied: seated workers rest within the abundance they tend. Their presence changes the ending. Color does not continue by itself; every display is sustained by bodies, including bodies that pause. Across the room, illumination offers acknowledgment, locating effort where the larger city might otherwise pass without seeing.",
       "tags": [
         "labor",
@@ -430,56 +430,56 @@
         {
           "assetId": "am-1e6de3fa2dbb5a9e",
           "title": "Inventory Under Bark",
-          "prose": "Manufactured color accumulates beneath the tree’s dark weight, leaving the seated shopkeeper a narrow clearing. Commerce and bark share one frame, each bearing a different kind of weathering.",
+          "prose": "Packets and water bottles hang beneath the reach of a dark tree, surrounding a seated shopkeeper. Inventory brightens the red wall while the long evening waits nearby.",
           "alt": "A seated shopkeeper is framed by a dark tree trunk, hanging packets, and a red wall.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-2586c8ae96696145",
           "title": "Shutter Measure",
-          "prose": "Hard sunlight cleaves the shutter; the vendor remains at its edge, neither erased nor enlarged. Distance steadies the encounter, letting one life resist the wall’s immense surface.",
+          "prose": "A vendor works beside a closed metal shutter divided by late sun. Half the stall has already entered night; the day remains only where labor catches it.",
           "alt": "A vendor stands beside a large closed shutter divided by hard diagonal sunlight.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-abc4dd5917818d11",
           "title": "Cart in Snow",
-          "prose": "Yellow and red defend their ground inside the snowfall. Beside the cart, an umbrella marks the radius of temporary shelter, where exchange and endurance occupy the same warmth.",
+          "prose": "A yellow food cart glows through heavy snow, its menu brighter than the street. Beside it, an umbrella passes with the weather still attached.",
           "alt": "A glowing yellow and red food cart stands in heavy snow beside an umbrella-carrying figure.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-d327bba5b1a4ae04",
           "title": "Night Counter",
-          "prose": "Two buses press darkness against a narrow counter. Beneath three amber lamps, the worker’s bent posture keeps a modest center intact while the city’s larger machinery closes around it.",
+          "prose": "Between two dark buses, an amber counter holds one worker and a row of small necessities. The stall survives as a narrow room borrowed from traffic.",
           "alt": "A worker stands at an amber-lit food stall framed tightly between two dark buses.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-338d5945e3f7be37",
           "title": "Cold Shelter",
-          "prose": "Blue light shapes rough timber into an uncertain shell. Seated amid dense surfaces, the worker occupies the uneasy border between being protected and being exposed.",
+          "prose": "Cold blue light finds a worker inside the dense wooden stall. Shelves and tools press close, forming a shelter that resembles another unfinished shift.",
           "alt": "A solitary worker sits inside a densely textured wooden stall illuminated by cold blue light.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-9bd193e97e1eb1bc",
           "title": "Hands Under Lantern",
-          "prose": "Only the lantern and working hands receive visibility. Darkness removes every distraction, leaving gesture as evidence that care can be exact even when its maker remains partly withheld.",
+          "prose": "Beneath a red lantern, working hands emerge from the dark beside skewers and paper signs. The person recedes; the careful motion remains.",
           "alt": "Working hands appear beneath a red lantern at a food stall surrounded by darkness.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-59fd4cfbe4bf60f0",
           "title": "Doorway Heat",
-          "prose": "Red lanterns and fabric gather heat at the entrance; surrounding night sharpens every threshold. Invitation and reserve occupy the same rectangle, neither cancelling the other.",
+          "prose": "Lanterns, curtains, and a vending machine crowd the ramen doorway with heat. No customer enters the frame, but the threshold continues to offer welcome.",
           "alt": "A warmly lit ramen doorway with red lanterns, curtains, and signs glows at night.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-cfad3d27d48b4105",
           "title": "After the Flowers",
-          "prose": "Blue-green light saturates the florist kiosk, where seated workers remain among flowers and empty stools. Abundance surrounds their pause, binding rest to the labor that keeps color available.",
+          "prose": "Flowers fill the white-lit kiosk after dark while empty stools wait outside. Two workers remain among colors prepared for other people’s arrivals and apologies.",
           "alt": "A brightly lit florist kiosk contains abundant flowers, empty stools, and seated workers at night.",
           "sequenceRole": "release"
         }
@@ -489,7 +489,7 @@
       "slug": "weather-has-bodies",
       "title": "Weather Has Bodies",
       "subtitle": "Bodies altered by snow, rain, and atmosphere.",
-      "synopsis": "Weather crosses every boundary it reveals, finding its measure in silhouettes, umbrellas, reflections, and bodies that continue through pressure.",
+      "synopsis": "Snow and rain pass through streets and silhouettes, testing every umbrella, coat, and temporary claim to shelter.",
       "essay": "Weather does not enter these photographs as background; it redraws the terms of visibility. Wind scores four silhouettes until their edges belong partly to the air. Fire escapes resist diagonal snow, lanterns deepen a solitary route, and violet rain breaks the crossing into bodies and reflections. One umbrella then carries private shelter across a field of public brightness. The sequence increases its pressure. White glare nearly consumes architecture, leaving a distant pedestrian to establish proportion. Red storefront light stains snow and pavement alike, binding two back-turned walkers to the atmosphere they traverse. Release arrives without calm: a cyclist advances through the storm, red cap and dark frame cutting a deliberate vector into the brightness. Nothing clears. Instead, movement provides its own aperture. The room asks how a body remains distinct without pretending it can stand outside the conditions passing through it.",
       "tags": [
         "weather",
@@ -508,56 +508,56 @@
         {
           "assetId": "am-af71b5722d858a52",
           "title": "Bodies Becoming Weather",
-          "prose": "Wind frays four dark silhouettes, loosening the certainty of their edges. Human form persists, but ownership of the outline has passed partly to the snow.",
+          "prose": "Four bundled figures darken against wind-driven snow until their edges begin to lift away. Weather enters the body first as posture, then as disappearance.",
           "alt": "Four bundled figures stand as dark silhouettes against a field of bright, wind-driven snow.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-30c806d0e0c6d913",
           "title": "Laddered Snow",
-          "prose": "Fire escapes impose a black grammar on diagonal snow. Nearly hidden below, one figure gives the conflict proportion: structure insists, weather revises.",
+          "prose": "Snow crosses the fire escape in hard diagonal lines while a small figure climbs behind it. Each rung offers structure, but almost no shelter.",
           "alt": "Heavy snow crosses a monochrome façade with fire escapes, windows, and a small figure.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-45209f68ca5ad071",
           "title": "Umbrella into Lanterns",
-          "prose": "Darkness travels beneath one umbrella while lanterns recede into snowfall. The centered route feels both chosen and given, a narrow passage composed from cold air and borrowed warmth.",
+          "prose": "One umbrella moves down the white street beneath red lanterns. Warm color follows overhead while the solitary body carries its own dark weather.",
           "alt": "A lone umbrella figure walks down a snowy street lined with warm red lanterns.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-1ec943f39f0f0c4e",
           "title": "The Crossing Trembles",
-          "prose": "Violet rain fractures the crossing into figures and reflections. No outline arrives intact; the pavement receives each body, alters it, and returns a second city underfoot.",
+          "prose": "Umbrellas collect at the crossing under violet rain, their reflections breaking across the pavement. The crowd advances together without becoming less alone.",
           "alt": "A crowd with umbrellas crosses a rain-soaked street amid violet haze and reflections.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-2e8d671d11dd2719",
           "title": "Rain Against Stripes",
-          "prose": "Private shelter passes before public radiance, one dark umbrella interrupting the striped display. Rain traverses both, refusing the clean border between protection and exposure.",
+          "prose": "A dark umbrella passes before luminous stripes as rain writes over both. The figure keeps moving, briefly protected beneath a circle too small for the storm.",
           "alt": "A silhouetted umbrella pedestrian crosses heavy rain before a bright striped display and wet reflections.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-89dd1107bfa084e9",
           "title": "White Pressure",
-          "prose": "Commercial glare nearly erases the street, yet one distant pedestrian restores proportion. Against so much white, a dark body carries the quiet authority of measure.",
+          "prose": "White city light and blown snow nearly erase the distant pedestrian. A dark coat holds the last human scale inside the pressure of the sky.",
           "alt": "A distant bundled pedestrian stands amid wind-driven snow and intense white city light.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-c82a13b707c56294",
           "title": "Red Weather",
-          "prose": "Red storefront light enters the snowfall and spreads across wet pavement. Two back-turned walkers share its field without surrendering their separateness, brief dark marks inside saturated weather.",
+          "prose": "Two figures walk away across red-washed pavement while snow drifts through storefront light. Their bags and bent shoulders carry the weather farther than the street can.",
           "alt": "Two back-turned pedestrians cross wet pavement during snowfall beside bright red storefronts.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-b9734ca6cc409190",
           "title": "Rider into Snow",
-          "prose": "Forward motion cuts a clean line through snow and broken color. The cyclist does not resolve the storm; the body simply gives pressure a direction.",
+          "prose": "A cyclist rides toward the camera through falling snow, red cap bright against the avenue. Balance becomes a private act performed inside public weather.",
           "alt": "A bundled cyclist in a red cap rides toward the camera through falling snow.",
           "sequenceRole": "release"
         }
@@ -567,7 +567,7 @@
       "slug": "velocity-has-passengers",
       "title": "Velocity Has Passengers",
       "subtitle": "Passengers carried by speed, blur, and signal.",
-      "synopsis": "Velocity leaves bodies neither fixed nor erased; light, weather, and roads record passage as pressure, interval, and release.",
+      "synopsis": "Riders, pedestrians, and cars enter the blur of streets where every arrival already contains the shape of departure.",
       "essay": "Motion first appears suspended: one rider centered in an illuminated street, a red point storing distance. Then the frame begins to move around its passengers. The rickshaw keeps its amber-green core as the night pulls laterally; pedestrians pass a sealed façade as translucent durations; chevrons sharpen the taxi’s red-violet momentum into graphic command. Rain breaks individual trajectories into a cyan crowd, briefly granting one pale figure coherence before the current closes. From there, red transit threads through dense housing, and another taxi sheds a scarlet trace beneath vertical neon. The final roadway exchanges compression for breadth. Two cars follow opposing curves through open gray space, each blur released from the crowds, signs, and weather that previously defined speed. The room never treats velocity as freedom by itself. Passage is always carried, framed, and measured, an outward force whose meaning depends on the bodies and structures it leaves momentarily altered.",
       "tags": [
         "velocity",
@@ -586,56 +586,56 @@
         {
           "assetId": "am-31e30eea19bf79e9",
           "title": "Waiting at the Axis",
-          "prose": "Centered beneath a corridor of light, the rider gathers distance into one red point. Stillness here is not rest; it is velocity folded tightly before release.",
+          "prose": "A lone rider waits beneath Chinatown lights, one red tail lamp centered in the wet street. Stillness gathers at the exact point where departure should begin.",
           "alt": "A lone rider with a red tail light stands centered on an illuminated snowy street.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-68f89394b99bd531",
           "title": "Passenger Capsule",
-          "prose": "Amber and green remain briefly coherent while midnight blue streams sideways. Driver and passenger occupy a small moving interior, protected only by the clarity that motion has spared.",
+          "prose": "The auto-rickshaw carries shadowed passengers through a blue lateral blur. Its amber body stays briefly intact while the street slips away on both sides.",
           "alt": "An amber and green auto-rickshaw carrying people moves through a blue, laterally blurred street.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-39e4d68365292bc6",
           "title": "Durations Passing",
-          "prose": "Two translucent figures pass across a sealed rhythm of panels. Closure stays rigid; time acquires bodies, each crossing written lightly enough to reveal what resists it.",
+          "prose": "Two pedestrians pass a boarded storefront at different speeds, faces already softened by motion. The sealed windows hold still while their shared instant separates.",
           "alt": "Two motion-blurred pedestrians pass a boarded storefront with repeating panels and blue tape.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-f79ab0aa635d2429",
           "title": "Chevrons of Speed",
-          "prose": "White chevrons ride the taxi’s red-violet flank while the street dissolves laterally. Speed has entered the vehicle’s skin, turning graphic command into a moving, unstable emblem.",
+          "prose": "White chevrons sharpen the side of a red taxi as the night smears behind it. Direction becomes decoration on a vehicle already leaving the frame.",
           "alt": "A red-violet taxi bearing bold white directional chevrons moves through a horizontally blurred night street.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-8d6ec059db2ab2b8",
           "title": "Crowd Current",
-          "prose": "Cyan rain loosens the crowd into a shared current. One pale figure gathers momentary definition, then yields again to the larger motion carrying every outline.",
+          "prose": "Umbrellas and bodies dissolve into cyan rain around one pale figure. The crowd moves as a current, carrying each person without revealing where anyone arrives.",
           "alt": "A rain-soaked crowd with umbrellas blurs through a cyan-lit street around one pale figure.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-927e31041dd0f943",
           "title": "Red Transit",
-          "prose": "Scarlet light connects the passing car to stacked housing, stitching motion into density for a fraction of a second. The city remains, but velocity changes its temperature.",
+          "prose": "A dark car draws white streaks beneath red signs and stacked windows. The street keeps only its color after the passengers have passed beyond recognition.",
           "alt": "A moving car streaks past red neon signage and densely stacked apartments on a wet road.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-9d6acdaa202038cc",
           "title": "Red Taxi Trace",
-          "prose": "Vertical neon fixes the façade while a taxi drags red across its base. Vehicle and trace part company, leaving speed visible after form has already moved on.",
+          "prose": "Tail lights stretch across a taxi under crowded neon, turning one ordinary fare into a red trace. The vehicle departs faster than the storefronts can name it.",
           "alt": "A motion-blurred taxi passes beneath red and white neon signs on a dark street.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-06a2490eabcfcbb1",
           "title": "Curves Carry Cars",
-          "prose": "Opposing white curves offer two cars a wider grammar of departure. With weather and crowds removed, motion approaches abstraction, yet each blur still carries an interior.",
+          "prose": "Two cars follow the curved lanes through a gray, nearly emptied city. Their blur bends with the road, carrying urgency toward an unseen intersection.",
           "alt": "Two motion-blurred cars follow curving lanes through a broad urban roadway beneath gray sky.",
           "sequenceRole": "release"
         }
@@ -645,7 +645,7 @@
       "slug": "electrical-weather",
       "title": "Electrical Weather",
       "subtitle": "Neon, rain, and the charged grammar of night.",
-      "synopsis": "Natural and manufactured charge migrate through sun, neon, rain, lightning, and traffic, then settle into the city’s vertical pulse.",
+      "synopsis": "Sun, neon, lightning, and traffic lend the night an unstable warmth that brightens solitude without dispelling it.",
       "essay": "Charge begins quietly, an amber sun lowered between blue-black towers until nature resembles a signal. Wet alleys take over that language, drawing color into narrow depths and layering a doorway, signs, and reflections until architecture grows electrically porous. Rain gives red traffic a horizontal stroke beneath a fixed hotel sign. The scale then breaks open: lightning branches above city and river, an instant of white force answered by accumulated windows below. Returning to street level, a distant walker carries human proportion into a dark corridor of neon. Another strike lands above bridge and grid, its violence disciplined by a level horizon. Release arrives through geometry rather than silence. A vertical hotel sign crosses white and amber traffic trails, fixed word against passing light. Across the room, electricity is never only spectacle; it measures what endures, what passes, and what briefly permits the two to share one surface.",
       "tags": [
         "neon",
@@ -664,56 +664,56 @@
         {
           "assetId": "am-3ecd133c8fd14bbe",
           "title": "Sun at Street Level",
-          "prose": "Amber light reaches street level between blue-black towers, compressed until sunset resembles a distant signal. Vast natural time enters the city through an opening scarcely wider than traffic.",
+          "prose": "The setting sun sits at street level between blue towers, smaller than the traffic below. Natural fire becomes another signal waiting to change.",
           "alt": "An amber setting sun appears at street level between blue-shadowed towers and dense traffic.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-54c71ce66ee578e9",
           "title": "Voltage Corridor",
-          "prose": "Neon descends through the wet alley in vertical pulses, giving darkness an internal structure. Depth conducts color farther than any single sign can claim.",
+          "prose": "Vertical signs descend through the wet alley, breaking into color on the pavement. The corridor glows for strangers who have already turned its corners.",
           "alt": "A narrow wet alley recedes beneath dense vertical neon signs and colored reflections at night.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-a952491c15a57135",
           "title": "Layered Current",
-          "prose": "Warm and cool planes press across one compact threshold, the doorway half-revealed by reflection. Illumination does not clarify the street; it grants complexity a visible surface.",
+          "prose": "Neon words overlap above a narrow doorway until invitation becomes noise. Red, green, and blue warmth gather around an entrance no one crosses.",
           "alt": "Layered neon signs, reflected colors, and a doorway overlap in a compact nighttime streetscape.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-cf68dcaa5692c929",
           "title": "Hotel Signal",
-          "prose": "Red traffic crosses wet asphalt beneath white letters edged in red. Rain joins motion to reflection, while the upright hotel sign refuses the lateral pull.",
+          "prose": "A hotel sign keeps its white vertical promise above rain-black pavement. Red traffic trails pass beneath, checking in nowhere and leaving brightness behind.",
           "alt": "Red traffic light trails cross wet pavement beneath a vertical white hotel sign outlined in red.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-3ad8f6acdf4a6eed",
           "title": "Forked Horizon",
-          "prose": "White branches divide the dark sky above a patient grid of windows. River light receives the shock at another tempo, spreading duration beneath the instant.",
+          "prose": "Lightning forks over the distant city and river, pale enough to erase the horizon. Thousands of steady windows wait below one unrepeatable charge.",
           "alt": "Several lightning branches spread above a nighttime city grid and river beneath dark clouds.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-a546c31f139a70a4",
           "title": "Walker in the Circuit",
-          "prose": "Far inside the neon corridor, one pedestrian supplies the smallest unit of scale. Red, blue, and white light continue past the body, conducting solitude without enclosing it.",
+          "prose": "A small walker enters the wet alley beneath signs bright with competing names. The circuit surrounds the body but cannot illuminate where it is going.",
           "alt": "A small pedestrian walks through a wet narrow alley lined with colorful neon signs.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-b6c010254e7a47c9",
           "title": "Ground Strike",
-          "prose": "Lightning descends with the precision of drawn geometry, yet nothing below controls its line. Bridge and city absorb the rupture into their accumulated lights.",
+          "prose": "A branching bolt touches down beyond the suspension bridge while the city grid burns steadily below. For one instant, infrastructure appears fragile beside weather.",
           "alt": "A branching lightning bolt strikes above a lit suspension bridge and dense nighttime city grid.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-602754a62e8541db",
           "title": "Hotel Current",
-          "prose": "One vertical word anchors the façade while white and amber trails cross below. Fixed language and passing light meet briefly, each defining the other’s direction.",
+          "prose": "White and amber trails slide below the hotel’s red outline. The building keeps announcing shelter while the street carries everyone past its door.",
           "alt": "White and amber traffic trails pass below a vertical hotel sign on a dark city façade.",
           "sequenceRole": "release"
         }
@@ -723,7 +723,7 @@
       "slug": "rooms-after-people",
       "title": "Rooms After People",
       "subtitle": "Vacancy retaining the shape of departed lives.",
-      "synopsis": "Darkness gathers around emptied rooms, where thresholds, reflections, and unattended objects keep rehearsing the shapes of those who have gone.",
+      "synopsis": "Storefronts, corridors, shrines, and counters retain the arrangement of lives that have stepped just outside the frame.",
       "essay": "Departure has no clean edge. It lingers as green darkness around one passing figure, as wet pavement waiting beneath a web of wires, as snow laid across a stilled motorbike. One lit balcony then makes solitude feel architectural: a life reduced to a small interval inside repeating rails. Mirrors refuse a stable account, breaking ornament into incompatible versions of the same interior. After that fracture, human bodies vanish, but their scale remains. Cups attend an empty counter; vermilion gates protect an unclaimed glow; a rectangle of sun crosses timber and stone, measuring the duration of silence. These rooms are not empty in any simple sense. They have absorbed posture, appetite, arrival, and retreat. Light serves as their memory, not a record of who stood where, but a tender pressure on the places that could receive us again.",
       "tags": [
         "interiors",
@@ -742,56 +742,56 @@
         {
           "assetId": "am-f072aa931df56bf5",
           "title": "Figures Under Green",
-          "prose": "Green-black night presses around one passing silhouette while a modest window keeps its square of warmth. How little of us remains visible; how much the surrounding dark remembers.",
+          "prose": "A passerby becomes a dark interruption before the green storefront, caught between two windows of warmer light. The room remains visible after the figure leaves it.",
           "alt": "One silhouetted person walks past a glowing storefront window on a dark green nighttime street.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-03c247475f40ba3b",
           "title": "Alley Without Footsteps",
-          "prose": "Wet pavement draws borrowed light beneath a nervous web of wires. With no footsteps to settle it, the alley feels suspended between invitation and refusal.",
+          "prose": "Wet stones lead through an alley of hanging wires and closed doors. Lamps continue their patient work for footsteps that do not arrive.",
           "alt": "An empty wet alley at night contains hanging wires, layered signs, teal shadows, and reflected light.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-a11f713aba363b4a",
           "title": "Closed for Weather",
-          "prose": "Snow gathers around the waiting motorbike and closes the storefront in blue-gray quiet. Commerce has withdrawn; weather draws a softer boundary no lock could make.",
+          "prose": "Snow rests on a motorbike before the shuttered shop, muting machine and doorway alike. Nothing has vanished; everything has been temporarily abandoned to weather.",
           "alt": "A snow-covered motorbike stands before a closed storefront rendered in muted teal and gray tones.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-c24619aa3deb0966",
           "title": "One Light Between Floors",
-          "prose": "Repeating rails darken into a vast notation around one distant figure. Solitude here is not emptiness, but a single human measure confronting a structure without end.",
+          "prose": "One silhouette stands between repeating balconies under sparse blue lights. The building offers many rooms, yet the figure occupies only the narrow space between them.",
           "alt": "A small silhouetted figure stands among repeating interior balconies lit by sparse cool blue lights.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-c5d5bdc41048b858",
           "title": "The Room Splinters",
-          "prose": "Mirrors break ornament into rival truths, each angle lucid and incomplete. The room can no longer contain one version of itself, and perhaps neither can memory.",
+          "prose": "Mirrors divide the ornate interior into black and silver fragments. The room survives in pieces, each angle preserving a different absence.",
           "alt": "Black-and-white mirrors fracture an ornate interior into overlapping triangular planes and contrasting tonal fields.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-83552e881d7ffcac",
           "title": "Counter After Closing",
-          "prose": "Lamplight attends the vessels and stools with undiminished care. Order survives its users, lending the vacant counter the intimate ache of a sentence left open.",
+          "prose": "After closing, the wooden counter still holds vessels, plants, and a warm lamp. Empty stools face the careful arrangement left behind.",
           "alt": "An empty wooden shop counter glows at night, surrounded by vessels, stools, shelves, and plants.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-805d011440f41af2",
           "title": "Rooms Within Gates",
-          "prose": "Vermilion frames repeat toward an amber interior, each threshold narrowing the promise of arrival. The empty center asks whether entrance is ever the same as access.",
+          "prose": "Vermilion gates frame a bright inner shrine beyond stone rails. The empty passage feels recently crossed, its warmth waiting without evidence of return.",
           "alt": "Empty vermilion gates and stone rails frame a warmly lit inner shrine along a narrow path.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-c3d36a9647cbed64",
           "title": "Sunlit Vacancy",
-          "prose": "Hard sunlight crosses stone and timber but cannot enter the black doorway. Illumination reveals the room’s surfaces while deepening the mystery of whom it awaits.",
+          "prose": "A dark doorway opens onto timber and stone cut by hard sunlight. The vacant courtyard receives the afternoon with no one there to disturb it.",
           "alt": "Dark doorway frames an empty wooden courtyard where hard sunlight falls across stone and timber.",
           "sequenceRole": "release"
         }
@@ -801,7 +801,7 @@
       "slug": "writing-on-the-surface",
       "title": "Writing on the Surface",
       "subtitle": "Walls, signs, and cities learning to speak.",
-      "synopsis": "Paint, weather, commerce, and passage inscribe the city together, leaving every surface legible as both statement and revision.",
+      "synopsis": "Posters, signs, paint, and inscriptions accumulate across façades, leaving messages partly erased by commerce, weather, and time.",
       "essay": "No surface speaks alone. Posters gather beneath snow; signs press against windows, fire escapes, shutters, and old paint. Each mark arrives with confidence, yet time places another hand over it. The pale storefronts introduce restraint, spacing their doors like pauses, before a dark roofline meets an orange-lit façade and contrasting structures share one uneasy margin. Rows of calligraphy then exceed individual reading and enter the body as cadence. Red beams answer with heavier strokes; pipes and awnings carry the line uphill through a narrow alley. Finally, a high view sets vertical signage against bodies dissolving through wet brightness. The street composes and erases itself at once. The city here resembles a page only because both resist completion. Weather edits ownership, use revises design, and movement unsettles every fixed claim. Reading such surfaces means accepting that meaning may reside less in any single message than in the friction among them.",
       "tags": [
         "language",
@@ -820,56 +820,56 @@
         {
           "assetId": "am-bfaeab87cbce15f6",
           "title": "Snow Revises the Wall",
-          "prose": "Snow attempts a white revision, yet posters, stickers, and several red messages insist through it. Public memory survives not by staying clear, but by accumulating interference.",
+          "prose": "Snow crosses a wall dense with posters and stickers while one red sign persists. Every message competes with weather, and weather is winning slowly.",
           "alt": "A snowy storefront wall is covered with posters and stickers around a small bright red neon sign.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-57b7a5ad4ed3aafd",
           "title": "Facade as Sentence",
-          "prose": "Signs, windows, painted marks, and iron stairs crowd the façade without surrendering its order. The building reads like thought under pressure: layered, amended, still coherent.",
+          "prose": "Fire escape, grocery sign, graffiti, and old masonry share the same snowy façade. No single voice owns the wall long enough to finish its sentence.",
           "alt": "A snowy grocery storefront combines a fire escape, signs, painted marks, windows, and green-red lights.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-1c20ed13cf269e0c",
           "title": "Facade as Measure",
-          "prose": "Pale rectangles pace the street in shutters, columns, and doors. Their restraint offers a quieter alphabet, where intervals matter as much as anything written upon them.",
+          "prose": "Japanese signs divide the pale storefront into names, shutters, and windows. The façade reads like a ledger after business has withdrawn behind it.",
           "alt": "Pale storefront facade with Japanese signs, dark shutters, windows, doors, and blue-gray structural columns.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-de51ec92b01ed78d",
           "title": "Old Roof, New Light",
-          "prose": "Dark roof tiles meet an orange-lit façade beneath evening blue. Weight and radiance share one compound without resolving the tension between continuity and change.",
+          "prose": "Dark traditional roofs face one orange-lit wall at evening. Old lines and new brightness meet across the courtyard without agreeing on which will remain.",
           "alt": "Traditional dark roofs and trees face a brightly lit orange building under an evening sky.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-dbb339fb3d245e65",
           "title": "Language Becomes Pattern",
-          "prose": "Repeated calligraphy loosens from individual words and enters the eye as rhythm. Meaning remains near, but pattern reaches us first, before translation can establish distance.",
+          "prose": "Black calligraphy repeats across rows of white lanterns until language becomes rhythm. Individual names survive inside the pattern, legible and nearly lost at once.",
           "alt": "Rows of white paper lanterns carry dense black calligraphy in a repeating rectangular pattern.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-a6a679bb3f96bb25",
           "title": "Inscribed Red",
-          "prose": "Red beams cut across green foliage with the authority of underlining. Black inscriptions descend the uprights, binding passage to language and structure to memory.",
+          "prose": "Black inscriptions descend the cropped red gate against green trees. The words mark an entrance whose destination remains outside the photograph.",
           "alt": "Cropped red gate with black vertical inscriptions stands against dense green trees and pale sky.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-4a1448ea4903f42e",
           "title": "Alley Notation",
-          "prose": "Blue walls, amber planes, pipes, and awnings compress around the rising lane. Every practical addition redirects the eye, composing beauty from necessity’s revisions.",
+          "prose": "Blue and amber walls narrow around an uphill lane crossed by pipes and awnings. The alley writes direction through repairs, shadows, and turns.",
           "alt": "Narrow uphill alley winds between blue, amber, and dark walls with pipes, doors, and awnings.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-97b6795a384b3004",
           "title": "City as Page",
-          "prose": "Neon stands upright while blurred bodies cross the wet brightness below. From this height, the city resembles a page still being written by those passing through.",
+          "prose": "Vertical signs fill the night above a bright pedestrian street, while figures blur across the crossing. The city becomes a page revised by every passing body.",
           "alt": "Elevated nighttime view of a bright pedestrian street lined with vertical signs and blurred walking figures.",
           "sequenceRole": "release"
         }
@@ -879,7 +879,7 @@
       "slug": "old-forms-moving-time",
       "title": "Old Forms, Moving Time",
       "subtitle": "History held between endurance and passing weather.",
-      "synopsis": "Monuments endure by changing: blur, weather, shadow, crowds, and electric light loosen stone from certainty and return it to lived time.",
+      "synopsis": "Monuments and sacred passages endure inside blur, crowds, shadow, and weather, their permanence continually revised by the present.",
       "essay": "Stone enters this room already unsteady. A white monument drifts at the edge of recognition, less an object than the mind’s imperfect retrieval of one. Sunlight then divides repeating gates into intervals of flame and darkness. Farther on, a solitary walker descends between tiled roofs toward a hazed skyline, carrying centuries along the same slope. Carved details surface from blackness; what shadow withholds exerts its own pressure. An equestrian figure keeps its official posture while the crowd below dissolves into current. Human silhouettes return among golden columns, then narrow to one small body beneath an illuminated gate. The final lane offers no figure at all, only a pagoda, storm cloud, and one electric star. Continuity here does not mean immunity from change. These forms persist because every encounter alters their scale: the body passes, light cuts across, weather bears down, and memory supplies what the frame cannot keep.",
       "tags": [
         "history",
@@ -898,56 +898,56 @@
         {
           "assetId": "am-6fd4d56a70bf2976",
           "title": "Monument as Afterimage",
-          "prose": "Motion releases the white monument from perfect recognition. Its domes and towers persist like a memory revisited: unmistakable in feeling, unstable at every edge.",
+          "prose": "The white dome and four minarets rise through a soft blur above dark trees. The monument appears less like stone than something recalled imperfectly.",
           "alt": "A white domed monument and four minarets appear softly blurred above dark trees and lawn.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-2213e61b7e6559e1",
           "title": "Gates Holding Fire",
-          "prose": "Sunlit orange and deep shadow alternate down the empty passage. Repetition promises permanence, yet each step would encounter a different temperature of time.",
+          "prose": "Orange gates repeat through patterned sun and deep shade, holding fire along an empty path. Their endurance is measured by footsteps absent from the frame.",
           "alt": "A long passage of orange gates contains patterned sunlight, deep shadows, and an empty stone path.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-9dd88efd08f3e65b",
           "title": "Between Two Centuries",
-          "prose": "One walker descends between dark tiled roofs toward towers dissolved in haze. The slope joins two centuries without reconciling them; passage supplies the only bridge.",
+          "prose": "A lone walker moves between tiled roofs toward towers fading in haze. Centuries share the same descending street, though only one body connects them.",
           "alt": "A lone walker moves between traditional tiled roofs toward a distant modern skyline in haze.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-f1ea864f1945699d",
           "title": "Fragments in Amber",
-          "prose": "Amber edges rescue carved columns from surrounding blackness. Shadow and cropping refuse a complete account, giving imagination room to continue beyond the visible frame.",
+          "prose": "Carved columns emerge from blackness under amber side light, each fragment carrying more detail than the room can reveal. History arrives incomplete by necessity.",
           "alt": "Carved stone columns and arches emerge from deep black shadow under amber side light.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-3ebecc22942c2be4",
           "title": "History Standing Still",
-          "prose": "Above the crowd’s blurred current, the mounted figure retains a bright, fixed posture. Official memory prefers stillness; lived time keeps refusing the arrangement.",
+          "prose": "The equestrian monument remains sharp above a crowd dissolved by motion. Stone keeps its pose while public time passes through the square below.",
           "alt": "A bright equestrian monument stands above a motion-blurred crowd in a dark monochrome public space.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-1e5f9d4cfb16898b",
           "title": "The Crowd Becomes Shadow",
-          "prose": "Golden pillars divide the visitors into a moving frieze of shadow. Architecture lends them rhythm, while their passing returns human time to inherited geometry.",
+          "prose": "Visitors gather as silhouettes between ornate columns and white openings. The old structure holds their shadows briefly, then releases them into the day.",
           "alt": "Silhouetted visitors gather between ornate columns and bright openings in a gold-lit historic structure.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-640f0065d310b5b5",
           "title": "The Last Figure",
-          "prose": "Dense color rises from blackness around one small figure beneath the gate. Splendor enlarges the passage, yet the lone body gives it consequence.",
+          "prose": "A richly colored gate rises from darkness above one final figure. Ornament outlives scale here, leaving the person almost outside the building’s time.",
           "alt": "A lone figure stands beneath a richly illuminated vertical gate surrounded by deep darkness.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-61ec236b9e557eb6",
           "title": "Street Beneath the Storm",
-          "prose": "Storm cloud bears down on the empty lane while one star of electric light resists it. Beyond, the pagoda waits where endurance and exposure meet.",
+          "prose": "An empty street leads toward a pagoda beneath heavy clouds, one lamp breaking into a star. The old roof waits under weather with no witness nearby.",
           "alt": "A monochrome empty street leads toward a pagoda beneath storm clouds and one bright starburst.",
           "sequenceRole": "release"
         }
@@ -957,7 +957,7 @@
       "slug": "air-after-pressure",
       "title": "Air After Pressure",
       "subtitle": "Distance returning after the world’s compression.",
-      "synopsis": "Space returns by degrees, until water, weather, and distant light teach pressure to loosen without pretending it has disappeared.",
+      "synopsis": "Distance returns across lakes, dunes, towers, and mountains, opening the frame while leaving unease at its farthest edge.",
       "essay": "Release begins cautiously, with two small walkers balanced between water and cloud. Gold foliage offers a corridor, but its destination remains concealed; the path grants movement, not certainty. Human scale then recedes. Dunes register wind in bands of amber and black, while a blue tower nearly surrenders its edges to white air. Pressure returns over the water: a storm front lowers above the minute wheel and pier, reminding us that openness can still feel immense. Warm village lights gather beneath a mountain, neither conquering the dark nor lost within it. Next, the city contracts to a thin seam under rain. Only then does the final mountain emerge, snow-bright against black ground, with small clouds free around its shoulders. Nothing has been resolved; the pressure has merely found a larger vessel. Distance offers the eye what reflection sometimes offers the self: enough room for a burden to change shape without requiring it to vanish.",
       "tags": [
         "distance",
@@ -976,56 +976,56 @@
         {
           "assetId": "am-1ccb18b7185ac456",
           "title": "The First Clearing",
-          "prose": "Two walkers occupy the slender margin between reflective water and clouded mountain. Their smallness is not defeat; it is the measure that brings vastness within human reach.",
+          "prose": "Two hikers cross a thin green shore between still water and clouded mountains. The clearing is immense, yet their path remains a narrow decision.",
           "alt": "Two distant hikers cross a narrow grassy shore beside a reflective alpine lake and clouded mountain.",
           "sequenceRole": "threshold"
         },
         {
           "assetId": "am-521797f1c77c15a4",
           "title": "Gold Corridor",
-          "prose": "Amber trees gather over the solitary walker, making a passage from light itself. The symmetry directs the body forward while keeping its destination beyond sight.",
+          "prose": "One person walks beneath a corridor of gold trees, centered inside long shadows. Autumn opens ahead while the dark road keeps what has passed behind.",
           "alt": "A lone person walks down a symmetrical tree-lined path beneath a dense golden autumn canopy.",
           "sequenceRole": "development-1"
         },
         {
           "assetId": "am-c260de4945be81b7",
           "title": "Land Made of Light",
-          "prose": "Raking sun gives the dunes an austere grammar of gold and black. Wind has written every curve, then left no signature except change.",
+          "prose": "Dunes carry amber ridges toward a pale horizon, each curve followed by shadow. The open land feels endless because no footprint offers a return.",
           "alt": "Layered desert dunes form repeating golden curves and dark shadows beneath a pale open sky.",
           "sequenceRole": "development-2"
         },
         {
           "assetId": "am-6feab60ce435bd7f",
           "title": "Tower Nearly Gone",
-          "prose": "White cloud takes the blue tower apart from its edges inward. Mass approaches pure atmosphere, leaving ambition suspended between presence and erasure.",
+          "prose": "A blue tower rises into white cloud until its upper edges nearly disappear. Height becomes a form of leaving, accomplished without movement.",
           "alt": "A slender blue skyscraper is partly dissolved by bright white cloud and a high-key sky.",
           "sequenceRole": "development-3"
         },
         {
           "assetId": "am-d0df354c843a79ff",
           "title": "Weather at the Pier",
-          "prose": "Under the descending storm shelf, the wheel and pier contract to fragile marks. Open water offers no escape from pressure; it merely reveals its scale.",
+          "prose": "A ferris wheel glows at the edge of the pier beneath a vast storm front. Pleasure keeps its small circle while weather closes over the water.",
           "alt": "A ferris wheel and pier sit beneath a massive dark storm front over open water.",
           "sequenceRole": "hinge"
         },
         {
           "assetId": "am-aa3a115ac0f3ec3d",
           "title": "Lights Under the Mountain",
-          "prose": "Warm lights collect at the mountain’s foot without challenging its darkness. From a distance, habitation resembles a quiet answer to immensity rather than its conquest.",
+          "prose": "Village lights collect below the dark mountain at blue hour. The warm streets seem near enough to enter, though the peaks keep every approach in scale.",
           "alt": "A mountain village glows at dusk beneath steep dark peaks and a cool blue evening sky.",
           "sequenceRole": "echo-1"
         },
         {
           "assetId": "am-664e0e1aa184cec8",
           "title": "Skyline Dissolving",
-          "prose": "Rain absorbs the towers until the city survives only as a dark seam. Density relinquishes its detail, and the horizon learns to breathe through uncertainty.",
+          "prose": "Rain and mist lower over the monochrome skyline until towers become faint vertical stains. The city remains below, breathing through almost no visible air.",
           "alt": "Monochrome city skyline dissolves into layered rain clouds and mist beneath a dark sky.",
           "sequenceRole": "echo-2"
         },
         {
           "assetId": "am-fa65496b8b41999a",
           "title": "Mountain After Noise",
-          "prose": "Snow lifts the mountain from black ground with startling clarity. Small clouds cross its shoulders; after so much compression, distance returns as a form of mercy.",
+          "prose": "A snow-covered mountain rises from black land between isolated clouds. After the crowded rooms and electric streets, silence arrives with its own pressure.",
           "alt": "Monochrome snow-covered mountain rises from dark land between small drifting clouds and black sky.",
           "sequenceRole": "release"
         }

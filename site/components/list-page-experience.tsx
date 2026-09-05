@@ -7,7 +7,7 @@ import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { InfiniteVerticalSlider } from "@/components/infinite-vertical-slider";
 import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
-import { ResponsivePhoto } from "@/components/responsive-photo";
+import { DecodedBackground } from "@/components/decoded-background";
 
 type ListItem = {
   collection: {
@@ -30,9 +30,7 @@ export function ListPageExperience({
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
   const setMobileTitle = useUIStore((state) => state.setMobileTitle);
-  const [displayedIndex, setDisplayedIndex] = useState(0);
   const activeItem = items[activeIndex] ?? items[0];
-  const displayedItem = items[displayedIndex] ?? items[0];
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
@@ -46,28 +44,10 @@ export function ListPageExperience({
     setMobileTitle(activeItem.collection.title);
   }, [activeIndex, activeItem, setMobileTitle, setNumber]);
 
-  useEffect(() => {
-    const timeout = window.setTimeout(() => {
-      setDisplayedIndex(activeIndex);
-    }, 96);
-
-    return () => window.clearTimeout(timeout);
-  }, [activeIndex]);
-
   return (
     <main className="list-page-experience">
-      {displayedItem ? (
-        <div className="list-page-experience__background">
-          <ResponsivePhoto
-            key={displayedItem.cover.id}
-            asset={displayedItem.cover}
-            alt={displayedItem.cover.alt}
-            variants={["hero"]}
-            sizes="100vw"
-            eager
-            fetchPriority="high"
-          />
-        </div>
+      {activeItem ? (
+        <DecodedBackground asset={activeItem.cover} className="list-page-experience__background" />
       ) : null}
       <PortfolioModeBar mode="list" showZoom={false} />
       <div className="list-page-experience__mask" />

@@ -19,7 +19,6 @@
     "next-transition-router": "^0.2.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "split-type": "^0.3.4",
     "zustand": "^5.0.11"
   },
   "devDependencies": {

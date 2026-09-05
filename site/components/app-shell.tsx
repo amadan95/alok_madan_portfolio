@@ -15,6 +15,7 @@ import { SiteHeaderChrome } from "@/components/site-header-chrome";
 import { SiteMobileNav } from "@/components/site-mobile-nav";
 
 const THEME_STORAGE_KEY = "portfolio-theme";
+const INTRO_SESSION_KEY = "portfolio-intro-seen";
 
 function readStoredTheme() {
   try {
@@ -29,6 +30,14 @@ function storeTheme(theme: "dark" | "light") {
     window.localStorage?.setItem(THEME_STORAGE_KEY, theme);
   } catch {
     // Theme switching still works when storage is blocked or unavailable.
+  }
+}
+
+function introWasSeen() {
+  try {
+    return window.sessionStorage?.getItem(INTRO_SESSION_KEY) === "true";
+  } catch {
+    return false;
   }
 }
 
@@ -81,7 +90,7 @@ export function AppShell({
     if (storedTheme === "dark") {
       setIsDarkMode(true);
     }
-    setHideIntro(pathname !== "/");
+    setHideIntro(pathname !== "/" || introWasSeen());
   }, [pathname, setHideIntro, setIsDarkMode]);
 
   useEffect(() => {
@@ -119,7 +128,7 @@ export function AppShell({
 
         const tween = gsap.to(stageRef.current, {
           autoAlpha: 0,
-          duration: 0.28,
+          duration: 0.2,
           ease: "power2.out",
           onComplete: next,
         });
@@ -137,7 +146,7 @@ export function AppShell({
           { autoAlpha: 0 },
           {
             autoAlpha: 1,
-            duration: 0.42,
+            duration: 0.28,
             ease: "power2.out",
             clearProps: "opacity,visibility",
             onComplete: next,
@@ -155,7 +164,7 @@ export function AppShell({
         {showHeader ? <SiteHeaderChrome routeKind={routeKind} siteMeta={siteMeta} /> : null}
         <DarkLightSwitch routeKind={routeKind} />
         {hasMounted && (routeKind !== "home" || hideIntro) ? <SiteMobileNav routeKind={routeKind} /> : null}
-        {hasMounted && routeKind === "home" ? (
+        {routeKind === "home" ? (
           <IntroOverlay
             slides={introSlides}
             siteMeta={siteMeta}

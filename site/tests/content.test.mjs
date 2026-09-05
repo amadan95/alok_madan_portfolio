@@ -55,6 +55,14 @@ test("every collection preserves authored membership and copy contracts", () => 
   }
 });
 
+test("the revised editorial passages are distinct and image-specific", () => {
+  assert.equal(new Set(selected.map((image) => image.prose)).size, 104);
+  for (const image of selected) {
+    assert.notEqual(image.prose, image.alt, image.title);
+    assert.doesNotMatch(image.prose, /\b(?:photo|photograph|image) shows\b/iu, image.title);
+  }
+});
+
 test("covers, previews, intro, and responsive variants resolve exactly", () => {
   assert.ok(manifest.introPhotoIds.length > 0 && manifest.introPhotoIds.length <= 12);
   assert.equal(new Set(manifest.introPhotoIds).size, manifest.introPhotoIds.length);

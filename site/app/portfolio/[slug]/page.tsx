@@ -41,5 +41,10 @@ export default async function PortfolioDetailPage({
 
   const images = getCollectionImages(collection);
 
-  return <ProjectDetailExperience collection={collection} images={images} />;
+  return (
+    <ProjectDetailExperience
+      collection={{ slug: collection.slug, title: collection.title, synopsis: collection.synopsis }}
+      images={images}
+    />
+  );
 }

@@ -1,11 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import type { CSSProperties, ImgHTMLAttributes } from "react";
 import type { AssetVariantKey, AssetVariantSource, DisplayAsset } from "@/lib/types";
-
-const TRANSPARENT_PIXEL =
-  "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=";
 
 type ResponsivePhotoProps = {
   asset: DisplayAsset;
@@ -51,68 +48,41 @@ export function ResponsivePhoto({
   sizes,
   eager = false,
   fetchPriority = "auto",
-  rootMargin = "150% 0px",
-  observerRoot = null,
   pictureClassName,
   imgClassName,
   style,
   imgProps,
 }: ResponsivePhotoProps) {
-  const pictureRef = useRef<HTMLPictureElement | null>(null);
-  const [shouldLoad, setShouldLoad] = useState(eager);
+  const [failed, setFailed] = useState(false);
   const sources = useMemo(() => dedupeVariantSources(asset, variants), [asset, variants]);
-
-  useEffect(() => {
-    if (eager || shouldLoad || !pictureRef.current) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting || entry.intersectionRatio > 0)) {
-          setShouldLoad(true);
-        }
-      },
-      {
-        root: observerRoot,
-        rootMargin,
-        threshold: 0.01,
-      },
-    );
-
-    observer.observe(pictureRef.current);
-    return () => observer.disconnect();
-  }, [eager, observerRoot, rootMargin, shouldLoad]);
-
-  const activeSources = shouldLoad || eager ? sources : [];
-  const fallbackSource = activeSources[activeSources.length - 1] ?? sources[sources.length - 1];
-  const webpSrcSet =
-    activeSources.length > 0 ? activeSources.map((variant) => `${variant.webp} ${variant.width}w`).join(", ") : undefined;
-  const jpegSrcSet =
-    activeSources.length > 0 ? activeSources.map((variant) => `${variant.jpeg} ${variant.width}w`).join(", ") : undefined;
+  const fallbackSource = sources[sources.length - 1] ?? asset.variants.thumb;
+  const webpSrcSet = sources.map((variant) => `${variant.webp} ${variant.width}w`).join(", ");
+  const jpegSrcSet = sources.map((variant) => `${variant.jpeg} ${variant.width}w`).join(", ");
 
   return (
     <picture
-      ref={pictureRef}
       className={pictureClassName}
+      data-image-error={failed ? "true" : undefined}
       style={{
-        backgroundColor: asset.averageColor,
         ...style,
       }}
     >
-      {webpSrcSet ? <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} /> : null}
-      {jpegSrcSet ? <source type="image/jpeg" srcSet={jpegSrcSet} sizes={sizes} /> : null}
+      <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
+      <source type="image/jpeg" srcSet={jpegSrcSet} sizes={sizes} />
       <img
         {...imgProps}
         alt={alt}
-        src={activeSources.length > 0 && fallbackSource ? fallbackSource.jpeg : TRANSPARENT_PIXEL}
+        src={fallbackSource.jpeg}
         width={asset.width}
         height={asset.height}
         loading={eager ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={eager ? fetchPriority : "auto"}
-        sizes={activeSources.length > 0 ? sizes : undefined}
+        fetchPriority={fetchPriority}
+        sizes={sizes}
         className={imgClassName}
+        onError={() => {
+          setFailed(true);
+        }}
       />
     </picture>
   );

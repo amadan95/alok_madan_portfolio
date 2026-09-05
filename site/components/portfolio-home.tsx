@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitType from "split-type";
 import type { CuratedDisplayImage, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
@@ -105,8 +104,6 @@ export function PortfolioHome({
     const sections = Array.from(
       containerRef.current?.querySelectorAll<HTMLElement>("[data-home-series]") ?? [],
     );
-    const splits: SplitType[] = [];
-
     if (reducedMotion) {
       sections.forEach((section) => {
         const title = section.querySelector<HTMLElement>("[data-project-title]");
@@ -125,19 +122,8 @@ export function PortfolioHome({
       sections.forEach((section) => {
         const title = section.querySelector<HTMLElement>("[data-project-title]");
         const bodyNodes = Array.from(section.querySelectorAll<HTMLElement>("[data-project-body]"));
-        const bodyCharacters: HTMLElement[] = [];
-
-        if (title) {
-          gsap.set(title, { autoAlpha: 0, y: 22 });
-        }
-
-        bodyNodes.forEach((node) => {
-          const split = new SplitType(node, { types: "chars,words" });
-          const characters = split.chars ?? [];
-          splits.push(split);
-          gsap.set(characters, { opacity: 0 });
-          bodyCharacters.push(...characters);
-        });
+        const copy = [title, ...bodyNodes].filter((node): node is HTMLElement => Boolean(node));
+        gsap.set(copy, { autoAlpha: 0, y: 14 });
 
         const timeline = gsap.timeline({
           scrollTrigger: {
@@ -147,32 +133,20 @@ export function PortfolioHome({
           },
         });
 
-        if (title) {
-          timeline.to(title, {
+        if (copy.length > 0) {
+          timeline.to(copy, {
             autoAlpha: 1,
             y: 0,
-            duration: 0.48,
-            ease: "power2.out",
+            duration: 0.28,
+            stagger: 0.04,
+            ease: "power3.out",
           });
-        }
-
-        if (bodyCharacters.length > 0) {
-          timeline.to(
-            bodyCharacters,
-            {
-              opacity: 1,
-              duration: 0,
-              stagger: 0.007,
-            },
-            title ? "-=0.16" : 0,
-          );
         }
       });
     }, containerRef);
 
     return () => {
       context.revert();
-      splits.forEach((split) => split.revert());
     };
   }, [items, reducedMotion]);
 
@@ -216,26 +190,20 @@ export function PortfolioHome({
                 className="portfolio-home__rail"
                 aria-label={`Open ${collection.title}`}
               >
-                {displayedPreviews.map((asset, previewIndex) => (
+                {displayedPreviews.map((asset) => (
                   <figure
                     key={asset.id}
                     className="portfolio-home__frame"
                     style={{
                       flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%`,
+                      aspectRatio: asset.aspectRatio,
                     }}
                   >
                     <ResponsivePhoto
                       asset={asset}
                       alt={asset.alt}
-                      variants={["rail", "hero"]}
-                      sizes="(min-width: 1024px) 28vw, 92vw"
-                      eager={collection.portfolioIndex === 1 && previewIndex === 0}
-                      fetchPriority={
-                        collection.portfolioIndex === 1 && previewIndex === 0
-                          ? "high"
-                          : "auto"
-                      }
-                      rootMargin="150% 0px"
+                      variants={["thumb", "rail"]}
+                      sizes={zoomLevel === 0 ? "(min-width: 1024px) 72vw, 100vw" : "(min-width: 1024px) 24vw, 92vw"}
                     />
                   </figure>
                 ))}

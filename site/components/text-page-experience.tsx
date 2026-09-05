@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import gsap from "gsap";
-import SplitType from "split-type";
 import type { DisplayAsset, SiteMeta } from "@/lib/types";
 import { splitParagraphs } from "@/lib/utils";
 import { ResponsivePhoto } from "@/components/responsive-photo";
@@ -50,29 +49,14 @@ export function TextPageExperience({
 
   useEffect(() => {
     const targets = [textRef.current, sideRef.current, footerRef.current].filter(Boolean) as HTMLElement[];
-    const splits: SplitType[] = [];
-
-    targets.forEach((target) => {
-      const paragraphs = Array.from(target.querySelectorAll("p, a, span"));
-      if (!paragraphs.length) {
-        return;
-      }
-      gsap.set(target, { autoAlpha: 1 });
-      paragraphs.forEach((paragraph) => {
-        const split = new SplitType(paragraph as HTMLElement, { types: "chars,words" });
-        splits.push(split);
-        gsap.set(split.chars, { opacity: 0 });
-        gsap.to(split.chars, {
-          opacity: 1,
-          delay: 0.15,
-          duration: 0,
-          stagger: 0.006,
-        });
-      });
-    });
+    const animation = gsap.fromTo(
+      targets,
+      { autoAlpha: 0, y: 10 },
+      { autoAlpha: 1, y: 0, duration: 0.28, stagger: 0.05, ease: "power2.out" },
+    );
 
     return () => {
-      splits.forEach((split) => split.revert());
+      animation.kill();
     };
   }, [kind, mainParagraphs, sideParagraphs]);
 

@@ -42,9 +42,9 @@ export function PortfolioModeBar({
               }
               onZoomOut?.();
             }}
-            aria-label="Zoom out"
+            aria-label="Show more photographs per collection"
           >
-            +
+            More
           </button>
           <button
             type="button"
@@ -56,9 +56,9 @@ export function PortfolioModeBar({
               }
               onZoomIn?.();
             }}
-            aria-label="Zoom in"
+            aria-label="Show fewer photographs per collection"
           >
-            -
+            Fewer
           </button>
         </div>
       ) : null}

@@ -40,15 +40,25 @@ test("home, raw, and every collection include their authored content hooks", () 
   const home = readExport("index.html");
   assert.doesNotMatch(home, /data-exhibit-intro=""/);
   assert.match(home, /data-home-series=""/);
+  assert.doesNotMatch(home, />Skip intro</);
+  assert.doesNotMatch(home, /data:image\/gif;base64/);
+  for (const collection of manifest.collections) {
+    assert.ok(home.includes(`/portfolio/${collection.slug}`), collection.slug);
+  }
 
   const raw = readExport("raw.html");
   assert.match(raw, /data-raw-selected-count="104"/);
 
   for (const collection of manifest.collections) {
     const html = readExport(`portfolio/${collection.slug}.html`);
-    assert.match(html, /data-project-essay=""/);
+    assert.doesNotMatch(html, /data-project-essay=""/);
+    assert.doesNotMatch(html, />Collection essay</);
     assert.equal((html.match(/data-project-image=""/g) ?? []).length, 8, collection.slug);
     assert.equal((html.match(/data-mobile-caption=""/g) ?? []).length, 8, collection.slug);
+    assert.match(html, />Collections</);
+    assert.match(html, />Previous</);
+    assert.match(html, />Next</);
+    assert.match(html, /<img[^>]+src="\/_generated\/(?:rail|hero)\//);
     for (const image of collection.images) {
       assert.ok(html.includes(`data-asset-id="${image.assetId}"`), `${collection.slug}:${image.assetId}`);
     }

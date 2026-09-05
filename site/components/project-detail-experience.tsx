@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent as ReactKeyboardEvent } from "react";
+import Link from "next/link";
 import gsap from "gsap";
-import type { CuratedDisplayImage, ExhibitCollection } from "@/lib/types";
+import type { CuratedDisplayImage } from "@/lib/types";
 import { useReducedMotion, useViewportWidth } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { ResponsivePhoto } from "@/components/responsive-photo";
@@ -18,7 +19,7 @@ export function ProjectDetailExperience({
   collection,
   images,
 }: {
-  collection: ExhibitCollection;
+  collection: { slug: string; title: string; synopsis: string };
   images: CuratedDisplayImage[];
 }) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
@@ -32,15 +33,7 @@ export function ProjectDetailExperience({
   const setTitle = useUIStore((state) => state.setTitle);
 
   const activeRailCopy = useMemo<ActiveRailCopy>(() => {
-    if (activeSlideIndex === 0) {
-      return {
-        number: "Collection essay",
-        title: collection.title,
-        prose: collection.synopsis,
-      };
-    }
-
-    const imageIndex = Math.min(activeSlideIndex - 1, Math.max(images.length - 1, 0));
+    const imageIndex = Math.min(activeSlideIndex, Math.max(images.length - 1, 0));
     const image = images[imageIndex];
     return image
       ? {
@@ -49,7 +42,7 @@ export function ProjectDetailExperience({
           prose: image.prose,
         }
       : {
-          number: "Collection essay",
+          number: "01 / 00",
           title: collection.title,
           prose: collection.synopsis,
         };
@@ -138,7 +131,7 @@ export function ProjectDetailExperience({
           nextIndex = 0;
           break;
         case "End":
-          nextIndex = images.length;
+          nextIndex = images.length - 1;
           break;
         case "PageUp":
           nextIndex = activeSlideIndex - 1;
@@ -191,7 +184,7 @@ export function ProjectDetailExperience({
     }
 
     setTitle(collection.title);
-    setNumber(images.length);
+    setNumber(1);
     setActiveProjectSlug(collection.slug);
     setActiveSlideIndex(0);
   }, [
@@ -203,6 +196,10 @@ export function ProjectDetailExperience({
     setNumber,
     setTitle,
   ]);
+
+  useEffect(() => {
+    setNumber(activeSlideIndex + 1);
+  }, [activeSlideIndex, setNumber]);
 
   useEffect(() => {
     const scroller = scrollerRef.current;
@@ -280,7 +277,7 @@ export function ProjectDetailExperience({
     const tween = gsap.fromTo(
       railUpdate,
       { autoAlpha: 0, y: 12 },
-      { autoAlpha: 1, y: 0, duration: 0.38, ease: "power2.out" },
+      { autoAlpha: 1, y: 0, duration: 0.24, ease: "power3.out" },
     );
     return () => {
       tween.revert();
@@ -297,8 +294,6 @@ export function ProjectDetailExperience({
         <div
           ref={railUpdateRef}
           className="project-detail-experience__rail-content"
-          aria-live="polite"
-          aria-atomic="true"
         >
           <p className="project-detail-experience__rail-number">
             {activeRailCopy.number}
@@ -310,6 +305,17 @@ export function ProjectDetailExperience({
             {activeRailCopy.prose}
           </p>
         </div>
+        <nav className="project-detail-experience__navigation" aria-label="Gallery controls">
+          <Link href="/" className="project-detail-experience__return">Collections</Link>
+          <div className="project-detail-experience__step-controls">
+            <button type="button" onClick={() => scrollToSlide(activeSlideIndex - 1)} disabled={activeSlideIndex === 0}>
+              Previous
+            </button>
+            <button type="button" onClick={() => scrollToSlide(activeSlideIndex + 1)} disabled={activeSlideIndex === images.length - 1}>
+              Next
+            </button>
+          </div>
+        </nav>
       </aside>
 
       <div
@@ -320,25 +326,9 @@ export function ProjectDetailExperience({
         onKeyDown={onKeyDown}
       >
         <div className="project-detail-experience__scroller">
-          <section
-            className="project-detail-experience__essay project-detail-experience__frame"
-            data-project-slide=""
-            data-project-essay=""
-            data-slide-index="0"
-            aria-label={`${collection.title} collection essay`}
-            aria-current={activeSlideIndex === 0 ? "true" : undefined}
-          >
-            <div className="project-detail-experience__essay-inner">
-              <p className="project-detail-experience__essay-eyebrow">Collection essay</p>
-              <h1 className="project-detail-experience__essay-title">{collection.title}</h1>
-              <p className="project-detail-experience__essay-synopsis">{collection.synopsis}</p>
-              <p className="project-detail-experience__essay-body">{collection.essay}</p>
-            </div>
-          </section>
-
           {images.map((image, index) => {
             const number = `${String(index + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}`;
-            const slideIndex = index + 1;
+            const slideIndex = index;
 
             return (
               <figure
@@ -355,11 +345,9 @@ export function ProjectDetailExperience({
                   asset={image}
                   alt={image.alt}
                   variants={["rail", "hero"]}
-                  sizes="100vw"
+                  sizes="(min-width: 1024px) calc(100vw - 18rem), 100vw"
                   eager={index === 0}
                   fetchPriority={index === 0 ? "high" : "auto"}
-                  observerRoot={isMobile ? null : scrollerRef.current}
-                  rootMargin={isMobile ? "120% 0px" : "0px 120% 0px 120%"}
                   pictureClassName="project-detail-experience__picture"
                   imgClassName="project-detail-experience__image"
                   imgProps={{
@@ -391,6 +379,11 @@ export function ProjectDetailExperience({
           })}
         </div>
       </div>
+      <nav className="project-detail-experience__mobile-navigation" aria-label="Gallery controls">
+        <Link href="/">Collections</Link>
+        <button type="button" onClick={() => scrollToSlide(activeSlideIndex - 1)} disabled={activeSlideIndex === 0}>Previous</button>
+        <button type="button" onClick={() => scrollToSlide(activeSlideIndex + 1)} disabled={activeSlideIndex === images.length - 1}>Next</button>
+      </nav>
     </main>
   );
 }

@@ -145,9 +145,7 @@ function parseExhibitMetadata(value: unknown, path: string): ExhibitMetadata {
   const title = readString(record.title, `${path}.title`);
   const subtitle = readString(record.subtitle, `${path}.subtitle`);
   const statement = readString(record.statement, `${path}.statement`);
-  if (wordCount(statement) < 80) {
-    fail(`${path}.statement`, "expected a substantive exhibit statement of at least 80 words");
-  }
+  assertWordCount(statement, 12, 30, `${path}.statement`);
 
   return { title, subtitle, statement };
 }
