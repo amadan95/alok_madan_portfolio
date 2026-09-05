@@ -44,7 +44,6 @@ export function RawPageExperience({
   photographerName: string;
 }) {
   const [activeAsset, setActiveAsset] = useState<CuratedDisplayImage | null>(null);
-  const [isPaused, setIsPaused] = useState(false);
   const rows = useMemo(() => buildRows(assets), [assets]);
 
   const handleThumbnailKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
@@ -83,21 +82,13 @@ export function RawPageExperience({
           />
         </div>
       ) : null}
-      <button
-        type="button"
-        className="raw-page-experience__motion-control"
-        aria-pressed={isPaused}
-        onClick={() => setIsPaused((value) => !value)}
-      >
-        {isPaused ? "Play movement" : "Pause movement"}
-      </button>
       <InfiniteVerticalSlider
         items={rows}
         rowHeight={136}
         className="raw-page-experience__slider"
         itemClassName="raw-page-experience__row"
         onActiveChange={() => {}}
-        autoScrollSpeed={isPaused || activeAsset ? 0 : 14}
+        autoScrollSpeed={activeAsset ? 0 : 14}
         maxRenderedRows={12}
         renderRow={(row) => (
           <div
