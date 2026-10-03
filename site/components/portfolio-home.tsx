@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
+import { ScrollTypedSynopsis } from "@/components/scroll-typed-synopsis";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { PortfolioPageEntry, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
@@ -85,31 +86,6 @@ export function PortfolioHome({
     siteMeta.photographer,
   ]);
 
-  useEffect(() => {
-    const bodies = Array.from(containerRef.current?.querySelectorAll<HTMLElement>("[data-project-body]") ?? []);
-    if (reducedMotion || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const context = gsap.context(() => {
-      bodies.forEach((body) => {
-        // Create the reveal before hiding content; failed initialization stays readable.
-        const animation = gsap.to(body, {
-          opacity: 1, y: 0, duration: 0.35, ease: "power3.out", paused: true,
-          onComplete: () => { gsap.set(body, { clearProps: "opacity,transform" }); },
-        });
-        const trigger = ScrollTrigger.create({
-          trigger: body, start: "top 85%", once: true,
-          onEnter: () => { animation.play(); },
-        });
-        if (body.getBoundingClientRect().top <= window.innerHeight * 0.85) {
-          animation.play();
-        } else {
-          gsap.set(body, { opacity: 0, y: 8 });
-        }
-        return trigger;
-      });
-    }, containerRef);
-    return () => context.revert();
-  }, [items, reducedMotion]);
-
   return (
     <main className="portfolio-home" ref={containerRef}>
       <div className="portfolio-home__top-gradient" />
@@ -151,9 +127,7 @@ export function PortfolioHome({
                     >
                       {collection.title}
                     </Link>
-                    <p className="portfolio-home__synopsis" data-project-body="">
-                      {collection.synopsis}
-                    </p>
+                    <ScrollTypedSynopsis text={collection.synopsis} reducedMotion={reducedMotion} />
                   </div>
                 </div>
               </div>

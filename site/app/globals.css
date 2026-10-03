@@ -559,6 +559,17 @@ picture[data-image-error="true"]::after {
   line-height: 1.4;
 }
 
+.scroll-typed-synopsis__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-typed-synopsis [data-typed-character] {
+    visibility: visible !important;
+  }
+}
+
 .portfolio-home__meta-foot {
   display: flex;
   flex-wrap: wrap;
