@@ -78,3 +78,18 @@ test("the export contains exactly the selected responsive files and no private p
   assert.doesNotMatch(textual, /#recycle/);
   assert.doesNotMatch(textual, /\/Users\/alokmadan/);
 });
+
+
+test("homepage rails expose every photograph in authored order with independent controls", () => {
+  const home = readExport("index.html");
+  assert.doesNotMatch(home, />More<|>Fewer</u);
+  const sections = home.split('data-home-series=""').slice(1);
+  assert.equal(sections.length, manifest.collections.length);
+  manifest.collections.forEach((collection, index) => {
+    const section = sections[index];
+    const ids = Array.from(section.matchAll(/data-rail-image="" data-asset-id="([^"]+)"/gu), (match) => match[1]);
+    assert.deepEqual(ids, collection.images.map((image) => image.assetId), collection.slug);
+    assert.equal((section.match(/aria-controls="rail-/gu) ?? []).length, 2, collection.slug);
+    assert.doesNotMatch(section, /<a\b[^>]*>[^<]*<button\b/u);
+  });
+});

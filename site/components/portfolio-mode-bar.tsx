@@ -1,24 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useTransitionRouter } from "next-transition-router";
 import { cn } from "@/lib/utils";
 
-export function PortfolioModeBar({
-  mode,
-  zoomLevel,
-  onZoomIn,
-  onZoomOut,
-  showZoom = true,
-}: {
-  mode: "grid" | "list";
-  zoomLevel?: number;
-  onZoomIn?: () => void;
-  onZoomOut?: () => void;
-  showZoom?: boolean;
-}) {
-  const router = useTransitionRouter();
-
+export function PortfolioModeBar({ mode }: { mode: "grid" | "list" }) {
   return (
     <div className="portfolio-mode-bar">
       <div className="portfolio-mode-bar__links">
@@ -31,37 +16,6 @@ export function PortfolioModeBar({
         </Link>
       </div>
 
-      {showZoom ? (
-        <div className="portfolio-mode-bar__zoom">
-          <button
-            type="button"
-            className={cn("portfolio-mode-bar__button", zoomLevel === 2 && "is-disabled")}
-            onClick={() => {
-              if (zoomLevel === 2) {
-                return;
-              }
-              onZoomOut?.();
-            }}
-            aria-label="Show more photographs per collection"
-          >
-            More
-          </button>
-          <button
-            type="button"
-            className={cn("portfolio-mode-bar__button", zoomLevel === 0 && "is-edge")}
-            onClick={() => {
-              if (zoomLevel === 0 && mode === "grid") {
-                router.push("/list");
-                return;
-              }
-              onZoomIn?.();
-            }}
-            aria-label="Show fewer photographs per collection"
-          >
-            Fewer
-          </button>
-        </div>
-      ) : null}
     </div>
   );
 }

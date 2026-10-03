@@ -66,7 +66,6 @@ export function AppShell({
   const setMoveNavToTop = useUIStore((state) => state.setMoveNavToTop);
   const setScrollPosition = useUIStore((state) => state.setScrollPosition);
   const setTitle = useUIStore((state) => state.setTitle);
-  const setZoomLevel = useUIStore((state) => state.setZoomLevel);
 
   const showHeader =
     routeKind === "home" ||
@@ -108,10 +107,7 @@ export function AppShell({
       setTitle(siteMeta.photographer);
     }
 
-    if (routeKind === "home") {
-      setZoomLevel(1);
-    }
-  }, [hideIntro, routeKind, setIsWhite, setMoveNavToTop, setTitle, setZoomLevel, siteMeta.photographer]);
+  }, [hideIntro, routeKind, setIsWhite, setMoveNavToTop, setTitle, siteMeta.photographer]);
 
   const transitionCallbacks = useMemo(
     () => ({
