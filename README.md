@@ -67,7 +67,7 @@ npm run test:export   # Check the generated static export
 - Category pages support mouse, touch, scroll, visible Previous/Next controls, and arrow-key navigation.
 - The cinematic entrance runs once per browser session and respects reduced-motion preferences.
 - Image passages remain available without hover and use literal, useful alt text separately from the poetic copy.
-- The original sequence, routes, collection names, asset IDs, and source checksums remain stable.
+- Collection routes remain stable. Editorial titles, selected images, and copy are maintained in the manifest; replacement masters receive new checksum-based asset IDs.
 
 ## Deployment
 
