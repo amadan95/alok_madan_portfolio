@@ -4,33 +4,20 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import type { CuratedDisplayImage, SiteMeta } from "@/lib/types";
+import type { PortfolioPageEntry, SiteMeta } from "@/lib/types";
 import { useReducedMotion } from "@/lib/client-hooks";
 import { useUIStore } from "@/lib/ui-store";
 import { formatSeriesIndex } from "@/lib/utils";
 import { PortfolioModeBar } from "@/components/portfolio-mode-bar";
-import { ResponsivePhoto } from "@/components/responsive-photo";
+import { CollectionImageRail } from "@/components/collection-image-rail";
 
 gsap.registerPlugin(ScrollTrigger);
-
-type HomeEntry = {
-  collection: {
-    slug: string;
-    title: string;
-    synopsis: string;
-    tags: string[];
-    portfolioIndex: number;
-    photoCount: number;
-  };
-  cover: CuratedDisplayImage;
-  previews: CuratedDisplayImage[];
-};
 
 export function PortfolioHome({
   items,
   siteMeta,
 }: {
-  items: HomeEntry[];
+  items: PortfolioPageEntry[];
   siteMeta: SiteMeta;
 }) {
   const firstCollection = items[0]?.collection;
@@ -39,12 +26,10 @@ export function PortfolioHome({
   const activeProjectSlug = useUIStore((state) => state.activeProjectSlug);
   const mobileTitle = useUIStore((state) => state.mobileTitle);
   const scrollPosition = useUIStore((state) => state.scrollPosition);
-  const zoomLevel = useUIStore((state) => state.zoomLevel);
   const setActiveProjectSlug = useUIStore((state) => state.setActiveProjectSlug);
   const setMobileTitle = useUIStore((state) => state.setMobileTitle);
   const setNumber = useUIStore((state) => state.setNumber);
   const setTitle = useUIStore((state) => state.setTitle);
-  const setZoomLevel = useUIStore((state) => state.setZoomLevel);
 
   useEffect(() => {
     setTitle(siteMeta.photographer);
@@ -101,66 +86,34 @@ export function PortfolioHome({
   ]);
 
   useEffect(() => {
-    const sections = Array.from(
-      containerRef.current?.querySelectorAll<HTMLElement>("[data-home-series]") ?? [],
-    );
-    if (reducedMotion) {
-      sections.forEach((section) => {
-        const title = section.querySelector<HTMLElement>("[data-project-title]");
-        const bodyNodes = Array.from(section.querySelectorAll<HTMLElement>("[data-project-body]"));
-        if (title) {
-          gsap.set(title, { clearProps: "all" });
-        }
-        bodyNodes.forEach((node) => {
-          gsap.set(node, { clearProps: "all" });
-        });
-      });
-      return;
-    }
-
+    const bodies = Array.from(containerRef.current?.querySelectorAll<HTMLElement>("[data-project-body]") ?? []);
+    if (reducedMotion || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const context = gsap.context(() => {
-      sections.forEach((section) => {
-        const title = section.querySelector<HTMLElement>("[data-project-title]");
-        const bodyNodes = Array.from(section.querySelectorAll<HTMLElement>("[data-project-body]"));
-        const copy = [title, ...bodyNodes].filter((node): node is HTMLElement => Boolean(node));
-        gsap.set(copy, { autoAlpha: 0, y: 14 });
-
-        const timeline = gsap.timeline({
-          scrollTrigger: {
-            trigger: section,
-            start: "top 72%",
-            once: true,
-          },
+      bodies.forEach((body) => {
+        // Create the reveal before hiding content; failed initialization stays readable.
+        const animation = gsap.to(body, {
+          opacity: 1, y: 0, duration: 0.35, ease: "power3.out", paused: true,
+          onComplete: () => { gsap.set(body, { clearProps: "opacity,transform" }); },
         });
-
-        if (copy.length > 0) {
-          timeline.to(copy, {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.28,
-            stagger: 0.04,
-            ease: "power3.out",
-          });
+        const trigger = ScrollTrigger.create({
+          trigger: body, start: "top 85%", once: true,
+          onEnter: () => { animation.play(); },
+        });
+        if (body.getBoundingClientRect().top <= window.innerHeight * 0.85) {
+          animation.play();
+        } else {
+          gsap.set(body, { opacity: 0, y: 8 });
         }
+        return trigger;
       });
     }, containerRef);
-
-    return () => {
-      context.revert();
-    };
+    return () => context.revert();
   }, [items, reducedMotion]);
-
-  const previewCount = zoomLevel === 1 ? 3 : 5;
 
   return (
     <main className="portfolio-home" ref={containerRef}>
       <div className="portfolio-home__top-gradient" />
-      <PortfolioModeBar
-        mode="grid"
-        zoomLevel={zoomLevel}
-        onZoomIn={() => setZoomLevel(Math.max(0, zoomLevel - 1))}
-        onZoomOut={() => setZoomLevel(Math.min(2, zoomLevel + 1))}
-      />
+      <PortfolioModeBar mode="grid" />
       <div className="portfolio-home__mobile-title" data-mobile-project-title="">
         <p>{mobileTitle || siteMeta.photographer}</p>
       </div>
@@ -172,9 +125,7 @@ export function PortfolioHome({
       </aside>
 
       <div className="portfolio-home__content">
-        {items.map(({ collection, cover, previews }) => {
-          const displayedPreviews = zoomLevel === 0 ? [cover] : previews.slice(0, previewCount);
-
+        {items.map(({ collection, images }, index) => {
           return (
             <section
               key={collection.slug}
@@ -185,29 +136,7 @@ export function PortfolioHome({
               data-series-index={collection.portfolioIndex}
               data-project={collection.slug}
             >
-              <Link
-                href={`/portfolio/${collection.slug}`}
-                className="portfolio-home__rail"
-                aria-label={`Open ${collection.title}`}
-              >
-                {displayedPreviews.map((asset) => (
-                  <figure
-                    key={asset.id}
-                    className="portfolio-home__frame"
-                    style={{
-                      flex: `${Math.max(0.7, Math.min(asset.aspectRatio, 1.85))} 1 0%`,
-                      aspectRatio: asset.aspectRatio,
-                    }}
-                  >
-                    <ResponsivePhoto
-                      asset={asset}
-                      alt={asset.alt}
-                      variants={["thumb", "rail"]}
-                      sizes={zoomLevel === 0 ? "(min-width: 1024px) 72vw, 100vw" : "(min-width: 1024px) 24vw, 92vw"}
-                    />
-                  </figure>
-                ))}
-              </Link>
+              <CollectionImageRail slug={collection.slug} title={collection.title} images={images} priority={index === 0} />
 
               <div className="portfolio-home__meta">
                 <div className="portfolio-home__meta-top">

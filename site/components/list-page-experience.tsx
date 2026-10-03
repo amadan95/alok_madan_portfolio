@@ -49,7 +49,7 @@ export function ListPageExperience({
       {activeItem ? (
         <DecodedBackground asset={activeItem.cover} className="list-page-experience__background" />
       ) : null}
-      <PortfolioModeBar mode="list" showZoom={false} />
+      <PortfolioModeBar mode="list" />
       <div className="list-page-experience__mask" />
       <InfiniteVerticalSlider
         items={items}

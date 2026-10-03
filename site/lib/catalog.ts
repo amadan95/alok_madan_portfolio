@@ -170,10 +170,13 @@ export function getIntroSlides(): IntroSlide[] {
 
 export function getPortfolioPageEntries(): PortfolioPageEntry[] {
   return collections.map((collection) => ({
-    collection,
-    cover: getCollectionCover(collection),
-    previews: getPreviewImages(collection),
-    photoCount: collection.photoCount,
+    collection: {
+      slug: collection.slug,
+      title: collection.title,
+      synopsis: collection.synopsis,
+      portfolioIndex: collection.portfolioIndex,
+    },
+    images: getCollectionImages(collection),
   }));
 }
 

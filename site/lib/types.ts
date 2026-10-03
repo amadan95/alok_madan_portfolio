@@ -111,10 +111,8 @@ export interface IntroSlide {
 }
 
 export interface PortfolioPageEntry {
-  collection: CuratedCollection;
-  cover: CuratedDisplayImage;
-  previews: CuratedDisplayImage[];
-  photoCount: number;
+  collection: Pick<CuratedCollection, "slug" | "title" | "synopsis" | "portfolioIndex">;
+  images: CuratedDisplayImage[];
 }
 
 export interface CollectionCoverEntry {

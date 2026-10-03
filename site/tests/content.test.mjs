@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
+import { nextRailOffset } from "../lib/rail-navigation.mjs";
 
 const siteRoot = resolve(import.meta.dirname, "..");
 const manifest = JSON.parse(readFileSync(resolve(siteRoot, "content/exhibit-manifest.json"), "utf8"));
@@ -88,4 +89,19 @@ test("production content contains no private absolute source paths", () => {
     assert.ok(source.masterPath.startsWith("assets/selected/masters/am-"));
     assert.equal(source.masterPath.includes(".."), false);
   }
+});
+
+
+test("rail navigation clamps boundaries, partial positions, and rapid destinations", () => {
+  const offsets = [0, 100, 200, 300, 400, 500, 600, 700];
+  assert.equal(nextRailOffset(offsets, 500, 0, -1), 0);
+  assert.equal(nextRailOffset(offsets, 500, 500, 1), 500);
+  assert.equal(nextRailOffset(offsets, 500, 150, 1), 200);
+  assert.equal(nextRailOffset(offsets, 500, 150, -1), 100);
+  assert.equal(nextRailOffset(offsets, 455, 400, 1), 455);
+  let destination = 0;
+  for (let click = 0; click < 12; click += 1) destination = nextRailOffset(offsets, 500, destination, 1);
+  assert.equal(destination, 500);
+  assert.equal(nextRailOffset([], 0, 0, 1), 0);
+  assert.equal(nextRailOffset([0], 0, 0, -1), 0);
 });

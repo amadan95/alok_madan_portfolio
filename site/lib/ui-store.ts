@@ -2,8 +2,6 @@
 
 import { create } from "zustand";
 
-type ZoomDirection = "in" | "out";
-
 interface UIState {
   hideIntro: boolean;
   isDarkMode: boolean;
@@ -12,10 +10,8 @@ interface UIState {
   mobileTitle: string;
   number: number;
   moveNavToTop: boolean;
-  zoomLevel: number;
   scrollPosition: number;
   activeProjectSlug: string | null;
-  clickZoomDirection: ZoomDirection;
   toggleDarkMode: () => void;
   setHideIntro: (value: boolean) => void;
   setIsDarkMode: (value: boolean) => void;
@@ -24,10 +20,8 @@ interface UIState {
   setMobileTitle: (value: string) => void;
   setNumber: (value: number) => void;
   setMoveNavToTop: (value: boolean) => void;
-  setZoomLevel: (value: number) => void;
   setScrollPosition: (value: number) => void;
   setActiveProjectSlug: (value: string | null) => void;
-  setClickZoomDirection: (value: ZoomDirection) => void;
 }
 
 export const useUIStore = create<UIState>((set) => ({
@@ -38,10 +32,8 @@ export const useUIStore = create<UIState>((set) => ({
   mobileTitle: "",
   number: 1,
   moveNavToTop: false,
-  zoomLevel: 1,
   scrollPosition: 0,
   activeProjectSlug: null,
-  clickZoomDirection: "out",
   toggleDarkMode: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
   setHideIntro: (value) => set({ hideIntro: value }),
   setIsDarkMode: (value) => set({ isDarkMode: value }),
@@ -50,8 +42,6 @@ export const useUIStore = create<UIState>((set) => ({
   setMobileTitle: (value) => set({ mobileTitle: value }),
   setNumber: (value) => set({ number: value }),
   setMoveNavToTop: (value) => set({ moveNavToTop: value }),
-  setZoomLevel: (value) => set({ zoomLevel: value }),
   setScrollPosition: (value) => set({ scrollPosition: value }),
   setActiveProjectSlug: (value) => set({ activeProjectSlug: value }),
-  setClickZoomDirection: (value) => set({ clickZoomDirection: value }),
 }));
