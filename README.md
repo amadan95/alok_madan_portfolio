@@ -1,6 +1,6 @@
 # Alok Madan — Photography Portfolio
 
-A cinematic, static-export photography portfolio for Alok Madan. The site presents 13 collections and 104 photographs through gallery, list, archive, and raw browsing modes.
+A cinematic, static-export photography portfolio for Alok Madan. The site presents 13 collections and 105 photographs through gallery, list, archive, and raw browsing modes.
 
 ## Stack
 

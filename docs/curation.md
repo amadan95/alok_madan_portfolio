@@ -6,7 +6,7 @@ Curatorial edit prepared October 2, 2026.
 
 Reviewed all 104 photographs in the current GitHub portfolio and 105 readable finished JPEG exports from the supplied archive and its photography export folders. These include duplicate frames and alternate edits. The 185 export candidates contained 80 empty files; 79 were in the original Prints folder. The JPEG XL companion was not independently evaluated. Raw camera rolls, legacy camera JPEG folders, unrelated files, and generated website thumbnails were excluded from visual curation. This is a finished-export edit, not an exhaustive RAW-library cull.
 
-The local site retains 13 collections and 104 photographs: 89 retained, 15 replaced. All collection titles, subtitles, synopses, essays, and image passages have been rewritten. Existing collection URLs remain stable. NAS originals were not changed.
+The initial local curation retained 13 collections and 104 photographs: 89 retained, 15 replaced. Later user-selected additions and removals brought the current site to 105 photographs across those same 13 collections. All collection URLs remain stable. NAS originals were not changed.
 
 ## Direction
 
@@ -46,4 +46,3 @@ Catalog validation, 3 Python tests, 5 content tests, 3 static-export tests, Type
 ## Applying the edit
 
 The supplied update ZIP contains a binary Git patch with all source, editorial, and image-asset changes. Apply it to the original repository revision following APPLY.md, then run npm install and npm run release:check. The original project uses a Google font fetched at build time, so its first build requires network access. No deployment has been performed.
-

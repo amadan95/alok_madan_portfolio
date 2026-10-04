@@ -14,8 +14,8 @@ import type {
 } from "@/lib/types";
 
 const COLLECTION_COUNT_RANGE = { minimum: 12, maximum: 13 } as const;
-const COLLECTION_IMAGE_COUNT_RANGE = { minimum: 7, maximum: 8 } as const;
-const EXHIBIT_IMAGE_COUNT_RANGE = { minimum: 96, maximum: 104 } as const;
+const COLLECTION_IMAGE_COUNT_RANGE = { minimum: 6, maximum: 9 } as const;
+const EXHIBIT_IMAGE_COUNT_RANGE = { minimum: 96, maximum: 117 } as const;
 const INTRO_IMAGE_COUNT_RANGE = { minimum: 1, maximum: 13 } as const;
 const VARIANT_KEYS: AssetVariantKey[] = ["raw", "thumb", "rail", "hero"];
 const VARIANT_MAX_DIMENSIONS: Record<AssetVariantKey, number> = {
@@ -29,6 +29,7 @@ const SEQUENCE_ROLES: SequenceRole[] = [
   "development-1",
   "development-2",
   "development-3",
+  "development-4",
   "hinge",
   "rupture",
   "echo-1",

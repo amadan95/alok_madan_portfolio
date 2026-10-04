@@ -47,14 +47,14 @@ test("home, raw, and every collection include their authored content hooks", () 
   }
 
   const raw = readExport("raw.html");
-  assert.match(raw, /data-raw-selected-count="104"/);
+  assert.match(raw, new RegExp(`data-raw-selected-count="${manifest.collections.reduce((count, collection) => count + collection.images.length, 0)}"`));
 
   for (const collection of manifest.collections) {
     const html = readExport(`portfolio/${collection.slug}.html`);
     assert.doesNotMatch(html, /data-project-essay=""/);
     assert.doesNotMatch(html, />Collection essay</);
-    assert.equal((html.match(/data-project-image=""/g) ?? []).length, 8, collection.slug);
-    assert.equal((html.match(/data-mobile-caption=""/g) ?? []).length, 8, collection.slug);
+    assert.equal((html.match(/data-project-image=""/g) ?? []).length, collection.images.length, collection.slug);
+    assert.equal((html.match(/data-mobile-caption=""/g) ?? []).length, collection.images.length, collection.slug);
     assert.match(html, />Collections</);
     assert.match(html, />Previous</);
     assert.match(html, />Next</);
@@ -67,7 +67,7 @@ test("home, raw, and every collection include their authored content hooks", () 
 
 test("the export contains exactly the selected responsive files and no private paths", () => {
   const generated = filesBelow(resolve(outRoot, "_generated"));
-  assert.equal(generated.length, 104 * 4 * 2);
+  assert.equal(generated.length, manifest.collections.reduce((count, collection) => count + collection.images.length, 0) * 4 * 2);
   generated.forEach((path) => assert.ok(statSync(path).size > 0, path));
 
   const textual = filesBelow(outRoot)

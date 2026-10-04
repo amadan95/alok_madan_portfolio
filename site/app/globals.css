@@ -645,6 +645,26 @@ picture[data-image-error="true"]::after {
 .collection-image-rail__arrow--next { right: 0.65rem; }
 .collection-image-rail__arrow:hover:not(:disabled) { background: rgba(16, 16, 22, 0.95); }
 .collection-image-rail__arrow:disabled { opacity: 0.3; cursor: default; }
+
+@media (hover: hover) and (pointer: fine) {
+  .collection-image-rail__arrow,
+  .collection-image-rail__arrow:disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .collection-image-rail:hover .collection-image-rail__arrow,
+  .collection-image-rail:focus-within .collection-image-rail__arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .collection-image-rail:hover .collection-image-rail__arrow:disabled,
+  .collection-image-rail:focus-within .collection-image-rail__arrow:disabled {
+    opacity: 0.3;
+  }
+}
+
 .collection-image-rail__arrow svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .collection-image-rail__arrow:focus-visible,
 .portfolio-home__rail:focus-visible,

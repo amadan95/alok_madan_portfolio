@@ -44,6 +44,7 @@ export type SequenceRole =
   | "development-1"
   | "development-2"
   | "development-3"
+  | "development-4"
   | "hinge"
   | "rupture"
   | "echo-1"

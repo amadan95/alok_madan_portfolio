@@ -33,10 +33,19 @@ export function ScrollTypedSynopsis({ text, reducedMotion }: { text: string; red
     try {
       trigger = ScrollTrigger.create({
         trigger: paragraph,
-        start: "top 85%",
-        end: "top 45%",
+        // The last paragraph cannot reach the usual viewport positions.
+        // Move its typing interval into the scroll space that remains.
+        start: () => {
+          const top = paragraph.getBoundingClientRect().top + window.scrollY;
+          const maximum = ScrollTrigger.maxScroll(window);
+          return Math.max(0, Math.min(top - window.innerHeight * 0.85, maximum - window.innerHeight * 0.4));
+        },
+        end: () => {
+          const top = paragraph.getBoundingClientRect().top + window.scrollY;
+          return Math.max(0, Math.min(top - window.innerHeight * 0.45, ScrollTrigger.maxScroll(window)));
+        },
         onUpdate: (self) => reveal(self.progress),
-        onRefresh: (self) => reveal(self.progress),
+        onRefresh: (self) => reveal(ScrollTrigger.maxScroll(window) <= 0 ? 1 : self.progress),
       });
       reveal(trigger.progress);
       // Hide only after initialization succeeds. Invisible characters retain their layout.

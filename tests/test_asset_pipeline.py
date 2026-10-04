@@ -17,8 +17,8 @@ class SelectedAssetPipelineTests(unittest.TestCase):
     def test_approved_inputs_and_outputs_are_exact(self) -> None:
         _, selected_ids, sources = catalog.verify_inputs()
         catalog.verify_catalog(selected_ids, sources)
-        self.assertEqual(len(selected_ids), 104)
-        self.assertEqual(len(set(selected_ids)), 104)
+        self.assertEqual(len(selected_ids), 105)
+        self.assertEqual(len(set(selected_ids)), 105)
 
     def test_target_dimensions_never_crop_or_upscale(self) -> None:
         self.assertEqual(catalog.target_dimensions(6000, 4000, 2400), (2400, 1600))
